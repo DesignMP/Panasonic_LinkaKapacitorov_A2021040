@@ -1,0 +1,1 @@
+Panasonic_LinkaKapacitorov_A2021040
