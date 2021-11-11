@@ -1,0 +1,14 @@
+$(AS_PROJECT_PATH)/Logical/Libraries/IecCheck/IecCheck.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/FM_NORD/FM_NORD.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/FM_NORD/Types.typ
+$(AS_PROJECT_PATH)/Logical/Libraries/LoopConR/LoopConR.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/standard/standard.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/SC/SC.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/AsBrStr/AsBrStr.fun
+$(AS_PROJECT_PATH)/Logical/Global.var
+$(AS_PROJECT_PATH)/Logical/Global.typ
+$(AS_PROJECT_PATH)/Physical/Config1/AB1_CPU/Cpu.per
+$(AS_PROJECT_PATH)/Logical/Program/VstupnyVytah/Variables.var
+$(AS_PROJECT_PATH)/Logical/Libraries/SC/Types.typ
+$(AS_PROJECT_PATH)/Logical/Libraries/Statistika/Types.typ
+$(AS_PROJECT_PATH)/Logical/Libraries/Statistika/Statistika.fun

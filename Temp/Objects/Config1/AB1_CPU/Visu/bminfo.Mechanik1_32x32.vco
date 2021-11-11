@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="Bitmaps">
+    <Folder Name="POBJ">
+      <Object Name="Mechanik1_32x32" ClsId="0x306" Version="1" TargetIndex="56" Type="GFX" RefString="Source[local].Bitmap[Mechanik1_32x32]">
+        <UInt16 Name="Width">32</UInt16>
+        <UInt16 Name="Height">32</UInt16>
+        <UInt32 Name="BitsPerPixel">32</UInt32>
+        <Byte Name="Transparency">0</Byte>
+        <Byte Name="TargetFormat">2</Byte>
+        <UInt16 Name="Reserved">0</UInt16>
+        <Int32 Name="TransparentColor">0</Int32>
+        <Int32 Name="FillAreas">0</Int32>
+        <Binary Name="BitmapData" Encoding="Base64">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMuSURBVFhHtdZZqE1RHMfxY54zhDKEMmfMkBeEB4pIkjI9yJDpAWXIlClT4oFkKoQoJWN5QoYHGR88mJKZSAiZh+/3nLO6u+tM9959f/Xp7L3POXuvvfZ/7bUSpUxDjMdmHMA2jEUtlGsawIt9wd8MXsKGVUDsaYEH8EKvMR/jMBJjMBO38AebEHsjjiHc6Q4PZIgNCr+Z5oE4cx/h5NdQFZVRDVVQEVsRfmODY81dhJPrDd7hKz7iBez+8P1RxJo7iDYgn8OINRZYpgtl4/CMLT7fhwgn/4S16ALHfivMgY8l/OYUYkknbIc9sBwWY0dkSktYKztxAf6vDsqUdbDahyb3Eoma6c9ssUe6ojPsoSkoU+xqG+BjMG6fwYjkXlFG43hqMzlE/X13TPRAWeLdLEKl5F6qAacxLLlXlGgDjPPFbuTrsYLSBz6KQuNreC+aJPdiyhoUOtv5/KemNuNLN0xPbebNBtSDo8VJLGRI+rPUWY/mqc2s6QdnRh/DbViIIa/QPrVZutTGLjRN7v0fL7YFjoBG+IUwfOvDdcSy5F4ZUhfO996lvVEDbbEES+EoMc6Qrhu+4S18e/qGdOUUS3xDzsVKzED0WYdMQng16xDCcC5RHMsuNpzjXQvYC5li1x/BWUyAb0Ev/AzRWig4dudseNIFCHdyBXZ7NK4X9yP8xmH7KL1tD5U4FtF5OK9b0TbmOcIFvuMc9uAkPiB856wYGvwUFqbvhoLjC+c6PMEND6TjHB8ukot18Ti9bdW7arIgnbYLymqEk32GFW0WIhzPxgstTm8/gbUQvjuBvLFK7bbwpx9wDJtQVNm4JnQohkflynhjelu/0Rg5Y8VHF5f2gNOrmYxwvLircFg6U7pv5btiLv7YnNhyxhfLT4Q/RGugN1wVrcAq+Kisdj9dknmH4X++eNrBsR+OqRdyxuf9HuEPVnC+OEruwZFwGTdhL/pfR0m0ATYqb2ZhHy7BO7CqLUCn2FEYiJ7oAE/YDBbfPLgwGQSH8EFchEt6F6nWQ6kWKNXhCqcNeqA/BsNV0XA4VXu3Fl1fONx8aw5AmBvKPRZcdD5onf7MkUTiHzJsBTxi2L4PAAAAAElFTkSuQmCC</Binary>
+      </Object>
+    </Folder>
+  </Folder>
+</Intermediate>

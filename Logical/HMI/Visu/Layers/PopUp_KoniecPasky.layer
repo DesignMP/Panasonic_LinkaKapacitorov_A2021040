@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.10.3.60 SP"?>
+<Layer xmlns="http://br-automation.co.at/AS/VC/Project" Name="PopUp_KoniecPasky">
+  <Property Name="BackColor" Value="9"/>
+  <Property Name="Description" Value=""/>
+  <Property Name="Height" Value="600"/>
+  <Property Name="Left" Value="0"/>
+  <Property Name="StatusDatapoint" Value="None"/>
+  <Property Name="Top" Value="0"/>
+  <Property Name="Width" Value="1024"/>
+  <TextGroup>
+    <TextLayer LanguageId="sk-SK">
+      <Text ID="258271" Value=""/>
+      <Text ID="258273" Value="Info"/>
+    </TextLayer>
+    <TextLayer LanguageId="en">
+      <Text ID="258271" Value=""/>
+      <Text ID="258273" Value="Info"/>
+    </TextLayer>
+    <TextLayer LanguageId="ja-JP">
+      <Text ID="258271" Value=""/>
+      <Text ID="258273" Value=""/>
+    </TextLayer>
+    <IndexMap>
+      <Index ID="258271" Value="3"/>
+      <Index ID="258273" Value="5"/>
+    </IndexMap>
+  </TextGroup>
+  <Controls>
+    <Control ClassId="0x00001001" Name="shpBody1">
+      <Property Name="BackColor" Value="42"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="ForeColor" Value="0"/>
+      <Property Name="Height" Value="112"/>
+      <Property Name="Left" Value="498"/>
+      <Property Name="LineWidth" Value="2"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Vizu.ZobrazHlasenie_DochadzaPaska]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="428"/>
+      <Property Name="Width" Value="350"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtHeader1">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BackColor" Value="0"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="ForeColor" Value="15"/>
+      <Property Name="Height" Value="35"/>
+      <Property Name="Left" Value="498"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="MsgBox Header"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Vizu.ZobrazHlasenie_DochadzaPaska]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[FrameHeader]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="3"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="422"/>
+      <Property Name="Width" Value="350"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_3">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[Arial16_Bold]"/>
+      <Property Name="ForeColor" Value="15"/>
+      <Property Name="Height" Value="24"/>
+      <Property Name="Left" Value="530"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Vizu.ZobrazHlasenie_DochadzaPaska]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="5"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="428"/>
+      <Property Name="Width" Value="285"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="Bitmap_1">
+      <Property Name="Bitmap" Value="Source[local].Bitmap[information_0]"/>
+      <Property Name="BitmapSource" Value="SingleBitmap"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="32"/>
+      <Property Name="IndexDatapoint" Value="None"/>
+      <Property Name="Left" Value="800"/>
+      <Property Name="SimulationValue" Value="0"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Vizu.ZobrazHlasenie_DochadzaPaska]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="424"/>
+      <Property Name="Width" Value="36"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_1">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[Arial12_Bold]"/>
+      <Property Name="Height" Value="54"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Vizu.IndexStavuPasky]"/>
+      <Property Name="Left" Value="510"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Vizu.ZobrazHlasenie_DochadzaPaska]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[local].TextGroup[StavTlaciarne]"/>
+      <Property Name="TextIndexOffset" Value="0"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
+      <Property Name="Top" Value="472"/>
+      <Property Name="Width" Value="324"/>
+    </Control>
+  </Controls>
+  <KeyMapping/>
+</Layer>

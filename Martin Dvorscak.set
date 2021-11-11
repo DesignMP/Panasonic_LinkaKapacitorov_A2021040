@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.10.3.60 SP"?>
+<ProjectSettings xmlns="http://br-automation.co.at/AS/ProjectSettings">
+  <ConfigurationManager ActiveConfigurationName="Config1" />
+  <Deployment Value="ActiveCpu" />
+  <ExportProject ExportFilePath="D:\Projekty BER\ZalohyProjektov\Panasonic_LinkaKapacitorov_A2021040\Zaloha_11112021\Panasonic_LinkaKapacitorov_A2021040.zip" />
+  <Print Footer="%cPage: %p" Header="%lProject: %n%c%x" />
+</ProjectSettings>

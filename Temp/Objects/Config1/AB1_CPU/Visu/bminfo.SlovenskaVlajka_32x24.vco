@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="Bitmaps">
+    <Folder Name="POBJ">
+      <Object Name="SlovenskaVlajka_32x24" ClsId="0x306" Version="1" TargetIndex="108" Type="GFX" RefString="Source[local].Bitmap[SlovenskaVlajka_32x24]">
+        <UInt16 Name="Width">32</UInt16>
+        <UInt16 Name="Height">24</UInt16>
+        <UInt32 Name="BitsPerPixel">32</UInt32>
+        <Byte Name="Transparency">0</Byte>
+        <Byte Name="TargetFormat">2</Byte>
+        <UInt16 Name="Reserved">0</UInt16>
+        <Int32 Name="TransparentColor">0</Int32>
+        <Int32 Name="FillAreas">0</Int32>
+        <Binary Name="BitmapData" Encoding="Base64">iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIZSURBVEhL7ZJNaBNBGIanMa3BEsxFCbFYkBjCboKh0JCKBumxCoIxiSIo2qIXMc019FAq9KKtaTXGgz9ET1U8tIeCePHeay1YxIIt+ZmMZRvaojbyup1Gy3YHhQnFgxl4Dvvu9+48O7sE/3g1BBoCQoEfq6uoUrpNPo9qqbR9rWm1yfqXUGBlcBDU6eQUdbRsFlRVf2csEqlN1r/I57yGnSxfv4EyIaCtrSi2tOD7/DyKDgeo3c5zFgwiTyumngzEFX4IAyfuYyl6gW+kJRJYn55GlTGsTU2hksnwvOz343g8Z+xJQogvDQPKXRQisa03DQTAurrwdWYGpc5OsHB4S8DrhXLmqbEniynQBei58yjqG61PTqIyPo6NxUVU0mmsTUyg7PGAut3wn31m7MliCmoCJV1gJZXCl3gc32ZnwaJRaP39KLe1cQHf7gmM4EPsMj9quvkZdLQ3b7kQP/7NLBTCoVNZY08WUfjy6gAKTRZ83LMP72wudJ9+gJzdhwWLDUuWZsxdvIYmdcTUk0IUxvpeoE/thU29A/fRFM8OeIdwUCd45BZu33xk6kjj1B+6E5cyhGTqNYg6ahxWRnEl8QpKcNjUkYXMNTsg4tNhNwYST7D32Fht83u41JvDQugk3lvFHRnIrx9LBGtvx/PkGDzdGQwnH6MQ6OA/pmhWlj8KcKxWLPf0gDn2i+/Xyd8FdpmGwP8uQPATLB+yGXjsB2QAAAAASUVORK5CYII=</Binary>
+      </Object>
+    </Folder>
+  </Folder>
+</Intermediate>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="Bitmaps">
+    <Folder Name="POBJ">
+      <Object Name="BritskaVlajka_64x32" ClsId="0x306" Version="1" TargetIndex="104" Type="GFX" RefString="Source[local].Bitmap[BritskaVlajka_64x32]">
+        <UInt16 Name="Width">64</UInt16>
+        <UInt16 Name="Height">32</UInt16>
+        <UInt32 Name="BitsPerPixel">32</UInt32>
+        <Byte Name="Transparency">0</Byte>
+        <Byte Name="TargetFormat">2</Byte>
+        <UInt16 Name="Reserved">0</UInt16>
+        <Int32 Name="TransparentColor">0</Int32>
+        <Int32 Name="FillAreas">0</Int32>
+        <Binary Name="BitmapData" Encoding="Base64">iVBORw0KGgoAAAANSUhEUgAAAEAAAAAgCAYAAACinX6EAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJrSURBVGhD7Zk9L0RREIaPRuIX8AN8/BH/gCAU1up8FNQ61dIrNKIQhUJCt41vESLsRkOhEZ1Eo6BYY9/rzsa9dzZ79pwzNxImeRM7994z8z42uzOYq8Fxejm6ICkqd480VFihju4JMj3FuqadNTy1Gp35el2lo85eOu/sSwg5XEPgXukMexWjntE7PLw9PFK1sEgnXQN0Ftdi3yadkCIEiHwAyMYPu/rptIlP0+qGn+EDQhdA+8Y5TLsPIFxA6ABwN47AM8b3AFsQYQH4G2/0HfzAJiDCAFDoU71ALD8Air+gxIuGwhd0A6D/zmwCgBWugeGpUpSzA1DSN84SkxkxiJLY0KFFQ+sb+9HPNgBwb1Tn/rvOQVvGv+G1NM7C281eJRopLNP2TplqtVoE4m5uiW7HZummrqvRGXpY26Ta+0fcUjZsANDnJz3tlelyYj46F+dXJheaGkcv6Am9oUe5d1kmPiO3sAKQYxgUzVPPW7t0LABADtekZzRlQD5PwSj2jzQA5HBNekZTJt3IX9M/ACn5l/QPQPpg0NSv+xCUvho09eu+BuN5ILdAUZBPA0AO1/IOr1FYCoyrGFt5PMY4i7EW4y3CFQDGa4zZGLd5PMYYjnHcaxQWF4SMksuQFDCORQVGsLhggcEig4XGdRmSgutgAYsWMa5TB+G0DInJhpLrsBRp49mG/NdhKWzrtgQhJgMa5wbwdkPYAZD/ICKFN4hkQq+gGwD9vmIA+qT9ALAU+tQ2zgoDgBUQhLZxVlgALH8QmUEotHGWDgCWO4gGAC3jLF0ArPZAYP8w6QT+hRzSOCsfACxbEOP0Be9j72DgpGF1AAAAAElFTkSuQmCC</Binary>
+      </Object>
+    </Folder>
+  </Folder>
+</Intermediate>

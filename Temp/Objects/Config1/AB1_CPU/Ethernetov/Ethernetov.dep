@@ -1,0 +1,6 @@
+$(AS_PROJECT_PATH)/Logical/Libraries/AsTCP/AsTCP.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/AsTCP/AsTCP.var
+$(AS_PROJECT_PATH)/Logical/Libraries/Runtime/runtime.var
+$(AS_PROJECT_PATH)/Logical/Global.var
+$(AS_PROJECT_PATH)/Logical/Global.typ
+$(AS_PROJECT_PATH)/Logical/Libraries/AsTCP/AsTCP.typ

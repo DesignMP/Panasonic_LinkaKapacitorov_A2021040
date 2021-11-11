@@ -1,0 +1,65 @@
+<!--xml version= "1.0" encoding="utf-8"-->
+<!--IOMapping Version="4.0"-->
+<IOOffsets SIBytes="2048" SOBytes="2048" NSIBytes="1024" NSOBytes="1024" ConnectionsValidOffset="24" >
+		<Module Name="SL1.SM1" Hardware="X20SLX842" SafeLogicID="1" SafeModuleID="1" SISize="8" SOSize="2" NSISize="20" NSOSize="20" SIOffset="16" SOOffset="12" NSIOffset="0" NSOOffset="0" HWTypeCode="63" >
+			<Channel Name="SafeTwoChannelInput0102" Mapping="SIX17.0" Variable="siCS_Robot" SODIndex="0x9999" SODSubIndex="0x2" />
+			<Channel Name="SafeTwoChannelInput0304" Mapping="SIX17.1" Variable="siVyblokovanieZamkov" SODIndex="0x9999" SODSubIndex="0x2" />
+			<Channel Name="SafeTwoChannelInput0506" Mapping="SIX17.2" Variable="siCS_Panel" SODIndex="0x9999" SODSubIndex="0x2" />
+			<Channel Name="SafeTwoChannelInput0708" Mapping="SIX17.3" Variable="siDopravnikaNG_Bariera" SODIndex="0x9999" SODSubIndex="0x2" />
+			<Channel Name="SafeDigitalOutput01" Mapping="SQX12.0" Variable="soZonaCS" SODIndex="0x9999" SODSubIndex="0x4" />
+			<Channel Name="SafeDigitalOutput02" Mapping="SQX12.1" Variable="soZonaVstupnyVytah" SODIndex="0x9999" SODSubIndex="0x4" />
+			<Channel Name="SafeDigitalOutput03" Mapping="SQX12.2" Variable="soZonaVystupnyVytah" SODIndex="0x9999" SODSubIndex="0x4" />
+			<Channel Name="SafeDigitalOutput04" Mapping="SQX12.3" Variable="soZonaBunky" SODIndex="0x9999" SODSubIndex="0x4" />
+			<Channel Name="ReleaseOutput01" Mapping="NSQX3.0" Variable="Release_soZonaCS" SODIndex="0x9999" SODSubIndex="0x7" />
+			<Channel Name="ReleaseOutput02" Mapping="NSQX3.1" Variable="Release_soZonaVstupnyVytah" SODIndex="0x9999" SODSubIndex="0x7" />
+			<Channel Name="ReleaseOutput03" Mapping="NSQX3.2" Variable="Release_soZonaVystupnyVytah" SODIndex="0x9999" SODSubIndex="0x7" />
+			<Channel Name="ReleaseOutput04" Mapping="NSQX3.3" Variable="Release_soZonaBunky" SODIndex="0x9999" SODSubIndex="0x7" />
+			<Channel Name="BOOL001" Mapping="NSQX0.0" Variable="SafetyPLC_Nabehlo" Address="Cyclic#1.Safety.STAV.SafetyPLC_Nabehlo" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL002" Mapping="NSQX0.1" Variable="Stav_ZonaCS_AKTIVNA" Address="Cyclic#1.Safety.STAV.ZonaCS_AKTIVNA" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL003" Mapping="NSQX0.2" Variable="Stav_CS_Panel_ODBLOKOVANY" Address="Cyclic#1.Safety.STAV.CS_OvlPanel_Odblokovany" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL004" Mapping="NSQX0.3" Variable="Stav_CS_Robot_ODBLOKOVANY" Address="Cyclic#1.Safety.STAV.CS_Robot_Odblokovany" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL005" Mapping="NSQX0.4" Variable="Stav_CS_VstupVytah_ODBLOKOVANY" Address="Cyclic#1.Safety.STAV.CS_VstupnyVytah_Odblokovany" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL006" Mapping="NSQX0.5" Variable="Stav_CS_VystVytah_ODBLOKOVANY" Address="Cyclic#1.Safety.STAV.CS_VystupnyVytah_Odblokovany" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL007" Mapping="NSQX0.6" Variable="Stav_VyblokovZamkov_AKTIVNE" Address="Cyclic#1.Safety.STAV.VyblokovanieSafety_AKTIVNE" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL008" Mapping="NSQX0.7" Variable="Stav_ZonaBunky_ODBLOKOVANA" Address="Cyclic#1.Safety.STAV.ZonaBunky_Odblokovana" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL009" Mapping="NSQX1.0" Variable="Stav_ZonaBunky_AKTIVNA" Address="Cyclic#1.Safety.STAV.ZonaBunky_AKTIVNA" SODIndex="0x2580" SODSubIndex="0x2" />
+			<Channel Name="BOOL010" Mapping="NSQX1.1" Variable="Stav_BarieraDopravNG_AKTIVNA" Address="Cyclic#1.Safety.STAV.BarieraDopravnikaNG_AKTIVNA" SODIndex="0x2580" SODSubIndex="0x2" />
+			<Channel Name="BOOL011" Mapping="NSQX1.2" Variable="Stav_ZonaVstupVytah_ODBLOKOV" Address="Cyclic#1.Safety.STAV.ZonaVstupnyVytah_Odblokovana" SODIndex="0x2580" SODSubIndex="0x2" />
+			<Channel Name="BOOL012" Mapping="NSQX1.3" Variable="Stav_ZonaVstupVytah_AKTIVNA" Address="Cyclic#1.Safety.STAV.ZonaVstupnyVytah_AKTIVNA" SODIndex="0x2580" SODSubIndex="0x2" />
+			<Channel Name="BOOL013" Mapping="NSQX1.4" Variable="Stav_ZonaVystupVytah_ODBLOKOV" Address="Cyclic#1.Safety.STAV.ZonaVystupnyVytah_Odblokovana" SODIndex="0x2580" SODSubIndex="0x2" />
+			<Channel Name="BOOL014" Mapping="NSQX1.5" Variable="Stav_ZonaVystupVytah_AKTIVNA" Address="Cyclic#1.Safety.STAV.ZonaVystupnyVytah_AKTIVNA" SODIndex="0x2580" SODSubIndex="0x2" />
+			<Channel Name="BOOL015" Mapping="NSQX1.6" Variable="Stav_BarieraVstupVytahu_AKTIV" Address="Cyclic#1.Safety.STAV.BarieraVstupVytahu_AKTIVNA" SODIndex="0x2580" SODSubIndex="0x2" />
+			<Channel Name="BOOL016" Mapping="NSQX1.7" Variable="Stav_ZamkyBunky_AKTIV" Address="Cyclic#1.Safety.STAV.ZamkyBunky_AKTIVNE" SODIndex="0x2580" SODSubIndex="0x2" />
+			<Channel Name="BOOL017" Mapping="NSQX2.0" Variable="Stav_BarieraVystupVytahu_AKTIV" Address="Cyclic#1.Safety.STAV.BarieraVystupVytahu_AKTIVNA" SODIndex="0x2580" SODSubIndex="0x3" />
+			<Channel Name="BOOL018" Mapping="NSQX2.1" Variable="Stav_MutingRobota_AKTIV" Address="Cyclic#1.Safety.STAV.MutingRobota_AKTIVNY" SODIndex="0x2580" SODSubIndex="0x3" />
+			<Channel Name="BOOL019" Mapping="NSQX2.2" Variable="Stav_MutingBarVstupVytah_AKTIV" Address="Cyclic#1.Safety.STAV.MutingBarieryVstupVytah_AKTIVNY" SODIndex="0x2580" SODSubIndex="0x3" />
+			<Channel Name="BOOL020" Mapping="NSQX2.3" Variable="Stav_MutingBarVystVytah_AKTIV" Address="Cyclic#1.Safety.STAV.MutingBarieryVystupVytah_AKTIVNY" SODIndex="0x2580" SODSubIndex="0x3" />
+			<Channel Name="BOOL021" Mapping="NSQX2.4" Variable="Stav_ServDvereTlaciarne_AKTIV" Address="Cyclic#1.Safety.STAV.ServisneDvereTlaciarne_AKTIVNE" SODIndex="0x2580" SODSubIndex="0x3" />
+			<Channel Name="BOOL101" Mapping="NSIX0.0" Variable="Reset_ZonyCS" Address="Cyclic#1.Safety.RESET_ZonyCS" SODIndex="0x2500" SODSubIndex="0x2" />
+			<Channel Name="BOOL102" Mapping="NSIX0.1" Variable="Reset_ZonyVstupnyVytah" Address="Cyclic#1.Safety.RESET_ZonyVstupnehoVytahu" SODIndex="0x2500" SODSubIndex="0x2" />
+			<Channel Name="BOOL103" Mapping="NSIX0.2" Variable="Reset_ZonyVystupnyVytah" Address="Cyclic#1.Safety.RESET_ZonyVystupnehoVytahu" SODIndex="0x2500" SODSubIndex="0x2" />
+			<Channel Name="BOOL104" Mapping="NSIX0.3" Variable="Reset_ZonyBunky" Address="Cyclic#1.Safety.RESET_ZonyBunky" SODIndex="0x2500" SODSubIndex="0x2" />
+			<Channel Name="BOOL105" Mapping="NSIX0.4" Variable="SpatnaVazba_ZonaCS" Address="Cyclic#1.Linka.IN.SpatnaVazba_ZonaCS" SODIndex="0x2500" SODSubIndex="0x2" />
+			<Channel Name="BOOL106" Mapping="NSIX0.5" Variable="SpatnaVazba_ZonaVstupnyVytah" Address="Cyclic#1.Linka.IN.SpatnaVazba_ZonaVstupVytah" SODIndex="0x2500" SODSubIndex="0x2" />
+			<Channel Name="BOOL107" Mapping="NSIX0.6" Variable="SpatnaVazba_ZonaVystupnyVytah" Address="Cyclic#1.Linka.IN.SpatnaVazba_ZonaVystupVytah" SODIndex="0x2500" SODSubIndex="0x2" />
+			<Channel Name="BOOL108" Mapping="NSIX0.7" Variable="SpatnaVazba_ZonaBunky" Address="Cyclic#1.Linka.IN.SpatnaVazba_ZonaBunky" SODIndex="0x2500" SODSubIndex="0x2" />
+			<Channel Name="BOOL109" Mapping="NSIX1.0" Variable="SpatnaVazba_VT_ZonaVstupVytah" Address="Cyclic#1.Linka.IN.SpatnaVazba_VentilTerminal_SQ1" SODIndex="0x2500" SODSubIndex="0x3" />
+			<Channel Name="BOOL110" Mapping="NSIX1.1" Variable="SpatnaVazba_VT_ZonaBunky" Address="Cyclic#1.Linka.IN.SpatnaVazba_VentilTerminal_SQ2" SODIndex="0x2500" SODSubIndex="0x3" />
+		</Module>
+		<Module Name="SL1.SM2" Hardware="X20SI8110" SafeLogicID="1" SafeModuleID="2" SISize="3" SOSize="0" NSISize="0" NSOSize="0" SIOffset="60" ConnectionValidBitNumber="0" HWTypeCode="27" >
+			<Channel Name="SafeTwoChannelInput0102" Mapping="SIX61.0" Variable="siTlaciaren_SnimacDveri" SODIndex="0x6000" SODSubIndex="0x2" />
+			<Channel Name="SafeTwoChannelInput0304" Mapping="SIX61.1" Variable="siZamkyBunky" SODIndex="0x6000" SODSubIndex="0x2" />
+			<Channel Name="SafeTwoChannelInput0506" Mapping="SIX61.2" Variable="siDeadMan" SODIndex="0x6000" SODSubIndex="0x2" />
+			<Channel Name="SafeTwoChannelInput0708" Mapping="SIX61.3" Variable="siMutingRobota" SODIndex="0x6000" SODSubIndex="0x2" />
+		</Module>
+		<Module Name="SL1.SM3" Hardware="X67SI8103" SafeLogicID="1" SafeModuleID="3" SISize="4" SOSize="0" NSISize="2" NSOSize="2" SIOffset="64" NSIOffset="20" NSOOffset="20" ConnectionValidBitNumber="1" HWTypeCode="27" >
+			<Channel Name="SafeTwoChannelInput0102" Mapping="SIX65.0" Variable="siVstupnyVytah_HornySnimac" SODIndex="0x6000" SODSubIndex="0x2" />
+			<Channel Name="SafeTwoChannelInput0304" Mapping="SIX65.1" Variable="siVstupnyVytah_Bariera" SODIndex="0x6000" SODSubIndex="0x2" />
+			<Channel Name="SafeTwoChannelInput0506" Mapping="SIX65.2" Variable="siCS_VstupnyVytah" SODIndex="0x6000" SODSubIndex="0x2" />
+		</Module>
+		<Module Name="SL1.SM4" Hardware="X67SI8103" SafeLogicID="1" SafeModuleID="4" SISize="4" SOSize="0" NSISize="2" NSOSize="2" SIOffset="68" NSIOffset="22" NSOOffset="22" ConnectionValidBitNumber="2" HWTypeCode="27" >
+			<Channel Name="SafeTwoChannelInput0102" Mapping="SIX69.0" Variable="siVystupnyVytah_HornySnimac" SODIndex="0x6000" SODSubIndex="0x2" />
+			<Channel Name="SafeTwoChannelInput0304" Mapping="SIX69.1" Variable="siVystupnyVytah_Bariera" SODIndex="0x6000" SODSubIndex="0x2" />
+			<Channel Name="SafeTwoChannelInput0506" Mapping="SIX69.2" Variable="siCS_VystupnyVytah" SODIndex="0x6000" SODSubIndex="0x2" />
+		</Module>
+</IOOffsets>

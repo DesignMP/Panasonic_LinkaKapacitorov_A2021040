@@ -1,0 +1,5 @@
+VAR
+	PocetNacitZnakovQRkodu : UDINT := 0;
+	PocetNacitZnakovDMkodu : UDINT := 0;
+	CasPoPrepProgramuKamery : TON := (0);
+END_VAR

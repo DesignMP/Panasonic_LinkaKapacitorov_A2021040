@@ -1,0 +1,22 @@
+VAR
+	SC_OvlCentrovacky : SequenceControlTyp;
+	Centrovacku_VYSUN : BOOL;
+	Centrovacku_ZASUN : BOOL;
+	i : USINT := 0;
+	VstupnePoleUSINT : ARRAY[1..20] OF USINT;
+	VystupnePoleStringov : ARRAY[1..20] OF STRING[80];
+	h : USINT := 0;
+	PocetZnakovUDINT : UDINT;
+	PocetZnakovUSINT : USINT;
+	g : USINT := 0;
+	AktualNacitanyZnak : USINT;
+	CasVytlaceniaEtikety : TON := (0);
+	TextovaPremenna_1 : STRING[10] := '';
+	PrvyRiadok : STRING[20] := '';
+	DruhyRiadok : STRING[30] := '';
+	TretiRiadok : STRING[10] := '';
+	DataMetrix : STRING[30] := '';
+	CisloPaletky : STRING[10] := '';
+	STEP : BOOL := 0;
+	PocetOpatovnychTrigrov : USINT := 0;
+END_VAR

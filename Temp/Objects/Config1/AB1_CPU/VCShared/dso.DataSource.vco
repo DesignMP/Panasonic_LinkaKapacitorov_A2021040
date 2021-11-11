@@ -1,0 +1,2915 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="DPV">
+    <Folder Name="Drivers">
+      <Folder Name="POBJ">
+        <Object Name="DataSource" ClsId="0x200" Version="1" Type="DS" RefString="Source[global].DataSource[DataSource]">
+          <Reference Name="DriverID" Type="DS">Source[global].DataSource[DataSource]</Reference>
+          <Reference Name="TextGroup" Type="TG">None</Reference>
+          <UInt32 Name="PVCount">321</UInt32>
+          <UInt32 Name="ImageSize">14347</UInt32>
+          <Table Name="Variables" Cols="5">
+            <TableHeader>
+              <Column Name="PVID" />
+              <Column Name="PVType" />
+              <Column Name="PVOffset" />
+              <Column Name="PVDim" />
+              <Column Name="PVName" />
+            </TableHeader>
+            <Group Name="SC_Robot.StepName">
+              <UInt16 Name="ID">0</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">0</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">0</Int32>
+            </Group>
+            <Group Name="Vizu.TL_RezimAutomat">
+              <UInt16 Name="ID">1</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">201</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">18</Int32>
+            </Group>
+            <Group Name="Vizu.StavPracoviskaRobota_Index">
+              <UInt16 Name="ID">2</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">202</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">39</Int32>
+            </Group>
+            <Group Name="Vizu.StavZariadenia_Farba">
+              <UInt16 Name="ID">3</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">203</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">71</Int32>
+            </Group>
+            <Group Name="Vizu.StavZariadenia_Index">
+              <UInt16 Name="ID">4</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">204</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">97</Int32>
+            </Group>
+            <Group Name="Vizu.TL_StartAutomat_DISABLE">
+              <UInt16 Name="ID">5</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">205</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">123</Int32>
+            </Group>
+            <Group Name="Vizu.TL_UkoncenieCyklu_DISABLE">
+              <UInt16 Name="ID">6</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">206</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">152</Int32>
+            </Group>
+            <Group Name="Vizu.TL_RR_OvladanieServa_DISABLE">
+              <UInt16 Name="ID">7</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">207</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">183</Int32>
+            </Group>
+            <Group Name="Vizu.Slider">
+              <UInt16 Name="ID">8</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">208</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">217</Int32>
+            </Group>
+            <Group Name="Vizu.ZobrazHlasenie_ResetZariadenia">
+              <UInt16 Name="ID">9</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">209</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">229</Int32>
+            </Group>
+            <Group Name="Vizu.TL_RezimManual_DISABLE">
+              <UInt16 Name="ID">10</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">210</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">265</Int32>
+            </Group>
+            <Group Name="Vizu.FarbaTlacitkaAlarm_Index">
+              <UInt16 Name="ID">11</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">211</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">293</Int32>
+            </Group>
+            <Group Name="Vizu.PodsvietenieTlacitka_ResetCS">
+              <UInt16 Name="ID">12</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">212</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">323</Int32>
+            </Group>
+            <Group Name="Vizu.TL_ZamkniPredneDvere">
+              <UInt16 Name="ID">13</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">213</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">357</Int32>
+            </Group>
+            <Group Name="Vizu.TL_ZamkniZadneDvere">
+              <UInt16 Name="ID">14</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">214</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">383</Int32>
+            </Group>
+            <Group Name="Vizu.TL_ZamokPredneDvere_DISABLE">
+              <UInt16 Name="ID">15</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">215</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">408</Int32>
+            </Group>
+            <Group Name="Vizu.TL_ZamokZadneDvere_DISABLE">
+              <UInt16 Name="ID">16</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">216</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">441</Int32>
+            </Group>
+            <Group Name="Vizu.ZobrazPopUp_PrihlasenieUzivatela">
+              <UInt16 Name="ID">17</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">217</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">473</Int32>
+            </Group>
+            <Group Name="Vizu.CisloAktualnejObrazovky">
+              <UInt16 Name="ID">18</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">218</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">511</Int32>
+            </Group>
+            <Group Name="Vizu.CisloZadanejObrazovky">
+              <UInt16 Name="ID">19</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">219</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">540</Int32>
+            </Group>
+            <Group Name="Vizu.TL_Reset_DISABLE">
+              <UInt16 Name="ID">20</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">220</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">567</Int32>
+            </Group>
+            <Group Name="Vizu.StavPracoviskaVstupVytah_Index">
+              <UInt16 Name="ID">21</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">221</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">589</Int32>
+            </Group>
+            <Group Name="Vizu.StavPracoviskaStopPredCist_Index">
+              <UInt16 Name="ID">22</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">222</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">625</Int32>
+            </Group>
+            <Group Name="Vizu.StavPracoviskaStopPoCist_Index">
+              <UInt16 Name="ID">23</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">223</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">663</Int32>
+            </Group>
+            <Group Name="Vizu.StavPracoviskaDoprCistenia_Index">
+              <UInt16 Name="ID">24</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">224</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">699</Int32>
+            </Group>
+            <Group Name="Vizu.StavPracoviskaStopEtiketov_Index">
+              <UInt16 Name="ID">25</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">225</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">737</Int32>
+            </Group>
+            <Group Name="Vizu.StavPracoviskaStopDopNG_Index">
+              <UInt16 Name="ID">26</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">226</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">775</Int32>
+            </Group>
+            <Group Name="Vizu.StavPracoviskaStopVystDopr_Index">
+              <UInt16 Name="ID">27</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">227</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">810</Int32>
+            </Group>
+            <Group Name="Vizu.StavPracoviskaDoprVystup_Index">
+              <UInt16 Name="ID">28</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">228</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">848</Int32>
+            </Group>
+            <Group Name="Vizu.StavPracoviskaVystupVytah_Index">
+              <UInt16 Name="ID">29</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">229</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">884</Int32>
+            </Group>
+            <Group Name="Vizu.StavPracoviskaStopVratDopr_Index">
+              <UInt16 Name="ID">30</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">230</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">921</Int32>
+            </Group>
+            <Group Name="Vizu.StavPracoviskaDoprVrat_Index">
+              <UInt16 Name="ID">31</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">231</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">959</Int32>
+            </Group>
+            <Group Name="Vizu.StavPracoviskaDoprBunky_Index">
+              <UInt16 Name="ID">32</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">232</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">993</Int32>
+            </Group>
+            <Group Name="Vizu.Nacitany_MODEL">
+              <UInt16 Name="ID">33</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">233</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">1028</Int32>
+            </Group>
+            <Group Name="Vizu.Nacitany_LOT">
+              <UInt16 Name="ID">34</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">252</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">1048</Int32>
+            </Group>
+            <Group Name="Vizu.TL_VstupVytah_Homing_DISABLE">
+              <UInt16 Name="ID">35</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">264</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">1066</Int32>
+            </Group>
+            <Group Name="Vizu.TL_VstupVytah_Doprav_DISABLE">
+              <UInt16 Name="ID">36</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">265</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">1100</Int32>
+            </Group>
+            <Group Name="Vizu.TL_VstupVytah_Zdvih_DISABLE">
+              <UInt16 Name="ID">37</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">266</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">1134</Int32>
+            </Group>
+            <Group Name="Vizu.TL_VystupVytah_Homing_DISABLE">
+              <UInt16 Name="ID">38</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">267</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">1167</Int32>
+            </Group>
+            <Group Name="Vizu.TL_VystupVytah_Zdvih_DISABLE">
+              <UInt16 Name="ID">39</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">268</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">1202</Int32>
+            </Group>
+            <Group Name="Vizu.TL_VystupVytah_Doprav_DISABLE">
+              <UInt16 Name="ID">40</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">269</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">1236</Int32>
+            </Group>
+            <Group Name="Vizu.FarbaTlacitka_PotvrdPaletkuNG">
+              <UInt16 Name="ID">41</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">270</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">1271</Int32>
+            </Group>
+            <Group Name="Vizu.ZobrazHlasenie_PotvrdPaletkyNG">
+              <UInt16 Name="ID">42</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">271</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">1306</Int32>
+            </Group>
+            <Group Name="Vizu.StavZmenyModelu_Index">
+              <UInt16 Name="ID">43</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">272</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">1342</Int32>
+            </Group>
+            <Group Name="Vizu.StavZmenyModelu_Farba">
+              <UInt16 Name="ID">44</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">273</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">1369</Int32>
+            </Group>
+            <Group Name="Vizu.ZobrazHlasenie_NespravTypPaletky">
+              <UInt16 Name="ID">45</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">274</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">1396</Int32>
+            </Group>
+            <Group Name="Vizu.FarbaTlacitka_ZamokPredneDvere">
+              <UInt16 Name="ID">46</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">275</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">1434</Int32>
+            </Group>
+            <Group Name="Vizu.FarbaTlacitka_ZamokZadneDvere">
+              <UInt16 Name="ID">47</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">276</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">1470</Int32>
+            </Group>
+            <Group Name="Vizu.ZobrazHlasenie_ZaaretujTlaciaren">
+              <UInt16 Name="ID">48</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">277</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">1505</Int32>
+            </Group>
+            <Group Name="Vizu.ZobrazHlas_ZatvorSerDvereTlac">
+              <UInt16 Name="ID">49</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">278</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">1543</Int32>
+            </Group>
+            <Group Name="Vizu.ZobrazHlasenie_TlaciarenOffline">
+              <UInt16 Name="ID">50</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">279</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">1578</Int32>
+            </Group>
+            <Group Name="Vizu.ZmenaParametrov_DISABLE">
+              <UInt16 Name="ID">51</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">280</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">1615</Int32>
+            </Group>
+            <Group Name="Vizu.IndexSuradnicovehoSystemuPaletky">
+              <UInt16 Name="ID">52</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">281</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">1644</Int32>
+            </Group>
+            <Group Name="Vizu.TL_PotvrdeniePaletky_NG_DISABLE">
+              <UInt16 Name="ID">53</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">282</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">1682</Int32>
+            </Group>
+            <Group Name="Vizu.TL_ZruseniePaletky_NG_DISABLE">
+              <UInt16 Name="ID">54</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">283</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">1719</Int32>
+            </Group>
+            <Group Name="Vizu.IndexFarbyStavuFiltrov">
+              <UInt16 Name="ID">55</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">284</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">1754</Int32>
+            </Group>
+            <Group Name="Vizu.IndexStavuFiltrov">
+              <UInt16 Name="ID">56</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">285</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">1782</Int32>
+            </Group>
+            <Group Name="Vizu.Language_Index">
+              <UInt16 Name="ID">57</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">286</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">1805</Int32>
+            </Group>
+            <Group Name="Vizu.ZobrazHlasenie_DochadzaPaska">
+              <UInt16 Name="ID">58</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">287</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">1825</Int32>
+            </Group>
+            <Group Name="Vizu.IndexStavuPasky">
+              <UInt16 Name="ID">59</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">288</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">1859</Int32>
+            </Group>
+            <Group Name="Vizu.TL_OdparkujRobota_DISABLE">
+              <UInt16 Name="ID">60</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">289</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">1880</Int32>
+            </Group>
+            <Group Name="Vizu.TL_BunkyRR_DISABLE">
+              <UInt16 Name="ID">61</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">290</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">1911</Int32>
+            </Group>
+            <Group Name="Vizu.RezimBezTlaceEtikety_DISABLE">
+              <UInt16 Name="ID">62</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">291</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">1935</Int32>
+            </Group>
+            <Group Name="Vizu.ZobrazSymbolCS_VstupVytah">
+              <UInt16 Name="ID">63</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">292</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">1969</Int32>
+            </Group>
+            <Group Name="Vizu.ZobrazSymbolCS_VystupVytah">
+              <UInt16 Name="ID">64</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">293</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">2000</Int32>
+            </Group>
+            <Group Name="Vizu.ZobrazSymbolCS_Panel">
+              <UInt16 Name="ID">65</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">294</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">2032</Int32>
+            </Group>
+            <Group Name="Vizu.ZobrazSymbolCS_Robot">
+              <UInt16 Name="ID">66</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">295</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">2058</Int32>
+            </Group>
+            <Group Name="Vizu.TL_Robot_CitanieQRkodu_DISABLE">
+              <UInt16 Name="ID">67</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">296</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">2084</Int32>
+            </Group>
+            <Group Name="Vizu.TL_Robot_CitanieDMkodu_DISABLE">
+              <UInt16 Name="ID">68</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">297</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">2120</Int32>
+            </Group>
+            <Group Name="Vizu.IndexStavuLadenieKamery">
+              <UInt16 Name="ID">69</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">298</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">2156</Int32>
+            </Group>
+            <Group Name="Vizu.IndexStavuLadenieKamery_Farba">
+              <UInt16 Name="ID">70</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">299</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">2185</Int32>
+            </Group>
+            <Group Name="Vizu.TL_Robot_OdoberEtiketu_DISABLE">
+              <UInt16 Name="ID">71</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">300</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">2220</Int32>
+            </Group>
+            <Group Name="RemPremenne.VstupVytah_PozNavazania">
+              <UInt16 Name="ID">72</UInt16>
+              <UInt16 Name="PVType">5</UInt16>
+              <UInt32 Name="PVOffset">301</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">4294967295</Double>
+              <Int32 Name="Offset">2256</Int32>
+            </Group>
+            <Group Name="RemPremenne.VstupVytah_PozVyvazania">
+              <UInt16 Name="ID">73</UInt16>
+              <UInt16 Name="PVType">5</UInt16>
+              <UInt32 Name="PVOffset">305</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">4294967295</Double>
+              <Int32 Name="Offset">2292</Int32>
+            </Group>
+            <Group Name="RemPremenne.VystupVytah_PozNavazania">
+              <UInt16 Name="ID">74</UInt16>
+              <UInt16 Name="PVType">5</UInt16>
+              <UInt32 Name="PVOffset">309</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">4294967295</Double>
+              <Int32 Name="Offset">2328</Int32>
+            </Group>
+            <Group Name="RemPremenne.VystupVytah_PozVyvazania">
+              <UInt16 Name="ID">75</UInt16>
+              <UInt16 Name="PVType">5</UInt16>
+              <UInt32 Name="PVOffset">313</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">4294967295</Double>
+              <Int32 Name="Offset">2365</Int32>
+            </Group>
+            <Group Name="RemPremenne.PocetDniDoVymenyFiltra">
+              <UInt16 Name="ID">76</UInt16>
+              <UInt16 Name="PVType">5</UInt16>
+              <UInt32 Name="PVOffset">317</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">4294967295</Double>
+              <Int32 Name="Offset">2402</Int32>
+            </Group>
+            <Group Name="Zariadenie.Reset">
+              <UInt16 Name="ID">77</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">321</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">2437</Int32>
+            </Group>
+            <Group Name="Safety.RESET_ZonyCS">
+              <UInt16 Name="ID">78</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">322</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">2454</Int32>
+            </Group>
+            <Group Name="Safety.STAV.ServisneDvereTlaciarne_AKTIVNE">
+              <UInt16 Name="ID">79</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">323</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">2474</Int32>
+            </Group>
+            <Group Name="Linka.Manual">
+              <UInt16 Name="ID">80</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">324</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">2517</Int32>
+            </Group>
+            <Group Name="Linka.Automat">
+              <UInt16 Name="ID">81</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">325</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">2530</Int32>
+            </Group>
+            <Group Name="Linka.Reset">
+              <UInt16 Name="ID">82</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">326</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">2544</Int32>
+            </Group>
+            <Group Name="Linka.KoniecCyklu">
+              <UInt16 Name="ID">83</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">327</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">2556</Int32>
+            </Group>
+            <Group Name="Linka.ZmenModel">
+              <UInt16 Name="ID">84</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">328</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">2574</Int32>
+            </Group>
+            <Group Name="Linka.VymenaFiltrovPotvrdena">
+              <UInt16 Name="ID">85</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">329</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">2590</Int32>
+            </Group>
+            <Group Name="Linka.Rezim_BezTlaceEtikety">
+              <UInt16 Name="ID">86</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">330</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">2619</Int32>
+            </Group>
+            <Group Name="Linka.IN.SnimacRotacieHornTrysiek_1_IS7">
+              <UInt16 Name="ID">87</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">331</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">2647</Int32>
+            </Group>
+            <Group Name="Linka.IN.SnimacRotacieHornTrysiek_2_IS8">
+              <UInt16 Name="ID">88</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">332</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">2687</Int32>
+            </Group>
+            <Group Name="Linka.IN.SnimacRotacieHornTrysiek_3_IS9">
+              <UInt16 Name="ID">89</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">333</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">2727</Int32>
+            </Group>
+            <Group Name="Linka.IN.SnimacRotacieHornTrysiek_4_IS10">
+              <UInt16 Name="ID">90</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">334</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">2767</Int32>
+            </Group>
+            <Group Name="Linka.IN.SnimacRotacieSpodTrysiek_1_IS11">
+              <UInt16 Name="ID">91</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">335</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">2808</Int32>
+            </Group>
+            <Group Name="Linka.IN.SnimacRotacieSpodTrysiek_2_IS12">
+              <UInt16 Name="ID">92</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">336</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">2849</Int32>
+            </Group>
+            <Group Name="Linka.IN.SnimacRotacieSpodTrysiek_3_IS13">
+              <UInt16 Name="ID">93</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">337</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">2890</Int32>
+            </Group>
+            <Group Name="Linka.PAR.Zvoleny_MODEL">
+              <UInt16 Name="ID">94</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">338</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">2931</Int32>
+            </Group>
+            <Group Name="Linka.PAR.Zvoleny_LOT">
+              <UInt16 Name="ID">95</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">357</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">2955</Int32>
+            </Group>
+            <Group Name="Linka.PAR.Zvolena_PozLepenia_OffsetX">
+              <UInt16 Name="ID">96</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">369</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">2977</Int32>
+            </Group>
+            <Group Name="Linka.PAR.Zvolena_PozLepenia_OffsetY">
+              <UInt16 Name="ID">97</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">373</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">3014</Int32>
+            </Group>
+            <Group Name="Linka.PAR.Zvolena_PozLepenia_OffsetZ">
+              <UInt16 Name="ID">98</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">377</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">3051</Int32>
+            </Group>
+            <Group Name="Linka.PAR.Zvolena_RychlostDopravPriCisteni">
+              <UInt16 Name="ID">99</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">381</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">3088</Int32>
+            </Group>
+            <Group Name="Linka.OUT.PredneDvere_Zamkni_EZ1">
+              <UInt16 Name="ID">100</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">385</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">3131</Int32>
+            </Group>
+            <Group Name="Linka.OUT.ZadneDvere_Zamkni_EZ2">
+              <UInt16 Name="ID">101</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">386</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">3164</Int32>
+            </Group>
+            <Group Name="Linka.OUT.IonJednotka_START">
+              <UInt16 Name="ID">102</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">387</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">3196</Int32>
+            </Group>
+            <Group Name="SC_VratnyDopravnik.StepName">
+              <UInt16 Name="ID">103</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">388</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">3224</Int32>
+            </Group>
+            <Group Name="SC_StoperVratDopravnika.StepName">
+              <UInt16 Name="ID">104</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">589</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">3252</Int32>
+            </Group>
+            <Group Name="SC_VystupVytah.StepName">
+              <UInt16 Name="ID">105</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">790</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">3285</Int32>
+            </Group>
+            <Group Name="SC_VystupnyDopravnik.StepName">
+              <UInt16 Name="ID">106</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">991</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">3309</Int32>
+            </Group>
+            <Group Name="SC_StoperVystupDopravnika.StepName">
+              <UInt16 Name="ID">107</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">1192</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">3339</Int32>
+            </Group>
+            <Group Name="SC_DopravBunky.StepName">
+              <UInt16 Name="ID">108</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">1393</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">3374</Int32>
+            </Group>
+            <Group Name="SC_StoperDopravNG.StepName">
+              <UInt16 Name="ID">109</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">1594</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">3398</Int32>
+            </Group>
+            <Group Name="SC_StoperEtiketovania.StepName">
+              <UInt16 Name="ID">110</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">1795</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">3425</Int32>
+            </Group>
+            <Group Name="SC_DopravCistenia.StepName">
+              <UInt16 Name="ID">111</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">1996</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">3456</Int32>
+            </Group>
+            <Group Name="SC_StoperPoCisteni.StepName">
+              <UInt16 Name="ID">112</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">2197</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">3483</Int32>
+            </Group>
+            <Group Name="SC_StoperPredCistenim.StepName">
+              <UInt16 Name="ID">113</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">2398</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">3511</Int32>
+            </Group>
+            <Group Name="SC_VstupVytah.StepName">
+              <UInt16 Name="ID">114</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">2599</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">3542</Int32>
+            </Group>
+            <Group Name="Receptury:MoveDown_Page">
+              <UInt16 Name="ID">115</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2800</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">3565</Int32>
+            </Group>
+            <Group Name="Receptury:MoveUP_Page">
+              <UInt16 Name="ID">116</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2801</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">3589</Int32>
+            </Group>
+            <Group Name="Receptury:MoveDown">
+              <UInt16 Name="ID">117</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2802</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">3611</Int32>
+            </Group>
+            <Group Name="Receptury:MoveUP">
+              <UInt16 Name="ID">118</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2803</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">3630</Int32>
+            </Group>
+            <Group Name="Receptury:i">
+              <UInt16 Name="ID">119</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">2804</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">3647</Int32>
+            </Group>
+            <Group Name="Prihlasova:i">
+              <UInt16 Name="ID">120</UInt16>
+              <UInt16 Name="PVType">2</UInt16>
+              <UInt32 Name="PVOffset">2806</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-32768</Double>
+              <Double Name="PVMaxVal">32767</Double>
+              <Int32 Name="Offset">3659</Int32>
+            </Group>
+            <Group Name="Prihlasova:MoveDown">
+              <UInt16 Name="ID">121</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2808</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">3672</Int32>
+            </Group>
+            <Group Name="Prihlasova:MoveUP">
+              <UInt16 Name="ID">122</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2809</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">3692</Int32>
+            </Group>
+            <Group Name="RFID_Hlava_3.CMD.ZapisDATA">
+              <UInt16 Name="ID">123</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2810</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">3710</Int32>
+            </Group>
+            <Group Name="RFID_Hlava_3.STAV.PritomnostCipu">
+              <UInt16 Name="ID">124</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2811</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">3737</Int32>
+            </Group>
+            <Group Name="RFID_Hlava_3.PAR.PrecitaneCisloPaletky">
+              <UInt16 Name="ID">125</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">2812</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">3770</Int32>
+            </Group>
+            <Group Name="RFID_Hlava_3.PAR.PrecitanyTypPaletky">
+              <UInt16 Name="ID">126</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">2823</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">3809</Int32>
+            </Group>
+            <Group Name="RFID_Hlava_3.PAR.Zadane_Cislo_Typ_Paletky">
+              <UInt16 Name="ID">127</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">2834</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">3846</Int32>
+            </Group>
+            <Group Name="RFID_Hlava_2.STAV.PritomnostCipu">
+              <UInt16 Name="ID">128</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2845</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">3888</Int32>
+            </Group>
+            <Group Name="RFID_Hlava_2.PAR.PrecitaneCisloPaletky">
+              <UInt16 Name="ID">129</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">2846</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">3921</Int32>
+            </Group>
+            <Group Name="RFID_Hlava_2.PAR.PrecitanyTypPaletky">
+              <UInt16 Name="ID">130</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">2857</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">3960</Int32>
+            </Group>
+            <Group Name="RFID_Hlava_2.PAR.Zadane_Cislo_Typ_Paletky">
+              <UInt16 Name="ID">131</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">2868</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">3997</Int32>
+            </Group>
+            <Group Name="RFID_Hlava_1.CMD.ZapisDATA">
+              <UInt16 Name="ID">132</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2879</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4039</Int32>
+            </Group>
+            <Group Name="RFID_Hlava_1.STAV.PritomnostCipu">
+              <UInt16 Name="ID">133</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2880</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4066</Int32>
+            </Group>
+            <Group Name="RFID_Hlava_1.PAR.PrecitaneCisloPaletky">
+              <UInt16 Name="ID">134</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">2881</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">4099</Int32>
+            </Group>
+            <Group Name="RFID_Hlava_1.PAR.PrecitanyTypPaletky">
+              <UInt16 Name="ID">135</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">2892</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">4138</Int32>
+            </Group>
+            <Group Name="RFID_Hlava_1.PAR.Zadane_Cislo_Typ_Paletky">
+              <UInt16 Name="ID">136</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">2903</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">4175</Int32>
+            </Group>
+            <Group Name="VstupnyVyt:Zdvih_HOME">
+              <UInt16 Name="ID">137</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2914</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4217</Int32>
+            </Group>
+            <Group Name="VstupnyVyt:Zdvih_JoggDOLE">
+              <UInt16 Name="ID">138</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2915</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4239</Int32>
+            </Group>
+            <Group Name="VstupnyVyt:Zdvih_JoggHORE">
+              <UInt16 Name="ID">139</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2916</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4265</Int32>
+            </Group>
+            <Group Name="VstupnyVyt:Dvere_ZATVOR">
+              <UInt16 Name="ID">140</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2917</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4291</Int32>
+            </Group>
+            <Group Name="VstupnyVyt:Dvere_OTVOR">
+              <UInt16 Name="ID">141</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2918</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4315</Int32>
+            </Group>
+            <Group Name="StoperEtik:Centrovacku_ZASUN">
+              <UInt16 Name="ID">142</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2919</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4338</Int32>
+            </Group>
+            <Group Name="StoperEtik:Centrovacku_VYSUN">
+              <UInt16 Name="ID">143</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2920</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4367</Int32>
+            </Group>
+            <Group Name="DopravnikC:Chod_VPRED">
+              <UInt16 Name="ID">144</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2921</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4396</Int32>
+            </Group>
+            <Group Name="StoperDopr:Centrovacku_VYSTRED">
+              <UInt16 Name="ID">145</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2922</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4418</Int32>
+            </Group>
+            <Group Name="StoperDopr:Centrovacku_ZASUN">
+              <UInt16 Name="ID">146</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2923</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4449</Int32>
+            </Group>
+            <Group Name="StoperDopr:Centrovacku_VYSUN">
+              <UInt16 Name="ID">147</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2924</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4478</Int32>
+            </Group>
+            <Group Name="VystupnyVy:Zdvih_HOME">
+              <UInt16 Name="ID">148</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2925</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4507</Int32>
+            </Group>
+            <Group Name="VystupnyVy:Zdvih_JoggDOLE">
+              <UInt16 Name="ID">149</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2926</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4529</Int32>
+            </Group>
+            <Group Name="VystupnyVy:Zdvih_JoggHORE">
+              <UInt16 Name="ID">150</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2927</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4555</Int32>
+            </Group>
+            <Group Name="VstupVytah.RR_Dopravnik_VPRED">
+              <UInt16 Name="ID">151</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2928</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4581</Int32>
+            </Group>
+            <Group Name="VstupVytah.RR_Dopravnik_VZAD">
+              <UInt16 Name="ID">152</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2929</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4611</Int32>
+            </Group>
+            <Group Name="VstupVytah.STAV.Zdvih_HomingOK">
+              <UInt16 Name="ID">153</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2930</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4640</Int32>
+            </Group>
+            <Group Name="VstupVytah.STAV.Zdvih_AktualnaPozicia">
+              <UInt16 Name="ID">154</UInt16>
+              <UInt16 Name="PVType">5</UInt16>
+              <UInt32 Name="PVOffset">2931</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">4294967295</Double>
+              <Int32 Name="Offset">4671</Int32>
+            </Group>
+            <Group Name="VstupVytah.PAR.Zdvih_ZadanaJoggRychlost">
+              <UInt16 Name="ID">155</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">2935</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">4709</Int32>
+            </Group>
+            <Group Name="VstupVytah.PAR.PotvrdenieBannerom_AKTIVNE">
+              <UInt16 Name="ID">156</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2939</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4749</Int32>
+            </Group>
+            <Group Name="VstupVytah.IN.BannerPotvrdeny_IOS1">
+              <UInt16 Name="ID">157</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2940</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4791</Int32>
+            </Group>
+            <Group Name="VstupVytah.IN.DvereVytahuOtvorene_MS1">
+              <UInt16 Name="ID">158</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2941</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4826</Int32>
+            </Group>
+            <Group Name="VstupVytah.IN.DvereVytahuZatvorene_MS2">
+              <UInt16 Name="ID">159</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2942</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4864</Int32>
+            </Group>
+            <Group Name="VstupVytah.IN.PrechodDopravnikaVytahu_OS1">
+              <UInt16 Name="ID">160</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2943</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4903</Int32>
+            </Group>
+            <Group Name="VstupVytah.IN.PritomnostPaletky_IS3">
+              <UInt16 Name="ID">161</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2944</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4945</Int32>
+            </Group>
+            <Group Name="VstupVytah.IN.PritomnostProduktu_OS2">
+              <UInt16 Name="ID">162</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2945</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">4981</Int32>
+            </Group>
+            <Group Name="VstupVytah.OUT.Banner_ZelenaLED_IOS1">
+              <UInt16 Name="ID">163</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2946</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">5018</Int32>
+            </Group>
+            <Group Name="VstupVytah.OUT.Banner_CervenaLED_IOS1">
+              <UInt16 Name="ID">164</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2947</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">5055</Int32>
+            </Group>
+            <Group Name="StoperEtiketovania.RR_VytlacEtiketu">
+              <UInt16 Name="ID">165</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2948</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">5093</Int32>
+            </Group>
+            <Group Name="StoperEtiketovania.IN.PritomnostPaletky_IS16">
+              <UInt16 Name="ID">166</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2949</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">5129</Int32>
+            </Group>
+            <Group Name="StoperEtiketovania.IN.Centrovanie_HornaPoloha_IS18">
+              <UInt16 Name="ID">167</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2950</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">5174</Int32>
+            </Group>
+            <Group Name="StoperEtiketovania.IN.Centrovanie_SpodnaPoloha_IS17">
+              <UInt16 Name="ID">168</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2951</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">5225</Int32>
+            </Group>
+            <Group Name="StoperEtiketovania.IN.Tlaciaren_KoniecEtikiet">
+              <UInt16 Name="ID">169</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2952</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">5277</Int32>
+            </Group>
+            <Group Name="StoperEtiketovania.IN.Tlaciaren_KoniecPasky">
+              <UInt16 Name="ID">170</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2953</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">5323</Int32>
+            </Group>
+            <Group Name="StoperEtiketovania.IN.Tlaciaren_Porucha">
+              <UInt16 Name="ID">171</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2954</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">5367</Int32>
+            </Group>
+            <Group Name="StoperEtiketovania.IN.Tlaciaren_KoniecTlace">
+              <UInt16 Name="ID">172</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2955</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">5407</Int32>
+            </Group>
+            <Group Name="StoperEtiketovania.IN.Tlaciaren_Online">
+              <UInt16 Name="ID">173</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2956</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">5451</Int32>
+            </Group>
+            <Group Name="StoperEtiketovania.IN.SuflikTlaciarne_LS_IS23">
+              <UInt16 Name="ID">174</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2957</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">5490</Int32>
+            </Group>
+            <Group Name="StoperEtiketovania.IN.SuflikTlaciarne_PS_IS22">
+              <UInt16 Name="ID">175</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2958</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">5536</Int32>
+            </Group>
+            <Group Name="StoperEtiketovania.OUT.StoperZASUN_YV007">
+              <UInt16 Name="ID">176</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2959</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">5582</Int32>
+            </Group>
+            <Group Name="StoperEtiketovania.STAV.AlarmTextPaletkyNG">
+              <UInt16 Name="ID">177</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">2960</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">5623</Int32>
+            </Group>
+            <Group Name="StoperEtiketovania.PAR.TypPaletky_RucneVytlacEtikety">
+              <UInt16 Name="ID">178</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">2991</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">5666</Int32>
+            </Group>
+            <Group Name="StoperPoCisteni.IN.PritomnostPaletky_IS6">
+              <UInt16 Name="ID">179</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2995</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">5719</Int32>
+            </Group>
+            <Group Name="StoperPoCisteni.IN.ZaplnenieBuffera_IS5">
+              <UInt16 Name="ID">180</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2996</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">5760</Int32>
+            </Group>
+            <Group Name="StoperPoCisteni.OUT.StoperZASUN_YV006">
+              <UInt16 Name="ID">181</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2997</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">5800</Int32>
+            </Group>
+            <Group Name="StoperPredCistenim.IN.PritomnostPaletky_IS4">
+              <UInt16 Name="ID">182</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2998</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">5838</Int32>
+            </Group>
+            <Group Name="StoperPredCistenim.OUT.StoperZASUN_YV005">
+              <UInt16 Name="ID">183</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">2999</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">5882</Int32>
+            </Group>
+            <Group Name="StoperDopravNG.RR_Dopravnik_VPRED">
+              <UInt16 Name="ID">184</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3000</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">5923</Int32>
+            </Group>
+            <Group Name="StoperDopravNG.RR_Dopravnik_VZAD">
+              <UInt16 Name="ID">185</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3001</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">5957</Int32>
+            </Group>
+            <Group Name="StoperDopravNG.IN.Stoper_PritomnostPaletky_IS15">
+              <UInt16 Name="ID">186</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3002</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">5990</Int32>
+            </Group>
+            <Group Name="StoperDopravNG.IN.Dopravnik_PritomnostPaletky_OS4">
+              <UInt16 Name="ID">187</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3003</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">6038</Int32>
+            </Group>
+            <Group Name="StoperDopravNG.IN.Dopravnik_PritomnostProduktu_OS3">
+              <UInt16 Name="ID">188</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3004</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">6088</Int32>
+            </Group>
+            <Group Name="StoperDopravNG.IN.Centrovanie_HornaPoloha_IS19">
+              <UInt16 Name="ID">189</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3005</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">6139</Int32>
+            </Group>
+            <Group Name="StoperDopravNG.IN.Centrovanie_StrednaPoloha_IS20">
+              <UInt16 Name="ID">190</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3006</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">6186</Int32>
+            </Group>
+            <Group Name="StoperDopravNG.IN.Centrovanie_SpodnaPoloha_IS21">
+              <UInt16 Name="ID">191</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3007</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">6235</Int32>
+            </Group>
+            <Group Name="StoperDopravNG.STAV.ObsluhaPotvrdilaPaletkuNG">
+              <UInt16 Name="ID">192</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3008</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">6283</Int32>
+            </Group>
+            <Group Name="StoperDopravNG.STAV.ObsluhaPotvrdilaZrusPaletkyNG">
+              <UInt16 Name="ID">193</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3009</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">6329</Int32>
+            </Group>
+            <Group Name="VratnyDopravnik.OUT.Dopravnik_ChodVPRED_ELR2">
+              <UInt16 Name="ID">194</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3010</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">6379</Int32>
+            </Group>
+            <Group Name="StoperVratDopravnika.IN.PritomnostPaletky_IS14">
+              <UInt16 Name="ID">195</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3011</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">6424</Int32>
+            </Group>
+            <Group Name="StoperVratDopravnika.OUT.StoperZASUN_YV012">
+              <UInt16 Name="ID">196</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3012</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">6471</Int32>
+            </Group>
+            <Group Name="VystupnyDopravnik.OUT.Dopravnik_ChodVPRED_ELR5">
+              <UInt16 Name="ID">197</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3013</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">6514</Int32>
+            </Group>
+            <Group Name="StoperVystupDopravnika.IN.PritomnostPaletky_IS27">
+              <UInt16 Name="ID">198</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3014</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">6561</Int32>
+            </Group>
+            <Group Name="StoperVystupDopravnika.IN.ZaplnenieBuffera_IS28">
+              <UInt16 Name="ID">199</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3015</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">6610</Int32>
+            </Group>
+            <Group Name="StoperVystupDopravnika.OUT.StoperZASUN_YV011">
+              <UInt16 Name="ID">200</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3016</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">6658</Int32>
+            </Group>
+            <Group Name="DopravBunky.OUT.Dopravnik_ChodVPRED_ELR4">
+              <UInt16 Name="ID">201</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3017</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">6703</Int32>
+            </Group>
+            <Group Name="DopravCistenia.PAR.ZadanaJoggRychlost">
+              <UInt16 Name="ID">202</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3018</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">6744</Int32>
+            </Group>
+            <Group Name="VystupVytah.RR_Dopravnik_VPRED">
+              <UInt16 Name="ID">203</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3022</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">6782</Int32>
+            </Group>
+            <Group Name="VystupVytah.RR_Dopravnik_VZAD">
+              <UInt16 Name="ID">204</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3023</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">6813</Int32>
+            </Group>
+            <Group Name="VystupVytah.IN.BannerPotvrdeny_IOS2">
+              <UInt16 Name="ID">205</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3024</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">6843</Int32>
+            </Group>
+            <Group Name="VystupVytah.IN.PritomnostPaletky_IS26">
+              <UInt16 Name="ID">206</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3025</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">6879</Int32>
+            </Group>
+            <Group Name="VystupVytah.IN.PritomnostProduktu_OS5">
+              <UInt16 Name="ID">207</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3026</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">6917</Int32>
+            </Group>
+            <Group Name="VystupVytah.IN.PrechodDopravnikaVytahu_OS6">
+              <UInt16 Name="ID">208</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3027</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">6955</Int32>
+            </Group>
+            <Group Name="VystupVytah.OUT.Banner_ZelenaLED_IOS2">
+              <UInt16 Name="ID">209</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3028</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">6998</Int32>
+            </Group>
+            <Group Name="VystupVytah.OUT.Banner_CervenaLED_IOS2">
+              <UInt16 Name="ID">210</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3029</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">7036</Int32>
+            </Group>
+            <Group Name="VystupVytah.PAR.Zdvih_ZadanaJoggRychlost">
+              <UInt16 Name="ID">211</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3030</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">7075</Int32>
+            </Group>
+            <Group Name="VystupVytah.PAR.PotvrdenieBannerom_AKTIVNE">
+              <UInt16 Name="ID">212</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3034</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">7116</Int32>
+            </Group>
+            <Group Name="VystupVytah.PAR.PotvrdenieNGkusuBannerom_AKTIVNE">
+              <UInt16 Name="ID">213</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3035</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">7159</Int32>
+            </Group>
+            <Group Name="VystupVytah.STAV.Zdvih_AktualnaPozicia">
+              <UInt16 Name="ID">214</UInt16>
+              <UInt16 Name="PVType">5</UInt16>
+              <UInt32 Name="PVOffset">3036</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">4294967295</Double>
+              <Int32 Name="Offset">7208</Int32>
+            </Group>
+            <Group Name="VystupVytah.STAV.Zdvih_HomingOK">
+              <UInt16 Name="ID">215</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3040</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">7247</Int32>
+            </Group>
+            <Group Name="RFID_Hlava_4.CMD.ZapisDATA">
+              <UInt16 Name="ID">216</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3041</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">7279</Int32>
+            </Group>
+            <Group Name="RFID_Hlava_4.STAV.PritomnostCipu">
+              <UInt16 Name="ID">217</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3042</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">7306</Int32>
+            </Group>
+            <Group Name="RFID_Hlava_4.PAR.PrecitaneCisloPaletky">
+              <UInt16 Name="ID">218</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">3043</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">7339</Int32>
+            </Group>
+            <Group Name="RFID_Hlava_4.PAR.PrecitanyTypPaletky">
+              <UInt16 Name="ID">219</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">3054</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">7378</Int32>
+            </Group>
+            <Group Name="RFID_Hlava_4.PAR.Zadane_Cislo_Typ_Paletky">
+              <UInt16 Name="ID">220</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">3065</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">7415</Int32>
+            </Group>
+            <Group Name="VystupnyVytah_Statistika.NameranyCas_v_Sekundach">
+              <UInt16 Name="ID">221</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3076</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">7457</Int32>
+            </Group>
+            <Group Name="VystupnyVytah_Statistika.PriemernyCas_v_Sekundach">
+              <UInt16 Name="ID">222</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3080</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">7506</Int32>
+            </Group>
+            <Group Name="VystupnyVytah_Statistika.NameranyCas_v_Minutach">
+              <UInt16 Name="ID">223</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3084</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">7556</Int32>
+            </Group>
+            <Group Name="VystupnyVytah_Statistika.PriemernyCas_v_Minutach">
+              <UInt16 Name="ID">224</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3088</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">7604</Int32>
+            </Group>
+            <Group Name="VystupnyVytah_Statistika.OUT.NameranyCas_v_Sekundach">
+              <UInt16 Name="ID">225</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3092</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">7653</Int32>
+            </Group>
+            <Group Name="VystupnyVytah_Statistika.OUT.PriemernyCas_v_Sekundach">
+              <UInt16 Name="ID">226</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3096</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">7706</Int32>
+            </Group>
+            <Group Name="StoperPoCisteni_Statistika.NameranyCas_v_Sekundach">
+              <UInt16 Name="ID">227</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3100</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">7760</Int32>
+            </Group>
+            <Group Name="StoperPoCisteni_Statistika.PriemernyCas_v_Sekundach">
+              <UInt16 Name="ID">228</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3104</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">7811</Int32>
+            </Group>
+            <Group Name="StoperPoCisteni_Statistika.NameranyCas_v_Minutach">
+              <UInt16 Name="ID">229</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3108</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">7863</Int32>
+            </Group>
+            <Group Name="StoperPoCisteni_Statistika.PriemernyCas_v_Minutach">
+              <UInt16 Name="ID">230</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3112</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">7913</Int32>
+            </Group>
+            <Group Name="StoperPoCisteni_Statistika.OUT.NameranyCas_v_Sekundach">
+              <UInt16 Name="ID">231</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3116</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">7964</Int32>
+            </Group>
+            <Group Name="StoperPoCisteni_Statistika.OUT.PriemernyCas_v_Sekundach">
+              <UInt16 Name="ID">232</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3120</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">8019</Int32>
+            </Group>
+            <Group Name="StoperPredCistenim_Statistika.NameranyCas_v_Sekundach">
+              <UInt16 Name="ID">233</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3124</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">8075</Int32>
+            </Group>
+            <Group Name="StoperPredCistenim_Statistika.PriemernyCas_v_Sekundach">
+              <UInt16 Name="ID">234</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3128</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">8129</Int32>
+            </Group>
+            <Group Name="StoperPredCistenim_Statistika.NameranyCas_v_Minutach">
+              <UInt16 Name="ID">235</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3132</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">8184</Int32>
+            </Group>
+            <Group Name="StoperPredCistenim_Statistika.PriemernyCas_v_Minutach">
+              <UInt16 Name="ID">236</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3136</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">8237</Int32>
+            </Group>
+            <Group Name="StoperPredCistenim_Statistika.OUT.NameranyCas_v_Sekundach">
+              <UInt16 Name="ID">237</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3140</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">8291</Int32>
+            </Group>
+            <Group Name="StoperPredCistenim_Statistika.OUT.PriemernyCas_v_Sekundach">
+              <UInt16 Name="ID">238</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3144</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">8349</Int32>
+            </Group>
+            <Group Name="VstupnyVytah_Statistika.NameranyCas_v_Sekundach">
+              <UInt16 Name="ID">239</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3148</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">8408</Int32>
+            </Group>
+            <Group Name="VstupnyVytah_Statistika.PriemernyCas_v_Sekundach">
+              <UInt16 Name="ID">240</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3152</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">8456</Int32>
+            </Group>
+            <Group Name="VstupnyVytah_Statistika.NameranyCas_v_Minutach">
+              <UInt16 Name="ID">241</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3156</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">8505</Int32>
+            </Group>
+            <Group Name="VstupnyVytah_Statistika.PriemernyCas_v_Minutach">
+              <UInt16 Name="ID">242</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3160</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">8552</Int32>
+            </Group>
+            <Group Name="VstupnyVytah_Statistika.OUT.NameranyCas_v_Sekundach">
+              <UInt16 Name="ID">243</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3164</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">8600</Int32>
+            </Group>
+            <Group Name="VstupnyVytah_Statistika.OUT.PriemernyCas_v_Sekundach">
+              <UInt16 Name="ID">244</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3168</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">8652</Int32>
+            </Group>
+            <Group Name="StoperDopravNG_Statistika.NameranyCas_v_Sekundach">
+              <UInt16 Name="ID">245</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3172</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">8705</Int32>
+            </Group>
+            <Group Name="StoperDopravNG_Statistika.PriemernyCas_v_Sekundach">
+              <UInt16 Name="ID">246</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3176</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">8755</Int32>
+            </Group>
+            <Group Name="StoperDopravNG_Statistika.NameranyCas_v_Minutach">
+              <UInt16 Name="ID">247</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3180</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">8806</Int32>
+            </Group>
+            <Group Name="StoperDopravNG_Statistika.PriemernyCas_v_Minutach">
+              <UInt16 Name="ID">248</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3184</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">8855</Int32>
+            </Group>
+            <Group Name="StoperDopravNG_Statistika.OUT.NameranyCas_v_Sekundach">
+              <UInt16 Name="ID">249</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3188</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">8905</Int32>
+            </Group>
+            <Group Name="StoperDopravNG_Statistika.OUT.PriemernyCas_v_Sekundach">
+              <UInt16 Name="ID">250</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3192</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">8959</Int32>
+            </Group>
+            <Group Name="StoperEtiketovania_Statistika.NameranyCas_v_Sekundach">
+              <UInt16 Name="ID">251</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3196</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">9014</Int32>
+            </Group>
+            <Group Name="StoperEtiketovania_Statistika.PriemernyCas_v_Sekundach">
+              <UInt16 Name="ID">252</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3200</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">9068</Int32>
+            </Group>
+            <Group Name="StoperEtiketovania_Statistika.NameranyCas_v_Minutach">
+              <UInt16 Name="ID">253</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3204</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">9123</Int32>
+            </Group>
+            <Group Name="StoperEtiketovania_Statistika.PriemernyCas_v_Minutach">
+              <UInt16 Name="ID">254</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3208</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">9176</Int32>
+            </Group>
+            <Group Name="StoperEtiketovania_Statistika.OUT.NameranyCas_v_Sekundach">
+              <UInt16 Name="ID">255</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3212</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">9230</Int32>
+            </Group>
+            <Group Name="StoperEtiketovania_Statistika.OUT.PriemernyCas_v_Sekundach">
+              <UInt16 Name="ID">256</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">3216</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">9288</Int32>
+            </Group>
+            <Group Name="HistoriaVyroby[0].NazovModelu">
+              <UInt16 Name="ID">257</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">3220</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">9347</Int32>
+            </Group>
+            <Group Name="HistoriaVyroby[0].NazovLOTU">
+              <UInt16 Name="ID">258</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">3239</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">9377</Int32>
+            </Group>
+            <Group Name="HistoriaVyroby[0].PocetVyrobenychKusov_OK">
+              <UInt16 Name="ID">259</UInt16>
+              <UInt16 Name="PVType">5</UInt16>
+              <UInt32 Name="PVOffset">3251</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">4294967295</Double>
+              <Int32 Name="Offset">9405</Int32>
+            </Group>
+            <Group Name="HistoriaVyroby[0].PocetVyrobenychKusov_NG">
+              <UInt16 Name="ID">260</UInt16>
+              <UInt16 Name="PVType">5</UInt16>
+              <UInt32 Name="PVOffset">3255</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">4294967295</Double>
+              <Int32 Name="Offset">9447</Int32>
+            </Group>
+            <Group Name="HistoriaVyroby[1].NazovModelu">
+              <UInt16 Name="ID">261</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">3259</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">9489</Int32>
+            </Group>
+            <Group Name="HistoriaVyroby[1].NazovLOTU">
+              <UInt16 Name="ID">262</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">3278</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">9519</Int32>
+            </Group>
+            <Group Name="HistoriaVyroby[1].PocetVyrobenychKusov_OK">
+              <UInt16 Name="ID">263</UInt16>
+              <UInt16 Name="PVType">5</UInt16>
+              <UInt32 Name="PVOffset">3290</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">4294967295</Double>
+              <Int32 Name="Offset">9547</Int32>
+            </Group>
+            <Group Name="HistoriaVyroby[1].PocetVyrobenychKusov_NG">
+              <UInt16 Name="ID">264</UInt16>
+              <UInt16 Name="PVType">5</UInt16>
+              <UInt32 Name="PVOffset">3294</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">4294967295</Double>
+              <Int32 Name="Offset">9589</Int32>
+            </Group>
+            <Group Name="HistoriaVyroby[2].NazovModelu">
+              <UInt16 Name="ID">265</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">3298</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">9631</Int32>
+            </Group>
+            <Group Name="HistoriaVyroby[2].NazovLOTU">
+              <UInt16 Name="ID">266</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">3317</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">9661</Int32>
+            </Group>
+            <Group Name="HistoriaVyroby[2].PocetVyrobenychKusov_OK">
+              <UInt16 Name="ID">267</UInt16>
+              <UInt16 Name="PVType">5</UInt16>
+              <UInt32 Name="PVOffset">3329</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">4294967295</Double>
+              <Int32 Name="Offset">9689</Int32>
+            </Group>
+            <Group Name="HistoriaVyroby[2].PocetVyrobenychKusov_NG">
+              <UInt16 Name="ID">268</UInt16>
+              <UInt16 Name="PVType">5</UInt16>
+              <UInt32 Name="PVOffset">3333</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">4294967295</Double>
+              <Int32 Name="Offset">9731</Int32>
+            </Group>
+            <Group Name="HistoriaVyroby[3].NazovModelu">
+              <UInt16 Name="ID">269</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">3337</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">9773</Int32>
+            </Group>
+            <Group Name="HistoriaVyroby[3].NazovLOTU">
+              <UInt16 Name="ID">270</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">3356</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">9803</Int32>
+            </Group>
+            <Group Name="HistoriaVyroby[3].PocetVyrobenychKusov_OK">
+              <UInt16 Name="ID">271</UInt16>
+              <UInt16 Name="PVType">5</UInt16>
+              <UInt32 Name="PVOffset">3368</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">4294967295</Double>
+              <Int32 Name="Offset">9831</Int32>
+            </Group>
+            <Group Name="HistoriaVyroby[3].PocetVyrobenychKusov_NG">
+              <UInt16 Name="ID">272</UInt16>
+              <UInt16 Name="PVType">5</UInt16>
+              <UInt32 Name="PVOffset">3372</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">4294967295</Double>
+              <Int32 Name="Offset">9873</Int32>
+            </Group>
+            <Group Name="HistoriaVyroby[4].NazovModelu">
+              <UInt16 Name="ID">273</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">3376</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">9915</Int32>
+            </Group>
+            <Group Name="HistoriaVyroby[4].NazovLOTU">
+              <UInt16 Name="ID">274</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">3395</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">9945</Int32>
+            </Group>
+            <Group Name="HistoriaVyroby[4].PocetVyrobenychKusov_OK">
+              <UInt16 Name="ID">275</UInt16>
+              <UInt16 Name="PVType">5</UInt16>
+              <UInt32 Name="PVOffset">3407</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">4294967295</Double>
+              <Int32 Name="Offset">9973</Int32>
+            </Group>
+            <Group Name="HistoriaVyroby[4].PocetVyrobenychKusov_NG">
+              <UInt16 Name="ID">276</UInt16>
+              <UInt16 Name="PVType">5</UInt16>
+              <UInt32 Name="PVOffset">3411</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">4294967295</Double>
+              <Int32 Name="Offset">10015</Int32>
+            </Group>
+            <Group Name="HistoriaVyroby[5].NazovModelu">
+              <UInt16 Name="ID">277</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">3415</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">10057</Int32>
+            </Group>
+            <Group Name="HistoriaVyroby[5].NazovLOTU">
+              <UInt16 Name="ID">278</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">3434</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">10087</Int32>
+            </Group>
+            <Group Name="HistoriaVyroby[5].PocetVyrobenychKusov_OK">
+              <UInt16 Name="ID">279</UInt16>
+              <UInt16 Name="PVType">5</UInt16>
+              <UInt32 Name="PVOffset">3446</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">4294967295</Double>
+              <Int32 Name="Offset">10115</Int32>
+            </Group>
+            <Group Name="Tajfun_Motohodiny.CelkovyPocetHodin">
+              <UInt16 Name="ID">280</UInt16>
+              <UInt16 Name="PVType">5</UInt16>
+              <UInt32 Name="PVOffset">3450</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">4294967295</Double>
+              <Int32 Name="Offset">10157</Int32>
+            </Group>
+            <Group Name="Robot.Odparkovanie">
+              <UInt16 Name="ID">281</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3454</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">10193</Int32>
+            </Group>
+            <Group Name="Robot.RR_PresunPoziciaCitaniaQRkodu">
+              <UInt16 Name="ID">282</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3455</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">10212</Int32>
+            </Group>
+            <Group Name="Robot.RR_PresunPoziciaCitaniaDMkodu">
+              <UInt16 Name="ID">283</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3456</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">10248</Int32>
+            </Group>
+            <Group Name="Robot.RR_PresunPoziciaOdobratiaEtikety">
+              <UInt16 Name="ID">284</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3457</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">10284</Int32>
+            </Group>
+            <Group Name="Hesla">
+              <UInt16 Name="ID">285</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">3458</UInt32>
+              <UInt32 Name="PVDim">4</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">10323</Int32>
+            </Group>
+            <Group Name="Hesla[1]">
+              <UInt16 Name="ID">286</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">3542</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">10329</Int32>
+            </Group>
+            <Group Name="Hesla[2]">
+              <UInt16 Name="ID">287</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">3563</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">10338</Int32>
+            </Group>
+            <Group Name="Hesla[0]">
+              <UInt16 Name="ID">288</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">3584</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">10347</Int32>
+            </Group>
+            <Group Name="PotvrdenieAlarmov">
+              <UInt16 Name="ID">289</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3605</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">10356</Int32>
+            </Group>
+            <Group Name="UlozPremenne">
+              <UInt16 Name="ID">290</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3606</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">10374</Int32>
+            </Group>
+            <Group Name="TP_ZobrazPopUpPrihlasenie">
+              <UInt16 Name="ID">291</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3607</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">10387</Int32>
+            </Group>
+            <Group Name="ZadaneMenoUzivatela">
+              <UInt16 Name="ID">292</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">3608</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">10413</Int32>
+            </Group>
+            <Group Name="PrihlasUzivatela">
+              <UInt16 Name="ID">293</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3659</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">10433</Int32>
+            </Group>
+            <Group Name="ZadaneHesloUzivatela">
+              <UInt16 Name="ID">294</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">3660</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">10450</Int32>
+            </Group>
+            <Group Name="OdhlasUzivatela">
+              <UInt16 Name="ID">295</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3711</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">10471</Int32>
+            </Group>
+            <Group Name="Alarmy">
+              <UInt16 Name="ID">296</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3712</UInt32>
+              <UInt32 Name="PVDim">101</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">10487</Int32>
+            </Group>
+            <Group Name="ZvolenyUzivatel">
+              <UInt16 Name="ID">297</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">3813</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">10494</Int32>
+            </Group>
+            <Group Name="ZvolenaUroven">
+              <UInt16 Name="ID">298</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">3864</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">10510</Int32>
+            </Group>
+            <Group Name="Robot_CisloProgramu">
+              <UInt16 Name="ID">299</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3866</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">10524</Int32>
+            </Group>
+            <Group Name="NazovModelu">
+              <UInt16 Name="ID">300</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">3867</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">10544</Int32>
+            </Group>
+            <Group Name="ZoznamReceptur">
+              <UInt16 Name="ID">301</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">3886</UInt32>
+              <UInt32 Name="PVDim">151</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">10556</Int32>
+            </Group>
+            <Group Name="HesloUzivatela">
+              <UInt16 Name="ID">302</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">11587</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">10571</Int32>
+            </Group>
+            <Group Name="MenoUzivatela">
+              <UInt16 Name="ID">303</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">11638</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">10586</Int32>
+            </Group>
+            <Group Name="ZoznamUzivatelov">
+              <UInt16 Name="ID">304</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">11689</UInt32>
+              <UInt32 Name="PVDim">51</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">10600</Int32>
+            </Group>
+            <Group Name="TypPaletky">
+              <UInt16 Name="ID">305</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">14290</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">10617</Int32>
+            </Group>
+            <Group Name="UrovenUzivatela">
+              <UInt16 Name="ID">306</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">14301</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">10628</Int32>
+            </Group>
+            <Group Name="UlozRecepturu">
+              <UInt16 Name="ID">307</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">14303</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">10644</Int32>
+            </Group>
+            <Group Name="VymazUzivatela">
+              <UInt16 Name="ID">308</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">14304</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">10658</Int32>
+            </Group>
+            <Group Name="UlozUzivatelov">
+              <UInt16 Name="ID">309</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">14305</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">10673</Int32>
+            </Group>
+            <Group Name="PrepisRecepturu">
+              <UInt16 Name="ID">310</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">14306</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">10688</Int32>
+            </Group>
+            <Group Name="VymazRecepturu">
+              <UInt16 Name="ID">311</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">14307</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">10704</Int32>
+            </Group>
+            <Group Name="UlozKorekcieRobota">
+              <UInt16 Name="ID">312</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">14308</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">10719</Int32>
+            </Group>
+            <Group Name="OffsetRobota_NazovModelu">
+              <UInt16 Name="ID">313</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">14309</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">10738</Int32>
+            </Group>
+            <Group Name="Kamera_CisloProgramu_DMkod">
+              <UInt16 Name="ID">314</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">14328</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">10763</Int32>
+            </Group>
+            <Group Name="Kamera_CisloProgramu_QRkod">
+              <UInt16 Name="ID">315</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">14329</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">10790</Int32>
+            </Group>
+            <Group Name="RychlostDopravnikaPriCisteni">
+              <UInt16 Name="ID">316</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">14330</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">10817</Int32>
+            </Group>
+            <Group Name="CelkovyPocetVyrobenychKusov">
+              <UInt16 Name="ID">317</UInt16>
+              <UInt16 Name="PVType">5</UInt16>
+              <UInt32 Name="PVOffset">14334</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">4294967295</Double>
+              <Int32 Name="Offset">10846</Int32>
+            </Group>
+            <Group Name="RESET_CelkovehoPoctuKusov">
+              <UInt16 Name="ID">318</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">14338</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">10874</Int32>
+            </Group>
+            <Group Name="PocetVyrobenychKusov_NG">
+              <UInt16 Name="ID">319</UInt16>
+              <UInt16 Name="PVType">5</UInt16>
+              <UInt32 Name="PVOffset">14339</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">4294967295</Double>
+              <Int32 Name="Offset">10900</Int32>
+            </Group>
+            <Group Name="PocetVyrobenychKusov_OK">
+              <UInt16 Name="ID">320</UInt16>
+              <UInt16 Name="PVType">5</UInt16>
+              <UInt32 Name="PVOffset">14343</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">4294967295</Double>
+              <Int32 Name="Offset">10924</Int32>
+            </Group>
+          </Table>
+          <Binary Name="Name" Encoding="Base64">U0NfUm9ib3QuU3RlcE5hbWUAVml6dS5UTF9SZXppbUF1dG9tYXQAVml6dS5TdGF2UHJhY292aXNrYVJvYm90YV9JbmRleABWaXp1LlN0YXZaYXJpYWRlbmlhX0ZhcmJhAFZpenUuU3RhdlphcmlhZGVuaWFfSW5kZXgAVml6dS5UTF9TdGFydEF1dG9tYXRfRElTQUJMRQBWaXp1LlRMX1Vrb25jZW5pZUN5a2x1X0RJU0FCTEUAVml6dS5UTF9SUl9PdmxhZGFuaWVTZXJ2YV9ESVNBQkxFAFZpenUuU2xpZGVyAFZpenUuWm9icmF6SGxhc2VuaWVfUmVzZXRaYXJpYWRlbmlhAFZpenUuVExfUmV6aW1NYW51YWxfRElTQUJMRQBWaXp1LkZhcmJhVGxhY2l0a2FBbGFybV9JbmRleABWaXp1LlBvZHN2aWV0ZW5pZVRsYWNpdGthX1Jlc2V0Q1MAVml6dS5UTF9aYW1rbmlQcmVkbmVEdmVyZQBWaXp1LlRMX1phbWtuaVphZG5lRHZlcmUAVml6dS5UTF9aYW1va1ByZWRuZUR2ZXJlX0RJU0FCTEUAVml6dS5UTF9aYW1va1phZG5lRHZlcmVfRElTQUJMRQBWaXp1LlpvYnJhelBvcFVwX1ByaWhsYXNlbmllVXppdmF0ZWxhAFZpenUuQ2lzbG9Ba3R1YWxuZWpPYnJhem92a3kAVml6dS5DaXNsb1phZGFuZWpPYnJhem92a3kAVml6dS5UTF9SZXNldF9ESVNBQkxFAFZpenUuU3RhdlByYWNvdmlza2FWc3R1cFZ5dGFoX0luZGV4AFZpenUuU3RhdlByYWNvdmlza2FTdG9wUHJlZENpc3RfSW5kZXgAVml6dS5TdGF2UHJhY292aXNrYVN0b3BQb0Npc3RfSW5kZXgAVml6dS5TdGF2UHJhY292aXNrYURvcHJDaXN0ZW5pYV9JbmRleABWaXp1LlN0YXZQcmFjb3Zpc2thU3RvcEV0aWtldG92X0luZGV4AFZpenUuU3RhdlByYWNvdmlza2FTdG9wRG9wTkdfSW5kZXgAVml6dS5TdGF2UHJhY292aXNrYVN0b3BWeXN0RG9wcl9JbmRleABWaXp1LlN0YXZQcmFjb3Zpc2thRG9wclZ5c3R1cF9JbmRleABWaXp1LlN0YXZQcmFjb3Zpc2thVnlzdHVwVnl0YWhfSW5kZXgAVml6dS5TdGF2UHJhY292aXNrYVN0b3BWcmF0RG9wcl9JbmRleABWaXp1LlN0YXZQcmFjb3Zpc2thRG9wclZyYXRfSW5kZXgAVml6dS5TdGF2UHJhY292aXNrYURvcHJCdW5reV9JbmRleABWaXp1Lk5hY2l0YW55X01PREVMAFZpenUuTmFjaXRhbnlfTE9UAFZpenUuVExfVnN0dXBWeXRhaF9Ib21pbmdfRElTQUJMRQBWaXp1LlRMX1ZzdHVwVnl0YWhfRG9wcmF2X0RJU0FCTEUAVml6dS5UTF9Wc3R1cFZ5dGFoX1pkdmloX0RJU0FCTEUAVml6dS5UTF9WeXN0dXBWeXRhaF9Ib21pbmdfRElTQUJMRQBWaXp1LlRMX1Z5c3R1cFZ5dGFoX1pkdmloX0RJU0FCTEUAVml6dS5UTF9WeXN0dXBWeXRhaF9Eb3ByYXZfRElTQUJMRQBWaXp1LkZhcmJhVGxhY2l0a2FfUG90dnJkUGFsZXRrdU5HAFZpenUuWm9icmF6SGxhc2VuaWVfUG90dnJkUGFsZXRreU5HAFZpenUuU3RhdlptZW55TW9kZWx1X0luZGV4AFZpenUuU3RhdlptZW55TW9kZWx1X0ZhcmJhAFZpenUuWm9icmF6SGxhc2VuaWVfTmVzcHJhdlR5cFBhbGV0a3kAVml6dS5GYXJiYVRsYWNpdGthX1phbW9rUHJlZG5lRHZlcmUAVml6dS5GYXJiYVRsYWNpdGthX1phbW9rWmFkbmVEdmVyZQBWaXp1LlpvYnJhekhsYXNlbmllX1phYXJldHVqVGxhY2lhcmVuAFZpenUuWm9icmF6SGxhc19aYXR2b3JTZXJEdmVyZVRsYWMAVml6dS5ab2JyYXpIbGFzZW5pZV9UbGFjaWFyZW5PZmZsaW5lAFZpenUuWm1lbmFQYXJhbWV0cm92X0RJU0FCTEUAVml6dS5JbmRleFN1cmFkbmljb3ZlaG9TeXN0ZW11UGFsZXRreQBWaXp1LlRMX1BvdHZyZGVuaWVQYWxldGt5X05HX0RJU0FCTEUAVml6dS5UTF9acnVzZW5pZVBhbGV0a3lfTkdfRElTQUJMRQBWaXp1LkluZGV4RmFyYnlTdGF2dUZpbHRyb3YAVml6dS5JbmRleFN0YXZ1RmlsdHJvdgBWaXp1Lkxhbmd1YWdlX0luZGV4AFZpenUuWm9icmF6SGxhc2VuaWVfRG9jaGFkemFQYXNrYQBWaXp1LkluZGV4U3RhdnVQYXNreQBWaXp1LlRMX09kcGFya3VqUm9ib3RhX0RJU0FCTEUAVml6dS5UTF9CdW5reVJSX0RJU0FCTEUAVml6dS5SZXppbUJlelRsYWNlRXRpa2V0eV9ESVNBQkxFAFZpenUuWm9icmF6U3ltYm9sQ1NfVnN0dXBWeXRhaABWaXp1LlpvYnJhelN5bWJvbENTX1Z5c3R1cFZ5dGFoAFZpenUuWm9icmF6U3ltYm9sQ1NfUGFuZWwAVml6dS5ab2JyYXpTeW1ib2xDU19Sb2JvdABWaXp1LlRMX1JvYm90X0NpdGFuaWVRUmtvZHVfRElTQUJMRQBWaXp1LlRMX1JvYm90X0NpdGFuaWVETWtvZHVfRElTQUJMRQBWaXp1LkluZGV4U3RhdnVMYWRlbmllS2FtZXJ5AFZpenUuSW5kZXhTdGF2dUxhZGVuaWVLYW1lcnlfRmFyYmEAVml6dS5UTF9Sb2JvdF9PZG9iZXJFdGlrZXR1X0RJU0FCTEUAUmVtUHJlbWVubmUuVnN0dXBWeXRhaF9Qb3pOYXZhemFuaWEAUmVtUHJlbWVubmUuVnN0dXBWeXRhaF9Qb3pWeXZhemFuaWEAUmVtUHJlbWVubmUuVnlzdHVwVnl0YWhfUG96TmF2YXphbmlhAFJlbVByZW1lbm5lLlZ5c3R1cFZ5dGFoX1BvelZ5dmF6YW5pYQBSZW1QcmVtZW5uZS5Qb2NldERuaURvVnltZW55RmlsdHJhAFphcmlhZGVuaWUuUmVzZXQAU2FmZXR5LlJFU0VUX1pvbnlDUwBTYWZldHkuU1RBVi5TZXJ2aXNuZUR2ZXJlVGxhY2lhcm5lX0FLVElWTkUATGlua2EuTWFudWFsAExpbmthLkF1dG9tYXQATGlua2EuUmVzZXQATGlua2EuS29uaWVjQ3lrbHUATGlua2EuWm1lbk1vZGVsAExpbmthLlZ5bWVuYUZpbHRyb3ZQb3R2cmRlbmEATGlua2EuUmV6aW1fQmV6VGxhY2VFdGlrZXR5AExpbmthLklOLlNuaW1hY1JvdGFjaWVIb3JuVHJ5c2lla18xX0lTNwBMaW5rYS5JTi5TbmltYWNSb3RhY2llSG9yblRyeXNpZWtfMl9JUzgATGlua2EuSU4uU25pbWFjUm90YWNpZUhvcm5UcnlzaWVrXzNfSVM5AExpbmthLklOLlNuaW1hY1JvdGFjaWVIb3JuVHJ5c2lla180X0lTMTAATGlua2EuSU4uU25pbWFjUm90YWNpZVNwb2RUcnlzaWVrXzFfSVMxMQBMaW5rYS5JTi5TbmltYWNSb3RhY2llU3BvZFRyeXNpZWtfMl9JUzEyAExpbmthLklOLlNuaW1hY1JvdGFjaWVTcG9kVHJ5c2lla18zX0lTMTMATGlua2EuUEFSLlp2b2xlbnlfTU9ERUwATGlua2EuUEFSLlp2b2xlbnlfTE9UAExpbmthLlBBUi5adm9sZW5hX1BvekxlcGVuaWFfT2Zmc2V0WABMaW5rYS5QQVIuWnZvbGVuYV9Qb3pMZXBlbmlhX09mZnNldFkATGlua2EuUEFSLlp2b2xlbmFfUG96TGVwZW5pYV9PZmZzZXRaAExpbmthLlBBUi5adm9sZW5hX1J5Y2hsb3N0RG9wcmF2UHJpQ2lzdGVuaQBMaW5rYS5PVVQuUHJlZG5lRHZlcmVfWmFta25pX0VaMQBMaW5rYS5PVVQuWmFkbmVEdmVyZV9aYW1rbmlfRVoyAExpbmthLk9VVC5Jb25KZWRub3RrYV9TVEFSVABTQ19WcmF0bnlEb3ByYXZuaWsuU3RlcE5hbWUAU0NfU3RvcGVyVnJhdERvcHJhdm5pa2EuU3RlcE5hbWUAU0NfVnlzdHVwVnl0YWguU3RlcE5hbWUAU0NfVnlzdHVwbnlEb3ByYXZuaWsuU3RlcE5hbWUAU0NfU3RvcGVyVnlzdHVwRG9wcmF2bmlrYS5TdGVwTmFtZQBTQ19Eb3ByYXZCdW5reS5TdGVwTmFtZQBTQ19TdG9wZXJEb3ByYXZORy5TdGVwTmFtZQBTQ19TdG9wZXJFdGlrZXRvdmFuaWEuU3RlcE5hbWUAU0NfRG9wcmF2Q2lzdGVuaWEuU3RlcE5hbWUAU0NfU3RvcGVyUG9DaXN0ZW5pLlN0ZXBOYW1lAFNDX1N0b3BlclByZWRDaXN0ZW5pbS5TdGVwTmFtZQBTQ19Wc3R1cFZ5dGFoLlN0ZXBOYW1lAFJlY2VwdHVyeTpNb3ZlRG93bl9QYWdlAFJlY2VwdHVyeTpNb3ZlVVBfUGFnZQBSZWNlcHR1cnk6TW92ZURvd24AUmVjZXB0dXJ5Ok1vdmVVUABSZWNlcHR1cnk6aQBQcmlobGFzb3ZhOmkAUHJpaGxhc292YTpNb3ZlRG93bgBQcmlobGFzb3ZhOk1vdmVVUABSRklEX0hsYXZhXzMuQ01ELlphcGlzREFUQQBSRklEX0hsYXZhXzMuU1RBVi5Qcml0b21ub3N0Q2lwdQBSRklEX0hsYXZhXzMuUEFSLlByZWNpdGFuZUNpc2xvUGFsZXRreQBSRklEX0hsYXZhXzMuUEFSLlByZWNpdGFueVR5cFBhbGV0a3kAUkZJRF9IbGF2YV8zLlBBUi5aYWRhbmVfQ2lzbG9fVHlwX1BhbGV0a3kAUkZJRF9IbGF2YV8yLlNUQVYuUHJpdG9tbm9zdENpcHUAUkZJRF9IbGF2YV8yLlBBUi5QcmVjaXRhbmVDaXNsb1BhbGV0a3kAUkZJRF9IbGF2YV8yLlBBUi5QcmVjaXRhbnlUeXBQYWxldGt5AFJGSURfSGxhdmFfMi5QQVIuWmFkYW5lX0Npc2xvX1R5cF9QYWxldGt5AFJGSURfSGxhdmFfMS5DTUQuWmFwaXNEQVRBAFJGSURfSGxhdmFfMS5TVEFWLlByaXRvbW5vc3RDaXB1AFJGSURfSGxhdmFfMS5QQVIuUHJlY2l0YW5lQ2lzbG9QYWxldGt5AFJGSURfSGxhdmFfMS5QQVIuUHJlY2l0YW55VHlwUGFsZXRreQBSRklEX0hsYXZhXzEuUEFSLlphZGFuZV9DaXNsb19UeXBfUGFsZXRreQBWc3R1cG55Vnl0OlpkdmloX0hPTUUAVnN0dXBueVZ5dDpaZHZpaF9Kb2dnRE9MRQBWc3R1cG55Vnl0OlpkdmloX0pvZ2dIT1JFAFZzdHVwbnlWeXQ6RHZlcmVfWkFUVk9SAFZzdHVwbnlWeXQ6RHZlcmVfT1RWT1IAU3RvcGVyRXRpazpDZW50cm92YWNrdV9aQVNVTgBTdG9wZXJFdGlrOkNlbnRyb3ZhY2t1X1ZZU1VOAERvcHJhdm5pa0M6Q2hvZF9WUFJFRABTdG9wZXJEb3ByOkNlbnRyb3ZhY2t1X1ZZU1RSRUQAU3RvcGVyRG9wcjpDZW50cm92YWNrdV9aQVNVTgBTdG9wZXJEb3ByOkNlbnRyb3ZhY2t1X1ZZU1VOAFZ5c3R1cG55Vnk6WmR2aWhfSE9NRQBWeXN0dXBueVZ5OlpkdmloX0pvZ2dET0xFAFZ5c3R1cG55Vnk6WmR2aWhfSm9nZ0hPUkUAVnN0dXBWeXRhaC5SUl9Eb3ByYXZuaWtfVlBSRUQAVnN0dXBWeXRhaC5SUl9Eb3ByYXZuaWtfVlpBRABWc3R1cFZ5dGFoLlNUQVYuWmR2aWhfSG9taW5nT0sAVnN0dXBWeXRhaC5TVEFWLlpkdmloX0FrdHVhbG5hUG96aWNpYQBWc3R1cFZ5dGFoLlBBUi5aZHZpaF9aYWRhbmFKb2dnUnljaGxvc3QAVnN0dXBWeXRhaC5QQVIuUG90dnJkZW5pZUJhbm5lcm9tX0FLVElWTkUAVnN0dXBWeXRhaC5JTi5CYW5uZXJQb3R2cmRlbnlfSU9TMQBWc3R1cFZ5dGFoLklOLkR2ZXJlVnl0YWh1T3R2b3JlbmVfTVMxAFZzdHVwVnl0YWguSU4uRHZlcmVWeXRhaHVaYXR2b3JlbmVfTVMyAFZzdHVwVnl0YWguSU4uUHJlY2hvZERvcHJhdm5pa2FWeXRhaHVfT1MxAFZzdHVwVnl0YWguSU4uUHJpdG9tbm9zdFBhbGV0a3lfSVMzAFZzdHVwVnl0YWguSU4uUHJpdG9tbm9zdFByb2R1a3R1X09TMgBWc3R1cFZ5dGFoLk9VVC5CYW5uZXJfWmVsZW5hTEVEX0lPUzEAVnN0dXBWeXRhaC5PVVQuQmFubmVyX0NlcnZlbmFMRURfSU9TMQBTdG9wZXJFdGlrZXRvdmFuaWEuUlJfVnl0bGFjRXRpa2V0dQBTdG9wZXJFdGlrZXRvdmFuaWEuSU4uUHJpdG9tbm9zdFBhbGV0a3lfSVMxNgBTdG9wZXJFdGlrZXRvdmFuaWEuSU4uQ2VudHJvdmFuaWVfSG9ybmFQb2xvaGFfSVMxOABTdG9wZXJFdGlrZXRvdmFuaWEuSU4uQ2VudHJvdmFuaWVfU3BvZG5hUG9sb2hhX0lTMTcAU3RvcGVyRXRpa2V0b3ZhbmlhLklOLlRsYWNpYXJlbl9Lb25pZWNFdGlraWV0AFN0b3BlckV0aWtldG92YW5pYS5JTi5UbGFjaWFyZW5fS29uaWVjUGFza3kAU3RvcGVyRXRpa2V0b3ZhbmlhLklOLlRsYWNpYXJlbl9Qb3J1Y2hhAFN0b3BlckV0aWtldG92YW5pYS5JTi5UbGFjaWFyZW5fS29uaWVjVGxhY2UAU3RvcGVyRXRpa2V0b3ZhbmlhLklOLlRsYWNpYXJlbl9PbmxpbmUAU3RvcGVyRXRpa2V0b3ZhbmlhLklOLlN1Zmxpa1RsYWNpYXJuZV9MU19JUzIzAFN0b3BlckV0aWtldG92YW5pYS5JTi5TdWZsaWtUbGFjaWFybmVfUFNfSVMyMgBTdG9wZXJFdGlrZXRvdmFuaWEuT1VULlN0b3BlclpBU1VOX1lWMDA3AFN0b3BlckV0aWtldG92YW5pYS5TVEFWLkFsYXJtVGV4dFBhbGV0a3lORwBTdG9wZXJFdGlrZXRvdmFuaWEuUEFSLlR5cFBhbGV0a3lfUnVjbmVWeXRsYWNFdGlrZXR5AFN0b3BlclBvQ2lzdGVuaS5JTi5Qcml0b21ub3N0UGFsZXRreV9JUzYAU3RvcGVyUG9DaXN0ZW5pLklOLlphcGxuZW5pZUJ1ZmZlcmFfSVM1AFN0b3BlclBvQ2lzdGVuaS5PVVQuU3RvcGVyWkFTVU5fWVYwMDYAU3RvcGVyUHJlZENpc3RlbmltLklOLlByaXRvbW5vc3RQYWxldGt5X0lTNABTdG9wZXJQcmVkQ2lzdGVuaW0uT1VULlN0b3BlclpBU1VOX1lWMDA1AFN0b3BlckRvcHJhdk5HLlJSX0RvcHJhdm5pa19WUFJFRABTdG9wZXJEb3ByYXZORy5SUl9Eb3ByYXZuaWtfVlpBRABTdG9wZXJEb3ByYXZORy5JTi5TdG9wZXJfUHJpdG9tbm9zdFBhbGV0a3lfSVMxNQBTdG9wZXJEb3ByYXZORy5JTi5Eb3ByYXZuaWtfUHJpdG9tbm9zdFBhbGV0a3lfT1M0AFN0b3BlckRvcHJhdk5HLklOLkRvcHJhdm5pa19Qcml0b21ub3N0UHJvZHVrdHVfT1MzAFN0b3BlckRvcHJhdk5HLklOLkNlbnRyb3ZhbmllX0hvcm5hUG9sb2hhX0lTMTkAU3RvcGVyRG9wcmF2TkcuSU4uQ2VudHJvdmFuaWVfU3RyZWRuYVBvbG9oYV9JUzIwAFN0b3BlckRvcHJhdk5HLklOLkNlbnRyb3ZhbmllX1Nwb2RuYVBvbG9oYV9JUzIxAFN0b3BlckRvcHJhdk5HLlNUQVYuT2JzbHVoYVBvdHZyZGlsYVBhbGV0a3VORwBTdG9wZXJEb3ByYXZORy5TVEFWLk9ic2x1aGFQb3R2cmRpbGFacnVzUGFsZXRreU5HAFZyYXRueURvcHJhdm5pay5PVVQuRG9wcmF2bmlrX0Nob2RWUFJFRF9FTFIyAFN0b3BlclZyYXREb3ByYXZuaWthLklOLlByaXRvbW5vc3RQYWxldGt5X0lTMTQAU3RvcGVyVnJhdERvcHJhdm5pa2EuT1VULlN0b3BlclpBU1VOX1lWMDEyAFZ5c3R1cG55RG9wcmF2bmlrLk9VVC5Eb3ByYXZuaWtfQ2hvZFZQUkVEX0VMUjUAU3RvcGVyVnlzdHVwRG9wcmF2bmlrYS5JTi5Qcml0b21ub3N0UGFsZXRreV9JUzI3AFN0b3BlclZ5c3R1cERvcHJhdm5pa2EuSU4uWmFwbG5lbmllQnVmZmVyYV9JUzI4AFN0b3BlclZ5c3R1cERvcHJhdm5pa2EuT1VULlN0b3BlclpBU1VOX1lWMDExAERvcHJhdkJ1bmt5Lk9VVC5Eb3ByYXZuaWtfQ2hvZFZQUkVEX0VMUjQARG9wcmF2Q2lzdGVuaWEuUEFSLlphZGFuYUpvZ2dSeWNobG9zdABWeXN0dXBWeXRhaC5SUl9Eb3ByYXZuaWtfVlBSRUQAVnlzdHVwVnl0YWguUlJfRG9wcmF2bmlrX1ZaQUQAVnlzdHVwVnl0YWguSU4uQmFubmVyUG90dnJkZW55X0lPUzIAVnlzdHVwVnl0YWguSU4uUHJpdG9tbm9zdFBhbGV0a3lfSVMyNgBWeXN0dXBWeXRhaC5JTi5Qcml0b21ub3N0UHJvZHVrdHVfT1M1AFZ5c3R1cFZ5dGFoLklOLlByZWNob2REb3ByYXZuaWthVnl0YWh1X09TNgBWeXN0dXBWeXRhaC5PVVQuQmFubmVyX1plbGVuYUxFRF9JT1MyAFZ5c3R1cFZ5dGFoLk9VVC5CYW5uZXJfQ2VydmVuYUxFRF9JT1MyAFZ5c3R1cFZ5dGFoLlBBUi5aZHZpaF9aYWRhbmFKb2dnUnljaGxvc3QAVnlzdHVwVnl0YWguUEFSLlBvdHZyZGVuaWVCYW5uZXJvbV9BS1RJVk5FAFZ5c3R1cFZ5dGFoLlBBUi5Qb3R2cmRlbmllTkdrdXN1QmFubmVyb21fQUtUSVZORQBWeXN0dXBWeXRhaC5TVEFWLlpkdmloX0FrdHVhbG5hUG96aWNpYQBWeXN0dXBWeXRhaC5TVEFWLlpkdmloX0hvbWluZ09LAFJGSURfSGxhdmFfNC5DTUQuWmFwaXNEQVRBAFJGSURfSGxhdmFfNC5TVEFWLlByaXRvbW5vc3RDaXB1AFJGSURfSGxhdmFfNC5QQVIuUHJlY2l0YW5lQ2lzbG9QYWxldGt5AFJGSURfSGxhdmFfNC5QQVIuUHJlY2l0YW55VHlwUGFsZXRreQBSRklEX0hsYXZhXzQuUEFSLlphZGFuZV9DaXNsb19UeXBfUGFsZXRreQBWeXN0dXBueVZ5dGFoX1N0YXRpc3Rpa2EuTmFtZXJhbnlDYXNfdl9TZWt1bmRhY2gAVnlzdHVwbnlWeXRhaF9TdGF0aXN0aWthLlByaWVtZXJueUNhc192X1Nla3VuZGFjaABWeXN0dXBueVZ5dGFoX1N0YXRpc3Rpa2EuTmFtZXJhbnlDYXNfdl9NaW51dGFjaABWeXN0dXBueVZ5dGFoX1N0YXRpc3Rpa2EuUHJpZW1lcm55Q2FzX3ZfTWludXRhY2gAVnlzdHVwbnlWeXRhaF9TdGF0aXN0aWthLk9VVC5OYW1lcmFueUNhc192X1Nla3VuZGFjaABWeXN0dXBueVZ5dGFoX1N0YXRpc3Rpa2EuT1VULlByaWVtZXJueUNhc192X1Nla3VuZGFjaABTdG9wZXJQb0Npc3RlbmlfU3RhdGlzdGlrYS5OYW1lcmFueUNhc192X1Nla3VuZGFjaABTdG9wZXJQb0Npc3RlbmlfU3RhdGlzdGlrYS5QcmllbWVybnlDYXNfdl9TZWt1bmRhY2gAU3RvcGVyUG9DaXN0ZW5pX1N0YXRpc3Rpa2EuTmFtZXJhbnlDYXNfdl9NaW51dGFjaABTdG9wZXJQb0Npc3RlbmlfU3RhdGlzdGlrYS5QcmllbWVybnlDYXNfdl9NaW51dGFjaABTdG9wZXJQb0Npc3RlbmlfU3RhdGlzdGlrYS5PVVQuTmFtZXJhbnlDYXNfdl9TZWt1bmRhY2gAU3RvcGVyUG9DaXN0ZW5pX1N0YXRpc3Rpa2EuT1VULlByaWVtZXJueUNhc192X1Nla3VuZGFjaABTdG9wZXJQcmVkQ2lzdGVuaW1fU3RhdGlzdGlrYS5OYW1lcmFueUNhc192X1Nla3VuZGFjaABTdG9wZXJQcmVkQ2lzdGVuaW1fU3RhdGlzdGlrYS5QcmllbWVybnlDYXNfdl9TZWt1bmRhY2gAU3RvcGVyUHJlZENpc3RlbmltX1N0YXRpc3Rpa2EuTmFtZXJhbnlDYXNfdl9NaW51dGFjaABTdG9wZXJQcmVkQ2lzdGVuaW1fU3RhdGlzdGlrYS5QcmllbWVybnlDYXNfdl9NaW51dGFjaABTdG9wZXJQcmVkQ2lzdGVuaW1fU3RhdGlzdGlrYS5PVVQuTmFtZXJhbnlDYXNfdl9TZWt1bmRhY2gAU3RvcGVyUHJlZENpc3RlbmltX1N0YXRpc3Rpa2EuT1VULlByaWVtZXJueUNhc192X1Nla3VuZGFjaABWc3R1cG55Vnl0YWhfU3RhdGlzdGlrYS5OYW1lcmFueUNhc192X1Nla3VuZGFjaABWc3R1cG55Vnl0YWhfU3RhdGlzdGlrYS5QcmllbWVybnlDYXNfdl9TZWt1bmRhY2gAVnN0dXBueVZ5dGFoX1N0YXRpc3Rpa2EuTmFtZXJhbnlDYXNfdl9NaW51dGFjaABWc3R1cG55Vnl0YWhfU3RhdGlzdGlrYS5QcmllbWVybnlDYXNfdl9NaW51dGFjaABWc3R1cG55Vnl0YWhfU3RhdGlzdGlrYS5PVVQuTmFtZXJhbnlDYXNfdl9TZWt1bmRhY2gAVnN0dXBueVZ5dGFoX1N0YXRpc3Rpa2EuT1VULlByaWVtZXJueUNhc192X1Nla3VuZGFjaABTdG9wZXJEb3ByYXZOR19TdGF0aXN0aWthLk5hbWVyYW55Q2FzX3ZfU2VrdW5kYWNoAFN0b3BlckRvcHJhdk5HX1N0YXRpc3Rpa2EuUHJpZW1lcm55Q2FzX3ZfU2VrdW5kYWNoAFN0b3BlckRvcHJhdk5HX1N0YXRpc3Rpa2EuTmFtZXJhbnlDYXNfdl9NaW51dGFjaABTdG9wZXJEb3ByYXZOR19TdGF0aXN0aWthLlByaWVtZXJueUNhc192X01pbnV0YWNoAFN0b3BlckRvcHJhdk5HX1N0YXRpc3Rpa2EuT1VULk5hbWVyYW55Q2FzX3ZfU2VrdW5kYWNoAFN0b3BlckRvcHJhdk5HX1N0YXRpc3Rpa2EuT1VULlByaWVtZXJueUNhc192X1Nla3VuZGFjaABTdG9wZXJFdGlrZXRvdmFuaWFfU3RhdGlzdGlrYS5OYW1lcmFueUNhc192X1Nla3VuZGFjaABTdG9wZXJFdGlrZXRvdmFuaWFfU3RhdGlzdGlrYS5QcmllbWVybnlDYXNfdl9TZWt1bmRhY2gAU3RvcGVyRXRpa2V0b3ZhbmlhX1N0YXRpc3Rpa2EuTmFtZXJhbnlDYXNfdl9NaW51dGFjaABTdG9wZXJFdGlrZXRvdmFuaWFfU3RhdGlzdGlrYS5QcmllbWVybnlDYXNfdl9NaW51dGFjaABTdG9wZXJFdGlrZXRvdmFuaWFfU3RhdGlzdGlrYS5PVVQuTmFtZXJhbnlDYXNfdl9TZWt1bmRhY2gAU3RvcGVyRXRpa2V0b3ZhbmlhX1N0YXRpc3Rpa2EuT1VULlByaWVtZXJueUNhc192X1Nla3VuZGFjaABIaXN0b3JpYVZ5cm9ieVswXS5OYXpvdk1vZGVsdQBIaXN0b3JpYVZ5cm9ieVswXS5OYXpvdkxPVFUASGlzdG9yaWFWeXJvYnlbMF0uUG9jZXRWeXJvYmVueWNoS3Vzb3ZfT0sASGlzdG9yaWFWeXJvYnlbMF0uUG9jZXRWeXJvYmVueWNoS3Vzb3ZfTkcASGlzdG9yaWFWeXJvYnlbMV0uTmF6b3ZNb2RlbHUASGlzdG9yaWFWeXJvYnlbMV0uTmF6b3ZMT1RVAEhpc3RvcmlhVnlyb2J5WzFdLlBvY2V0Vnlyb2JlbnljaEt1c292X09LAEhpc3RvcmlhVnlyb2J5WzFdLlBvY2V0Vnlyb2JlbnljaEt1c292X05HAEhpc3RvcmlhVnlyb2J5WzJdLk5hem92TW9kZWx1AEhpc3RvcmlhVnlyb2J5WzJdLk5hem92TE9UVQBIaXN0b3JpYVZ5cm9ieVsyXS5Qb2NldFZ5cm9iZW55Y2hLdXNvdl9PSwBIaXN0b3JpYVZ5cm9ieVsyXS5Qb2NldFZ5cm9iZW55Y2hLdXNvdl9ORwBIaXN0b3JpYVZ5cm9ieVszXS5OYXpvdk1vZGVsdQBIaXN0b3JpYVZ5cm9ieVszXS5OYXpvdkxPVFUASGlzdG9yaWFWeXJvYnlbM10uUG9jZXRWeXJvYmVueWNoS3Vzb3ZfT0sASGlzdG9yaWFWeXJvYnlbM10uUG9jZXRWeXJvYmVueWNoS3Vzb3ZfTkcASGlzdG9yaWFWeXJvYnlbNF0uTmF6b3ZNb2RlbHUASGlzdG9yaWFWeXJvYnlbNF0uTmF6b3ZMT1RVAEhpc3RvcmlhVnlyb2J5WzRdLlBvY2V0Vnlyb2JlbnljaEt1c292X09LAEhpc3RvcmlhVnlyb2J5WzRdLlBvY2V0Vnlyb2JlbnljaEt1c292X05HAEhpc3RvcmlhVnlyb2J5WzVdLk5hem92TW9kZWx1AEhpc3RvcmlhVnlyb2J5WzVdLk5hem92TE9UVQBIaXN0b3JpYVZ5cm9ieVs1XS5Qb2NldFZ5cm9iZW55Y2hLdXNvdl9PSwBUYWpmdW5fTW90b2hvZGlueS5DZWxrb3Z5UG9jZXRIb2RpbgBSb2JvdC5PZHBhcmtvdmFuaWUAUm9ib3QuUlJfUHJlc3VuUG96aWNpYUNpdGFuaWFRUmtvZHUAUm9ib3QuUlJfUHJlc3VuUG96aWNpYUNpdGFuaWFETWtvZHUAUm9ib3QuUlJfUHJlc3VuUG96aWNpYU9kb2JyYXRpYUV0aWtldHkASGVzbGEASGVzbGFbMV0ASGVzbGFbMl0ASGVzbGFbMF0AUG90dnJkZW5pZUFsYXJtb3YAVWxvelByZW1lbm5lAFRQX1pvYnJhelBvcFVwUHJpaGxhc2VuaWUAWmFkYW5lTWVub1V6aXZhdGVsYQBQcmlobGFzVXppdmF0ZWxhAFphZGFuZUhlc2xvVXppdmF0ZWxhAE9kaGxhc1V6aXZhdGVsYQBBbGFybXkAWnZvbGVueVV6aXZhdGVsAFp2b2xlbmFVcm92ZW4AUm9ib3RfQ2lzbG9Qcm9ncmFtdQBOYXpvdk1vZGVsdQBab3puYW1SZWNlcHR1cgBIZXNsb1V6aXZhdGVsYQBNZW5vVXppdmF0ZWxhAFpvem5hbVV6aXZhdGVsb3YAVHlwUGFsZXRreQBVcm92ZW5Veml2YXRlbGEAVWxvelJlY2VwdHVydQBWeW1helV6aXZhdGVsYQBVbG96VXppdmF0ZWxvdgBQcmVwaXNSZWNlcHR1cnUAVnltYXpSZWNlcHR1cnUAVWxvektvcmVrY2llUm9ib3RhAE9mZnNldFJvYm90YV9OYXpvdk1vZGVsdQBLYW1lcmFfQ2lzbG9Qcm9ncmFtdV9ETWtvZABLYW1lcmFfQ2lzbG9Qcm9ncmFtdV9RUmtvZABSeWNobG9zdERvcHJhdm5pa2FQcmlDaXN0ZW5pAENlbGtvdnlQb2NldFZ5cm9iZW55Y2hLdXNvdgBSRVNFVF9DZWxrb3ZlaG9Qb2N0dUt1c292AFBvY2V0Vnlyb2JlbnljaEt1c292X05HAFBvY2V0Vnlyb2JlbnljaEt1c292X09LAA==</Binary>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+</Intermediate>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="Bitmaps">
+    <Folder Name="POBJ">
+      <Object Name="Statistika_48x48" ClsId="0x306" Version="1" TargetIndex="84" Type="GFX" RefString="Source[local].Bitmap[Statistika_48x48]">
+        <UInt16 Name="Width">48</UInt16>
+        <UInt16 Name="Height">48</UInt16>
+        <UInt32 Name="BitsPerPixel">32</UInt32>
+        <Byte Name="Transparency">0</Byte>
+        <Byte Name="TargetFormat">2</Byte>
+        <UInt16 Name="Reserved">0</UInt16>
+        <Int32 Name="TransparentColor">0</Int32>
+        <Int32 Name="FillAreas">0</Int32>
+        <Binary Name="BitmapData" Encoding="Base64">iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMfSURBVGhD7ZjN6w1RHMav17wl/gOUjVKivBX2rC0kC0o2KP8DhaIsrBRixer3B0gUEgul2FlQEitl453nc7vP7dzzmzMv99753Zmapz7dued858z3OefMOTPT69SpU1+LxLKWQc5DPRE/WwY597VU/BB/xa+WQK7kvESMGFjeEpIG2qJWGFghyC1LjTawWJwUX8QjCjLUWAPbxXNBLnBXZKlxBtaL6+K3II8P4rBIqTEG2IyOi8/inyCPS2KNyFMjDGwTbEZcFx6KLaKMpmJgnzgnDoi1FJTUOnFNsCHR6x/FEVFFExlgI7komK8kACTzVtwRZ8VesVqEYrocE58E1+Jx4KrAfNaz2MizTqSxDWwWL4WTvideiO+DMqAdfknwtbgpzojHwjEcbxXWU0E8bfpZh7KUxjJwQnwTxL0Te4TFqOwQp8QN8Uq4zRB6n1GIe9f1GAD/T4m60gZY4u4LN8raXGbOrxK7xWlxW1wWzP8sOaGVA4o61PGFBuipN4Jh/yqOijoUJlRmRpQ2gObEA7Gx/2++MMl85fyQZ6KsiK/NQJFYMTxvaQcYseEFpKJVZqYGuIF98zF/aS824Dc+x3FMmU0siAGCQ6zQAD2LUgk5zsdF8SmF8aVOYD4TA6z5/HqdzjIQjkDYPrFscHF87QZIyBDnX1TFAKoyYimF8ZVPmDShmRhwj2ZtNGFCTA+SSo0AdXlTaOobmeUp4wtz7HgbcD0rTMpAeD6/oYG4HlKirpIBblg3bnwTeyOL64cfniSOs+q9jOa1n6XKBrwR0dvAcbgRcew6U7U+r/1YlQ00TUkDbWJoADHfKJgGfwQ3MfPYZRxzUerC2EmYd48wEtOAl3OSPRiUHRqUURfGTkIt4qsaX9QYgU0UDMQxBqgjprHaJUj0vYhXGT5WYWwnBU3VLYGBK/1/o6IMA7zkN1L7BTcrT6sbKIjEGx11xBDbCDE1eMHn8yDvzPTwecFGlMUFQQyxnONvQjMTSxlLI9OGxIAeNvFbGL/EOJ5z8x4ZahcXd4LjEj4zLbgYfqZG+IxTBc6d6RTq1Knd6vX+AzBzVLS2M12nAAAAAElFTkSuQmCC</Binary>
+      </Object>
+    </Folder>
+  </Folder>
+</Intermediate>

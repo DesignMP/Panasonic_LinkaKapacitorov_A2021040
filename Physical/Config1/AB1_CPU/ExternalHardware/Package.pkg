@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.7.6.114 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">YDCTTOYB.ext</Object>
+    <Object Type="File">ExternalHardwareDevices.xml</Object>
+    <Object Type="File">J0BGT4TZ.ext</Object>
+    <Object Type="File">A4XZ7STA.ext</Object>
+    <Object Type="File">EU9PZXZQ.ext</Object>
+  </Objects>
+</Package>

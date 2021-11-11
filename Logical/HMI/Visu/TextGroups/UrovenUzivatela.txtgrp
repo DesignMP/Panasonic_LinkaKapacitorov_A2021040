@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.10.3.60 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="UrovenUzivatela">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="4"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="sk-SK">
+    <Text ID="240198" Value="Zoraďovač"/>
+    <Text ID="240199" Value="Zvláštna uroveň"/>
+    <Text ID="248622" Value="Technológ"/>
+    <Text ID="248623" Value="Admin technológ"/>
+  </TextLayer>
+  <TextLayer LanguageId="en">
+    <Text ID="240198" Value="Technician"/>
+    <Text ID="240199" Value="Special level"/>
+    <Text ID="248622" Value="Technologist"/>
+    <Text ID="248623" Value="Admin Technologist"/>
+  </TextLayer>
+  <TextLayer LanguageId="ja-JP">
+    <Text ID="240198" Value=""/>
+    <Text ID="240199" Value=""/>
+    <Text ID="248622" Value=""/>
+    <Text ID="248623" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="240198" Value="10"/>
+    <Index ID="240199" Value="20"/>
+    <Index ID="248622" Value="30"/>
+    <Index ID="248623" Value="40"/>
+  </IndexMap>
+</TextGroup>

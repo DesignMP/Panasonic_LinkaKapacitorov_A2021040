@@ -1,0 +1,6 @@
+VAR
+	SC_OvlCentrovacky : SequenceControlTyp;
+	Centrovacku_VYSUN : BOOL;
+	Centrovacku_ZASUN : BOOL;
+	Centrovacku_VYSTRED : BOOL := FALSE;
+END_VAR

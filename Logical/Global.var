@@ -1,0 +1,175 @@
+(********************************************************************
+ * COPYRIGHT -- Microsoft
+ ********************************************************************
+ * File: Global.var
+ * Author: Martin
+ * Created: February 11, 2016
+ ********************************************************************
+ * Global variables of project Zamazat_1
+ ********************************************************************)
+VAR
+	Prisavka_ON : BOOL := FALSE;
+END_VAR
+(******************RFID èitaèky**********************)
+VAR
+	RFID_Hlava_1 : RFID_typ;
+	SC_Hlava_1 : SequenceControlTyp;
+	RFID_Hlava_2 : RFID_typ;
+	SC_Hlava_2 : SequenceControlTyp;
+	RFID_Hlava_3 : RFID_typ;
+	SC_Hlava_3 : SequenceControlTyp;
+	RFID_Hlava_4 : RFID_typ;
+	SC_Hlava_4 : SequenceControlTyp;
+END_VAR
+(**************Ruèná èítaèka QR kódu************)
+VAR
+	RucCitackaQR : RS232_typ;
+END_VAR
+(************Ovládanie Komunikácie s tlaèiaròou*******************)
+VAR
+	Client : Client_typ;
+	Tlaciaren : Tlaciaren_typ;
+	EtiketaPanasonic : EtiketaPanasonic_typ := (0);
+END_VAR
+(******************Blikaèe*****************************)
+VAR
+	Blikac100ms : BOOL;
+	Blikac200ms : BOOL;
+	Blikac500ms : BOOL;
+	Blikac1s : BOOL;
+END_VAR
+(**************Remanentné premenné*********)
+VAR
+	RemPremenne : RemPremenne_typ;
+	MpRecipeXml_0 : MpRecipeXml := (0);
+	MpRecipeRegPar_0 : MpRecipeRegPar := (0);
+	MpRecipeUI_0 : MpRecipeUI;
+	UlozPremenne : BOOL;
+	NacitajPremenne : BOOL;
+END_VAR
+(*************Premenne receptur**************)
+VAR
+	Receptura : ARRAY[0..150] OF ParametreRecepturTyp := [151((0))];
+	MpRecipeXml_1 : MpRecipeXml := (0);
+	MpRecipeRegPar_1 : MpRecipeRegPar := (0);
+	ZoznamReceptur : ARRAY[0..150] OF STRING[50] := [151('')];
+	UlozRecepturu : BOOL := FALSE;
+	VymazRecepturu : BOOL := FALSE;
+	NacitajRecepturu : BOOL;
+	PrepisRecepturu : BOOL := FALSE;
+	NazovModelu : STRING[18] := '';
+	TypPaletky : STRING[10] := '';
+	Robot_CisloProgramu : USINT;
+	Kamera_CisloProgramu_QRkod : USINT := 0;
+	Kamera_CisloProgramu_DMkod : USINT := 0;
+	RychlostDopravnikaPriCisteni : REAL := 0.0;
+	OffsetRobota_NazovModelu : STRING[18] := '';
+	NacitajKorekcieRobota : BOOL := FALSE;
+	UlozKorekcieRobota : BOOL := FALSE;
+	UlozenieKorekcii_DONE : BOOL := FALSE;
+	NacitanieKorekcii_DONE : BOOL := FALSE;
+END_VAR
+(***************Historia výroby*************************************)
+VAR RETAIN
+	HistoriaVyroby : ARRAY[0..5] OF HystoriaVyroby_typ := [6((0))];
+	IndexHistorie : USINT := 0;
+	Zvoleny_MODEL : STRING[18] := '';
+	Zvoleny_LOT : STRING[11] := '';
+END_VAR
+(**********Premenne uzivatelov********************************)
+VAR
+	Uzivatel : ARRAY[0..50] OF ParametreUzivatelovTyp;
+	MpRecipeXml_2 : MpRecipeXml := (0);
+	MpRecipeRegPar_2 : MpRecipeRegPar := (0);
+	ZoznamUzivatelov : ARRAY[0..50] OF STRING[50] := [51('')];
+	MenoUzivatela : STRING[50];
+	HesloUzivatela : STRING[50];
+	UrovenUzivatela : UINT;
+	ZadaneMenoUzivatela : STRING[50];
+	ZadaneHesloUzivatela : STRING[50];
+	ZvolenyUzivatel : STRING[50];
+	ZvolenaUroven : UINT;
+	TP_ZobrazPopUpPrihlasenie : USINT;
+	UlozUzivatelov : BOOL;
+	PrihlasUzivatela : BOOL;
+	VymazUzivatela : BOOL;
+	OdhlasUzivatela : BOOL;
+	SC_Uzivatelia : SequenceControlTyp;
+END_VAR
+(*************Všeobecné premenné*************)
+VAR
+	Vizu : Vizu_typ;
+	Safety : Safety_typ;
+END_VAR
+VAR RETAIN
+	Paletka : ARRAY[0..200] OF Paletka_typ;
+END_VAR
+VAR
+	StavHardware : Hardware_STAV_typ := (0);
+	Kamera : CAM_typ := (0);
+	Linka : Linka_typ := (0);
+	VstupVytah : VstupnyVytah_typ := (0);
+	SC_VstupVytah : SequenceControlTyp := (0);
+	StoperPredCistenim : StoperPredCistenim_typ := (0);
+	SC_StoperPredCistenim : SequenceControlTyp := (0);
+	StoperPoCisteni : StoperPoCisteni_typ := (0);
+	SC_StoperPoCisteni : SequenceControlTyp := (0);
+	DopravCistenia : DopravCistenia_typ := (0);
+	SC_DopravCistenia : SequenceControlTyp := (0);
+	StoperEtiketovania : StoperEtiketovania_typ := (0);
+	SC_StoperEtiketovania : SequenceControlTyp := (0);
+	Robot : Robot_typ := (0);
+	SC_Robot : SequenceControlTyp := (0);
+	StoperDopravNG : StoperDopravnikaNG_typ := (0);
+	SC_StoperDopravNG : SequenceControlTyp := (0);
+	DopravBunky : DopravBunky_typ := (0);
+	SC_DopravBunky : SequenceControlTyp := (0);
+	StoperVystupDopravnika : StoperVystupDopravnika_typ := (0);
+	SC_StoperVystupDopravnika : SequenceControlTyp := (0);
+	VystupnyDopravnik : VystupnyDopravnik_typ := (0);
+	SC_VystupnyDopravnik : SequenceControlTyp := (0);
+	VystupVytah : VystupnyVytah_typ := (0);
+	SC_VystupVytah : SequenceControlTyp := (0);
+	StoperVratDopravnika : StoperVratDopravnika_typ := (0);
+	SC_StoperVratDopravnika : SequenceControlTyp := (0);
+	VratnyDopravnik : VratnyDopravnik_typ := (0);
+	SC_VratnyDopravnik : SequenceControlTyp := (0);
+END_VAR
+(*****************Alarmy*****************************)
+VAR
+	Alarmy : ARRAY[0..100] OF BOOL;
+	NastalaPorucha : BOOL;
+	PotvrdenieAlarmov : BOOL;
+	PoruchaLinky : BOOL := FALSE;
+	PoruchaVstupnehoVytahu : BOOL;
+	PoruchaCistenia : BOOL := FALSE;
+	PoruchaBunky : BOOL;
+	PoruchaVystupnehoVytahu : BOOL;
+END_VAR
+(***********Štatistiky pracovisk*******************)
+VAR
+	VstupnyVytah_Statistika : Taktime := (0);
+	StoperPredCistenim_Statistika : Taktime := (0);
+	StoperPoCisteni_Statistika : Taktime := (0);
+	StoperEtiketovania_Statistika : Taktime := (0);
+	StoperDopravNG_Statistika : Taktime := (0);
+	VystupnyVytah_Statistika : Taktime := (0);
+END_VAR
+VAR RETAIN
+	Linka_Statistika : Taktime := (0);
+	PocetVyrobenychKusov_OK : UDINT := 0;
+	PocetVyrobenychKusov_NG : UDINT := 0;
+	CelkovyPocetVyrobenychKusov : UDINT := 0;
+END_VAR
+VAR
+	RESET_PoctuVyrobenychKusov : BOOL := FALSE;
+	RESET_CelkovehoPoctuKusov : BOOL := FALSE;
+END_VAR
+(*************Motohodiny*************************)
+VAR RETAIN
+	Tajfun_Motohodiny : Motohodiny_typ := (0);
+END_VAR
+(************* Komunikacia Ethernet_IP ********************************)
+VAR
+	KOM_Panasonic : KOM_EthernetIP := (0);
+END_VAR

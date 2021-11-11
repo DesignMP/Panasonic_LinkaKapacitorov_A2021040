@@ -1,0 +1,5 @@
+VAR
+	gRecipeXmlLink : {REDUND_UNREPLICABLE} MpComIdentType; (*#1"D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Physical\Config1\AB1_CPU\mappServices\Config_2.mprecipexml" #2"1" #3"1"*)
+	gRemPremenne : {REDUND_UNREPLICABLE} MpComIdentType; (*#1"D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Physical\Config1\AB1_CPU\mappServices\Config.mprecipexml" #2"1" #3"1"*)
+	gUzivatelXmlLink : {REDUND_UNREPLICABLE} MpComIdentType; (*#1"D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Physical\Config1\AB1_CPU\mappServices\Config_1.mprecipexml" #2"1" #3"1"*)
+END_VAR

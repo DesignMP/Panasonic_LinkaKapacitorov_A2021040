@@ -1,0 +1,8 @@
+[Header]
+Version=1
+DataSize=259
+Id=b7b1a617-7f7b-4cd3-8c30-2e2cf390d6e5
+Compression=Off
+DataEncoding=None
+[Data]
+<CustomItems><CustomItem name="Channel" value="0" persist="True" /><CustomItem name="IF" value="IF1" persist="True" /><CustomItem name="ModuleId" value="42781" persist="True" /><CustomItem name="Name" value="AB2_ProfinetMaster" persist="True" /></CustomItems>

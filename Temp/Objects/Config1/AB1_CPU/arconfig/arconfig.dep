@@ -1,0 +1,3 @@
+$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw
+$(AS_PROJECT_PATH)\Physical\Config1\AB1_CPU\DTM\X20IF10D3_1\X20IF10D3_1.dtm
+$(AS_PROJECT_PATH)\Physical\Config1\AB1_CPU\DTM\AB2_ProfinetMaster\AB2_ProfinetMaster.dtm

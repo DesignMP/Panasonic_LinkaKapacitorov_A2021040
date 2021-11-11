@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.10.3.60 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="StavyZmenyModelu">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="6"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="sk-SK">
+    <Text ID="243286" Value="Čakám na zmenu modelu."/>
+    <Text ID="243287" Value="Nebol načítaný názov modelu !!!"/>
+    <Text ID="243288" Value="Nebol načítaný LOT !!!"/>
+    <Text ID="243289" Value="Zmena modelu prebehla OK !!!"/>
+    <Text ID="243290" Value="Zadaný model nieje v databázi linky !!!"/>
+  </TextLayer>
+  <TextLayer LanguageId="en">
+    <Text ID="243286" Value="I'm waiting for the model to change."/>
+    <Text ID="243287" Value="Model name not loaded !!!"/>
+    <Text ID="243288" Value="LOT not loaded !!!"/>
+    <Text ID="243289" Value="The model change was OK !!!"/>
+    <Text ID="243290" Value="The specified model is not in the line database !!!"/>
+  </TextLayer>
+  <TextLayer LanguageId="ja-JP">
+    <Text ID="243286" Value=""/>
+    <Text ID="243287" Value=""/>
+    <Text ID="243288" Value=""/>
+    <Text ID="243289" Value=""/>
+    <Text ID="243290" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="243286" Value="0"/>
+    <Index ID="243287" Value="1"/>
+    <Index ID="243288" Value="2"/>
+    <Index ID="243289" Value="3"/>
+    <Index ID="243290" Value="4"/>
+  </IndexMap>
+</TextGroup>

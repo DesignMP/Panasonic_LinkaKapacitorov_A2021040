@@ -1,0 +1,22 @@
+
+***************FTP**************************
+login - admin
+heslo - vlmardo
+
+*************Safety*************************
+heslo - vlmardo
+
+
+************Adresy frekvenèných menièov na CANopen*****************
+FM1 Dopravník èistenia - 32
+FM2 Vstupný výtah - 34
+FM3 Vystupny výtah - 36
+
+
+****************Uroveò Design MP************************************
+Meno: DesignMP
+Heslo: vlmardo
+
+***************Uloženie typu a èísla paletky na RFID èip************
+Zadame èíslo paletky + oddelovací znak (;) + typ paletky
+Napr:  1;BV1

@@ -1,0 +1,12 @@
+VAR
+	a : USINT := 0;
+	CasKontroly_KarietPLC : TON;
+	CasKontroly_KOM_Robota : TON;
+	CasKontroly_TlakuVzduchu : TON := (0);
+	CasKontroly_KOM_VentTerminalu : TON := (0);
+	CasKontroly_KOM_IOlinkModulu : TON := (0);
+	CasKontroly_KOM_Kamery : TON := (0);
+	CasKontroly_KOM_MenicovFM : TON := (0);
+	CasKontrolyTlakuVzduchu : TON;
+	CasKontroly_KOM_RFIDModulu : TON;
+END_VAR

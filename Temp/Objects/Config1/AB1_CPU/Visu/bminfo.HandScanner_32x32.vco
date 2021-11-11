@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="Bitmaps">
+    <Folder Name="POBJ">
+      <Object Name="HandScanner_32x32" ClsId="0x306" Version="1" TargetIndex="54" Type="GFX" RefString="Source[local].Bitmap[HandScanner_32x32]">
+        <UInt16 Name="Width">32</UInt16>
+        <UInt16 Name="Height">32</UInt16>
+        <UInt32 Name="BitsPerPixel">32</UInt32>
+        <Byte Name="Transparency">0</Byte>
+        <Byte Name="TargetFormat">2</Byte>
+        <UInt16 Name="Reserved">0</UInt16>
+        <Int32 Name="TransparentColor">0</Int32>
+        <Int32 Name="FillAreas">0</Int32>
+        <Binary Name="BitmapData" Encoding="Base64">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANUSURBVFhHtZdZqE1hFMevecgcSsYiRHgQKUNJZk8kQ+YIkSGZhfIgUcoQD4YXKSTzFMKLkJkkmYdMmech/H5n3307t7PPOde9+/zrV2ufczrf+ta3vrXWziuh6sMwWAen4Bpcybd3wlqYD6OgOzSG0lBsNYWxsAXuwh/4CMdgBcyGubAcNsNBuAyvwN/+ha+wDxpARpWCVjAJtsNT8A/egH8wCzpAGSiKKkFrGASXYC+kqBrMgN2g1y74HHbAFGgDOlZSGSWPKkUDwUXlCxjKuhC3zIuLgVlYDcHFl4Fhfwe/4Rwshk5QFkqqRXAhMFP1BAy3Kgdm70q4CSbSe9gPYQ4Ux6GlcDYwU+V5bwvMFNWDEWCGh7fgE5yAJVADsqk8GH5vUqSmw/3AzCrrwBDwvuvIeMgkb4IJ/hI87kh1BHfmbv9HJ2FVYEaqHXiM5tgcP0gnz90bsAYq+0ERZTU8FJiFZJ1YCD/gNOhAZ8iooWCYnsFMsD5k01S4F5gFagnnwcQdBy1AB5pAVrmoV+81WG63Ql+oAFHqAV5Zz9ldG+ZvYII2AmVl1YGsZThZFWEkHIef8Bms/YbVRWuCMiH98+Hgrj/AREiunC7sbyzJxZKLDYYNcB3csQn7GHRQWyzj4a6TZWTMhQGJpxhUBbqADWs12KSsEd/BXUb1jatgJcyZTFqjYKgt5UehP4Qyeh5hTtQVzBPPvhk4H+iINSKU7dhrbm7FqjrwAjyCUHvAPHmYeApUHXSyX+IpRvUCQz8GTEBbrrlgmXamSJYj2/rAjE9m+Bkw5GK2TwAXOwzJspMWREWjG1iptK1otlltz2ljvh22TwuLv42S99zRzUjchhvwFsyHZDUHnWzrg0ZvsAtqLwCTSdteYPfSDj2+BY5t6WQFdVJ+BO7exaJ0Bzym2B0IZTKahOlkDhzRyIUD9gPP/UDiKVrTwCjE7sA8sBTbTdv7QRqNhsTtiNMB77bZ7/fZWvhkeKARpwPeIIfaorw7OBP65hSrA777WXxsyZlkV3XGsGjF6oDyHdEcsJakkw3J/0sMN7XBOdCio20GO+trq6qgXSvxFHifqZE4du8Ci5HObgIdtgnZFS1sv6An5FTeAKPpS6hV0UnKxuQg0wdQXt4/B5MHE8AxZJMAAAAASUVORK5CYII=</Binary>
+      </Object>
+    </Folder>
+  </Folder>
+</Intermediate>

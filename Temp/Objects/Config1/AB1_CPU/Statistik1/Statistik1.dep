@@ -1,0 +1,4 @@
+$(AS_PROJECT_PATH)/Logical/Libraries/Statistika/Statistika.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/Statistika/Types.typ
+$(AS_PROJECT_PATH)/Physical/Config1/AB1_CPU/Cpu.per
+$(AS_PROJECT_PATH)/Logical/Global.var

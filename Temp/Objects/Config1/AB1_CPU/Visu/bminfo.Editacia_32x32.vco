@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="Bitmaps">
+    <Folder Name="POBJ">
+      <Object Name="Editacia_32x32" ClsId="0x306" Version="1" TargetIndex="243" Type="GFX" RefString="Source[local].Bitmap[Editacia_32x32]">
+        <UInt16 Name="Width">32</UInt16>
+        <UInt16 Name="Height">32</UInt16>
+        <UInt32 Name="BitsPerPixel">32</UInt32>
+        <Byte Name="Transparency">0</Byte>
+        <Byte Name="TargetFormat">2</Byte>
+        <UInt16 Name="Reserved">0</UInt16>
+        <Int32 Name="TransparentColor">0</Int32>
+        <Int32 Name="FillAreas">0</Int32>
+        <Binary Name="BitmapData" Encoding="Base64">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFeSURBVFhH7Ze9SgNBGEUXRdDC6FtY6CMIooWdWPgAvohgY2ehjWBnI3YiUXsLGxFEULAVS638QUEs9FySGSZhyc5+M2uVAwfCpLiHhEySImATfw1eYQuTUcAzrtZQ49kiFPDYeRjNCd7hCyZHWAPkHCZHpASI5IjUAJEUkSNAmCNyBQhThDXgHKdKnMdXjI6wBvRfTGXuYSWWgFlcqPASD7ASS0AMepWGAcOAMGAEpzsPe/mPgDXUBaWP5j3OoKepgF3cwBX8wfB+uEZPUwFC49942DWM8DQVEI7r/Zcu4gE9TQT0jwsXoHN9X3hyB1SN6/kecgbUHhe5AkzjIkeAeVykBgwa/8QlHQwiJaBsfAyPUeOLOqjCGjCJX3iE4Xgbo8eFNUB/0XSpuN9+pnGhgDfciXALR1Hso7tWb/AMa4+LdbyI9BTHUTyhC5DvWHvcygR+4C1u43L3LJKi+AN167njEASfKgAAAABJRU5ErkJggg==</Binary>
+      </Object>
+    </Folder>
+  </Folder>
+</Intermediate>

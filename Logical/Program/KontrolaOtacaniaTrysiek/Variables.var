@@ -1,0 +1,10 @@
+VAR
+	SC_OvlCistenia : SequenceControlTyp := (0);
+	CasOtacaniaHornejTrisky_1 : TON := (0);
+	CasOtacaniaHornejTrisky_2 : TON := (0);
+	CasOtacaniaHornejTrisky_3 : TON := (0);
+	CasOtacaniaHornejTrisky_4 : TON := (0);
+	CasOtacaniaSpodnejTrisky_1 : TON := (0);
+	CasOtacaniaSpodnejTrisky_2 : TON := (0);
+	CasOtacaniaSpodnejTrisky_3 : TON := (0);
+END_VAR

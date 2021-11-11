@@ -1,0 +1,4 @@
+$(AS_PROJECT_PATH)/Logical/Libraries/EthernetIP/EthernetIP.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/EthernetIP/Types.typ
+$(AS_PROJECT_PATH)/Logical/Libraries/IecCheck/IecCheck.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/AsBrStr/AsBrStr.fun

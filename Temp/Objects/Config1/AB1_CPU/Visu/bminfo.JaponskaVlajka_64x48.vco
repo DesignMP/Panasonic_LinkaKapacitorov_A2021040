@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="Bitmaps">
+    <Folder Name="POBJ">
+      <Object Name="JaponskaVlajka_64x48" ClsId="0x306" Version="1" TargetIndex="107" Type="GFX" RefString="Source[local].Bitmap[JaponskaVlajka_64x48]">
+        <UInt16 Name="Width">64</UInt16>
+        <UInt16 Name="Height">43</UInt16>
+        <UInt32 Name="BitsPerPixel">32</UInt32>
+        <Byte Name="Transparency">0</Byte>
+        <Byte Name="TargetFormat">2</Byte>
+        <UInt16 Name="Reserved">0</UInt16>
+        <Int32 Name="TransparentColor">0</Int32>
+        <Int32 Name="FillAreas">0</Int32>
+        <Binary Name="BitmapData" Encoding="Base64">iVBORw0KGgoAAAANSUhEUgAAAEAAAAArCAYAAADIWo5HAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH7SURBVGhD7ZkxS8NAFMcDjlqdhOKg4OIXqJPFQRD8EC6igy4d9HNU6AcQHEtba20LOgodqi5KQWsrKtRJxEbo4tTn/cNFioQ2tO8Oy90PHi8kd+/l/knukheHDMcKIL2xWAGkNxYrgPTGYgWQXh/dLrmNJ3otFKl+dOwZtrEPx3SjTQD3sUnVxD5l5xYp7UzSiTNFeWnYxr6cOIY2aKsL5QJ8t12q7OxReiJCBSdCxQGGNmhb2d71+qpGqQAft3eUX1iiU3GFgwbbz9AHfRFDJcoEeL+6ocx0lM4CBhfW0DczE/ViqUKJAJ3WG2Vn50cavG+IgViIqQJ+AcRMfrG2Eep5D2uIhZgqVgl2AZ5zecqKGT1oIKMYYr6I2NywC1COxVlu/b+GmOXluMzCB6sA7fsHbz0PGgCHITZycMIqQC2ZGmrJC2uIXTtMyWw8sApwubml5Pb3DbGRgxNWAc5X1wNPnNOQgxNWAcqxlcCT5jTk4MTeAdKzYPwcgBna6FXgU8N7AHJwwioAwCSl4jFATLxlcsMuAN7Xjf4WMP5rEHRaLYPrARLWitD1mFWEfIyuCfoMXRUWfca+KtyLW29QNXHg1f6xnvf/L9CQvdSjTYBfxEzuNvFnqNTzZ6hEX2Kfill+EPoF+GdYAaQ3FiuA9MZiBZDeWAwXgOgHzFNHSaQs+LEAAAAASUVORK5CYII=</Binary>
+      </Object>
+    </Folder>
+  </Folder>
+</Intermediate>

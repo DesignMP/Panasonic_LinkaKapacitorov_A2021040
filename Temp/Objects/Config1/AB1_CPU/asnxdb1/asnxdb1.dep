@@ -1,0 +1,14 @@
+$(AS_PROJECT_PATH)\Physical\Config1\AB1_CPU\DTM\AB2_ProfinetMaster\AB2_ProfinetMaster.dtm
+$(AS_PROJECT_PATH)\Physical\Config1\AB1_CPU\DTM\AB2_ProfinetMaster\AB2_ProfinetMaster_IF1\AB2_ProfinetMaster_IF1.dtmdra
+$(AS_PROJECT_PATH)\Physical\Config1\AB1_CPU\DTM\AB2_ProfinetMaster\AB2_ProfinetMaster_IF1\AB2_ProfinetMaster_IF1.dtmdre
+$(AS_PROJECT_PATH)\Physical\Config1\AB1_CPU\DTM\AB2_ProfinetMaster\AB2_ProfinetMaster_IF1\AB2_ProfinetMaster_IF1.dtmdri
+$(AS_PROJECT_PATH)\Physical\Config1\AB1_CPU\DTM\AB2_ProfinetMaster\AB2_ProfinetMaster_IF1\AB2_ProfinetMaster_IF1.dtmtre
+$(AS_PROJECT_PATH)\Physical\Config1\AB1_CPU\DTM\AB2_ProfinetMaster\Balluff_IOmodul\Balluff_IOmodul.dtmdre
+$(AS_PROJECT_PATH)\Physical\Config1\AB1_CPU\DTM\AB2_ProfinetMaster\Balluff_IOmodul\Balluff_IOmodul.dtmdri
+$(AS_PROJECT_PATH)\Physical\Config1\AB1_CPU\DTM\AB2_ProfinetMaster\Balluff_IOmodul\Balluff_IOmodul.dtmtre
+$(AS_PROJECT_PATH)\Physical\Config1\AB1_CPU\DTM\AB2_ProfinetMaster\Robot_ABB_IRB1200\Robot_ABB_IRB1200.dtmdre
+$(AS_PROJECT_PATH)\Physical\Config1\AB1_CPU\DTM\AB2_ProfinetMaster\Robot_ABB_IRB1200\Robot_ABB_IRB1200.dtmdri
+$(AS_PROJECT_PATH)\Physical\Config1\AB1_CPU\DTM\AB2_ProfinetMaster\Robot_ABB_IRB1200\Robot_ABB_IRB1200.dtmtre
+$(AS_PROJECT_PATH)\Physical\Config1\AB1_CPU\DTM\AB2_ProfinetMaster\Robot_SmartKamera\Robot_SmartKamera.dtmdre
+$(AS_PROJECT_PATH)\Physical\Config1\AB1_CPU\DTM\AB2_ProfinetMaster\Robot_SmartKamera\Robot_SmartKamera.dtmdri
+$(AS_PROJECT_PATH)\Physical\Config1\AB1_CPU\DTM\AB2_ProfinetMaster\Robot_SmartKamera\Robot_SmartKamera.dtmtre

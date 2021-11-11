@@ -1,0 +1,14 @@
+VAR
+	CasResetZonyVstupVytahu : TON;
+	CasResetZonyBunky : TON;
+	CasResetZonyVystupVytahu : TON;
+	SC_ZmenaModelu : SequenceControlTyp := (0);
+	i : USINT := 0;
+	ModelNajdeny : BOOL := FALSE;
+	Nacitany_LOT_POLE : ARRAY[0..10] OF USINT := [11(0)];
+	PocetNacitanychZnakov : UDINT := 0;
+	NacitaneZnaky_POLE : ARRAY[0..100] OF USINT := [101(0)];
+	a : UINT := 0;
+	CasAktivacieHukacky : TON := (0);
+	CasVypnutiaVzduchotechniky : TON := (0);
+END_VAR

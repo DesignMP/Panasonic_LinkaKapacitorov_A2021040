@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.10.3.60 FileVersion="4.9"?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="6PPT30.101G-20B" Type="6PPT30.101G-20B" Version="1.3.3.0">
+    <Connection Connector="ETH1" TargetModule="AB1_CPU" TargetConnector="IF2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="Terminal" Value="true" />
+    <Parameter ID="Startmode" Value="1" />
+    <Parameter ID="Mode" Value="Manual" />
+    <Parameter ID="InternetAddress" Value="192.168.1.111" />
+    <Parameter ID="Subnetmask" Value="255.255.255.0" />
+    <Parameter ID="ActivateDns" Value="0" />
+    <Parameter ID="ActivateNtpClient" Value="1" />
+    <Parameter ID="NtpServer1" Value="192.168.1.110" />
+    <Parameter ID="TimeZone" Value="145" />
+    <Parameter ID="SelectedFavoriteVNC" Value="192.168.1.110:5900" />
+    <Parameter ID="PasswordVNC" Value="" />
+    <Parameter ID="PasswordCIFS" Value="" />
+    <Parameter ID="PasswordService" Value="" />
+    <Parameter ID="VncKeyMappingFile" Value="VC\6PPT30.101G-20B.dis" />
+    <Parameter ID="VncMaxConnections" Value="3" />
+    <Parameter ID="VncRefreshRate" Value="100" />
+  </Module>
+  <Module Name="AB10_X2X" Type="X20BT9400" Version="1.3.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11e" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="AB1_CPU" Type="X20CP1584" Version="1.10.0.0">
+    <Connector Name="IF1">
+      <Parameter ID="Baudrate" Value="115200" />
+      <Parameter ID="Parity" Value="N" />
+    </Connector>
+    <Connector Name="IF2">
+      <Parameter ID="ActivateDevice" Value="1" />
+      <Parameter ID="Mode" Value="Manual" />
+      <Parameter ID="InternetAddress" Value="192.168.1.110" />
+      <Parameter ID="SubnetMask" Value="255.255.255.0" />
+      <Group ID="Vnc1" />
+      <Parameter ID="VncVcObjectName1" Value="Visu" />
+      <Parameter ID="VncKeyMappingFile1" Value="VC\PS2-Keyboard.dis" />
+      <Parameter ID="VncMaxConnections1" Value="3" />
+      <Parameter ID="VncRefreshRate1" Value="100" />
+    </Connector>
+    <Connector Name="IF3">
+      <Parameter ID="DNAConfiguration" Value="manual" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="Panasonic_LinkaKapacitorov_A2021040_Config1" />
+    <Parameter ID="UserPartitionSize" Value="1000" />
+    <Parameter ID="PermanentPvSize" Value="100000" />
+    <Parameter ID="RemanentGlobalPvSize" Value="100000" />
+    <Parameter ID="VolatileGlobalPvSize" Value="100000" />
+    <Parameter ID="TimerDeviceType" Value="EPLX2X" />
+    <Parameter ID="TimerDevice" Value="AB1_CPU.IF3" />
+    <Parameter ID="TaskClassIdleTime" Value="2000" />
+    <Parameter ID="Cyclic1Duration" Value="2000" />
+    <Parameter ID="Cyclic1Tolerance" Value="0" />
+    <Parameter ID="Cyclic2Duration" Value="10000" />
+    <Parameter ID="Cyclic2Tolerance" Value="0" />
+    <Parameter ID="Cyclic5Duration" Value="250000" />
+    <Parameter ID="Cyclic5Tolerance" Value="250000" />
+    <Group ID="FileDevice1" />
+    <Parameter ID="FileDeviceName1" Value="HDD" />
+    <Parameter ID="FileDevicePath1" Value="F:\" />
+    <Parameter ID="TimeZone" Value="145" />
+    <Parameter ID="ActivateSntpServer" Value="1" />
+    <Group ID="FtpUser1" />
+    <Parameter ID="FtpUsername1" Value="admin" />
+    <Parameter ID="FtpUserPassword1" Value="WpM6vc++BEBilaVXVWwI5/hWRxX2ourn8nx6OokMexE=" />
+    <Parameter ID="FtpUserSalt1" Value="84j8tQs+" />
+    <Parameter ID="FTPAccessRight1" Value="0" />
+  </Module>
+  <Module Name="AB2_ProfinetMaster" Type="X20IF10E1-1" Version="1.4.0.0">
+    <Connection Connector="SS" TargetModule="AB1_CPU" TargetConnector="SS1" />
+    <Connector Name="IF1">
+      <Parameter ID="DtmRef" Value="FBDIF.Hilscher.PNIOControllerDTM2.NETX 100 RE/PNM" />
+      <Parameter ID="DtmId" Value="b7b1a617-7f7b-4cd3-8c30-2e2cf390d6e5" />
+    </Connector>
+    <Parameter ID="ConfigFile" Value="AB2_ProfinetMaster.dtm" />
+    <Parameter ID="ConfigModule" Value="asnxdb1" />
+  </Module>
+  <Module Name="AB3_SafetyMaster" Type="X20SLX842" Version="1.10.12.1">
+    <Connection Connector="SS1" TargetModule="X20TB52" TargetConnector="SS" />
+    <Connection Connector="SS2" TargetModule="X20TB52a" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM33" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="SafeProject" Value="SafeLOGIC-1" />
+    <Parameter ID="SafeDesigner" Value="4.4.0.0" />
+    <Parameter ID="DigitalOutput01" Value="viaSafeLOGIC" />
+    <Parameter ID="DigitalOutput02" Value="viaSafeLOGIC" />
+    <Parameter ID="DigitalOutput03" Value="viaSafeLOGIC" />
+    <Parameter ID="DigitalOutput04" Value="viaSafeLOGIC" />
+    <Parameter ID="DigitalOutput05" Value="viaSafeLOGIC" />
+    <Parameter ID="DigitalOutput06" Value="viaSafeLOGIC" />
+    <Parameter ID="UnsafeOutputBOOLs" Value="16" />
+    <Parameter ID="UnsafeInputBOOLs" Value="24" />
+  </Module>
+  <Module Name="AB4_SafetyDI" Type="X20SI8110" Version="1.10.12.0">
+    <Connection Connector="SS1" TargetModule="X20TB52b" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM13" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="AB5_16DI" Type="X20DIF371" Version="1.2.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB1F" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="AB6_16DI" Type="X20DIF371" Version="1.2.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB1F1" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11a" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="AB7_16DI" Type="X20DIF371" Version="1.2.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB1F2" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11b" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="AB8_16DO" Type="X20DOF322" Version="1.5.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB1F3" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11c" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="AB9_16DO" Type="X20DOF322" Version="1.5.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB1F4" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11d" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="Balluff_IOmodul" Type="FBD.Hilscher.PNIOGenDevDTM2.BIS V-6108-048" Version="V3.x" OrderNumber="BIS V-6108-048" VendorAddress="bisv6108048">
+    <Connection Connector="PN1" TargetModule="Robot_SmartKamera" TargetConnector="PN2" />
+    <Parameter ID="DtmId" Value="957c1aa6-5501-4b01-8690-8da2acdac176" />
+  </Module>
+  <Module Name="DI1_16DI" Type="X67DI1371.L08" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="AB10_X2X" TargetConnector="X2X1">
+      <Cable Type="X2XCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="DI2_16DI" Type="X67DI1371.L08" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="DI1_16DI" TargetConnector="X2X2">
+      <Cable Type="X2XCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="DI3_8DI" Type="X67DI1371" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="SI1_4SI" TargetConnector="X2X2">
+      <Cable Type="X2XCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="NORD_SK500P" Type="FBE.0xED_NORD_SK550P_POL" Version="1.0" OrderNumber="NORD SK500P">
+    <Connection Connector="PLK1" TargetModule="AB1_CPU" TargetConnector="IF3" NodeNumber="2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="PLK2" TargetModule="X20BC1083" TargetConnector="PLK1" NodeNumber="2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="p5000s01_direction" Value="wo" />
+    <Parameter ID="p5000s02_direction" Value="wo" />
+    <Parameter ID="p5000s03_direction" Value="wo" />
+    <Parameter ID="p5000s04_direction" Value="wo" />
+    <Parameter ID="p5000s05_direction" Value="wo" />
+    <Parameter ID="p5000s06_direction" Value="wo" />
+    <Parameter ID="p5001s01_direction" Value="wo" />
+    <Parameter ID="p5001s02_direction" Value="wo" />
+    <Parameter ID="p5001s03_direction" Value="wo" />
+    <Parameter ID="p5001s04_direction" Value="wo" />
+    <Parameter ID="p5001s05_direction" Value="wo" />
+    <Parameter ID="p5001s06_direction" Value="wo" />
+    <Parameter ID="p5002s01_direction" Value="wo" />
+    <Parameter ID="p5002s02_direction" Value="wo" />
+    <Parameter ID="p5002s03_direction" Value="wo" />
+    <Parameter ID="p5002s04_direction" Value="wo" />
+    <Parameter ID="p5002s05_direction" Value="wo" />
+    <Parameter ID="p5002s06_direction" Value="wo" />
+    <Parameter ID="p5010s01_direction" Value="ro" />
+    <Parameter ID="p5010s02_direction" Value="ro" />
+    <Parameter ID="p5010s03_direction" Value="ro" />
+    <Parameter ID="p5010s04_direction" Value="ro" />
+    <Parameter ID="p5010s05_direction" Value="ro" />
+    <Parameter ID="p5010s06_direction" Value="ro" />
+    <Parameter ID="p5011s01_direction" Value="ro" />
+    <Parameter ID="p5011s02_direction" Value="ro" />
+    <Parameter ID="p5011s03_direction" Value="ro" />
+    <Parameter ID="p5011s04_direction" Value="ro" />
+    <Parameter ID="p5011s05_direction" Value="ro" />
+    <Parameter ID="p5011s06_direction" Value="ro" />
+    <Parameter ID="p5012s01_direction" Value="ro" />
+    <Parameter ID="p5012s02_direction" Value="ro" />
+    <Parameter ID="p5012s03_direction" Value="ro" />
+    <Parameter ID="p5012s04_direction" Value="ro" />
+    <Parameter ID="p5012s05_direction" Value="ro" />
+    <Parameter ID="p5012s06_direction" Value="ro" />
+  </Module>
+  <Module Name="Robot_ABB_IRB1200" Type="FBD.Hilscher.PNIOGenDevDTM2.ENERGY V1.4" Version="1.4" OrderNumber="ENERGY V1.4" VendorAddress="robotabb">
+    <Connection Connector="PN1" TargetModule="AB2_ProfinetMaster" TargetConnector="IF1" />
+    <Parameter ID="DtmId" Value="d94eead1-de37-4b41-87fb-20fa55d3eb54" />
+  </Module>
+  <Module Name="Robot_SmartKamera" Type="FBD.Hilscher.PNIOGenDevDTM2.weQube V1.4" Version="1.1.4" OrderNumber="weQube V1.4" VendorAddress="weqube">
+    <Connection Connector="PN1" TargetModule="Robot_ABB_IRB1200" TargetConnector="PN2" />
+    <Parameter ID="DtmId" Value="8690793d-5e30-4adb-b536-c7434a34cb30" />
+  </Module>
+  <Module Name="SI1_4SI" Type="X67SI8103" Version="1.10.12.0">
+    <Connection Connector="X2X1" TargetModule="DI2_16DI" TargetConnector="X2X2">
+      <Cable Type="X2XCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="SafeModuleID" Value="3" />
+  </Module>
+  <Module Name="SI2_4SI" Type="X67SI8103" Version="1.10.12.0">
+    <Connection Connector="X2X1" TargetModule="DI3_8DI" TargetConnector="X2X2">
+      <Cable Type="X2XCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="SafeModuleID" Value="4" />
+  </Module>
+  <Module Name="X20BB81" Type="X20BB81" Version="1.1.0.0" />
+  <Module Name="X20BC1083" Type="X20BC1083" Version="2.14.0.0">
+    <Connection Connector="PLK1" TargetModule="NORD_SK500P" TargetConnector="PLK2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="SL" TargetModule="X20BB81" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="X20BM11" Type="X20BM11" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM13" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11a" Type="X20BM11" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM11" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11b" Type="X20BM11" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM11a" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11c" Type="X20BM11" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM11b" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11d" Type="X20BM11" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM11c" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11e" Type="X20BM11" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM11f" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11f" Type="X20BM11" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM11d" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM13" Type="X20BM13" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM33" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM33" Type="X20BM33" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="AB1_CPU" TargetConnector="IF6" />
+  </Module>
+  <Module Name="X20DOF322" Type="X20DOF322" Version="1.5.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB1F5" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11f" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="X20IF10D3_1" Type="X20IF10D3-1" Version="1.6.0.0">
+    <Connection Connector="SS" TargetModule="X20BB81" TargetConnector="SS1" />
+    <Connector Name="IF1">
+      <Parameter ID="DtmId" Value="ab4ae005-3f19-45b1-aaa9-aed3475b5247" />
+    </Connector>
+    <Parameter ID="ConfigFile" Value="X20IF10D3_1.dtm" />
+    <Parameter ID="ConfigModule" Value="asnxdb2" />
+    <Parameter ID="CycleTime" Value="2000" />
+    <Group ID="ChannelBlocks_d7c64b21-096d-4e1f-b917-c17efaf1afc7" Description="Connect1" />
+    <Group ID="IO_InputImage_d7c64b21-096d-4e1f-b917-c17efaf1afc7" Description="400 Byte(s)" />
+    <Group ID="IO_OutputImage_d7c64b21-096d-4e1f-b917-c17efaf1afc7" Description="400 Byte(s)" />
+  </Module>
+  <Module Name="X20PS9400" Type="X20PS9400" Version="1.7.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB12a" TargetConnector="SS" />
+    <Connection Connector="PS" TargetModule="X20BB81" TargetConnector="PS1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="X20TB12" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12a" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB1F" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F1" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F2" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F3" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F4" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F5" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB52" Type="X20TB52" Version="1.0.0.2" />
+  <Module Name="X20TB52a" Type="X20TB52" Version="1.0.0.2" />
+  <Module Name="X20TB52b" Type="X20TB52" Version="1.0.0.2" />
+</Hardware>

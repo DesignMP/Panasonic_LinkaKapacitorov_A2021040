@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExternalHardware>
+  <Modules>
+    <Module ModuleID="FBD.Hilscher.PNIOGenDevDTM2.ENERGY V1.4" Version="1.4" OrderNumber="ENERGY V1.4">
+      <SourceFile OriginalFile="GSDML-V2.33-ABB-Robotics-Robot-Device-20180814.xml" TranslationFile="YDCTTOYB.ext" />
+    </Module>
+    <Module ModuleID="FBD.Hilscher.PNIOGenDevDTM2.weQube V1.4" Version="1.1.4" OrderNumber="weQube V1.4">
+      <SourceFile OriginalFile="GSDML-V2.3-wenglor-wenglor ident-20161007-112500.xml" TranslationFile="J0BGT4TZ.ext" />
+    </Module>
+    <Module ModuleID="FBD.Hilscher.PNIOGenDevDTM2.BIS V-6108-048" Version="V3.x" OrderNumber="BIS V-6108-048">
+      <SourceFile OriginalFile="GSDML-V2.31-Balluff-BISV-6108-048-20160128.xml" TranslationFile="A4XZ7STA.ext" />
+    </Module>
+    <Module ModuleID="FBE.0xED_NORD_SK550P_POL" Version="1.0" OrderNumber="NORD SK500P">
+      <SourceFile OriginalFile="0xED_NORD_SK550P_POL.xdd" TranslationFile="EU9PZXZQ.ext" />
+    </Module>
+  </Modules>
+</ExternalHardware>

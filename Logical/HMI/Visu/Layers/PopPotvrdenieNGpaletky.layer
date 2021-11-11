@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.10.3.60 SP"?>
+<Layer xmlns="http://br-automation.co.at/AS/VC/Project" Name="PopPotvrdenieNGpaletky">
+  <Property Name="BackColor" Value="9"/>
+  <Property Name="Description" Value=""/>
+  <Property Name="Height" Value="600"/>
+  <Property Name="Left" Value="0"/>
+  <Property Name="StatusDatapoint" Value="None"/>
+  <Property Name="Top" Value="0"/>
+  <Property Name="Width" Value="1024"/>
+  <TextGroup>
+    <TextLayer LanguageId="sk-SK">
+      <Text ID="241060" Value=""/>
+      <Text ID="241062" Value="Potvrdenie paletky NG"/>
+      <Text ID="241068" Value="Potvrď návrat paletky NG"/>
+      <Text ID="250500" Value="Potvrď odobratie\npaletky NG"/>
+    </TextLayer>
+    <TextLayer LanguageId="en">
+      <Text ID="241060" Value=""/>
+      <Text ID="241062" Value="NG palette confirmation"/>
+      <Text ID="241068" Value="Confirm return of the NG palette"/>
+      <Text ID="250500" Value="Confirm NG palette removal"/>
+    </TextLayer>
+    <TextLayer LanguageId="ja-JP">
+      <Text ID="241060" Value=""/>
+      <Text ID="241062" Value=""/>
+      <Text ID="241068" Value=""/>
+      <Text ID="250500" Value=""/>
+    </TextLayer>
+    <IndexMap>
+      <Index ID="241060" Value="2"/>
+      <Index ID="241062" Value="4"/>
+      <Index ID="241068" Value="16"/>
+      <Index ID="250500" Value="3"/>
+    </IndexMap>
+  </TextGroup>
+  <Controls>
+    <Control ClassId="0x00001001" Name="shpBody1">
+      <Property Name="BackColor" Value="42"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="ForeColor" Value="0"/>
+      <Property Name="Height" Value="202"/>
+      <Property Name="Left" Value="328"/>
+      <Property Name="LineWidth" Value="2"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Vizu.ZobrazHlasenie_PotvrdPaletkyNG]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="192"/>
+      <Property Name="Width" Value="400"/>
+    </Control>
+    <Control ClassId="0x00001001" Name="Shape_1">
+      <Property Name="BackColor" Value="42"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.Vizu.FarbaTlacitka_PotvrdPaletkuNG]"/>
+      <Property Name="ColorMap" Value="Source[local].ColorMap[TlacitkoPotvrdenieNGpaletky]"/>
+      <Property Name="ColorMapIndexOffset" Value="0"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="65"/>
+      <Property Name="Left" Value="532"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Vizu.ZobrazHlasenie_PotvrdPaletkyNG]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="318"/>
+      <Property Name="Width" Value="190"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtHeader1">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BackColor" Value="0"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="ForeColor" Value="15"/>
+      <Property Name="Height" Value="35"/>
+      <Property Name="Left" Value="330"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="MsgBox Header"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Vizu.ZobrazHlasenie_PotvrdPaletkyNG]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[FrameHeader]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="2"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="192"/>
+      <Property Name="Width" Value="398"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_3">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[Arial16_Bold]"/>
+      <Property Name="ForeColor" Value="15"/>
+      <Property Name="Height" Value="24"/>
+      <Property Name="Left" Value="386"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Vizu.ZobrazHlasenie_PotvrdPaletkyNG]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="4"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="198"/>
+      <Property Name="Width" Value="285"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="Bitmap_1">
+      <Property Name="Bitmap" Value="Source[local].Bitmap[information_0]"/>
+      <Property Name="BitmapSource" Value="SingleBitmap"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="32"/>
+      <Property Name="IndexDatapoint" Value="None"/>
+      <Property Name="Left" Value="680"/>
+      <Property Name="SimulationValue" Value="0"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Vizu.ZobrazHlasenie_PotvrdPaletkyNG]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="194"/>
+      <Property Name="Width" Value="36"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="Button_2">
+      <Property Name="BackColor" Value="7"/>
+      <Property Name="Bitmap" Value="Source[local].Bitmap[PotvrdenieAlarmu_32x32]"/>
+      <Property Name="BitmapAlignmentHorizontal" Value="Left of Text"/>
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="SingleBitmap"/>
+      <Property Name="Border" Value="Source[local].Border[Button_Global_Area]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_73]"/>
+      <Property Name="Font" Value="Source[local].Font[Arial10_Bold]"/>
+      <Property Name="ForeColor" Value="0"/>
+      <Property Name="Height" Value="50"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="540"/>
+      <Property Name="Locking" Value="Datapoint &gt;= Level"/>
+      <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.Vizu.TL_PotvrdeniePaletky_NG_DISABLE]"/>
+      <Property Name="LockingLevel" Value="1"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_pressed]"/>
+      <Property Name="PressedForeColor" Value="0"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="SpacingHorizontal" Value="16"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Vizu.ZobrazHlasenie_PotvrdPaletkyNG]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndex" Value="16"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="325"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_73]"/>
+      <Property Name="Width" Value="175"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="Button_3">
+      <Property Name="BackColor" Value="39"/>
+      <Property Name="Bitmap" Value="Source[local].Bitmap[Cancel3_32x32]"/>
+      <Property Name="BitmapAlignmentHorizontal" Value="Left of Text"/>
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="SingleBitmap"/>
+      <Property Name="Border" Value="Source[local].Border[Button_Global_Area]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_82]"/>
+      <Property Name="Font" Value="Source[local].Font[Arial10_Bold]"/>
+      <Property Name="ForeColor" Value="0"/>
+      <Property Name="Height" Value="50"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="342"/>
+      <Property Name="Locking" Value="Datapoint &gt;= Level"/>
+      <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.Vizu.TL_ZruseniePaletky_NG_DISABLE]"/>
+      <Property Name="LockingLevel" Value="1"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_pressed]"/>
+      <Property Name="PressedForeColor" Value="0"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="SpacingHorizontal" Value="16"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Vizu.ZobrazHlasenie_PotvrdPaletkyNG]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndex" Value="3"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="325"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_82]"/>
+      <Property Name="Width" Value="175"/>
+    </Control>
+    <Control ClassId="0x0000100B" Name="String_1">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="Border" Value="Source[local].Border[FrameInvisible]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[Arial12_Bold]"/>
+      <Property Name="ForeColor" Value="0"/>
+      <Property Name="Height" Value="66"/>
+      <Property Name="Left" Value="337"/>
+      <Property Name="MaxChars" Value="30"/>
+      <Property Name="SimulationValue" Value="ABC"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Vizu.ZobrazHlasenie_PotvrdPaletkyNG]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="248"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.StoperEtiketovania.STAV.AlarmTextPaletkyNG]"/>
+      <Property Name="Width" Value="382"/>
+    </Control>
+  </Controls>
+  <KeyMapping>
+    <VirtualKey Name="%embVirtualKey_73">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="1"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.StoperDopravNG.STAV.ObsluhaPotvrdilaPaletkuNG]"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="%embVirtualKey_82">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="1"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.StoperDopravNG.STAV.ObsluhaPotvrdilaZrusPaletkyNG]"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+  </KeyMapping>
+</Layer>

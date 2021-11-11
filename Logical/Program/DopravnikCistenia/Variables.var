@@ -1,0 +1,5 @@
+VAR
+	SC_OvlMenica : SequenceControlTyp := (0);
+	Chod_VPRED : BOOL := FALSE;
+	Chod_VZAD : BOOL := FALSE;
+END_VAR

@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?AutomationStudio FileVersion="4.9"?>
+<BR.AS.HardwareTopology>
+  <TimeStamps>
+    <TimeStamp LogicalPath="Config1.Hardware.hw" LastWriteTime="11/04/2021 08:32:51" />
+  </TimeStamps>
+  <Modules>
+    <Module Name="AB1_CPU" Type="X20CP1584" X="100" Y="100" />
+    <Module Name="AB2_ProfinetMaster" Type="X20IF10E1-1" X="212" Y="100" />
+    <Module Name="X20BM33" Type="X20BM33" X="250" Y="100" />
+    <Module Name="AB3_SafetyMaster" Type="X20SLX842" X="250" Y="100" />
+    <Module Name="X20TB52a" Type="X20TB52" X="263" Y="126" />
+    <Module Name="X20TB52" Type="X20TB52" X="250" Y="126" />
+    <Module Name="X20BM13" Type="X20BM13" X="276" Y="100" />
+    <Module Name="AB4_SafetyDI" Type="X20SI8110" X="276" Y="100" />
+    <Module Name="X20TB52b" Type="X20TB52" X="276" Y="126" />
+    <Module Name="X20BM11" Type="X20BM11" X="289" Y="100" />
+    <Module Name="AB5_16DI" Type="X20DIF371" X="289" Y="100" />
+    <Module Name="X20TB1F" Type="X20TB1F" X="289" Y="127" />
+    <Module Name="X20BM11a" Type="X20BM11" X="302" Y="100" />
+    <Module Name="AB6_16DI" Type="X20DIF371" X="302" Y="100" />
+    <Module Name="X20TB1F1" Type="X20TB1F" X="302" Y="127" />
+    <Module Name="X20BM11b" Type="X20BM11" X="315" Y="100" />
+    <Module Name="AB7_16DI" Type="X20DIF371" X="315" Y="100" />
+    <Module Name="X20TB1F2" Type="X20TB1F" X="315" Y="127" />
+    <Module Name="X20BM11c" Type="X20BM11" X="328" Y="100" />
+    <Module Name="AB8_16DO" Type="X20DOF322" X="328" Y="100" />
+    <Module Name="X20TB1F3" Type="X20TB1F" X="328" Y="127" />
+    <Module Name="X20BM11d" Type="X20BM11" X="341" Y="100" />
+    <Module Name="AB9_16DO" Type="X20DOF322" X="341" Y="100" />
+    <Module Name="X20TB1F4" Type="X20TB1F" X="341" Y="127" />
+    <Module Name="X20BM11f" Type="X20BM11" X="354" Y="100" />
+    <Module Name="X20DOF322" Type="X20DOF322" X="354" Y="100" />
+    <Module Name="X20TB1F5" Type="X20TB1F" X="354" Y="127" />
+    <Module Name="X20BM11e" Type="X20BM11" X="367" Y="100" />
+    <Module Name="AB10_X2X" Type="X20BT9400" X="367" Y="100" />
+    <Module Name="X20TB12" Type="X20TB12" X="367" Y="127" />
+    <Module Name="6PPT30.101G-20B" Type="6PPT30.101G-20B" X="441" Y="772" />
+    <Module Name="Robot_ABB_IRB1200" Type="FBD.Hilscher.PNIOGenDevDTM2.ENERGY V1.4" X="391" Y="398" />
+    <Module Name="Robot_SmartKamera" Type="FBD.Hilscher.PNIOGenDevDTM2.weQube V1.4" X="600" Y="398" />
+    <Module Name="Balluff_IOmodul" Type="FBD.Hilscher.PNIOGenDevDTM2.BIS V-6108-048" X="816" Y="398" />
+    <Module Name="NORD_SK500P" Type="FBE.0xED_NORD_SK550P_POL" X="254" Y="663" />
+    <Module Name="DI1_16DI" Type="X67DI1371.L08" X="494" Y="100" />
+    <Module Name="DI2_16DI" Type="X67DI1371.L08" X="634" Y="100" />
+    <Module Name="SI1_4SI" Type="X67SI8103" X="759" Y="100" />
+    <Module Name="DI3_8DI" Type="X67DI1371" X="874" Y="100" />
+    <Module Name="SI2_4SI" Type="X67SI8103" X="966" Y="100" />
+    <Module Name="X20BB81" Type="X20BB81" X="620" Y="597" />
+    <Module Name="X20IF10D3_1" Type="X20IF10D3-1" X="620" Y="597" />
+    <Module Name="X20PS9400" Type="X20PS9400" X="670" Y="597" />
+    <Module Name="X20TB12a" Type="X20TB12" X="670" Y="624" />
+    <Module Name="X20BC1083" Type="X20BC1083" X="645" Y="597" />
+  </Modules>
+  <Links>
+    <Link From="6PPT30.101G-20B" To="AB1_CPU" FromPort="ETH1" ToPort="IF2" IsRoutedByUser="False">
+      <Point X="531.6" Y="896.4" />
+      <Point X="531.6" Y="896.4" />
+      <Point X="531.6" Y="901.4" />
+      <Point X="531.6" Y="915" />
+      <Point X="132" Y="915" />
+      <Point X="132" Y="201" />
+      <Point X="132" Y="187" />
+      <Point X="132" Y="187" />
+    </Link>
+    <Link From="AB10_X2X" To="DI1_16DI" FromPort="X2X1" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="374" Y="144" />
+      <Point X="374" Y="144" />
+      <Point X="381" Y="144" />
+      <Point X="395" Y="144" />
+      <Point X="395" Y="112" />
+      <Point X="493" Y="112" />
+      <Point X="504" Y="112" />
+      <Point X="504" Y="112" />
+    </Link>
+    <Link From="AB1_CPU" To="NORD_SK500P" FromPort="IF3" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="287.400024" Y="707" />
+      <Point X="287.400024" Y="707" />
+      <Point X="287.400024" Y="714" />
+      <Point X="287.400024" Y="725" />
+      <Point X="156" Y="725" />
+      <Point X="156" Y="201" />
+      <Point X="156" Y="187" />
+      <Point X="156" Y="187" />
+    </Link>
+    <Link From="AB2_ProfinetMaster" To="Robot_ABB_IRB1200" FromPort="IF1" ToPort="PN1" IsRoutedByUser="False">
+      <Point X="226" Y="191" />
+      <Point X="226" Y="191" />
+      <Point X="226" Y="201" />
+      <Point X="226" Y="455" />
+      <Point X="410" Y="455" />
+      <Point X="410" Y="449" />
+      <Point X="410" Y="437" />
+      <Point X="410" Y="437" />
+    </Link>
+    <Link From="Balluff_IOmodul" To="Robot_SmartKamera" FromPort="PN1" ToPort="PN2" IsRoutedByUser="False">
+      <Point X="634" Y="437" />
+      <Point X="634" Y="437" />
+      <Point X="634" Y="449" />
+      <Point X="634" Y="455" />
+      <Point X="705" Y="455" />
+      <Point X="705" Y="437" />
+      <Point X="815.4" Y="437" />
+      <Point X="835.4" Y="437" />
+      <Point X="835.4" Y="437" />
+    </Link>
+    <Link From="DI1_16DI" To="DI2_16DI" FromPort="X2X2" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="536.5" Y="112" />
+      <Point X="536.5" Y="112" />
+      <Point X="548.5" Y="112" />
+      <Point X="633.2" Y="112" />
+      <Point X="644.2" Y="112" />
+      <Point X="644.2" Y="112" />
+    </Link>
+    <Link From="DI2_16DI" To="SI1_4SI" FromPort="X2X2" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="676.2" Y="112" />
+      <Point X="676.2" Y="112" />
+      <Point X="688.2" Y="112" />
+      <Point X="758.5" Y="112" />
+      <Point X="769.5" Y="112" />
+      <Point X="769.5" Y="112" />
+    </Link>
+    <Link From="DI3_8DI" To="SI1_4SI" FromPort="X2X1" ToPort="X2X2" IsRoutedByUser="False">
+      <Point X="801.5" Y="112" />
+      <Point X="801.5" Y="112" />
+      <Point X="813.5" Y="112" />
+      <Point X="873.5" Y="112" />
+      <Point X="884.5" Y="112" />
+      <Point X="884.5" Y="112" />
+    </Link>
+    <Link From="DI3_8DI" To="SI2_4SI" FromPort="X2X2" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="916.5" Y="112" />
+      <Point X="916.5" Y="112" />
+      <Point X="928.5" Y="112" />
+      <Point X="965" Y="112" />
+      <Point X="976" Y="112" />
+      <Point X="976" Y="112" />
+    </Link>
+    <Link From="NORD_SK500P" To="X20BC1083" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="312.400024" Y="707" />
+      <Point X="312.400024" Y="707" />
+      <Point X="312.400024" Y="714" />
+      <Point X="312.400024" Y="726" />
+      <Point X="651.15" Y="726" />
+      <Point X="651.15" Y="697" />
+      <Point X="651.15" Y="672" />
+      <Point X="659.4" Y="672" />
+    </Link>
+    <Link From="Robot_ABB_IRB1200" To="Robot_SmartKamera" FromPort="PN2" ToPort="PN1" IsRoutedByUser="False">
+      <Point X="619" Y="437" />
+      <Point X="619" Y="437" />
+      <Point X="599" Y="437" />
+      <Point X="595" Y="437" />
+      <Point X="595" Y="455" />
+      <Point X="425.400024" Y="455" />
+      <Point X="425.400024" Y="449" />
+      <Point X="425.400024" Y="437" />
+      <Point X="425.400024" Y="437" />
+    </Link>
+  </Links>
+  <InfoElements>
+    <InfoElementText Id="Textbox_1" X="441.400024" Y="752.8" Width="198.599976" Height="20">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Ethernet IP: 192.168.1.111</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_2" X="100" Y="60" Width="201" Height="20">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Ethernet IP: 192.168.1.110</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_3" X="100" Y="80" Width="179" Height="20">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Profinet IP: 192.168.2.1</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_4" X="335" Y="358" Width="202.400024" Height="20">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Ethernet IP: 192.168.1.112</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_5" X="334" Y="378" Width="203.400024" Height="20">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Profinet IP: 192.168.3.2</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_6" X="560.4" Y="378" Width="179" Height="20">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Profinet IP: 192.168.3.3</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_7" X="787" Y="378" Width="179" Height="20">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Profinet IP: 192.168.3.4</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_8" X="334" Y="338" Width="44" Height="20">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Robot</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_9" X="560.4" Y="358" Width="102" Height="20">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">SmartKamera</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_10" X="787" Y="358" Width="94" Height="20">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">ČitačkyRFID</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_12" X="230.400024" Y="643" Width="140" Height="20">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">FrekvencneMenice</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_13" X="739.4" Y="845.4" Width="266" Height="40">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Tlačiareň:
+Ethernet IP: 192.168.1.113</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_15" X="560.4" Y="557" Width="190.599976" Height="40">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Komunikácia Ethernet_IP
+IP:192.168.1.115</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+  </InfoElements>
+</BR.AS.HardwareTopology>

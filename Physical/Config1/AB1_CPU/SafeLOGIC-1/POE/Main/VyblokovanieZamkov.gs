@@ -1,0 +1,29 @@
+[LIT]
+5
+5	47	29	65	29
+6	65	29	96	29
+7	65	42	80	42
+8	65	29	65	42
+10	105	42	109	42
+
+[TET]
+3
+0	24	28	47	30	4	5	siVyblokovanieZamkov
+1	96	28	130	30	4	3	Status_VyblokovZamkov_AKTIVNE
+9	109	41	141	43	4	3	Stav_VyblokovZamkov_AKTIVNE
+
+[FBS]
+1
+4	82	38	103	46	1	SAFEBOOL_TO_BOOL	
+
+[FPT]
+2
+2	82	41	84	43		0	640	0	SAFEBOOL
+3	102	41	103	43		1	0	640	BOOL
+
+[KOT]
+0
+
+[VER]
+0
+

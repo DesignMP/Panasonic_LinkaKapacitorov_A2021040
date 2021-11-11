@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.7.7.74 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Program" Language="IEC">Main</Object>
+    <Object Type="Program" Language="IEC">KontrolaOtacaniaTrysiek</Object>
+    <Object Type="Program" Language="IEC">VstupnyVytah</Object>
+    <Object Type="Program" Language="IEC">StoperPredCistenim</Object>
+    <Object Type="Program" Language="IEC">StoperPoCisteni</Object>
+    <Object Type="Program" Language="IEC">DopravnikCistenia</Object>
+    <Object Type="Program" Language="IEC">StoperEtiketovania</Object>
+    <Object Type="Program" Language="IEC">Robot</Object>
+    <Object Type="Program" Language="IEC">StoperDopravnikaNG</Object>
+    <Object Type="Program" Language="IEC">DopravnikBunky</Object>
+    <Object Type="Program" Language="IEC">StoperVystupDopravnika</Object>
+    <Object Type="Program" Language="IEC">VystupnyDopravnik</Object>
+    <Object Type="Program" Language="IEC">VystupnyVytah</Object>
+    <Object Type="Program" Language="IEC">StoperVratDopravnika</Object>
+    <Object Type="Program" Language="IEC">VratnyDopravnik</Object>
+    <Object Type="Program" Language="IEC">Alarmy</Object>
+    <Object Type="Program" Language="IEC">StatistikaLinky</Object>
+    <Object Type="Program" Language="IEC">IonizacnaJednotka</Object>
+    <Object Type="Program" Language="IEC">TestKomunikacie</Object>
+  </Objects>
+</Package>

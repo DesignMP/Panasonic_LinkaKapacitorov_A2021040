@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.10.3.60 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="StavyFiltra">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="7"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="sk-SK">
+    <Text ID="253408" Value="Stav filtrov ionizačnej jednotky je OK."/>
+    <Text ID="253409" Value="Blíži sa termín výmeny filtrov ionizačnej jednotky !!!"/>
+    <Text ID="253410" Value="Nutná výmena filtrov ionizačnej jednotky !!!"/>
+  </TextLayer>
+  <TextLayer LanguageId="en">
+    <Text ID="253408" Value="The status of the ionization unit filters is OK."/>
+    <Text ID="253409" Value="The date for replacing filters of the ionization unit is approaching !!!"/>
+    <Text ID="253410" Value="Necessary replacement of ionization unit filters !!!"/>
+  </TextLayer>
+  <TextLayer LanguageId="ja-JP">
+    <Text ID="253408" Value=""/>
+    <Text ID="253409" Value=""/>
+    <Text ID="253410" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="253408" Value="0"/>
+    <Index ID="253409" Value="1"/>
+    <Index ID="253410" Value="2"/>
+  </IndexMap>
+</TextGroup>

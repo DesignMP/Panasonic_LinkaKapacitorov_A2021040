@@ -1,0 +1,6 @@
+{
+  global:
+    KOM_EthernetIP;
+  local:
+    *;
+ };

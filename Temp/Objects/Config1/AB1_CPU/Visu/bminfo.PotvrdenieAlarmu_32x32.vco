@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="Bitmaps">
+    <Folder Name="POBJ">
+      <Object Name="PotvrdenieAlarmu_32x32" ClsId="0x306" Version="1" TargetIndex="58" Type="GFX" RefString="Source[local].Bitmap[PotvrdenieAlarmu_32x32]">
+        <UInt16 Name="Width">32</UInt16>
+        <UInt16 Name="Height">32</UInt16>
+        <UInt32 Name="BitsPerPixel">32</UInt32>
+        <Byte Name="Transparency">0</Byte>
+        <Byte Name="TargetFormat">2</Byte>
+        <UInt16 Name="Reserved">0</UInt16>
+        <Int32 Name="TransparentColor">0</Int32>
+        <Int32 Name="FillAreas">0</Int32>
+        <Binary Name="BitmapData" Encoding="Base64">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHdSURBVFhHxdfPKwRxHMbxJRQlDvKzJOUkd8qBi4gDOSkXcXXk4O7OUU7k5kdKOThwkFz8A0pKDiSJEuX3+5n2s40xszOzzdinXu3Od3e/++zszux3Mp60YAkXeMd3gr7wgH2M4E8G8Qi/F6dhDWVw0oUX6IFP7GIBcwmah/buDayEtp0cQAOvGNBAiqnBMfR+HxpogD61BhY18A9pxRv0npn+7B3p1kCCqYD2aJWz9TtncAoMZe9IpwYSzAY0r46qXg24coRUC4xDh57Nre97GpZUC9TjDjavWYUl1QI7sDmNzjH68VlSKzAJm89tCu6kUqAZOt3afGYP3qRSQOd5m8vcowneJF5gBjaP2wT8kmiBNjzB5jGbCEqkAvq3GkOjs+WfEhzC5jC3qENQQguUww6nK7TDL7Ow1xudgEaRL3kLlGILNi5+JTrwDPfzZB1hyVtAtzbm5i6hkifwPucatQhL6B7Yho27WQktMLyPaddrZRUlkX4DQSX0KbV48Y6vIGpCCyj5SnhdohpRE6mAEqWEVlR9iJPIBZSwEsuIm1gFlKAS56hE3MQuoHhL6OKlB4UkVyDuolQltHo+hf77C01uUVr0ZblS1AsTpeiXZkpRL04t/3V5PgySyfwAdEKPMLgNhUMAAAAASUVORK5CYII=</Binary>
+      </Object>
+    </Folder>
+  </Folder>
+</Intermediate>

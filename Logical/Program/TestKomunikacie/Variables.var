@@ -1,0 +1,14 @@
+VAR
+	SC_Step : SequenceControlTyp := (0);
+	Cistenie_OK : BOOL := 0;
+	Cistenie_NG : BOOL := 0;
+	VytlacEtiketu : BOOL := 0;
+	NalepenieEtikety_OK : BOOL := 0;
+	NalepenieEikety_NG : BOOL := 0;
+	KontrolaDMkodu_OK : BOOL := 0;
+	KontrolaDMkodu_NG : BOOL := 0;
+	KontrolaTextu_OK : BOOL := 0;
+	KontrolaTextu_NG : BOOL := 0;
+	ZakaznickeCislo : STRING[49] := '';
+	ReturnProcessName : STRING[80] := '0';
+END_VAR

@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.10.3.60 SP"?>
+<ConfigInfo xmlns="http://br-automation.co.at/AS/BuildInfo">
+  <TaskClass
+    Name="Cyclic#1">
+    <Task
+      Name="IonizacnaJ"
+      Disable="false"
+      Source="Program.IonizacnaJednotka"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\IonizacnaJ\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\IonizacnaJednotka\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\IonizacnaJednotka\Variables.var" />
+    </Task>
+    <Task
+      Name="Statistik1"
+      Disable="false"
+      Source="Program.StatistikaLinky"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\Statistik1\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\StatistikaLinky\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\StatistikaLinky\Variables.var" />
+    </Task>
+    <Task
+      Name="Robot"
+      Disable="false"
+      Source="Program.Robot"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\Robot\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\Robot\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\Robot\Variables.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\Robot\KOM_Robot.st.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\Robot\KOM_Kamera.st.var" />
+    </Task>
+    <Task
+      Name="StoperEtik"
+      Disable="false"
+      Source="Program.StoperEtiketovania"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\StoperEtik\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\StoperEtiketovania\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\StoperEtiketovania\Variables.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\StoperEtik\OvlCentrovacky.st.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\StoperEtik\OvlCitackyRFID.st.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\StoperEtik\OvlTlaciarne.st.var" />
+    </Task>
+    <Task
+      Name="KontrolaOt"
+      Disable="false"
+      Source="Program.KontrolaOtacaniaTrysiek"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\KontrolaOt\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\KontrolaOtacaniaTrysiek\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\KontrolaOtacaniaTrysiek\Variables.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#2">
+    <Task
+      Name="DopravnikC"
+      Disable="false"
+      Source="Program.DopravnikCistenia"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\DopravnikC\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\DopravnikCistenia\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\DopravnikCistenia\Variables.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\DopravnikC\OvlMenica.st.var" />
+    </Task>
+    <Task
+      Name="StoperPred"
+      Disable="false"
+      Source="Program.StoperPredCistenim"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\StoperPred\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\StoperPredCistenim\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\StoperPredCistenim\Variables.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\StoperPred\OvlCitackyRFID.st.var" />
+    </Task>
+    <Task
+      Name="VystupnyVy"
+      Disable="false"
+      Source="Program.VystupnyVytah"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\VystupnyVy\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\VystupnyVytah\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\VystupnyVytah\Variables.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\VystupnyVy\OvlMenica.st.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\VystupnyVy\OvlCitackyRFID.st.var" />
+    </Task>
+    <Task
+      Name="VstupnyVyt"
+      Disable="false"
+      Source="Program.VstupnyVytah"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\VstupnyVyt\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\VstupnyVytah\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\VstupnyVytah\Variables.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\VstupnyVyt\OvlMenica.st.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\VstupnyVyt\OvlDveri.st.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\VstupnyVyt\OvlCitackyRFID.st.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#3">
+    <Task
+      Name="Blikanie10"
+      Disable="false"
+      Source="Blikace.Blikanie100ms"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\Blikanie10\Blikanie100ms.st.var" />
+    </Task>
+    <Task
+      Name="OvladanieV"
+      Disable="false"
+      Source="HMI.OvladanieVizu"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\OvladanieV\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\HMI\OvladanieVizu\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\HMI\OvladanieVizu\Variables.var" />
+    </Task>
+    <Task
+      Name="StoperVyst"
+      Disable="false"
+      Source="Program.StoperVystupDopravnika"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\StoperVyst\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\StoperVystupDopravnika\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\StoperVystupDopravnika\Variables.var" />
+    </Task>
+    <Task
+      Name="StoperDopr"
+      Disable="false"
+      Source="Program.StoperDopravnikaNG"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\StoperDopr\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\StoperDopravnikaNG\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\StoperDopravnikaNG\Variables.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\StoperDopr\OvlCentrovacky.st.var" />
+    </Task>
+    <Task
+      Name="DopravnikB"
+      Disable="false"
+      Source="Program.DopravnikBunky"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\DopravnikB\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\DopravnikBunky\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\DopravnikBunky\Variables.var" />
+    </Task>
+    <Task
+      Name="StoperPoCi"
+      Disable="false"
+      Source="Program.StoperPoCisteni"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\StoperPoCi\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\StoperPoCisteni\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\StoperPoCisteni\Variables.var" />
+    </Task>
+    <Task
+      Name="VystupnyDo"
+      Disable="false"
+      Source="Program.VystupnyDopravnik"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\VystupnyDo\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\VystupnyDopravnik\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\VystupnyDopravnik\Variables.var" />
+    </Task>
+    <Task
+      Name="StoperVrat"
+      Disable="false"
+      Source="Program.StoperVratDopravnika"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\StoperVrat\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\StoperVratDopravnika\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\StoperVratDopravnika\Variables.var" />
+    </Task>
+    <Task
+      Name="VratnyDopr"
+      Disable="false"
+      Source="Program.VratnyDopravnik"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\VratnyDopr\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\VratnyDopravnik\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\VratnyDopravnik\Variables.var" />
+    </Task>
+    <Task
+      Name="Main"
+      Disable="false"
+      Source="Program.Main"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\Main\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\Main\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\Main\Variables.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\Main\OvlSafety.st.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\Main\KOM_VentilTerminal.st.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\Main\OvlRucnejCitackyQR.st.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\Main\ZmenaModelu.st.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#4">
+    <Task
+      Name="Blikanie20"
+      Disable="false"
+      Source="Blikace.Blikanie200ms"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\Blikanie20\Blikanie200ms.st.var" />
+    </Task>
+    <Task
+      Name="Receptury"
+      Disable="false"
+      Source="Receptury.Receptury"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\Receptury\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Receptury\Receptury\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Receptury\Receptury\Variables.var" />
+    </Task>
+    <Task
+      Name="Ethernetov"
+      Disable="false"
+      Source="EthernetovaKomunikacia.EthernetovaKomunikacia"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\Ethernetov\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\EthernetovaKomunikacia\EthernetovaKomunikacia\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\EthernetovaKomunikacia\EthernetovaKomunikacia\Variables.var" />
+    </Task>
+    <Task
+      Name="Alarmy"
+      Disable="false"
+      Source="Program.Alarmy"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\Alarmy\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\Alarmy\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\Alarmy\Variables.var" />
+    </Task>
+    <Task
+      Name="DatumCasPL"
+      Disable="false"
+      Source="DatumCasPLC.DatumCasPLC"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\DatumCasPL\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\DatumCasPLC\DatumCasPLC\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\DatumCasPLC\DatumCasPLC\Variables.var" />
+    </Task>
+    <Task
+      Name="Prihlasova"
+      Disable="false"
+      Source="PrihlasovaciSystem.PrihlasovaciSystem"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\Prihlasova\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\PrihlasovaciSystem\PrihlasovaciSystem\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\PrihlasovaciSystem\PrihlasovaciSystem\Variables.var" />
+    </Task>
+    <Task
+      Name="Remanentne"
+      Disable="false"
+      Source="RemanentnePremenne.RemanentnePremenne"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\Remanentne\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\RemanentnePremenne\RemanentnePremenne\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\RemanentnePremenne\RemanentnePremenne\Variables.var" />
+    </Task>
+    <Task
+      Name="TestKomuni"
+      Disable="false"
+      Source="Program.TestKomunikacie"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\TestKomuni\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\TestKomunikacie\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\TestKomunikacie\Variables.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#5">
+    <Task
+      Name="Blikanie50"
+      Disable="false"
+      Source="Blikace.Blikanie500ms"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\Blikanie50\Blikanie500ms.st.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#6">
+    <Task
+      Name="Blikanie1s"
+      Disable="false"
+      Source="Blikace.Blikanie1s"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Temp\Objects\Config1\AB1_CPU\Blikanie1s\Blikanie1s.st.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#7" />
+  <TaskClass
+    Name="Cyclic#8" />
+</ConfigInfo>

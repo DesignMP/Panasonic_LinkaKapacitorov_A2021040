@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="Bitmaps">
+    <Folder Name="POBJ">
+      <Object Name="StrednaPoloha_32x32" ClsId="0x306" Version="1" TargetIndex="61" Type="GFX" RefString="Source[local].Bitmap[StrednaPoloha_32x32]">
+        <UInt16 Name="Width">32</UInt16>
+        <UInt16 Name="Height">32</UInt16>
+        <UInt32 Name="BitsPerPixel">32</UInt32>
+        <Byte Name="Transparency">0</Byte>
+        <Byte Name="TargetFormat">2</Byte>
+        <UInt16 Name="Reserved">0</UInt16>
+        <Int32 Name="TransparentColor">0</Int32>
+        <Int32 Name="FillAreas">0</Int32>
+        <Binary Name="BitmapData" Encoding="Base64">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADfSURBVFhH7ZfBCcJAEEUXJUcFCzCdaAuWYBFebCMWoGfPFuNJG1HQ/yADITmIxJ09OB8eDLuH+RB25ieN0E68WqjdtRdmgNpdYeA/DczFWVzEVZgBas64m4lsmoqDeAprbjxEIyYiqxbiJPoGjoI7F9XiLqw5NWeuWgsa38SKA29VYttCHRqtjWCgeECvgRgk3WeVE3oNVNxA8U8Q+lbFBxHjlzHMOGYsu2opii0jVi6rt/usgBWdfR0TNggdhI++AUIKYYXQkk3ErU+RjNjmIgaKGaB2VxgIAz/4PU/pDaElpxpCfACDAAAAAElFTkSuQmCC</Binary>
+      </Object>
+    </Folder>
+  </Folder>
+</Intermediate>

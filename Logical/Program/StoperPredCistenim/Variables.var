@@ -1,0 +1,10 @@
+VAR
+	VstupnePoleUSINT : ARRAY[1..20] OF USINT;
+	VystupnePoleStringov : ARRAY[1..20] OF STRING[80];
+	h : USINT := 0;
+	PocetZnakovUDINT : UDINT;
+	PocetZnakovUSINT : USINT;
+	g : USINT := 0;
+	AktualNacitanyZnak : USINT;
+	i : USINT := 0;
+END_VAR

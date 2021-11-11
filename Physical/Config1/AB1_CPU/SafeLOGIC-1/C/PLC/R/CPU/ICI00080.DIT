@@ -1,0 +1,58 @@
+(*
+T: PROGRAM Main
+FW: NO
+CI#: 80
+QSL: 8
+QVE: 8
+QVPC: 8
+QPar: 0
+QFBI: 8
+*)
+@V 1 2 0
+Zona_CS	1	VAR	@FB:81
+		     
+
+;
+
+@V 1 3 0
+CasRelease_ZonaCS	2	VAR	@FB:21
+		     
+
+;
+
+@V 1 4 0
+Zona_VstupnyVytah	3	VAR	@FB:81
+		     
+
+;
+
+@V 1 5 0
+CasRelease_ZonaVstupVytah	4	VAR	@FB:21
+		     
+
+;
+
+@V 1 6 0
+Zona_Bunky	5	VAR	@FB:81
+		     
+
+;
+
+@V 1 7 0
+CasRelease_ZonaBunky	6	VAR	@FB:21
+		     
+
+;
+
+@V 1 8 0
+Zona_VystupnyVytah	7	VAR	@FB:81
+		     
+
+;
+
+@V 1 9 0
+CasRelease_ZonaVystupVytah	8	VAR	@FB:21
+		     
+
+;
+

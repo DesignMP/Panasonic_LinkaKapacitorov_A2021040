@@ -1,0 +1,18 @@
+VAR
+	SC_OvlMenica : SequenceControlTyp := (0);
+	Zdvih_JoggHORE : BOOL := FALSE;
+	Zdvih_JoggDOLE : BOOL := FALSE;
+	Zdvih_POLOHUJ : BOOL := FALSE;
+	Zdvih_HOME : BOOL := FALSE;
+	SC_OvlDveri : SequenceControlTyp := (0);
+	Dvere_OTVOR : BOOL := FALSE;
+	Dvere_ZATVOR : BOOL := FALSE;
+	i : USINT := 0;
+	VstupnePoleUSINT : ARRAY[1..20] OF USINT;
+	VystupnePoleStringov : ARRAY[1..20] OF STRING[80];
+	h : USINT := 0;
+	PocetZnakovUDINT : UDINT;
+	PocetZnakovUSINT : USINT;
+	g : USINT := 0;
+	AktualNacitanyZnak : USINT;
+END_VAR

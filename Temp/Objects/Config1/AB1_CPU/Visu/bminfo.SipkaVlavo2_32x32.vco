@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="Bitmaps">
+    <Folder Name="POBJ">
+      <Object Name="SipkaVlavo2_32x32" ClsId="0x306" Version="1" TargetIndex="51" Type="GFX" RefString="Source[local].Bitmap[SipkaVlavo2_32x32]">
+        <UInt16 Name="Width">32</UInt16>
+        <UInt16 Name="Height">32</UInt16>
+        <UInt32 Name="BitsPerPixel">32</UInt32>
+        <Byte Name="Transparency">0</Byte>
+        <Byte Name="TargetFormat">2</Byte>
+        <UInt16 Name="Reserved">0</UInt16>
+        <Int32 Name="TransparentColor">0</Int32>
+        <Int32 Name="FillAreas">0</Int32>
+        <Binary Name="BitmapData" Encoding="Base64">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADcSURBVFhH7ZcxCsJAEEWDYGHjEaxFCw9kZedtvIgIVoLgATyIR7DWP5ppwp/sru5Mmjx4qJDwX6FZbEb+ZNW+hjOFJ/j8fApGxs/w1RpKdzw0gI2HBVjjIQF946IrqXFxk+kCFpEzXuodLmESj3H1AefQxHNc3UNKxLh4gJQjZDfUlgZsIbvYQxqwg+xiD2nABF4gu6G25ndgBm+Q3VRTM0CIiDB/hopnRPJBpHhEZD+KlZwIdvAwiw8jJRURQl9EGFZEKCwinG7EIEjEFQ7yx0SRs2P9fTvyK03zBr7vaVCYe9JvAAAAAElFTkSuQmCC</Binary>
+      </Object>
+    </Folder>
+  </Folder>
+</Intermediate>

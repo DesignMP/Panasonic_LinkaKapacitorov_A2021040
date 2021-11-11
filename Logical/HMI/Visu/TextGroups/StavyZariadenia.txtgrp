@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.10.3.60 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="StavyZariadenia">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="18"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="sk-SK">
+    <Text ID="235717" Value="Linka je vypnutá."/>
+    <Text ID="235718" Value="Prebieha inicializacia linky."/>
+    <Text ID="235719" Value="Linka beží v automatickom režime."/>
+    <Text ID="235720" Value="Robot nieje prepnutý do automatického režimu !!!"/>
+    <Text ID="238654" Value="Prebieha ukončenie pracovného cyklu."/>
+    <Text ID="243291" Value="Nieje zvolený model alebo LOT !!!"/>
+    <Text ID="243292" Value="Tlačiareň nieje Online !!!"/>
+    <Text ID="245592" Value="Tlačiareň nieje zaistená !!!"/>
+    <Text ID="245593" Value="Servisné dvere tlačiarne niesu zatvorené !!!"/>
+    <Text ID="251122" Value="Paletka sa nachádza v bariere dopravnika NG !!!"/>
+    <Text ID="258277" Value="V tlačiarni došli etikety !!!"/>
+    <Text ID="258278" Value="V tlačiarni došla termopáska !!!"/>
+    <Text ID="258279" Value="Filtre ionizačnej jednotky sú zanesené !!!"/>
+    <Text ID="258967" Value="Kamera robota nieje READY !!!"/>
+  </TextLayer>
+  <TextLayer LanguageId="en">
+    <Text ID="235717" Value="The line is switched off."/>
+    <Text ID="235718" Value="The line is initializing."/>
+    <Text ID="235719" Value="The line runs in automatic mode."/>
+    <Text ID="235720" Value="The robot is not switched to automatic mode !!!"/>
+    <Text ID="238654" Value="The end of the work cycle is in progress."/>
+    <Text ID="243291" Value="No model or LOT selected !!!"/>
+    <Text ID="243292" Value="The printer is not online !!!"/>
+    <Text ID="245592" Value="The printer is not fixed !!!"/>
+    <Text ID="245593" Value="The printer service door is not closed !!!"/>
+    <Text ID="251122" Value="The pallet is located in the barrier of the NG conveyor !!!"/>
+    <Text ID="258277" Value="The printer ran out of labels !!!"/>
+    <Text ID="258278" Value="The printer is running out of thermal tape !!!"/>
+    <Text ID="258279" Value="Ionization unit filters are clogged !!!"/>
+    <Text ID="258967" Value="The robot camera is not READY !!!"/>
+  </TextLayer>
+  <TextLayer LanguageId="ja-JP">
+    <Text ID="235717" Value=""/>
+    <Text ID="235718" Value=""/>
+    <Text ID="235719" Value=""/>
+    <Text ID="235720" Value=""/>
+    <Text ID="238654" Value=""/>
+    <Text ID="243291" Value=""/>
+    <Text ID="243292" Value=""/>
+    <Text ID="245592" Value=""/>
+    <Text ID="245593" Value=""/>
+    <Text ID="251122" Value=""/>
+    <Text ID="258277" Value=""/>
+    <Text ID="258278" Value=""/>
+    <Text ID="258279" Value=""/>
+    <Text ID="258967" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="235717" Value="0"/>
+    <Index ID="235718" Value="1"/>
+    <Index ID="235719" Value="2"/>
+    <Index ID="235720" Value="3"/>
+    <Index ID="238654" Value="4"/>
+    <Index ID="243291" Value="5"/>
+    <Index ID="243292" Value="6"/>
+    <Index ID="245592" Value="7"/>
+    <Index ID="245593" Value="8"/>
+    <Index ID="251122" Value="9"/>
+    <Index ID="258277" Value="10"/>
+    <Index ID="258278" Value="11"/>
+    <Index ID="258279" Value="12"/>
+    <Index ID="258967" Value="13"/>
+  </IndexMap>
+</TextGroup>

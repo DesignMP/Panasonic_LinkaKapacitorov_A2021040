@@ -1,0 +1,37 @@
+<BuildOptions>
+  <BuildOption>
+    <SourceFile Value="D:/Projekty BER/Panasonic_LinkaKapacitorov_A2021040/Physical/Config1/AB1_CPU/Cpu.sw" />
+    <Query Value="/ns:SwConfiguration/ns:TaskClass/*$$Name,Source" />
+    <Xml>
+      <Task Name="IonizacnaJ" Source="Program.IonizacnaJednotka.prg" />
+      <Task Name="Statistik1" Source="Program.StatistikaLinky.prg" />
+      <Task Name="Robot" Source="Program.Robot.prg" />
+      <Task Name="StoperEtik" Source="Program.StoperEtiketovania.prg" />
+      <Task Name="KontrolaOt" Source="Program.KontrolaOtacaniaTrysiek.prg" />
+      <Task Name="DopravnikC" Source="Program.DopravnikCistenia.prg" />
+      <Task Name="StoperPred" Source="Program.StoperPredCistenim.prg" />
+      <Task Name="VystupnyVy" Source="Program.VystupnyVytah.prg" />
+      <Task Name="VstupnyVyt" Source="Program.VstupnyVytah.prg" />
+      <Task Name="Blikanie10" Source="Blikace.Blikanie100ms.prg" />
+      <Task Name="OvladanieV" Source="HMI.OvladanieVizu.prg" />
+      <Task Name="StoperVyst" Source="Program.StoperVystupDopravnika.prg" />
+      <Task Name="StoperDopr" Source="Program.StoperDopravnikaNG.prg" />
+      <Task Name="DopravnikB" Source="Program.DopravnikBunky.prg" />
+      <Task Name="StoperPoCi" Source="Program.StoperPoCisteni.prg" />
+      <Task Name="VystupnyDo" Source="Program.VystupnyDopravnik.prg" />
+      <Task Name="StoperVrat" Source="Program.StoperVratDopravnika.prg" />
+      <Task Name="VratnyDopr" Source="Program.VratnyDopravnik.prg" />
+      <Task Name="Main" Source="Program.Main.prg" />
+      <Task Name="Blikanie20" Source="Blikace.Blikanie200ms.prg" />
+      <Task Name="Receptury" Source="Receptury.Receptury.prg" />
+      <Task Name="Ethernetov" Source="EthernetovaKomunikacia.EthernetovaKomunikacia.prg" />
+      <Task Name="Alarmy" Source="Program.Alarmy.prg" />
+      <Task Name="DatumCasPL" Source="DatumCasPLC.DatumCasPLC.prg" />
+      <Task Name="Prihlasova" Source="PrihlasovaciSystem.PrihlasovaciSystem.prg" />
+      <Task Name="Remanentne" Source="RemanentnePremenne.RemanentnePremenne.prg" />
+      <Task Name="TestKomuni" Source="Program.TestKomunikacie.prg" />
+      <Task Name="Blikanie50" Source="Blikace.Blikanie500ms.prg" />
+      <Task Name="Blikanie1s" Source="Blikace.Blikanie1s.prg" />
+    </Xml>
+  </BuildOption>
+</BuildOptions>

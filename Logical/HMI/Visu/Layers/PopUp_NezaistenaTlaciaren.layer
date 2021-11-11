@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.10.3.60 SP"?>
+<Layer xmlns="http://br-automation.co.at/AS/VC/Project" Name="PopUp_NezaistenaTlaciaren">
+  <Property Name="BackColor" Value="9"/>
+  <Property Name="Description" Value=""/>
+  <Property Name="Height" Value="600"/>
+  <Property Name="Left" Value="0"/>
+  <Property Name="StatusDatapoint" Value="None"/>
+  <Property Name="Top" Value="0"/>
+  <Property Name="Width" Value="1024"/>
+  <TextGroup>
+    <TextLayer LanguageId="sk-SK">
+      <Text ID="245003" Value=""/>
+      <Text ID="245004" Value="Tlačiareň zákaznického štítku nieje zaistená !!!"/>
+      <Text ID="245005" Value="Info"/>
+    </TextLayer>
+    <TextLayer LanguageId="en">
+      <Text ID="245003" Value=""/>
+      <Text ID="245004" Value="The customer label printer is not fixed !!!"/>
+      <Text ID="245005" Value="Info"/>
+    </TextLayer>
+    <TextLayer LanguageId="ja-JP">
+      <Text ID="245003" Value=""/>
+      <Text ID="245004" Value=""/>
+      <Text ID="245005" Value=""/>
+    </TextLayer>
+    <IndexMap>
+      <Index ID="245003" Value="0"/>
+      <Index ID="245004" Value="1"/>
+      <Index ID="245005" Value="2"/>
+    </IndexMap>
+  </TextGroup>
+  <Controls>
+    <Control ClassId="0x00001001" Name="shpBody1">
+      <Property Name="BackColor" Value="42"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="ForeColor" Value="0"/>
+      <Property Name="Height" Value="202"/>
+      <Property Name="Left" Value="328"/>
+      <Property Name="LineWidth" Value="2"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Vizu.ZobrazHlasenie_ZaaretujTlaciaren]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="192"/>
+      <Property Name="Width" Value="400"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtHeader1">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BackColor" Value="0"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="ForeColor" Value="15"/>
+      <Property Name="Height" Value="35"/>
+      <Property Name="Left" Value="330"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="MsgBox Header"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Vizu.ZobrazHlasenie_ZaaretujTlaciaren]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[FrameHeader]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="192"/>
+      <Property Name="Width" Value="398"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_1">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[Arial12_Bold]"/>
+      <Property Name="Height" Value="90"/>
+      <Property Name="Left" Value="335"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Vizu.ZobrazHlasenie_ZaaretujTlaciaren]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="1"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="260"/>
+      <Property Name="Width" Value="385"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_3">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[Arial16_Bold]"/>
+      <Property Name="ForeColor" Value="15"/>
+      <Property Name="Height" Value="24"/>
+      <Property Name="Left" Value="386"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Vizu.ZobrazHlasenie_ZaaretujTlaciaren]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="2"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="198"/>
+      <Property Name="Width" Value="285"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="Bitmap_1">
+      <Property Name="Bitmap" Value="Source[local].Bitmap[information_0]"/>
+      <Property Name="BitmapSource" Value="SingleBitmap"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="32"/>
+      <Property Name="IndexDatapoint" Value="None"/>
+      <Property Name="Left" Value="680"/>
+      <Property Name="SimulationValue" Value="0"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Vizu.ZobrazHlasenie_ZaaretujTlaciaren]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="194"/>
+      <Property Name="Width" Value="36"/>
+    </Control>
+  </Controls>
+  <KeyMapping/>
+</Layer>
