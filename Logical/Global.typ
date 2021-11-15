@@ -298,6 +298,8 @@ TYPE
 		TL_OdparkujRobota_DISABLE : BOOL;
 		ZmenaParametrov_DISABLE : BOOL;
 		TL_BunkyRR_DISABLE : BOOL;
+		TL_Ovl_Ionizatora_DISABLE : BOOL;
+		TL_Ovl_DveriVstupVytahu_DISABLE : BOOL;
 		Slider : USINT;
 		FarbaTlacitkaAlarm_Index : BOOL;
 		FarbaTlacitka_PotvrdPaletkuNG : BOOL;
@@ -331,6 +333,7 @@ TYPE
 		TL_Robot_OdoberEtiketu_DISABLE : BOOL;
 		ZadavanieKorekciiRobota_DISABLE : BOOL;
 		RezimBezTlaceEtikety_DISABLE : BOOL;
+		RezimBezCistenia_DISABLE : BOOL;
 		IndexSuradnicovehoSystemuPaletky : USINT;
 		IndexFarbyStavuFiltrov : USINT;
 		IndexStavuFiltrov : USINT;
@@ -362,6 +365,7 @@ TYPE
 		VymenaFiltrovPotvrdena : BOOL;
 		Rezim_BezTlaceEtikety : BOOL;
 		Rezim_BezKomunikacie : BOOL;
+		Rezim_BezCistenia : BOOL;
 	END_STRUCT;
 	Linka_IN_typ : 	STRUCT 
 		PrepatovaOchrana_OK : BOOL; (*1 - OK*)
@@ -1050,6 +1054,8 @@ TYPE
 		StavCitania_InternehoQRkodu : STRING[2]; (*OK alebo NG*)
 		StavCitania_ZakaznickehoDMkodu : STRING[2]; (*OK alebo NG*)
 		StavCitania_KontrolaZnakov : STRING[2]; (*OK alebo NG*)
+		StavPorovnaniaDMkoduZoServerom : STRING[2]; (*OK alebo NG*)
+		StavKontrolyBielehoPaternu : STRING[2]; (*OK alebo NG*)
 		StavKomunikacie_DONE : BOOL;
 	END_STRUCT;
 END_TYPE

@@ -49,7 +49,7 @@
 			<Module Name="::asnxdb2" Type="67" Size="4260" Modified="2021-11-09 11:20:59" Version="1.00" ProjectDependent="1" />
 		</Memory>
 		<Memory Name="USERROM">
-			<Module Name="::Alarmy" Type="17" Size="23444" Modified="2021-11-09 10:33:52" Version="1.00" ProjectDependent="1" />
+			<Module Name="::Alarmy" Type="17" Size="23616" Modified="2021-11-15 11:49:19" Version="1.00" ProjectDependent="1" />
 			<Module Name="::ArCoal" Type="18" Size="70152" Modified="2021-01-22 17:57:41" Version="5.14" ProjectDependent="1" />
 			<Module Name="::ArFlatPrv" Type="18" Size="626412" Modified="2021-01-22 18:01:06" Version="5.14" ProjectDependent="1" />
 			<Module Name="::ArSvcReg" Type="18" Size="78216" Modified="2016-12-09 07:57:34" Version="4.91" ProjectDependent="1" />
@@ -61,55 +61,55 @@
 			<Module Name="::AsTCP" Type="18" Size="18960" Modified="2021-09-03 09:20:26" Version="4.91" ProjectDependent="1" />
 			<Module Name="::AsXml" Type="18" Size="28608" Modified="2021-09-03 09:20:42" Version="4.91" ProjectDependent="1" />
 			<Module Name="::AsZip" Type="18" Size="6928" Modified="2021-09-03 09:20:44" Version="4.91" ProjectDependent="1" />
-			<Module Name="::Blikanie10" Type="17" Size="2040" Modified="2021-11-09 10:33:48" Version="1.00" ProjectDependent="1" />
-			<Module Name="::Blikanie1s" Type="17" Size="2028" Modified="2021-11-09 10:33:53" Version="1.00" ProjectDependent="1" />
-			<Module Name="::Blikanie20" Type="17" Size="2036" Modified="2021-11-09 10:33:51" Version="1.00" ProjectDependent="1" />
-			<Module Name="::Blikanie50" Type="17" Size="2044" Modified="2021-11-09 10:33:53" Version="1.00" ProjectDependent="1" />
+			<Module Name="::Blikanie10" Type="17" Size="2040" Modified="2021-11-15 11:49:18" Version="1.00" ProjectDependent="1" />
+			<Module Name="::Blikanie1s" Type="17" Size="2148" Modified="2021-11-15 11:49:20" Version="1.00" ProjectDependent="1" />
+			<Module Name="::Blikanie20" Type="17" Size="2036" Modified="2021-11-15 11:49:19" Version="1.00" ProjectDependent="1" />
+			<Module Name="::Blikanie50" Type="17" Size="2044" Modified="2021-11-15 11:49:20" Version="1.00" ProjectDependent="1" />
 			<Module Name="::CoTrace" Type="18" Size="273396" Modified="2021-01-29 13:45:24" Version="5.14" ProjectDependent="1" />
 			<Module Name="::Config" Type="136" Size="2612" Modified="2021-11-09 10:33:57" Version="5.15" ProjectDependent="1" />
 			<Module Name="::Config_1" Type="136" Size="2616" Modified="2021-11-09 10:33:57" Version="5.15" ProjectDependent="1" />
 			<Module Name="::Config_2" Type="136" Size="2612" Modified="2021-11-09 10:33:57" Version="5.15" ProjectDependent="1" />
 			<Module Name="::DataObj" Type="18" Size="13788" Modified="2021-09-03 09:20:56" Version="4.91" ProjectDependent="1" />
-			<Module Name="::DatumCasPL" Type="17" Size="4556" Modified="2021-11-09 10:33:52" Version="1.00" ProjectDependent="1" />
-			<Module Name="::DopravnikB" Type="17" Size="15276" Modified="2021-11-09 10:33:49" Version="1.00" ProjectDependent="1" />
-			<Module Name="::DopravnikC" Type="17" Size="17640" Modified="2021-11-09 10:33:47" Version="1.00" ProjectDependent="1" />
-			<Module Name="::EthernetIP" Type="18" Size="2484" Modified="2021-11-09 10:33:53" Version="1.00" ProjectDependent="1" />
-			<Module Name="::Ethernetov" Type="17" Size="7056" Modified="2021-11-09 10:33:52" Version="1.00" ProjectDependent="1" />
+			<Module Name="::DatumCasPL" Type="17" Size="4556" Modified="2021-11-15 11:49:20" Version="1.00" ProjectDependent="1" />
+			<Module Name="::DopravnikB" Type="17" Size="15312" Modified="2021-11-15 11:49:18" Version="1.00" ProjectDependent="1" />
+			<Module Name="::DopravnikC" Type="17" Size="17676" Modified="2021-11-15 11:49:17" Version="1.00" ProjectDependent="1" />
+			<Module Name="::EthernetIP" Type="18" Size="2480" Modified="2021-11-12 07:42:41" Version="1.00" ProjectDependent="1" />
+			<Module Name="::Ethernetov" Type="17" Size="7056" Modified="2021-11-15 11:49:19" Version="1.00" ProjectDependent="1" />
 			<Module Name="::FM_NORD" Type="18" Size="4040" Modified="2021-11-09 10:33:52" Version="1.00" ProjectDependent="1" />
 			<Module Name="::FWRules" Type="136" Size="456" Modified="2021-11-09 10:33:57" Version="1.00" ProjectDependent="1" />
 			<Module Name="::FileIO" Type="18" Size="25496" Modified="2021-09-03 09:21:16" Version="4.91" ProjectDependent="1" />
 			<Module Name="::IecCheck" Type="18" Size="2868" Modified="2021-11-09 10:33:52" Version="1.00" ProjectDependent="1" />
-			<Module Name="::IonizacnaJ" Type="17" Size="13024" Modified="2021-11-09 10:33:46" Version="1.00" ProjectDependent="1" />
-			<Module Name="::KontrolaOt" Type="17" Size="7824" Modified="2021-11-09 10:33:47" Version="1.00" ProjectDependent="1" />
+			<Module Name="::IonizacnaJ" Type="17" Size="13200" Modified="2021-11-15 11:49:17" Version="1.00" ProjectDependent="1" />
+			<Module Name="::KontrolaOt" Type="17" Size="7860" Modified="2021-11-15 11:49:17" Version="1.00" ProjectDependent="1" />
 			<Module Name="::LoopConR" Type="18" Size="139040" Modified="2020-10-19 07:37:21" Version="4.102" ProjectDependent="1" />
-			<Module Name="::Main" Type="17" Size="39552" Modified="2021-11-09 10:33:50" Version="1.00" ProjectDependent="1" />
+			<Module Name="::Main" Type="17" Size="39732" Modified="2021-11-15 11:49:19" Version="1.00" ProjectDependent="1" />
 			<Module Name="::MpBase" Type="18" Size="591968" Modified="2021-04-22 12:11:03" Version="5.15" ProjectDependent="1" />
 			<Module Name="::MpRecipe" Type="18" Size="234664" Modified="2021-05-12 10:41:23" Version="5.15" ProjectDependent="1" />
-			<Module Name="::OvladanieV" Type="17" Size="34224" Modified="2021-11-09 10:33:48" Version="1.00" ProjectDependent="1" />
-			<Module Name="::Prihlasova" Type="17" Size="15420" Modified="2021-11-09 10:33:52" Version="1.00" ProjectDependent="1" />
-			<Module Name="::Receptury" Type="17" Size="18196" Modified="2021-11-09 10:33:51" Version="1.00" ProjectDependent="1" />
-			<Module Name="::Remanentne" Type="17" Size="11400" Modified="2021-11-09 10:33:52" Version="1.00" ProjectDependent="1" />
-			<Module Name="::Robot" Type="17" Size="20640" Modified="2021-11-09 10:33:47" Version="1.00" ProjectDependent="1" />
+			<Module Name="::OvladanieV" Type="17" Size="34444" Modified="2021-11-15 11:49:18" Version="1.00" ProjectDependent="1" />
+			<Module Name="::Prihlasova" Type="17" Size="15556" Modified="2021-11-15 11:49:20" Version="1.00" ProjectDependent="1" />
+			<Module Name="::Receptury" Type="17" Size="18232" Modified="2021-11-15 11:49:19" Version="1.00" ProjectDependent="1" />
+			<Module Name="::Remanentne" Type="17" Size="11400" Modified="2021-11-15 11:49:20" Version="1.00" ProjectDependent="1" />
+			<Module Name="::Robot" Type="17" Size="20780" Modified="2021-11-15 11:49:17" Version="1.00" ProjectDependent="1" />
 			<Module Name="::Role" Type="136" Size="760" Modified="2021-11-09 10:33:57" Version="1.00" ProjectDependent="1" />
 			<Module Name="::SC" Type="18" Size="2116" Modified="2021-11-09 10:33:52" Version="1.00" ProjectDependent="1" />
-			<Module Name="::Statistik1" Type="17" Size="5348" Modified="2021-11-09 10:33:47" Version="1.00" ProjectDependent="1" />
-			<Module Name="::Statistika" Type="18" Size="2620" Modified="2021-11-09 10:33:53" Version="1.00" ProjectDependent="1" />
-			<Module Name="::StoperDopr" Type="17" Size="24268" Modified="2021-11-09 10:33:49" Version="1.00" ProjectDependent="1" />
-			<Module Name="::StoperEtik" Type="17" Size="35596" Modified="2021-11-09 10:33:47" Version="1.00" ProjectDependent="1" />
-			<Module Name="::StoperPoCi" Type="17" Size="18596" Modified="2021-11-09 10:33:49" Version="1.00" ProjectDependent="1" />
-			<Module Name="::StoperPred" Type="17" Size="22848" Modified="2021-11-09 10:33:48" Version="1.00" ProjectDependent="1" />
-			<Module Name="::StoperVrat" Type="17" Size="16576" Modified="2021-11-09 10:33:49" Version="1.00" ProjectDependent="1" />
-			<Module Name="::StoperVyst" Type="17" Size="16588" Modified="2021-11-09 10:33:48" Version="1.00" ProjectDependent="1" />
-			<Module Name="::TestKomuni" Type="17" Size="6176" Modified="2021-11-09 10:33:53" Version="1.00" ProjectDependent="1" />
+			<Module Name="::Statistik1" Type="17" Size="5348" Modified="2021-11-15 11:49:17" Version="1.00" ProjectDependent="1" />
+			<Module Name="::Statistika" Type="18" Size="2620" Modified="2021-11-12 07:52:49" Version="1.00" ProjectDependent="1" />
+			<Module Name="::StoperDopr" Type="17" Size="24444" Modified="2021-11-15 11:49:18" Version="1.00" ProjectDependent="1" />
+			<Module Name="::StoperEtik" Type="17" Size="35944" Modified="2021-11-15 11:49:17" Version="1.00" ProjectDependent="1" />
+			<Module Name="::StoperPoCi" Type="17" Size="18632" Modified="2021-11-15 11:49:18" Version="1.00" ProjectDependent="1" />
+			<Module Name="::StoperPred" Type="17" Size="23052" Modified="2021-11-15 11:49:18" Version="1.00" ProjectDependent="1" />
+			<Module Name="::StoperVrat" Type="17" Size="16612" Modified="2021-11-15 11:49:19" Version="1.00" ProjectDependent="1" />
+			<Module Name="::StoperVyst" Type="17" Size="16624" Modified="2021-11-15 11:49:18" Version="1.00" ProjectDependent="1" />
+			<Module Name="::TestKomuni" Type="17" Size="6176" Modified="2021-11-15 11:49:20" Version="1.00" ProjectDependent="1" />
 			<Module Name="::User" Type="136" Size="648" Modified="2021-11-09 10:33:57" Version="1.00" ProjectDependent="1" />
-			<Module Name="::Visu" Type="18" Size="2168" Modified="2021-11-11 15:04:32" Version="1.00" ProjectDependent="1" />
-			<Module Name="::Visu01" Type="18" Size="228144" Modified="2021-11-11 15:04:30" Version="1.00" ProjectDependent="1" />
-			<Module Name="::Visu02" Type="18" Size="8580" Modified="2021-11-11 15:04:30" Version="1.00" ProjectDependent="1" />
-			<Module Name="::Visu03" Type="18" Size="15312340" Modified="2021-11-11 15:04:31" Version="1.00" ProjectDependent="1" />
-			<Module Name="::VratnyDopr" Type="17" Size="17832" Modified="2021-11-09 10:33:50" Version="1.00" ProjectDependent="1" />
-			<Module Name="::VstupnyVyt" Type="17" Size="30400" Modified="2021-11-09 10:33:48" Version="1.00" ProjectDependent="1" />
-			<Module Name="::VystupnyDo" Type="17" Size="16124" Modified="2021-11-09 10:33:49" Version="1.00" ProjectDependent="1" />
-			<Module Name="::VystupnyVy" Type="17" Size="25520" Modified="2021-11-09 10:33:48" Version="1.00" ProjectDependent="1" />
+			<Module Name="::Visu" Type="18" Size="2168" Modified="2021-11-15 10:39:46" Version="1.00" ProjectDependent="1" />
+			<Module Name="::Visu01" Type="18" Size="228748" Modified="2021-11-15 10:39:44" Version="1.00" ProjectDependent="1" />
+			<Module Name="::Visu02" Type="18" Size="8580" Modified="2021-11-15 10:39:44" Version="1.00" ProjectDependent="1" />
+			<Module Name="::Visu03" Type="18" Size="15312340" Modified="2021-11-15 10:39:45" Version="1.00" ProjectDependent="1" />
+			<Module Name="::VratnyDopr" Type="17" Size="17868" Modified="2021-11-15 11:49:19" Version="1.00" ProjectDependent="1" />
+			<Module Name="::VstupnyVyt" Type="17" Size="30736" Modified="2021-11-15 11:49:18" Version="1.00" ProjectDependent="1" />
+			<Module Name="::VystupnyDo" Type="17" Size="16160" Modified="2021-11-15 11:49:19" Version="1.00" ProjectDependent="1" />
+			<Module Name="::VystupnyVy" Type="17" Size="25688" Modified="2021-11-15 11:49:18" Version="1.00" ProjectDependent="1" />
 			<Module Name="::arial" Type="18" Size="1045436" Modified="2021-11-09 10:34:32" Version="1.00" ProjectDependent="1" />
 			<Module Name="::arialbd" Type="18" Size="989172" Modified="2021-11-09 10:34:32" Version="1.00" ProjectDependent="1" />
 			<Module Name="::ashwac" Type="136" Size="212" Modified="2021-11-09 10:33:57" Version="1.00" ProjectDependent="1" />
@@ -118,7 +118,7 @@
 			<Module Name="::astime" Type="18" Size="24304" Modified="2021-09-03 09:20:28" Version="4.91" ProjectDependent="1" />
 			<Module Name="::brsystem" Type="18" Size="23780" Modified="2021-09-03 09:20:48" Version="4.91" ProjectDependent="1" />
 			<Module Name="::dvframe" Type="18" Size="25384" Modified="2021-09-03 09:21:03" Version="4.91" ProjectDependent="1" />
-			<Module Name="::iomap" Type="50" Size="282020" Modified="2021-11-09 10:33:57" Version="1.00" ProjectDependent="1" />
+			<Module Name="::iomap" Type="50" Size="282000" Modified="2021-11-12 07:56:38" Version="1.00" ProjectDependent="1" />
 			<Module Name="::runtime" Type="18" Size="29340" Modified="2021-09-03 09:21:22" Version="4.91" ProjectDependent="1" />
 			<Module Name="::standard" Type="18" Size="11576" Modified="2021-09-03 09:21:28" Version="4.91" ProjectDependent="1" />
 			<Module Name="::sys_lib" Type="18" Size="20472" Modified="2021-09-03 09:21:31" Version="4.91" ProjectDependent="1" />
@@ -153,7 +153,7 @@
 			<Module Name="::vcpkat" Type="18" Size="3952" Modified="2021-06-17 21:23:13" Version="4.726" ProjectDependent="1" />
 			<Module Name="::vcresman" Type="18" Size="1566328" Modified="2021-06-17 21:22:25" Version="4.726" ProjectDependent="1" Reboot="1" />
 			<Module Name="::vcrt" Type="18" Size="75424" Modified="2021-06-17 21:24:51" Version="4.726" ProjectDependent="1" />
-			<Module Name="::vcshared" Type="18" Size="70956" Modified="2021-11-11 15:04:31" Version="1.00" ProjectDependent="1" />
+			<Module Name="::vcshared" Type="18" Size="71324" Modified="2021-11-15 10:39:45" Version="1.00" ProjectDependent="1" />
 			<Module Name="::vctcal" Type="18" Size="5388" Modified="2021-06-17 21:23:45" Version="4.726" ProjectDependent="1" />
 		</Memory>
 	</Application>

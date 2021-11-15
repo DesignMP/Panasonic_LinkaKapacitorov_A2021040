@@ -962,7 +962,7 @@ VAR_CONFIG
 	Cyclic#1.KOM_Panasonic.Mapping_OUT[96] AT %QD."X20IF10D3_1".Connect1_Input_Assembly_Byte_32_Byte_352;
 	Cyclic#1.KOM_Panasonic.Mapping_OUT[97] AT %QD."X20IF10D3_1".Connect1_Input_Assembly_Byte_32_Byte_356;
 	Cyclic#1.KOM_Panasonic.Mapping_OUT[98] AT %QD."X20IF10D3_1".Connect1_Input_Assembly_Byte_32_Byte_360;
-	Cyclic#1.KOM_Panasonic.Mapping_OUT[99] AT %QD."X20IF10D3_1".Connect1_Input_Assembly_Byte_32_Byte_364;
+	Cyclic#1.::Pocitadlo AT %QD."X20IF10D3_1".Connect1_Input_Assembly_Byte_32_Byte_364;
 	Cyclic#1.Linka.OUT.Vzduchotechnika_START AT %QX."AB9_16DO".DigitalOutput13;
 	Cyclic#1.Safety.STAV.ZamkyBunky_AKTIVNE AT %IX."AB3_SafetyMaster".BOOL016;
 END_VAR

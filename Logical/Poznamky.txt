@@ -20,3 +20,9 @@ Heslo: vlmardo
 ***************Uloženie typu a èísla paletky na RFID èip************
 Zadame èíslo paletky + oddelovací znak (;) + typ paletky
 Napr:  1;BV1
+
+
+
+****************VPN**********************************
+Pripojenie na HMI - 192.168.1.110:5900
+Pripojenie na poèítaè kde sú kamery - 192.168.1.114  - Heslo je Tester123

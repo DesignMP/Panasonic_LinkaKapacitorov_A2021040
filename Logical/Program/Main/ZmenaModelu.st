@@ -104,6 +104,7 @@ ACTION ZmenaModelu:
 					Vizu.StavZmenyModelu_Index:= 3;
 					Vizu.StavZmenyModelu_Farba:= 2;
 					RESET_PoctuVyrobenychKusov:= TRUE;
+					Linka.Rezim_BezCistenia:= FALSE;
 					Linka.Rezim_BezTlaceEtikety:= FALSE;
 					NacitajRecepturu:= TRUE;
 					ModelNajdeny:= TRUE;

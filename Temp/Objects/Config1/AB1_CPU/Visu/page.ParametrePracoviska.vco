@@ -73,7 +73,7 @@
           <Object Name="Shape_1" ClsId="0x1001" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Shape_1]">
             <UInt32 Name="Left">11</UInt32>
             <UInt32 Name="Top">135</UInt32>
-            <UInt32 Name="Right">380</UInt32>
+            <UInt32 Name="Right">1011</UInt32>
             <UInt32 Name="Bottom">534</UInt32>
             <UInt32 Name="ControlID">0</UInt32>
             <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001001].StyleClass[Default]</Reference>
@@ -92,7 +92,7 @@
           <Object Name="Text_7" ClsId="0x1004" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_7]">
             <UInt32 Name="Left">12</UInt32>
             <UInt32 Name="Top">110</UInt32>
-            <UInt32 Name="Right">379</UInt32>
+            <UInt32 Name="Right">1009</UInt32>
             <UInt32 Name="Bottom">134</UInt32>
             <UInt32 Name="IndexDatapoint">4294967295</UInt32>
             <UInt32 Name="ControlID">0</UInt32>
@@ -147,7 +147,7 @@
           <Object Name="Text_15" ClsId="0x1004" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_15]">
             <UInt32 Name="Left">19</UInt32>
             <UInt32 Name="Top">186</UInt32>
-            <UInt32 Name="Right">238</UInt32>
+            <UInt32 Name="Right">223</UInt32>
             <UInt32 Name="Bottom">220</UInt32>
             <UInt32 Name="IndexDatapoint">4294967295</UInt32>
             <UInt32 Name="ControlID">0</UInt32>
@@ -205,9 +205,9 @@
             </Group>
           </Object>
           <Object Name="Numeric_2" ClsId="0x1007" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Numeric_2]">
-            <UInt32 Name="Left">245</UInt32>
+            <UInt32 Name="Left">228</UInt32>
             <UInt32 Name="Top">186</UInt32>
-            <UInt32 Name="Right">339</UInt32>
+            <UInt32 Name="Right">322</UInt32>
             <UInt32 Name="Bottom">220</UInt32>
             <UInt32 Name="ValueMode">0</UInt32>
             <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.RemPremenne.VstupVytah_PozNavazania]</Reference>
@@ -316,9 +316,9 @@
             </Group>
           </Object>
           <Object Name="Text_1" ClsId="0x1004" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_1]">
-            <UInt32 Name="Left">345</UInt32>
+            <UInt32 Name="Left">329</UInt32>
             <UInt32 Name="Top">190</UInt32>
-            <UInt32 Name="Right">395</UInt32>
+            <UInt32 Name="Right">379</UInt32>
             <UInt32 Name="Bottom">219</UInt32>
             <UInt32 Name="IndexDatapoint">4294967295</UInt32>
             <UInt32 Name="ControlID">0</UInt32>
@@ -358,7 +358,7 @@
           <Object Name="Text_16" ClsId="0x1004" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_16]">
             <UInt32 Name="Left">20</UInt32>
             <UInt32 Name="Top">145</UInt32>
-            <UInt32 Name="Right">239</UInt32>
+            <UInt32 Name="Right">224</UInt32>
             <UInt32 Name="Bottom">179</UInt32>
             <UInt32 Name="IndexDatapoint">4294967295</UInt32>
             <UInt32 Name="ControlID">0</UInt32>
@@ -416,9 +416,9 @@
             </Group>
           </Object>
           <Object Name="Numeric_3" ClsId="0x1007" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Numeric_3]">
-            <UInt32 Name="Left">245</UInt32>
+            <UInt32 Name="Left">228</UInt32>
             <UInt32 Name="Top">145</UInt32>
-            <UInt32 Name="Right">339</UInt32>
+            <UInt32 Name="Right">322</UInt32>
             <UInt32 Name="Bottom">179</UInt32>
             <UInt32 Name="ValueMode">0</UInt32>
             <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.RemPremenne.VstupVytah_PozVyvazania]</Reference>
@@ -527,9 +527,9 @@
             </Group>
           </Object>
           <Object Name="Text_3" ClsId="0x1004" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_3]">
-            <UInt32 Name="Left">345</UInt32>
+            <UInt32 Name="Left">329</UInt32>
             <UInt32 Name="Top">150</UInt32>
-            <UInt32 Name="Right">395</UInt32>
+            <UInt32 Name="Right">379</UInt32>
             <UInt32 Name="Bottom">179</UInt32>
             <UInt32 Name="IndexDatapoint">4294967295</UInt32>
             <UInt32 Name="ControlID">0</UInt32>
@@ -569,7 +569,7 @@
           <Object Name="Text_17" ClsId="0x1004" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_17]">
             <UInt32 Name="Left">20</UInt32>
             <UInt32 Name="Top">228</UInt32>
-            <UInt32 Name="Right">239</UInt32>
+            <UInt32 Name="Right">224</UInt32>
             <UInt32 Name="Bottom">262</UInt32>
             <UInt32 Name="IndexDatapoint">4294967295</UInt32>
             <UInt32 Name="ControlID">0</UInt32>
@@ -627,9 +627,9 @@
             </Group>
           </Object>
           <Object Name="Numeric_4" ClsId="0x1007" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Numeric_4]">
-            <UInt32 Name="Left">245</UInt32>
+            <UInt32 Name="Left">228</UInt32>
             <UInt32 Name="Top">228</UInt32>
-            <UInt32 Name="Right">339</UInt32>
+            <UInt32 Name="Right">322</UInt32>
             <UInt32 Name="Bottom">262</UInt32>
             <UInt32 Name="ValueMode">0</UInt32>
             <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.RemPremenne.VystupVytah_PozNavazania]</Reference>
@@ -738,9 +738,9 @@
             </Group>
           </Object>
           <Object Name="Text_4" ClsId="0x1004" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_4]">
-            <UInt32 Name="Left">345</UInt32>
+            <UInt32 Name="Left">329</UInt32>
             <UInt32 Name="Top">234</UInt32>
-            <UInt32 Name="Right">395</UInt32>
+            <UInt32 Name="Right">379</UInt32>
             <UInt32 Name="Bottom">263</UInt32>
             <UInt32 Name="IndexDatapoint">4294967295</UInt32>
             <UInt32 Name="ControlID">0</UInt32>
@@ -780,7 +780,7 @@
           <Object Name="Text_18" ClsId="0x1004" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_18]">
             <UInt32 Name="Left">20</UInt32>
             <UInt32 Name="Top">270</UInt32>
-            <UInt32 Name="Right">239</UInt32>
+            <UInt32 Name="Right">224</UInt32>
             <UInt32 Name="Bottom">304</UInt32>
             <UInt32 Name="IndexDatapoint">4294967295</UInt32>
             <UInt32 Name="ControlID">0</UInt32>
@@ -838,9 +838,9 @@
             </Group>
           </Object>
           <Object Name="Numeric_5" ClsId="0x1007" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Numeric_5]">
-            <UInt32 Name="Left">245</UInt32>
+            <UInt32 Name="Left">228</UInt32>
             <UInt32 Name="Top">270</UInt32>
-            <UInt32 Name="Right">339</UInt32>
+            <UInt32 Name="Right">322</UInt32>
             <UInt32 Name="Bottom">304</UInt32>
             <UInt32 Name="ValueMode">0</UInt32>
             <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.RemPremenne.VystupVytah_PozVyvazania]</Reference>
@@ -949,9 +949,9 @@
             </Group>
           </Object>
           <Object Name="Text_5" ClsId="0x1004" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_5]">
-            <UInt32 Name="Left">345</UInt32>
+            <UInt32 Name="Left">329</UInt32>
             <UInt32 Name="Top">274</UInt32>
-            <UInt32 Name="Right">395</UInt32>
+            <UInt32 Name="Right">379</UInt32>
             <UInt32 Name="Bottom">303</UInt32>
             <UInt32 Name="IndexDatapoint">4294967295</UInt32>
             <UInt32 Name="ControlID">0</UInt32>
@@ -991,7 +991,7 @@
           <Object Name="Text_20" ClsId="0x1004" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_20]">
             <UInt32 Name="Left">20</UInt32>
             <UInt32 Name="Top">402</UInt32>
-            <UInt32 Name="Right">239</UInt32>
+            <UInt32 Name="Right">224</UInt32>
             <UInt32 Name="Bottom">436</UInt32>
             <UInt32 Name="IndexDatapoint">4294967295</UInt32>
             <UInt32 Name="ControlID">0</UInt32>
@@ -1049,9 +1049,9 @@
             </Group>
           </Object>
           <Object Name="Bitmap_1" ClsId="0x1005" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Bitmap_1]">
-            <UInt32 Name="Left">276</UInt32>
+            <UInt32 Name="Left">260</UInt32>
             <UInt32 Name="Top">403</UInt32>
-            <UInt32 Name="Right">307</UInt32>
+            <UInt32 Name="Right">291</UInt32>
             <UInt32 Name="Bottom">434</UInt32>
             <Reference Name="IndexDatapoint" Type="DP">Source[global].Variable[DataSource.VstupVytah.PAR.PotvrdenieBannerom_AKTIVNE]</Reference>
             <UInt32 Name="ControlID">0</UInt32>
@@ -1091,7 +1091,7 @@
           <Object Name="Text_21" ClsId="0x1004" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_21]">
             <UInt32 Name="Left">20</UInt32>
             <UInt32 Name="Top">446</UInt32>
-            <UInt32 Name="Right">239</UInt32>
+            <UInt32 Name="Right">224</UInt32>
             <UInt32 Name="Bottom">480</UInt32>
             <UInt32 Name="IndexDatapoint">4294967295</UInt32>
             <UInt32 Name="ControlID">0</UInt32>
@@ -1149,9 +1149,9 @@
             </Group>
           </Object>
           <Object Name="Bitmap_2" ClsId="0x1005" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Bitmap_2]">
-            <UInt32 Name="Left">276</UInt32>
+            <UInt32 Name="Left">260</UInt32>
             <UInt32 Name="Top">447</UInt32>
-            <UInt32 Name="Right">307</UInt32>
+            <UInt32 Name="Right">291</UInt32>
             <UInt32 Name="Bottom">478</UInt32>
             <Reference Name="IndexDatapoint" Type="DP">Source[global].Variable[DataSource.VystupVytah.PAR.PotvrdenieBannerom_AKTIVNE]</Reference>
             <UInt32 Name="ControlID">0</UInt32>
@@ -1191,7 +1191,7 @@
           <Object Name="Text_22" ClsId="0x1004" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_22]">
             <UInt32 Name="Left">20</UInt32>
             <UInt32 Name="Top">492</UInt32>
-            <UInt32 Name="Right">239</UInt32>
+            <UInt32 Name="Right">224</UInt32>
             <UInt32 Name="Bottom">526</UInt32>
             <UInt32 Name="IndexDatapoint">4294967295</UInt32>
             <UInt32 Name="ControlID">0</UInt32>
@@ -1249,9 +1249,9 @@
             </Group>
           </Object>
           <Object Name="Bitmap_3" ClsId="0x1005" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Bitmap_3]">
-            <UInt32 Name="Left">276</UInt32>
+            <UInt32 Name="Left">260</UInt32>
             <UInt32 Name="Top">493</UInt32>
-            <UInt32 Name="Right">307</UInt32>
+            <UInt32 Name="Right">291</UInt32>
             <UInt32 Name="Bottom">524</UInt32>
             <Reference Name="IndexDatapoint" Type="DP">Source[global].Variable[DataSource.VystupVytah.PAR.PotvrdenieNGkusuBannerom_AKTIVNE]</Reference>
             <UInt32 Name="ControlID">0</UInt32>
@@ -1288,148 +1288,10 @@
               <UInt16 Name="Size">0</UInt16>
             </Group>
           </Object>
-          <Object Name="HotSpot_2" ClsId="0x1003" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[HotSpot_2]">
-            <UInt32 Name="Left">245</UInt32>
-            <UInt32 Name="Top">446</UInt32>
-            <UInt32 Name="Right">339</UInt32>
-            <UInt32 Name="Bottom">480</UInt32>
-            <UInt16 Name="KeyMatrixOffset">65535</UInt16>
-            <UInt16 Name="Reserved">0</UInt16>
-            <Reference Name="VirtualKey" Type="VKEY">Source[local].VirtualKey[%embVirtualKey_60]</Reference>
-            <UInt32 Name="ControlID">0</UInt32>
-            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001003].StyleClass[Default]</Reference>
-            <UInt16 Name="StyleTableSize">25</UInt16>
-            <UInt16 Name="Reserved">0</UInt16>
-            <Group Name="LockingDatapoint">
-              <UInt16 Name="Offset">4</UInt16>
-              <UInt16 Name="Size">4</UInt16>
-              <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.Vizu.ZmenaParametrov_DISABLE]</Reference>
-            </Group>
-            <Group Name="LockingLevel">
-              <UInt16 Name="Offset">8</UInt16>
-              <UInt16 Name="Size">4</UInt16>
-              <UInt32 Name="Data">1</UInt32>
-            </Group>
-            <Group Name="Locking">
-              <UInt16 Name="Offset">12</UInt16>
-              <UInt16 Name="Size">1</UInt16>
-              <Byte Name="Data">3</Byte>
-            </Group>
-            <Group Name="End Marker">
-              <UInt16 Name="Offset">65535</UInt16>
-              <UInt16 Name="Size">0</UInt16>
-            </Group>
-          </Object>
-          <Object Name="HotSpot_3" ClsId="0x1003" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[HotSpot_3]">
-            <UInt32 Name="Left">245</UInt32>
-            <UInt32 Name="Top">492</UInt32>
-            <UInt32 Name="Right">339</UInt32>
-            <UInt32 Name="Bottom">526</UInt32>
-            <UInt16 Name="KeyMatrixOffset">65535</UInt16>
-            <UInt16 Name="Reserved">0</UInt16>
-            <Reference Name="VirtualKey" Type="VKEY">Source[local].VirtualKey[%embVirtualKey_76]</Reference>
-            <UInt32 Name="ControlID">0</UInt32>
-            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001003].StyleClass[Default]</Reference>
-            <UInt16 Name="StyleTableSize">25</UInt16>
-            <UInt16 Name="Reserved">0</UInt16>
-            <Group Name="LockingDatapoint">
-              <UInt16 Name="Offset">4</UInt16>
-              <UInt16 Name="Size">4</UInt16>
-              <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.Vizu.ZmenaParametrov_DISABLE]</Reference>
-            </Group>
-            <Group Name="LockingLevel">
-              <UInt16 Name="Offset">8</UInt16>
-              <UInt16 Name="Size">4</UInt16>
-              <UInt32 Name="Data">1</UInt32>
-            </Group>
-            <Group Name="Locking">
-              <UInt16 Name="Offset">12</UInt16>
-              <UInt16 Name="Size">1</UInt16>
-              <Byte Name="Data">3</Byte>
-            </Group>
-            <Group Name="End Marker">
-              <UInt16 Name="Offset">65535</UInt16>
-              <UInt16 Name="Size">0</UInt16>
-            </Group>
-          </Object>
-          <Object Name="Shape_2" ClsId="0x1001" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Shape_2]">
-            <UInt32 Name="Left">396</UInt32>
-            <UInt32 Name="Top">136</UInt32>
-            <UInt32 Name="Right">725</UInt32>
-            <UInt32 Name="Bottom">325</UInt32>
-            <UInt32 Name="ControlID">0</UInt32>
-            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001001].StyleClass[Default]</Reference>
-            <UInt16 Name="StyleTableSize">12</UInt16>
-            <UInt16 Name="Reserved">0</UInt16>
-            <Group Name="BackColor">
-              <UInt16 Name="Offset">8</UInt16>
-              <UInt16 Name="Size">4</UInt16>
-              <UInt32 Name="Data">249</UInt32>
-            </Group>
-            <Group Name="End Marker">
-              <UInt16 Name="Offset">65535</UInt16>
-              <UInt16 Name="Size">0</UInt16>
-            </Group>
-          </Object>
-          <Object Name="Text_8" ClsId="0x1004" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_8]">
-            <UInt32 Name="Left">398</UInt32>
-            <UInt32 Name="Top">110</UInt32>
-            <UInt32 Name="Right">725</UInt32>
-            <UInt32 Name="Bottom">134</UInt32>
-            <UInt32 Name="IndexDatapoint">4294967295</UInt32>
-            <UInt32 Name="ControlID">0</UInt32>
-            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001004].StyleClass[Default]</Reference>
-            <UInt16 Name="StyleTableSize">59</UInt16>
-            <UInt16 Name="Reserved">0</UInt16>
-            <Group Name="Border">
-              <UInt16 Name="Offset">0</UInt16>
-              <UInt16 Name="Size">4</UInt16>
-              <Reference Name="Data" Type="BRD">Source[local].Border[FrameHeader]</Reference>
-            </Group>
-            <Group Name="BackColor">
-              <UInt16 Name="Offset">12</UInt16>
-              <UInt16 Name="Size">4</UInt16>
-              <UInt32 Name="Data">48</UInt32>
-            </Group>
-            <Group Name="FillStyle">
-              <UInt16 Name="Offset">20</UInt16>
-              <UInt16 Name="Size">1</UInt16>
-              <Byte Name="Data">0</Byte>
-            </Group>
-            <Group Name="AlignmentVertical">
-              <UInt16 Name="Offset">22</UInt16>
-              <UInt16 Name="Size">1</UInt16>
-              <Byte Name="Data">1</Byte>
-            </Group>
-            <Group Name="Font">
-              <UInt16 Name="Offset">24</UInt16>
-              <UInt16 Name="Size">4</UInt16>
-              <Reference Name="Data" Type="FNT">Source[local].Font[Arial12_Bold]</Reference>
-            </Group>
-            <Group Name="TextSource">
-              <UInt16 Name="Offset">40</UInt16>
-              <UInt16 Name="Size">1</UInt16>
-              <Byte Name="Data">2</Byte>
-            </Group>
-            <Group Name="TextIndexOffset">
-              <UInt16 Name="Offset">44</UInt16>
-              <UInt16 Name="Size">4</UInt16>
-              <Int32 Name="Data">7</Int32>
-            </Group>
-            <Group Name="TextGroup">
-              <UInt16 Name="Offset">48</UInt16>
-              <UInt16 Name="Size">4</UInt16>
-              <Reference Name="Data" Type="TG">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].TextGroup[Embedded]</Reference>
-            </Group>
-            <Group Name="End Marker">
-              <UInt16 Name="Offset">65535</UInt16>
-              <UInt16 Name="Size">0</UInt16>
-            </Group>
-          </Object>
           <Object Name="Text_19" ClsId="0x1004" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_19]">
-            <UInt32 Name="Left">404</UInt32>
+            <UInt32 Name="Left">370</UInt32>
             <UInt32 Name="Top">145</UInt32>
-            <UInt32 Name="Right">609</UInt32>
+            <UInt32 Name="Right">574</UInt32>
             <UInt32 Name="Bottom">179</UInt32>
             <UInt32 Name="IndexDatapoint">4294967295</UInt32>
             <UInt32 Name="ControlID">0</UInt32>
@@ -1487,9 +1349,9 @@
             </Group>
           </Object>
           <Object Name="Numeric_6" ClsId="0x1007" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Numeric_6]">
-            <UInt32 Name="Left">614</UInt32>
+            <UInt32 Name="Left">582</UInt32>
             <UInt32 Name="Top">145</UInt32>
-            <UInt32 Name="Right">708</UInt32>
+            <UInt32 Name="Right">676</UInt32>
             <UInt32 Name="Bottom">179</UInt32>
             <UInt32 Name="ValueMode">0</UInt32>
             <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.Tajfun_Motohodiny.CelkovyPocetHodin]</Reference>
@@ -1533,9 +1395,9 @@
             </Group>
           </Object>
           <Object Name="Text_23" ClsId="0x1004" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_23]">
-            <UInt32 Name="Left">404</UInt32>
+            <UInt32 Name="Left">370</UInt32>
             <UInt32 Name="Top">186</UInt32>
-            <UInt32 Name="Right">609</UInt32>
+            <UInt32 Name="Right">574</UInt32>
             <UInt32 Name="Bottom">220</UInt32>
             <UInt32 Name="IndexDatapoint">4294967295</UInt32>
             <UInt32 Name="ControlID">0</UInt32>
@@ -1593,9 +1455,9 @@
             </Group>
           </Object>
           <Object Name="Numeric_7" ClsId="0x1007" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Numeric_7]">
-            <UInt32 Name="Left">614</UInt32>
+            <UInt32 Name="Left">582</UInt32>
             <UInt32 Name="Top">186</UInt32>
-            <UInt32 Name="Right">708</UInt32>
+            <UInt32 Name="Right">676</UInt32>
             <UInt32 Name="Bottom">220</UInt32>
             <UInt32 Name="ValueMode">0</UInt32>
             <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.RemPremenne.PocetDniDoVymenyFiltra]</Reference>
@@ -1704,10 +1566,10 @@
             </Group>
           </Object>
           <Object Name="Button_19" ClsId="0x1002" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Button_19]">
-            <UInt32 Name="Left">484</UInt32>
-            <UInt32 Name="Top">258</UInt32>
-            <UInt32 Name="Right">638</UInt32>
-            <UInt32 Name="Bottom">307</UInt32>
+            <UInt32 Name="Left">686</UInt32>
+            <UInt32 Name="Top">145</UInt32>
+            <UInt32 Name="Right">775</UInt32>
+            <UInt32 Name="Bottom">179</UInt32>
             <UInt16 Name="KeyMatrixOffset">65535</UInt16>
             <UInt16 Name="Reserved">0</UInt16>
             <Reference Name="VirtualKey" Type="VKEY">Source[local].VirtualKey[%embVirtualKey_81]</Reference>
@@ -1845,7 +1707,7 @@
           <Object Name="Text_24" ClsId="0x1004" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_24]">
             <UInt32 Name="Left">20</UInt32>
             <UInt32 Name="Top">312</UInt32>
-            <UInt32 Name="Right">239</UInt32>
+            <UInt32 Name="Right">224</UInt32>
             <UInt32 Name="Bottom">346</UInt32>
             <UInt32 Name="IndexDatapoint">4294967295</UInt32>
             <UInt32 Name="ControlID">0</UInt32>
@@ -1903,9 +1765,9 @@
             </Group>
           </Object>
           <Object Name="Numeric_8" ClsId="0x1007" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Numeric_8]">
-            <UInt32 Name="Left">246</UInt32>
+            <UInt32 Name="Left">229</UInt32>
             <UInt32 Name="Top">312</UInt32>
-            <UInt32 Name="Right">340</UInt32>
+            <UInt32 Name="Right">323</UInt32>
             <UInt32 Name="Bottom">346</UInt32>
             <UInt32 Name="ValueMode">0</UInt32>
             <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.Linka.PAR.Zvolena_RychlostDopravPriCisteni]</Reference>
@@ -2014,9 +1876,9 @@
             </Group>
           </Object>
           <Object Name="Text_6" ClsId="0x1004" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_6]">
-            <UInt32 Name="Left">346</UInt32>
+            <UInt32 Name="Left">330</UInt32>
             <UInt32 Name="Top">316</UInt32>
-            <UInt32 Name="Right">396</UInt32>
+            <UInt32 Name="Right">380</UInt32>
             <UInt32 Name="Bottom">345</UInt32>
             <UInt32 Name="IndexDatapoint">4294967295</UInt32>
             <UInt32 Name="ControlID">0</UInt32>
@@ -2054,10 +1916,10 @@
             </Group>
           </Object>
           <Object Name="Text_25" ClsId="0x1004" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_25]">
-            <UInt32 Name="Left">20</UInt32>
-            <UInt32 Name="Top">358</UInt32>
-            <UInt32 Name="Right">239</UInt32>
-            <UInt32 Name="Bottom">392</UInt32>
+            <UInt32 Name="Left">370</UInt32>
+            <UInt32 Name="Top">228</UInt32>
+            <UInt32 Name="Right">574</UInt32>
+            <UInt32 Name="Bottom">262</UInt32>
             <UInt32 Name="IndexDatapoint">4294967295</UInt32>
             <UInt32 Name="ControlID">0</UInt32>
             <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001004].StyleClass[Default]</Reference>
@@ -2114,10 +1976,225 @@
             </Group>
           </Object>
           <Object Name="Bitmap_4" ClsId="0x1005" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Bitmap_4]">
-            <UInt32 Name="Left">276</UInt32>
-            <UInt32 Name="Top">359</UInt32>
-            <UInt32 Name="Right">307</UInt32>
-            <UInt32 Name="Bottom">390</UInt32>
+            <UInt32 Name="Left">613</UInt32>
+            <UInt32 Name="Top">229</UInt32>
+            <UInt32 Name="Right">644</UInt32>
+            <UInt32 Name="Bottom">260</UInt32>
+            <Reference Name="IndexDatapoint" Type="DP">Source[global].Variable[DataSource.Linka.Rezim_BezCistenia]</Reference>
+            <UInt32 Name="ControlID">0</UInt32>
+            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001005].StyleClass[Default]</Reference>
+            <UInt16 Name="StyleTableSize">35</UInt16>
+            <UInt16 Name="Reserved">0</UInt16>
+            <Group Name="AlignmentHorizontal">
+              <UInt16 Name="Offset">5</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">1</Byte>
+            </Group>
+            <Group Name="AlignmentVertical">
+              <UInt16 Name="Offset">6</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">1</Byte>
+            </Group>
+            <Group Name="BitmapSource">
+              <UInt16 Name="Offset">24</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">1</Byte>
+            </Group>
+            <Group Name="BitmapIndex">
+              <UInt16 Name="Offset">28</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <Int32 Name="Data">0</Int32>
+            </Group>
+            <Group Name="BitmapGroup">
+              <UInt16 Name="Offset">32</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <Reference Name="Data" Type="BMPG">Source[local].BitmapGroup[CheckBox]</Reference>
+            </Group>
+            <Group Name="End Marker">
+              <UInt16 Name="Offset">65535</UInt16>
+              <UInt16 Name="Size">0</UInt16>
+            </Group>
+          </Object>
+          <Object Name="Line_1" ClsId="0x100D" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Line_1]">
+            <UInt32 Name="StartX">360</UInt32>
+            <UInt32 Name="StartY">143</UInt32>
+            <UInt32 Name="EndX">360</UInt32>
+            <UInt32 Name="EndY">521</UInt32>
+            <UInt32 Name="ControlID">0</UInt32>
+            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x0000100D].StyleClass[Default]</Reference>
+            <UInt16 Name="StyleTableSize">9</UInt16>
+            <UInt16 Name="Reserved">0</UInt16>
+            <Group Name="LineWidth">
+              <UInt16 Name="Offset">1</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">2</Byte>
+            </Group>
+            <Group Name="End Marker">
+              <UInt16 Name="Offset">65535</UInt16>
+              <UInt16 Name="Size">0</UInt16>
+            </Group>
+          </Object>
+          <Object Name="HotSpot_1" ClsId="0x1003" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[HotSpot_1]">
+            <UInt32 Name="Left">229</UInt32>
+            <UInt32 Name="Top">402</UInt32>
+            <UInt32 Name="Right">323</UInt32>
+            <UInt32 Name="Bottom">436</UInt32>
+            <UInt16 Name="KeyMatrixOffset">65535</UInt16>
+            <UInt16 Name="Reserved">0</UInt16>
+            <Reference Name="VirtualKey" Type="VKEY">Source[local].VirtualKey[%embVirtualKey_59]</Reference>
+            <UInt32 Name="ControlID">0</UInt32>
+            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001003].StyleClass[Default]</Reference>
+            <UInt16 Name="StyleTableSize">25</UInt16>
+            <UInt16 Name="Reserved">0</UInt16>
+            <Group Name="LockingDatapoint">
+              <UInt16 Name="Offset">4</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.Vizu.ZmenaParametrov_DISABLE]</Reference>
+            </Group>
+            <Group Name="LockingLevel">
+              <UInt16 Name="Offset">8</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <UInt32 Name="Data">1</UInt32>
+            </Group>
+            <Group Name="Locking">
+              <UInt16 Name="Offset">12</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">3</Byte>
+            </Group>
+            <Group Name="End Marker">
+              <UInt16 Name="Offset">65535</UInt16>
+              <UInt16 Name="Size">0</UInt16>
+            </Group>
+          </Object>
+          <Object Name="HotSpot_2" ClsId="0x1003" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[HotSpot_2]">
+            <UInt32 Name="Left">229</UInt32>
+            <UInt32 Name="Top">446</UInt32>
+            <UInt32 Name="Right">323</UInt32>
+            <UInt32 Name="Bottom">480</UInt32>
+            <UInt16 Name="KeyMatrixOffset">65535</UInt16>
+            <UInt16 Name="Reserved">0</UInt16>
+            <Reference Name="VirtualKey" Type="VKEY">Source[local].VirtualKey[%embVirtualKey_60]</Reference>
+            <UInt32 Name="ControlID">0</UInt32>
+            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001003].StyleClass[Default]</Reference>
+            <UInt16 Name="StyleTableSize">25</UInt16>
+            <UInt16 Name="Reserved">0</UInt16>
+            <Group Name="LockingDatapoint">
+              <UInt16 Name="Offset">4</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.Vizu.ZmenaParametrov_DISABLE]</Reference>
+            </Group>
+            <Group Name="LockingLevel">
+              <UInt16 Name="Offset">8</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <UInt32 Name="Data">1</UInt32>
+            </Group>
+            <Group Name="Locking">
+              <UInt16 Name="Offset">12</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">3</Byte>
+            </Group>
+            <Group Name="End Marker">
+              <UInt16 Name="Offset">65535</UInt16>
+              <UInt16 Name="Size">0</UInt16>
+            </Group>
+          </Object>
+          <Object Name="HotSpot_3" ClsId="0x1003" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[HotSpot_3]">
+            <UInt32 Name="Left">229</UInt32>
+            <UInt32 Name="Top">492</UInt32>
+            <UInt32 Name="Right">323</UInt32>
+            <UInt32 Name="Bottom">526</UInt32>
+            <UInt16 Name="KeyMatrixOffset">65535</UInt16>
+            <UInt16 Name="Reserved">0</UInt16>
+            <Reference Name="VirtualKey" Type="VKEY">Source[local].VirtualKey[%embVirtualKey_76]</Reference>
+            <UInt32 Name="ControlID">0</UInt32>
+            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001003].StyleClass[Default]</Reference>
+            <UInt16 Name="StyleTableSize">25</UInt16>
+            <UInt16 Name="Reserved">0</UInt16>
+            <Group Name="LockingDatapoint">
+              <UInt16 Name="Offset">4</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.Vizu.ZmenaParametrov_DISABLE]</Reference>
+            </Group>
+            <Group Name="LockingLevel">
+              <UInt16 Name="Offset">8</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <UInt32 Name="Data">1</UInt32>
+            </Group>
+            <Group Name="Locking">
+              <UInt16 Name="Offset">12</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">3</Byte>
+            </Group>
+            <Group Name="End Marker">
+              <UInt16 Name="Offset">65535</UInt16>
+              <UInt16 Name="Size">0</UInt16>
+            </Group>
+          </Object>
+          <Object Name="Text_26" ClsId="0x1004" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_26]">
+            <UInt32 Name="Left">370</UInt32>
+            <UInt32 Name="Top">270</UInt32>
+            <UInt32 Name="Right">574</UInt32>
+            <UInt32 Name="Bottom">304</UInt32>
+            <UInt32 Name="IndexDatapoint">4294967295</UInt32>
+            <UInt32 Name="ControlID">0</UInt32>
+            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001004].StyleClass[Default]</Reference>
+            <UInt16 Name="StyleTableSize">64</UInt16>
+            <UInt16 Name="Reserved">0</UInt16>
+            <Group Name="Border">
+              <UInt16 Name="Offset">0</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <Reference Name="Data" Type="BRD">Source[local].Border[Mp_LabelBorder]</Reference>
+            </Group>
+            <Group Name="BackColor">
+              <UInt16 Name="Offset">12</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <UInt32 Name="Data">248</UInt32>
+            </Group>
+            <Group Name="FillStyle">
+              <UInt16 Name="Offset">20</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">0</Byte>
+            </Group>
+            <Group Name="AlignmentVertical">
+              <UInt16 Name="Offset">22</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">1</Byte>
+            </Group>
+            <Group Name="Multiline">
+              <UInt16 Name="Offset">23</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">0</Byte>
+            </Group>
+            <Group Name="Font">
+              <UInt16 Name="Offset">24</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <Reference Name="Data" Type="FNT">Source[local].Font[Arial10_Bold]</Reference>
+            </Group>
+            <Group Name="TextSource">
+              <UInt16 Name="Offset">40</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">2</Byte>
+            </Group>
+            <Group Name="TextIndexOffset">
+              <UInt16 Name="Offset">44</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <Int32 Name="Data">21</Int32>
+            </Group>
+            <Group Name="TextGroup">
+              <UInt16 Name="Offset">48</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <Reference Name="Data" Type="TG">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].TextGroup[Embedded]</Reference>
+            </Group>
+            <Group Name="End Marker">
+              <UInt16 Name="Offset">65535</UInt16>
+              <UInt16 Name="Size">0</UInt16>
+            </Group>
+          </Object>
+          <Object Name="Bitmap_5" ClsId="0x1005" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Bitmap_5]">
+            <UInt32 Name="Left">613</UInt32>
+            <UInt32 Name="Top">271</UInt32>
+            <UInt32 Name="Right">644</UInt32>
+            <UInt32 Name="Bottom">302</UInt32>
             <Reference Name="IndexDatapoint" Type="DP">Source[global].Variable[DataSource.Linka.Rezim_BezTlaceEtikety]</Reference>
             <UInt32 Name="ControlID">0</UInt32>
             <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001005].StyleClass[Default]</Reference>
@@ -2153,14 +2230,14 @@
               <UInt16 Name="Size">0</UInt16>
             </Group>
           </Object>
-          <Object Name="HotSpot_1" ClsId="0x1003" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[HotSpot_1]">
-            <UInt32 Name="Left">245</UInt32>
-            <UInt32 Name="Top">402</UInt32>
-            <UInt32 Name="Right">339</UInt32>
-            <UInt32 Name="Bottom">436</UInt32>
+          <Object Name="HotSpot_5" ClsId="0x1003" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[HotSpot_5]">
+            <UInt32 Name="Left">582</UInt32>
+            <UInt32 Name="Top">270</UInt32>
+            <UInt32 Name="Right">676</UInt32>
+            <UInt32 Name="Bottom">304</UInt32>
             <UInt16 Name="KeyMatrixOffset">65535</UInt16>
             <UInt16 Name="Reserved">0</UInt16>
-            <Reference Name="VirtualKey" Type="VKEY">Source[local].VirtualKey[%embVirtualKey_59]</Reference>
+            <Reference Name="VirtualKey" Type="VKEY">Source[local].VirtualKey[%embVirtualKey_99]</Reference>
             <UInt32 Name="ControlID">0</UInt32>
             <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001003].StyleClass[Default]</Reference>
             <UInt16 Name="StyleTableSize">25</UInt16>
@@ -2168,7 +2245,7 @@
             <Group Name="LockingDatapoint">
               <UInt16 Name="Offset">4</UInt16>
               <UInt16 Name="Size">4</UInt16>
-              <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.Vizu.ZmenaParametrov_DISABLE]</Reference>
+              <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.Vizu.RezimBezTlaceEtikety_DISABLE]</Reference>
             </Group>
             <Group Name="LockingLevel">
               <UInt16 Name="Offset">8</UInt16>
@@ -2186,10 +2263,10 @@
             </Group>
           </Object>
           <Object Name="HotSpot_4" ClsId="0x1003" Version="1" Type="CTRL" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[HotSpot_4]">
-            <UInt32 Name="Left">245</UInt32>
-            <UInt32 Name="Top">358</UInt32>
-            <UInt32 Name="Right">339</UInt32>
-            <UInt32 Name="Bottom">392</UInt32>
+            <UInt32 Name="Left">582</UInt32>
+            <UInt32 Name="Top">228</UInt32>
+            <UInt32 Name="Right">676</UInt32>
+            <UInt32 Name="Bottom">262</UInt32>
             <UInt16 Name="KeyMatrixOffset">65535</UInt16>
             <UInt16 Name="Reserved">0</UInt16>
             <Reference Name="VirtualKey" Type="VKEY">Source[local].VirtualKey[%embVirtualKey_94]</Reference>
@@ -2200,7 +2277,7 @@
             <Group Name="LockingDatapoint">
               <UInt16 Name="Offset">4</UInt16>
               <UInt16 Name="Size">4</UInt16>
-              <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.Vizu.RezimBezTlaceEtikety_DISABLE]</Reference>
+              <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.Vizu.RezimBezCistenia_DISABLE]</Reference>
             </Group>
             <Group Name="LockingLevel">
               <UInt16 Name="Offset">8</UInt16>
@@ -2347,6 +2424,33 @@
               <Double Name="SetValue">1</Double>
               <Double Name="ResetValue">0</Double>
               <Double Name="CompletionValue">0</Double>
+              <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.Linka.Rezim_BezCistenia]</Reference>
+              <UInt32 Name="CompletionDatapoint">4294967295</UInt32>
+              <Byte Name="Mode">1</Byte>
+              <Byte Name="Reserved">0</Byte>
+              <Byte Name="Reserved1">0</Byte>
+              <Byte Name="Reserved2">0</Byte>
+            </Group>
+          </Object>
+          <Object Name="%embVirtualKey_99" ClsId="0x0" Version="1" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_99]">
+            <Group Name="LedMapping">
+              <UInt32 Name="Datapoint">4294967295</UInt32>
+              <Byte Name="Mode">0</Byte>
+              <Byte Name="Active">0</Byte>
+              <UInt16 Name="Reserved">0</UInt16>
+            </Group>
+            <Group Name="KeyMapping">
+              <UInt32 Name="KeyActionCount">1</UInt32>
+              <Int32 Name="ActionID">353</Int32>
+              <UInt32 Name="ActionDataSize">36</UInt32>
+              <Byte Name="Locking">0</Byte>
+              <Byte Name="Reserved">0</Byte>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt32 Name="LockingDatapoint">4294967295</UInt32>
+              <UInt32 Name="LockingLevel">0</UInt32>
+              <Double Name="SetValue">1</Double>
+              <Double Name="ResetValue">0</Double>
+              <Double Name="CompletionValue">0</Double>
               <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.Linka.Rezim_BezTlaceEtikety]</Reference>
               <UInt32 Name="CompletionDatapoint">4294967295</UInt32>
               <Byte Name="Mode">1</Byte>
@@ -2360,7 +2464,7 @@
       <Folder Name="POBJ">
         <Object Name="FrameLayer" ClsId="0x401" Version="1" Type="LAY" RefString="Source[local].Page[ParametrePracoviska].Layer[FrameLayer]">
           <Reference Name="StatusDP" Type="DP">None</Reference>
-          <UInt32 Name="CtrlCount">37</UInt32>
+          <UInt32 Name="CtrlCount">39</UInt32>
           <Reference Name="Text_2" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_2]</Reference>
           <Reference Name="Shape_1" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Shape_1]</Reference>
           <Reference Name="Text_7" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_7]</Reference>
@@ -2382,10 +2486,6 @@
           <Reference Name="Bitmap_2" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Bitmap_2]</Reference>
           <Reference Name="Text_22" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_22]</Reference>
           <Reference Name="Bitmap_3" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Bitmap_3]</Reference>
-          <Reference Name="HotSpot_2" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[HotSpot_2]</Reference>
-          <Reference Name="HotSpot_3" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[HotSpot_3]</Reference>
-          <Reference Name="Shape_2" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Shape_2]</Reference>
-          <Reference Name="Text_8" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_8]</Reference>
           <Reference Name="Text_19" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_19]</Reference>
           <Reference Name="Numeric_6" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Numeric_6]</Reference>
           <Reference Name="Text_23" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_23]</Reference>
@@ -2396,7 +2496,13 @@
           <Reference Name="Text_6" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_6]</Reference>
           <Reference Name="Text_25" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_25]</Reference>
           <Reference Name="Bitmap_4" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Bitmap_4]</Reference>
+          <Reference Name="Line_1" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Line_1]</Reference>
           <Reference Name="HotSpot_1" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[HotSpot_1]</Reference>
+          <Reference Name="HotSpot_2" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[HotSpot_2]</Reference>
+          <Reference Name="HotSpot_3" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[HotSpot_3]</Reference>
+          <Reference Name="Text_26" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Text_26]</Reference>
+          <Reference Name="Bitmap_5" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Bitmap_5]</Reference>
+          <Reference Name="HotSpot_5" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[HotSpot_5]</Reference>
           <Reference Name="HotSpot_4" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[HotSpot_4]</Reference>
         </Object>
       </Folder>
@@ -2439,10 +2545,6 @@
           <TableRow>
             <UInt32 Name="UserIndex">6</UInt32>
             <UInt32 Name="TextIndex">239391</UInt32>
-          </TableRow>
-          <TableRow>
-            <UInt32 Name="UserIndex">7</UInt32>
-            <UInt32 Name="TextIndex">253404</UInt32>
           </TableRow>
           <TableRow>
             <UInt32 Name="UserIndex">8</UInt32>
@@ -2495,6 +2597,10 @@
           <TableRow>
             <UInt32 Name="UserIndex">20</UInt32>
             <UInt32 Name="TextIndex">260349</UInt32>
+          </TableRow>
+          <TableRow>
+            <UInt32 Name="UserIndex">21</UInt32>
+            <UInt32 Name="TextIndex">261784</UInt32>
           </TableRow>
         </Table>
       </Object>
@@ -2606,57 +2712,57 @@
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
-                <UInt32 Name="TextIndex">253404</UInt32>
-                <UInt32 Name="TextOffset">802</UInt32>
-                <Byte Name="SnippetCount">0</Byte>
-                <Byte Name="Reserved">0</Byte>
-                <UInt16 Name="Reserved">0</UInt16>
-              </TableRow>
-              <TableRow>
                 <UInt32 Name="TextIndex">253405</UInt32>
-                <UInt32 Name="TextOffset">836</UInt32>
+                <UInt32 Name="TextOffset">800</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">253407</UInt32>
-                <UInt32 Name="TextOffset">898</UInt32>
+                <UInt32 Name="TextOffset">884</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">254099</UInt32>
-                <UInt32 Name="TextOffset">952</UInt32>
+                <UInt32 Name="TextOffset">960</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">254100</UInt32>
-                <UInt32 Name="TextOffset">1006</UInt32>
+                <UInt32 Name="TextOffset">972</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">256178</UInt32>
-                <UInt32 Name="TextOffset">1034</UInt32>
+                <UInt32 Name="TextOffset">1000</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">256179</UInt32>
-                <UInt32 Name="TextOffset">1098</UInt32>
+                <UInt32 Name="TextOffset">1064</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">260349</UInt32>
-                <UInt32 Name="TextOffset">1104</UInt32>
+                <UInt32 Name="TextOffset">1070</UInt32>
+                <Byte Name="SnippetCount">0</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">261784</UInt32>
+                <UInt32 Name="TextOffset">1110</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
@@ -2681,18 +2787,18 @@ Spodná poloha"</String>
 Potvrdenie bannerom"</String>
               <String Name="Text" Encoding="Unicode">"Vystupný výťah
 Potvrdenie bannerom"</String>
-              <String Name="Text" Encoding="Unicode">"Vystupný výťah
-Potvrdenie NG kusu bannerom"</String>
-              <String Name="Text" Encoding="Unicode">"Ionizátor Tajfun"</String>
+              <String Name="Text" Encoding="Unicode">"Vystupný výťah NG kus
+Potvrdenie bannerom"</String>
               <String Name="Text" Encoding="Unicode">"Aktuálny počet hodín
-prevádzky"</String>
-              <String Name="Text" Encoding="Unicode">"Počet dní do výmeny filtra"</String>
-              <String Name="Text" Encoding="Unicode">"Reset motohodín ionizátora"</String>
+prevádzky ionizátora"</String>
+              <String Name="Text" Encoding="Unicode">"Počet dní do výmeny filtra ionizátora"</String>
+              <String Name="Text" Encoding="Unicode">"Reset"</String>
               <String Name="Text" Encoding="Unicode">"Stopper
 VYSUŇ"</String>
               <String Name="Text" Encoding="Unicode">"Rýchlosť dopravníka
 pri čistení"</String>
               <String Name="Text" Encoding="Unicode">"Hz"</String>
+              <String Name="Text" Encoding="Unicode">"Režim bez čistenia."</String>
               <String Name="Text" Encoding="Unicode">"Režim bez lepenia
 etikety."</String>
             </Group>
@@ -2807,22 +2913,15 @@ etikety."</String>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
-                <UInt32 Name="TextIndex">253404</UInt32>
-                <UInt32 Name="TextOffset">812</UInt32>
-                <Byte Name="SnippetCount">0</Byte>
-                <Byte Name="Reserved">0</Byte>
-                <UInt16 Name="Reserved">0</UInt16>
-              </TableRow>
-              <TableRow>
                 <UInt32 Name="TextIndex">253405</UInt32>
-                <UInt32 Name="TextOffset">844</UInt32>
+                <UInt32 Name="TextOffset">806</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">253407</UInt32>
-                <UInt32 Name="TextOffset">912</UInt32>
+                <UInt32 Name="TextOffset">896</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
@@ -2836,28 +2935,35 @@ etikety."</String>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">254100</UInt32>
-                <UInt32 Name="TextOffset">1044</UInt32>
+                <UInt32 Name="TextOffset">996</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">256178</UInt32>
-                <UInt32 Name="TextOffset">1046</UInt32>
+                <UInt32 Name="TextOffset">998</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">256179</UInt32>
-                <UInt32 Name="TextOffset">1108</UInt32>
+                <UInt32 Name="TextOffset">1060</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">260349</UInt32>
-                <UInt32 Name="TextOffset">1114</UInt32>
+                <UInt32 Name="TextOffset">1066</UInt32>
+                <Byte Name="SnippetCount">0</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">261784</UInt32>
+                <UInt32 Name="TextOffset">1102</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
@@ -2866,24 +2972,32 @@ etikety."</String>
             <Group Name="Texts">
               <String Name="Text" Encoding="Unicode">"Workplace parameters"</String>
               <String Name="Text" Encoding="Unicode">"Line parameters"</String>
-              <String Name="Text" Encoding="Unicode">"Entrance lift Lower position"</String>
+              <String Name="Text" Encoding="Unicode">"Entrance lift
+Lower position"</String>
               <String Name="Text" Encoding="Unicode">"mm"</String>
-              <String Name="Text" Encoding="Unicode">"Entrance lift Upper position"</String>
+              <String Name="Text" Encoding="Unicode">"Entrance lift
+Upper position"</String>
               <String Name="Text" Encoding="Unicode">"mm"</String>
-              <String Name="Text" Encoding="Unicode">"Exit lift Upper position"</String>
+              <String Name="Text" Encoding="Unicode">"Exit lift
+Upper position"</String>
               <String Name="Text" Encoding="Unicode">"mm"</String>
-              <String Name="Text" Encoding="Unicode">"Exit lift Lower position"</String>
+              <String Name="Text" Encoding="Unicode">"Exit lift
+Lower position"</String>
               <String Name="Text" Encoding="Unicode">"mm"</String>
-              <String Name="Text" Encoding="Unicode">"Entrance lift Confirmation with banner"</String>
-              <String Name="Text" Encoding="Unicode">"Exit lift Confirmation with banner"</String>
-              <String Name="Text" Encoding="Unicode">"Exit lift Confirmation of NG piece with banner"</String>
-              <String Name="Text" Encoding="Unicode">"Typhoon ionizer"</String>
-              <String Name="Text" Encoding="Unicode">"Current number of operating hours"</String>
-              <String Name="Text" Encoding="Unicode">"Number of days before filter change"</String>
-              <String Name="Text" Encoding="Unicode">"Ionizer operating hours reset"</String>
+              <String Name="Text" Encoding="Unicode">"Entrance lift
+Confirmation with banner"</String>
+              <String Name="Text" Encoding="Unicode">"Exit lift
+Confirmation with banner"</String>
+              <String Name="Text" Encoding="Unicode">"Exit lift NG piece
+Confirmation with banner"</String>
+              <String Name="Text" Encoding="Unicode">"Current number of operating hours of Ionizer"</String>
+              <String Name="Text" Encoding="Unicode">"Number of days before Ionizer filter change"</String>
+              <String Name="Text" Encoding="Unicode">"Reset"</String>
               <String Name="Text" Encoding="Unicode">""</String>
-              <String Name="Text" Encoding="Unicode">"Conveyor speed during cleaning"</String>
+              <String Name="Text" Encoding="Unicode">"Conveyor speed
+during cleaning"</String>
               <String Name="Text" Encoding="Unicode">"Hz"</String>
+              <String Name="Text" Encoding="Unicode">"Blowing off mode."</String>
               <String Name="Text" Encoding="Unicode">"Label off mode"</String>
             </Group>
           </Object>
@@ -2997,56 +3111,56 @@ etikety."</String>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
-                <UInt32 Name="TextIndex">253404</UInt32>
+                <UInt32 Name="TextIndex">253405</UInt32>
                 <UInt32 Name="TextOffset">298</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
-                <UInt32 Name="TextIndex">253405</UInt32>
+                <UInt32 Name="TextIndex">253407</UInt32>
                 <UInt32 Name="TextOffset">300</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
-                <UInt32 Name="TextIndex">253407</UInt32>
+                <UInt32 Name="TextIndex">254099</UInt32>
                 <UInt32 Name="TextOffset">302</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
-                <UInt32 Name="TextIndex">254099</UInt32>
+                <UInt32 Name="TextIndex">254100</UInt32>
                 <UInt32 Name="TextOffset">304</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
-                <UInt32 Name="TextIndex">254100</UInt32>
+                <UInt32 Name="TextIndex">256178</UInt32>
                 <UInt32 Name="TextOffset">306</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
-                <UInt32 Name="TextIndex">256178</UInt32>
+                <UInt32 Name="TextIndex">256179</UInt32>
                 <UInt32 Name="TextOffset">308</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
-                <UInt32 Name="TextIndex">256179</UInt32>
-                <UInt32 Name="TextOffset">310</UInt32>
+                <UInt32 Name="TextIndex">260349</UInt32>
+                <UInt32 Name="TextOffset">314</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
-                <UInt32 Name="TextIndex">260349</UInt32>
+                <UInt32 Name="TextIndex">261784</UInt32>
                 <UInt32 Name="TextOffset">316</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
@@ -3072,8 +3186,8 @@ etikety."</String>
               <String Name="Text" Encoding="Unicode">""</String>
               <String Name="Text" Encoding="Unicode">""</String>
               <String Name="Text" Encoding="Unicode">""</String>
-              <String Name="Text" Encoding="Unicode">""</String>
               <String Name="Text" Encoding="Unicode">"Hz"</String>
+              <String Name="Text" Encoding="Unicode">""</String>
               <String Name="Text" Encoding="Unicode">""</String>
             </Group>
           </Object>
@@ -3200,7 +3314,7 @@ etikety."</String>
             <Reference Name="CtrlNext" Type="CTRL">Source[local].Layer[PopPrihlasenie].Control[String_2]</Reference>
             <Reference Name="CtrlPrev" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Numeric_4]</Reference>
             <Reference Name="CtrlLeft" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Numeric_4]</Reference>
-            <Reference Name="CtrlRight" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Numeric_7]</Reference>
+            <Reference Name="CtrlRight" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Numeric_4]</Reference>
             <Reference Name="CtrlUp" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Numeric_7]</Reference>
             <Reference Name="CtrlDown" Type="CTRL">Source[local].Layer[PopPrihlasenie].Control[String_2]</Reference>
           </Group>
@@ -3209,7 +3323,7 @@ etikety."</String>
             <Reference Name="CtrlNext" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Numeric_7]</Reference>
             <Reference Name="CtrlPrev" Type="CTRL">Source[local].Layer[PopPrihlasenie].Control[String_1]</Reference>
             <Reference Name="CtrlLeft" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Numeric_8]</Reference>
-            <Reference Name="CtrlRight" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Numeric_7]</Reference>
+            <Reference Name="CtrlRight" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Numeric_5]</Reference>
             <Reference Name="CtrlUp" Type="CTRL">Source[local].Layer[PopPrihlasenie].Control[String_1]</Reference>
             <Reference Name="CtrlDown" Type="CTRL">Source[local].Page[ParametrePracoviska].Layer[FrameLayer].Control[Numeric_8]</Reference>
           </Group>

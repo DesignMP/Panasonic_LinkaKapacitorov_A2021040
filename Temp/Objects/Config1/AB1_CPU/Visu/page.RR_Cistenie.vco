@@ -2271,7 +2271,7 @@
             <UInt32 Name="Script1">4294967295</UInt32>
             <UInt32 Name="Script2">4294967295</UInt32>
             <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001002].StyleClass[Default]</Reference>
-            <UInt16 Name="StyleTableSize">134</UInt16>
+            <UInt16 Name="StyleTableSize">155</UInt16>
             <UInt16 Name="Reserved">0</UInt16>
             <Group Name="PressedBorder">
               <UInt16 Name="Offset">0</UInt16>
@@ -2288,10 +2288,25 @@
               <UInt16 Name="Size">1</UInt16>
               <Byte Name="Data">7</Byte>
             </Group>
+            <Group Name="Locking">
+              <UInt16 Name="Offset">12</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">3</Byte>
+            </Group>
             <Group Name="Multiline">
               <UInt16 Name="Offset">13</UInt16>
               <UInt16 Name="Size">1</UInt16>
               <Byte Name="Data">0</Byte>
+            </Group>
+            <Group Name="LockingDatapoint">
+              <UInt16 Name="Offset">16</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.Vizu.TL_Ovl_Ionizatora_DISABLE]</Reference>
+            </Group>
+            <Group Name="LockingLevel">
+              <UInt16 Name="Offset">20</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <UInt32 Name="Data">1</UInt32>
             </Group>
             <Group Name="ForeColor">
               <UInt16 Name="Offset">24</UInt16>

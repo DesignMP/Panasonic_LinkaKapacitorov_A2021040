@@ -8,6 +8,7 @@
  * Global variables of project Zamazat_1
  ********************************************************************)
 VAR
+	Pocitadlo : UDINT := 0;
 	Prisavka_ON : BOOL := FALSE;
 END_VAR
 (******************RFID èitaèky**********************)

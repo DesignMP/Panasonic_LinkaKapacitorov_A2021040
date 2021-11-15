@@ -1293,7 +1293,7 @@
 <Cons Device="IF3.ST3.SS1" DPName="Connect1_Input_Assembly_Byte_32_Byte_360" Kind="io"/>
 </LN>
 <LN ID="%QD.IF3.ST3.SS1.Connect1_Input_Assembly_Byte_32_Byte_364" Type="UDINT">
-<Prod Device="TC#1-CPYDEV" DPName="KOM_Panasonic.Mapping_OUT[99]" Kind="pv"/>
+<Prod Device="TC#1-CPYDEV" DPName="::Pocitadlo" Kind="pv"/>
 <Cons Device="IF3.ST3.SS1" DPName="Connect1_Input_Assembly_Byte_32_Byte_364" Kind="io"/>
 </LN>
 <LN ID="%IX.IF3.ST3.IF1.ST1.ModuleOk" Type="BOOL">

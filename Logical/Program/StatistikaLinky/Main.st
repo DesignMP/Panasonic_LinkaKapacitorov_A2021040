@@ -19,6 +19,9 @@ PROGRAM _CYCLIC
 	VystupnyVytah_Statistika();
 	Linka_Statistika();
 	
+	
+		
+	
 	//********************************************Meranie taktime vstupnÈho v˝ùahu*****************************************************//
 	IF VstupnyVytah_Statistika.IN.ZAPIS_MeraniaCasu AND VstupnyVytah_Statistika.OUT.Stav_ZapisCasu_DONE THEN
 		VstupnyVytah_Statistika.IN.ZAPIS_MeraniaCasu:= FALSE;

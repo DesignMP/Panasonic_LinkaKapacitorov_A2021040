@@ -11,8 +11,8 @@ ACTION OvlDveri:
 			SC_OvlDveri.StepName:= '0 - Nulovanie';
 			Dvere_OTVOR:= FALSE;
 			Dvere_ZATVOR:= FALSE;
-//			VstupVytah.OUT.DvereVytahu_OTVOR_YV002:= FALSE;
-//			VstupVytah.OUT.DvereVytahu_ZATVOR_YV001:= FALSE;
+			VstupVytah.OUT.DvereVytahu_OTVOR_YV002:= FALSE;
+			VstupVytah.OUT.DvereVytahu_ZATVOR_YV001:= FALSE;
 								
 			IF SC_VstupVytah.Step <> 0 THEN
 				SC_OvlDveri.ResetStep:= TRUE;
@@ -49,6 +49,9 @@ ACTION OvlDveri:
 			IF VstupVytah.IN.DvereVytahuOtvorene_MS1 OR SC_OvlDveri.IdleTime.Q THEN
 				SC_OvlDveri.ResetStep:= TRUE;
 				SC_OvlDveri.Step:= 0;
+			ELSIF NOT Safety.STAV.BarieraVstupVytahu_AKTIVNA THEN
+				SC_OvlDveri.ResetStep:= TRUE;
+				SC_OvlDveri.Step:= 0;
 			ELSIF SC_OvlDveri.AlarmTime.Q THEN
 				Alarmy[42]:= TRUE;
 				PoruchaVstupnehoVytahu:= TRUE;
@@ -75,6 +78,9 @@ ACTION OvlDveri:
 			END_IF	
 			
 			IF VstupVytah.IN.DvereVytahuZatvorene_MS2 OR SC_OvlDveri.IdleTime.Q THEN
+				SC_OvlDveri.ResetStep:= TRUE;
+				SC_OvlDveri.Step:= 0;
+			ELSIF NOT Safety.STAV.BarieraVstupVytahu_AKTIVNA THEN
 				SC_OvlDveri.ResetStep:= TRUE;
 				SC_OvlDveri.Step:= 0;
 			ELSIF SC_OvlDveri.AlarmTime.Q THEN

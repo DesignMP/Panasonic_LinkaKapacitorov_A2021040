@@ -726,7 +726,7 @@
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="690"/>
           <Property Name="Locking" Value="Datapoint &gt;= Level"/>
-          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.Vizu.TL_VstupVytah_Homing_DISABLE]"/>
+          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.Vizu.TL_Ovl_DveriVstupVytahu_DISABLE]"/>
           <Property Name="LockingLevel" Value="1"/>
           <Property Name="Multiline" Value="Automatic"/>
           <Property Name="PressedBackColor" Value="0"/>
@@ -776,7 +776,7 @@
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="855"/>
           <Property Name="Locking" Value="Datapoint &gt;= Level"/>
-          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.Vizu.TL_VstupVytah_Homing_DISABLE]"/>
+          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.Vizu.TL_Ovl_DveriVstupVytahu_DISABLE]"/>
           <Property Name="LockingLevel" Value="1"/>
           <Property Name="Multiline" Value="Automatic"/>
           <Property Name="PressedBackColor" Value="0"/>

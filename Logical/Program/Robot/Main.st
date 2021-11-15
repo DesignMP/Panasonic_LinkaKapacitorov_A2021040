@@ -209,28 +209,31 @@ PROGRAM _CYCLIC
 				SC_Robot.ResetStep:= TRUE;
 				SC_Robot.Step:= 0;	
 			ELSIF SC_Robot.IdleTime.Q THEN
-				IF RFID_Hlava_2.PAR.PrecitaneCisloPaletky <> '' THEN
-					IF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BF1' THEN
+				IF RFID_Hlava_2.PAR.PrecitaneCisloPaletky <> '' AND Linka.PAR.Zvoleny_MODEL <> '' THEN
+					IF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BF1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKB24380HA' THEN
 						Robot.KOM_OUT.CisloProduktu:= 1;
 						Kamera.PAR.ZadaneCisloProgramu:= 1;
-					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BV1' THEN
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BV1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKE26150HC' THEN
 						Robot.KOM_OUT.CisloProduktu:= 2;
 						Kamera.PAR.ZadaneCisloProgramu:= 3;
-					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BW1' THEN
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BW1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKE27070WA' THEN
 						Robot.KOM_OUT.CisloProduktu:= 3;
 						Kamera.PAR.ZadaneCisloProgramu:= 5;	
-					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'CN1' THEN
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'CN1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKE28730WA' THEN
 						Robot.KOM_OUT.CisloProduktu:= 4;
 						Kamera.PAR.ZadaneCisloProgramu:= 7;	
-					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'CP1' THEN
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'CP1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKN27101HA' THEN
 						Robot.KOM_OUT.CisloProduktu:= 5;
 						Kamera.PAR.ZadaneCisloProgramu:= 9;	
-					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BE1' THEN
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BE1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKR21681HA' THEN
 						Robot.KOM_OUT.CisloProduktu:= 6;
 						Kamera.PAR.ZadaneCisloProgramu:= 11;	
-					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BD1' THEN
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BD1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKR25060HA' THEN
 						Robot.KOM_OUT.CisloProduktu:= 7;
 						Kamera.PAR.ZadaneCisloProgramu:= 13;
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BF1' AND Linka.PAR.Zvoleny_MODEL = 'EZTYB21670HA' THEN
+						Robot.KOM_OUT.CisloProduktu:= 8;
+						Kamera.PAR.ZadaneCisloProgramu:= 15;	
 					END_IF	
 					SC_Robot.ResetStep:= TRUE;
 					SC_Robot.Step:= 702;
@@ -240,6 +243,10 @@ PROGRAM _CYCLIC
 				END_IF
 			END_IF	
 		
+			
+				
+			
+			
 		702:
 			SC_Robot.StepName:='702 - Manualny Rezim - citania QR kodu internej etikety,presun robota do pozicie citania internej etikety';
 			SC_Robot.IdleTime.PT:= T#200ms;
@@ -331,6 +338,9 @@ PROGRAM _CYCLIC
 			SC_Robot.IdleTime.PT:= T#200ms;
 			SC_Robot.AlarmTime.PT:= T#5s;
 		
+			
+			
+			
 						
 			SC_Robot.IdleTime.IN:= RFID_Hlava_2.STAV.PritomnostCipu;
 			
@@ -341,28 +351,31 @@ PROGRAM _CYCLIC
 				SC_Robot.ResetStep:= TRUE;
 				SC_Robot.Step:= 0;	
 			ELSIF SC_Robot.IdleTime.Q THEN
-				IF RFID_Hlava_2.PAR.PrecitaneCisloPaletky <> '' THEN
-					IF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BF1' THEN
+				IF RFID_Hlava_2.PAR.PrecitaneCisloPaletky <> '' AND Linka.PAR.Zvoleny_MODEL <> '' THEN
+					IF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BF1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKB24380HA' THEN
 						Robot.KOM_OUT.CisloProduktu:= 1;
 						Kamera.PAR.ZadaneCisloProgramu:= 2;
-					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BV1' THEN
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BV1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKE26150HC' THEN
 						Robot.KOM_OUT.CisloProduktu:= 2;
 						Kamera.PAR.ZadaneCisloProgramu:= 4;
-					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BW1' THEN
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BW1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKE27070WA' THEN
 						Robot.KOM_OUT.CisloProduktu:= 3;
 						Kamera.PAR.ZadaneCisloProgramu:= 6;	
-					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'CN1' THEN
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'CN1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKE28730WA' THEN
 						Robot.KOM_OUT.CisloProduktu:= 4;
 						Kamera.PAR.ZadaneCisloProgramu:= 8;	
-					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'CP1' THEN
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'CP1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKN27101HA' THEN
 						Robot.KOM_OUT.CisloProduktu:= 5;
 						Kamera.PAR.ZadaneCisloProgramu:= 10;	
-					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BE1' THEN
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BE1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKR21681HA' THEN
 						Robot.KOM_OUT.CisloProduktu:= 6;
 						Kamera.PAR.ZadaneCisloProgramu:= 12;	
-					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BD1' THEN
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BD1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKR25060HA' THEN
 						Robot.KOM_OUT.CisloProduktu:= 7;
 						Kamera.PAR.ZadaneCisloProgramu:= 14;
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BF1' AND Linka.PAR.Zvoleny_MODEL = 'EZTYB21670HA' THEN
+						Robot.KOM_OUT.CisloProduktu:= 8;
+						Kamera.PAR.ZadaneCisloProgramu:= 16;	
 					END_IF	
 					SC_Robot.ResetStep:= TRUE;
 					SC_Robot.Step:= 722;

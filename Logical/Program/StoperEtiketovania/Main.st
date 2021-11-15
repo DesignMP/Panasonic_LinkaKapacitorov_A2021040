@@ -870,8 +870,10 @@ PROGRAM _CYCLIC
 			IF Kamera.RESULT.ZakazEtiketa_DMkod_OK AND Kamera.RESULT.ZakazEtiketa_ZnakyDMkodu <> 'Error' THEN
 				Paletka[i].PrecitaneZnakyZakaznickehoDMkodu:= Kamera.RESULT.ZakazEtiketa_ZnakyDMkodu;
 				IF Paletka[i].ZakaznickeCislo = Paletka[i].PrecitaneZnakyZakaznickehoDMkodu THEN
+					Paletka[i].StavPorovnaniaDMkoduZoServerom:= 'OK';
 					Paletka[i].StavCitania_ZakaznickehoDMkodu:= 'OK';
 				ELSE
+					Paletka[i].StavPorovnaniaDMkoduZoServerom:= 'NG';
 					Paletka[i].StavCitania_ZakaznickehoDMkodu:= 'NG';
 					Paletka[i].StavPaletky:= 'NG';
 				END_IF	
@@ -890,7 +892,10 @@ PROGRAM _CYCLIC
 			SC_StoperEtiketovania.IdleTime.PT:= T#200ms;
 			SC_StoperEtiketovania.AlarmTime.PT:= T#5s;
 		
-			IF Kamera.RESULT.ZakazEtiketa_PritomnZnakov_OK THEN
+					
+			
+			IF Kamera.RESULT.ZakazEtiketa_PritomnZnakov_OK (*AND Kamera.RESULT.BielyPatern_OK*) THEN
+				Paletka[i].StavKontrolyBielehoPaternu:= 'OK';
 				Paletka[i].StavCitania_KontrolaZnakov:= 'OK';
 				IF Linka.Rezim_BezKomunikacie THEN
 					SC_StoperEtiketovania.ResetStep:= TRUE;
@@ -899,7 +904,12 @@ PROGRAM _CYCLIC
 					SC_StoperEtiketovania.ResetStep:= TRUE;
 					SC_StoperEtiketovania.Step:= 220;
 				END_IF
-			ELSIF NOT Kamera.RESULT.ZakazEtiketa_PritomnZnakov_OK THEN
+			ELSIF NOT Kamera.RESULT.ZakazEtiketa_PritomnZnakov_OK (*OR NOT Kamera.RESULT.BielyPatern_OK*) THEN
+				IF NOT Kamera.RESULT.BielyPatern_OK THEN
+					Paletka[i].StavKontrolyBielehoPaternu:= 'NG';
+				ELSE
+					Paletka[i].StavCitania_KontrolaZnakov:= 'OK';
+				END_IF	
 				Paletka[i].StavCitania_KontrolaZnakov:= 'NG';
 				Paletka[i].StavPaletky:= 'NG';
 				IF Linka.Rezim_BezKomunikacie THEN

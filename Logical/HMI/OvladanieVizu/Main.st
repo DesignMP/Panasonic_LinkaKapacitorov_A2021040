@@ -510,6 +510,8 @@ PROGRAM _CYCLIC
 		Vizu.TL_Robot_CitanieQRkodu_DISABLE:= TRUE;
 	ELSIF NOT StoperEtiketovania.IN.SuflikTlaciarne_LS_IS23 OR NOT StoperEtiketovania.IN.SuflikTlaciarne_PS_IS22 THEN
 		Vizu.TL_Robot_CitanieQRkodu_DISABLE:= TRUE;
+	ELSIF Linka.PAR.Zvoleny_MODEL = '' THEN
+		Vizu.TL_Robot_CitanieQRkodu_DISABLE:= TRUE;
 	ELSE	
 		Vizu.TL_Robot_CitanieQRkodu_DISABLE:= FALSE;
 	END_IF	
@@ -530,6 +532,8 @@ PROGRAM _CYCLIC
 	ELSIF NOT Safety.STAV.ServisneDvereTlaciarne_AKTIVNE THEN
 		Vizu.TL_Robot_CitanieDMkodu_DISABLE:= TRUE;
 	ELSIF NOT StoperEtiketovania.IN.SuflikTlaciarne_LS_IS23 OR NOT StoperEtiketovania.IN.SuflikTlaciarne_PS_IS22 THEN	
+		Vizu.TL_Robot_CitanieDMkodu_DISABLE:= TRUE;
+	ELSIF Linka.PAR.Zvoleny_MODEL = '' THEN
 		Vizu.TL_Robot_CitanieDMkodu_DISABLE:= TRUE;
 	ELSE	
 		Vizu.TL_Robot_CitanieDMkodu_DISABLE:= FALSE;
@@ -552,9 +556,25 @@ PROGRAM _CYCLIC
 		Vizu.TL_Robot_OdoberEtiketu_DISABLE:= TRUE;
 	ELSIF NOT StoperEtiketovania.IN.SuflikTlaciarne_LS_IS23 OR NOT StoperEtiketovania.IN.SuflikTlaciarne_PS_IS22 THEN
 		Vizu.TL_Robot_OdoberEtiketu_DISABLE:= TRUE;
+	ELSIF Linka.PAR.Zvoleny_MODEL = '' THEN
+		Vizu.TL_Robot_OdoberEtiketu_DISABLE:= TRUE;
 	ELSE	
 		Vizu.TL_Robot_OdoberEtiketu_DISABLE:= FALSE;
 	END_IF
+	
+	//TlaËÌtko ovl·dania Ioniz·tora//
+	IF NOT VstupVytah.IN.DvereVytahuZatvorene_MS2 THEN
+		Vizu.TL_Ovl_Ionizatora_DISABLE:= TRUE;
+	ELSE	
+		Vizu.TL_Ovl_Ionizatora_DISABLE:= FALSE;
+	END_IF	
+	
+	//Ovl·danie dverÌ vstupnÈho v˝ùahu//
+	IF NOT Safety.STAV.BarieraVstupVytahu_AKTIVNA THEN
+		Vizu.TL_Ovl_DveriVstupVytahu_DISABLE:= TRUE;
+	ELSE	
+		Vizu.TL_Ovl_DveriVstupVytahu_DISABLE:= FALSE;
+	END_IF	
 	
 	
 	//Zad·vanie korekcii robota//
@@ -573,15 +593,24 @@ PROGRAM _CYCLIC
 	ELSE	
 		Vizu.RezimBezTlaceEtikety_DISABLE:= FALSE;
 	END_IF	
+
+	//Volba reûimu bez Ëistenia//
+	IF Linka.STAV.Automat THEN
+		Vizu.RezimBezCistenia_DISABLE:= TRUE;
+	ELSIF ZvolenaUroven < 20 THEN
+		Vizu.RezimBezCistenia_DISABLE:= TRUE;
+	ELSE	
+		Vizu.RezimBezCistenia_DISABLE:= FALSE;
+	END_IF	
 	
 	
 	
 	//Zad·vanie parametrov//
-//	IF Linka.STAV.Automat THEN
-//		Vizu.ZmenaParametrov_DISABLE:= TRUE;
-//	ELSE
-//		Vizu.ZmenaParametrov_DISABLE:= FALSE;
-//	END_IF	
+	IF Linka.STAV.Automat THEN
+		Vizu.ZmenaParametrov_DISABLE:= TRUE;
+	ELSE
+		Vizu.ZmenaParametrov_DISABLE:= FALSE;
+	END_IF	
 	
 	
 	
@@ -602,6 +631,7 @@ PROGRAM _CYCLIC
 	//6 - UkonËi automatick˝ reûim linky !!!
 	//7 - ServisnÈ dvere tlaËiarne nie su zatvorenÈ !!!
 	//8 - TlaËiareÚ nie je zaaretovan· !!!
+	//9 - Na linke nieje zvolen˝ model !!!
 	
 	//Farba//
 	//0 - Ëerven·
@@ -631,6 +661,9 @@ PROGRAM _CYCLIC
 		Vizu.IndexStavuLadenieKamery_Farba:= 0;
 	ELSIF NOT StoperEtiketovania.IN.SuflikTlaciarne_LS_IS23 OR NOT StoperEtiketovania.IN.SuflikTlaciarne_PS_IS22 THEN
 		Vizu.IndexStavuLadenieKamery:= 8;
+		Vizu.IndexStavuLadenieKamery_Farba:= 0;
+	ELSIF Linka.PAR.Zvoleny_MODEL = '' THEN
+		Vizu.IndexStavuLadenieKamery:= 9;
 		Vizu.IndexStavuLadenieKamery_Farba:= 0;
 	ELSE    
 		Vizu.IndexStavuLadenieKamery:= 0;

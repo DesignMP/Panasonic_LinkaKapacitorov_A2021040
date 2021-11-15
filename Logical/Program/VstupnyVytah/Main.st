@@ -504,6 +504,8 @@ PROGRAM _CYCLIC
 				Paletka[i].StavCitania_InternehoQRkodu:= '';
 				Paletka[i].StavCitania_ZakaznickehoDMkodu:= '';
 				Paletka[i].StavCitania_KontrolaZnakov:= '';
+				Paletka[i].StavKontrolyBielehoPaternu:= '';
+				Paletka[i].StavPorovnaniaDMkoduZoServerom:= '';
 				Paletka[i].StavKomunikacie_DONE:= FALSE;
 				SC_VstupVytah.ResetStep:= TRUE;
 				SC_VstupVytah.Step:= 120;

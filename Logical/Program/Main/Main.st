@@ -7,6 +7,9 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	
+	
+	
+	
 	//Zapnutie osvetlenia bunky//
 	IF NOT Linka.IN.PredneDvereZavrete_EZ1 OR NOT Linka.IN.ZadneDvereZavrete_EZ2 THEN
 		Linka.OUT.OsvetlenieBunky_Zapni:= TRUE;

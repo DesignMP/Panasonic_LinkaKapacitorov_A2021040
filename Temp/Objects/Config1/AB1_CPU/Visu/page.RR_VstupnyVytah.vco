@@ -1874,7 +1874,7 @@
             <Group Name="LockingDatapoint">
               <UInt16 Name="Offset">16</UInt16>
               <UInt16 Name="Size">4</UInt16>
-              <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.Vizu.TL_VstupVytah_Homing_DISABLE]</Reference>
+              <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.Vizu.TL_Ovl_DveriVstupVytahu_DISABLE]</Reference>
             </Group>
             <Group Name="LockingLevel">
               <UInt16 Name="Offset">20</UInt16>
@@ -2053,7 +2053,7 @@
             <Group Name="LockingDatapoint">
               <UInt16 Name="Offset">16</UInt16>
               <UInt16 Name="Size">4</UInt16>
-              <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.Vizu.TL_VstupVytah_Homing_DISABLE]</Reference>
+              <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.Vizu.TL_Ovl_DveriVstupVytahu_DISABLE]</Reference>
             </Group>
             <Group Name="LockingLevel">
               <UInt16 Name="Offset">20</UInt16>

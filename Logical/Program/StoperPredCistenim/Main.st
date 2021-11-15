@@ -95,7 +95,7 @@ PROGRAM _CYCLIC
 			END_IF	
 			
 			DopravCistenia.PAR.ZadanaRychlost:= 50;
-			
+		
 			SC_StoperPredCistenim.IdleTime.IN:= StoperPredCistenim.IN.PritomnostPaletky_IS4;
 			
 			IF StoperPredCistenim.KoniecCyklu THEN
@@ -125,17 +125,30 @@ PROGRAM _CYCLIC
 				SC_StoperPredCistenim.ResetStep:= TRUE;
 				SC_StoperPredCistenim.Step:= 0;
 			ELSIF SC_StoperPoCisteni.Step = 100 AND (NOT StoperPoCisteni.IN.PritomnostPaletky_IS6 OR NOT StoperPoCisteni.IN.ZaplnenieBuffera_IS5) AND NOT StoperPoCisteni.STAV.PrebiehaVyvazaniePaletky THEN  
-				SC_StoperPredCistenim.ResetStep:= TRUE;
-				SC_StoperPredCistenim.Step:= 103;
+				IF NOT Linka.Rezim_BezCistenia THEN
+					SC_StoperPredCistenim.ResetStep:= TRUE;
+					SC_StoperPredCistenim.Step:= 103;
+				ELSE
+					SC_StoperPredCistenim.ResetStep:= TRUE;
+					SC_StoperPredCistenim.Step:= 105;
+				END_IF	
 			ELSIF StoperPoCisteni.STAV.PoINIT AND NOT StoperPoCisteni.IN.ZaplnenieBuffera_IS5 THEN
-				SC_StoperPredCistenim.ResetStep:= TRUE;
-				SC_StoperPredCistenim.Step:= 103;
+				IF NOT Linka.Rezim_BezCistenia THEN
+					SC_StoperPredCistenim.ResetStep:= TRUE;
+					SC_StoperPredCistenim.Step:= 103;
+				ELSE
+					SC_StoperPredCistenim.ResetStep:= TRUE;
+					SC_StoperPredCistenim.Step:= 105;
+				END_IF
 			END_IF
 		
 		103:
 			SC_StoperPredCistenim.StepName:='103 - Automaticky Rezim - cakam na spustenie cistenia';
 			SC_StoperPredCistenim.IdleTime.PT:= T#2s;
 			SC_StoperPredCistenim.AlarmTime.PT:= T#10s;
+			
+			DopravCistenia.PAR.ZadanaRychlost:= Linka.PAR.Zvolena_RychlostDopravPriCisteni;
+			
 			
 			IF NOT SC_StoperPredCistenim.Switch1 THEN
 				Linka.OUT.IonJednotka_START:= TRUE;
@@ -168,7 +181,6 @@ PROGRAM _CYCLIC
 			IF NOT SC_StoperPredCistenim.Switch1 THEN
 				StoperPredCistenim.OUT.StoperZASUN_YV005:= TRUE;
 				SC_StoperPredCistenim.AlarmTime.IN:= TRUE;
-				DopravCistenia.PAR.ZadanaRychlost:= Linka.PAR.Zvolena_RychlostDopravPriCisteni;
 				StoperPredCistenim.STAV.PrebiehaVyvazaniePaletky:= TRUE;
 				SC_StoperPredCistenim.Switch1:= TRUE;
 			END_IF	
@@ -215,7 +227,13 @@ PROGRAM _CYCLIC
 			SC_StoperPredCistenim.IdleTime.PT:= T#200ms;
 			SC_StoperPredCistenim.AlarmTime.PT:= T#10s;
 			
-			IF NOT Linka.STAV.PoruchaOtacaniaTrysiek THEN
+			IF Linka.Rezim_BezCistenia THEN
+				Paletka[i].Cistenie_DONE:= TRUE;
+				Paletka[i].StavCistenia:= 'OK';
+				Paletka[i].StavPaletky:= 'OK';
+				SC_StoperPredCistenim.ResetStep:= TRUE;
+				SC_StoperPredCistenim.Step:= 115;
+			ELSIF NOT Linka.STAV.PoruchaOtacaniaTrysiek THEN
 				Paletka[i].Cistenie_DONE:= TRUE;
 				Paletka[i].StavCistenia:= 'OK';
 				Paletka[i].StavPaletky:= 'OK';

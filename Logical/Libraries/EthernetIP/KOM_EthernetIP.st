@@ -32,9 +32,7 @@ FUNCTION_BLOCK KOM_EthernetIP
 	Mapping_OUT[1]:= Server_IN.CommandNumber;
 	
 	
-	//Testovanie//
-	Mapping_OUT[99]:= 30;
-	
+		
 	
 	
 	

@@ -14,6 +14,7 @@
     <Text ID="261063" Value="Ukonči automatický režim linky !!!"/>
     <Text ID="261064" Value="Servisné dvere tlačiarne nie su zatvorené !!!"/>
     <Text ID="261071" Value="Tlačiareň nie je zaaretovaná !!!"/>
+    <Text ID="262496" Value="Na linke nieje zvolený model !!!"/>
   </TextLayer>
   <TextLayer LanguageId="en">
     <Text ID="261057" Value="READY."/>
@@ -25,6 +26,7 @@
     <Text ID="261063" Value="Exit the automatic line mode !!!"/>
     <Text ID="261064" Value="The printer service door is not closed !!!"/>
     <Text ID="261071" Value="The printer is not fixed !!!"/>
+    <Text ID="262496" Value="There is no selected model on the line !!!"/>
   </TextLayer>
   <TextLayer LanguageId="ja-JP">
     <Text ID="261057" Value="READY."/>
@@ -36,6 +38,7 @@
     <Text ID="261063" Value=""/>
     <Text ID="261064" Value=""/>
     <Text ID="261071" Value=""/>
+    <Text ID="262496" Value=""/>
   </TextLayer>
   <IndexMap>
     <Index ID="261057" Value="0"/>
@@ -47,5 +50,6 @@
     <Index ID="261063" Value="6"/>
     <Index ID="261064" Value="7"/>
     <Index ID="261071" Value="8"/>
+    <Index ID="262496" Value="9"/>
   </IndexMap>
 </TextGroup>

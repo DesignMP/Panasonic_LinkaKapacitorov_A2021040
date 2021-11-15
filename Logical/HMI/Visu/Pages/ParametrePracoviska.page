@@ -42,38 +42,38 @@
           <Text ID="239391" Value="mm"/>
           <Text ID="241620" Value="Vstupný výťah\nPotvrdenie bannerom"/>
           <Text ID="241623" Value="Vystupný výťah\nPotvrdenie bannerom"/>
-          <Text ID="247963" Value="Vystupný výťah\nPotvrdenie NG kusu bannerom"/>
-          <Text ID="253404" Value="Ionizátor Tajfun"/>
-          <Text ID="253405" Value="Aktuálny počet hodín\nprevádzky"/>
-          <Text ID="253407" Value="Počet dní do výmeny filtra"/>
-          <Text ID="254099" Value="Reset motohodín ionizátora"/>
+          <Text ID="247963" Value="Vystupný výťah NG kus\nPotvrdenie bannerom"/>
+          <Text ID="253405" Value="Aktuálny počet hodín\nprevádzky ionizátora"/>
+          <Text ID="253407" Value="Počet dní do výmeny filtra ionizátora"/>
+          <Text ID="254099" Value="Reset"/>
           <Text ID="254100" Value="Stopper\nVYSUŇ"/>
           <Text ID="256178" Value="Rýchlosť dopravníka\npri čistení"/>
           <Text ID="256179" Value="Hz"/>
-          <Text ID="260349" Value="Režim bez lepenia\netikety."/>
+          <Text ID="260349" Value="Režim bez čistenia."/>
+          <Text ID="261784" Value="Režim bez lepenia\netikety."/>
         </TextLayer>
         <TextLayer LanguageId="en">
           <Text ID="237610" Value="Workplace parameters"/>
           <Text ID="237611" Value="Line parameters"/>
-          <Text ID="237612" Value="Entrance lift Lower position"/>
+          <Text ID="237612" Value="Entrance lift\nLower position"/>
           <Text ID="237613" Value="mm"/>
-          <Text ID="239386" Value="Entrance lift Upper position"/>
+          <Text ID="239386" Value="Entrance lift\nUpper position"/>
           <Text ID="239387" Value="mm"/>
-          <Text ID="239388" Value="Exit lift Upper position"/>
+          <Text ID="239388" Value="Exit lift\nUpper position"/>
           <Text ID="239389" Value="mm"/>
-          <Text ID="239390" Value="Exit lift Lower position"/>
+          <Text ID="239390" Value="Exit lift\nLower position"/>
           <Text ID="239391" Value="mm"/>
-          <Text ID="241620" Value="Entrance lift Confirmation with banner"/>
-          <Text ID="241623" Value="Exit lift Confirmation with banner"/>
-          <Text ID="247963" Value="Exit lift Confirmation of NG piece with banner"/>
-          <Text ID="253404" Value="Typhoon ionizer"/>
-          <Text ID="253405" Value="Current number of operating hours"/>
-          <Text ID="253407" Value="Number of days before filter change"/>
-          <Text ID="254099" Value="Ionizer operating hours reset"/>
+          <Text ID="241620" Value="Entrance lift\nConfirmation with banner"/>
+          <Text ID="241623" Value="Exit lift\nConfirmation with banner"/>
+          <Text ID="247963" Value="Exit lift NG piece\nConfirmation with banner"/>
+          <Text ID="253405" Value="Current number of operating hours of Ionizer"/>
+          <Text ID="253407" Value="Number of days before Ionizer filter change"/>
+          <Text ID="254099" Value="Reset"/>
           <Text ID="254100" Value=""/>
-          <Text ID="256178" Value="Conveyor speed during cleaning"/>
+          <Text ID="256178" Value="Conveyor speed\nduring cleaning"/>
           <Text ID="256179" Value="Hz"/>
-          <Text ID="260349" Value="Label off mode"/>
+          <Text ID="260349" Value="Blowing off mode."/>
+          <Text ID="261784" Value="Label off mode"/>
         </TextLayer>
         <TextLayer LanguageId="ja-JP">
           <Text ID="237610" Value=""/>
@@ -89,7 +89,6 @@
           <Text ID="241620" Value=""/>
           <Text ID="241623" Value=""/>
           <Text ID="247963" Value=""/>
-          <Text ID="253404" Value=""/>
           <Text ID="253405" Value=""/>
           <Text ID="253407" Value=""/>
           <Text ID="254099" Value=""/>
@@ -97,6 +96,7 @@
           <Text ID="256178" Value=""/>
           <Text ID="256179" Value="Hz"/>
           <Text ID="260349" Value=""/>
+          <Text ID="261784" Value=""/>
         </TextLayer>
         <IndexMap>
           <Index ID="237610" Value="4"/>
@@ -112,7 +112,6 @@
           <Index ID="241620" Value="9"/>
           <Index ID="241623" Value="15"/>
           <Index ID="247963" Value="13"/>
-          <Index ID="253404" Value="7"/>
           <Index ID="253405" Value="8"/>
           <Index ID="253407" Value="16"/>
           <Index ID="254099" Value="14"/>
@@ -120,6 +119,7 @@
           <Index ID="256178" Value="18"/>
           <Index ID="256179" Value="19"/>
           <Index ID="260349" Value="20"/>
+          <Index ID="261784" Value="21"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -152,7 +152,7 @@
           <Property Name="Left" Value="11"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="Top" Value="135"/>
-          <Property Name="Width" Value="370"/>
+          <Property Name="Width" Value="1001"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_7">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -171,7 +171,7 @@
           <Property Name="TextIndexOffset" Value="10"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="110"/>
-          <Property Name="Width" Value="368"/>
+          <Property Name="Width" Value="998"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_15">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -191,7 +191,7 @@
           <Property Name="TextIndexOffset" Value="11"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="186"/>
-          <Property Name="Width" Value="220"/>
+          <Property Name="Width" Value="205"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_2">
           <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -212,7 +212,7 @@
           <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
           <Property Name="InputUpDown" Value="Disabled"/>
-          <Property Name="Left" Value="245"/>
+          <Property Name="Left" Value="228"/>
           <Property Name="Locking" Value="Datapoint &lt; Level"/>
           <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.ZvolenaUroven]"/>
           <Property Name="LockingLevel" Value="30"/>
@@ -234,7 +234,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[Arial10_Bold]"/>
           <Property Name="Height" Value="30"/>
-          <Property Name="Left" Value="345"/>
+          <Property Name="Left" Value="329"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -262,7 +262,7 @@
           <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="145"/>
-          <Property Name="Width" Value="220"/>
+          <Property Name="Width" Value="205"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_3">
           <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -283,7 +283,7 @@
           <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
           <Property Name="InputUpDown" Value="Disabled"/>
-          <Property Name="Left" Value="245"/>
+          <Property Name="Left" Value="228"/>
           <Property Name="Locking" Value="Datapoint &lt; Level"/>
           <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.ZvolenaUroven]"/>
           <Property Name="LockingLevel" Value="30"/>
@@ -305,7 +305,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[Arial10_Bold]"/>
           <Property Name="Height" Value="30"/>
-          <Property Name="Left" Value="345"/>
+          <Property Name="Left" Value="329"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -333,7 +333,7 @@
           <Property Name="TextIndexOffset" Value="2"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="228"/>
-          <Property Name="Width" Value="220"/>
+          <Property Name="Width" Value="205"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_4">
           <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -354,7 +354,7 @@
           <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
           <Property Name="InputUpDown" Value="Disabled"/>
-          <Property Name="Left" Value="245"/>
+          <Property Name="Left" Value="228"/>
           <Property Name="Locking" Value="Datapoint &lt; Level"/>
           <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.ZvolenaUroven]"/>
           <Property Name="LockingLevel" Value="30"/>
@@ -376,7 +376,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[Arial10_Bold]"/>
           <Property Name="Height" Value="30"/>
-          <Property Name="Left" Value="345"/>
+          <Property Name="Left" Value="329"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -404,7 +404,7 @@
           <Property Name="TextIndexOffset" Value="5"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="270"/>
-          <Property Name="Width" Value="220"/>
+          <Property Name="Width" Value="205"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_5">
           <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -425,7 +425,7 @@
           <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
           <Property Name="InputUpDown" Value="Disabled"/>
-          <Property Name="Left" Value="245"/>
+          <Property Name="Left" Value="228"/>
           <Property Name="Locking" Value="Datapoint &lt; Level"/>
           <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.ZvolenaUroven]"/>
           <Property Name="LockingLevel" Value="30"/>
@@ -447,7 +447,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[Arial10_Bold]"/>
           <Property Name="Height" Value="30"/>
-          <Property Name="Left" Value="345"/>
+          <Property Name="Left" Value="329"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -475,7 +475,7 @@
           <Property Name="TextIndexOffset" Value="9"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="402"/>
-          <Property Name="Width" Value="220"/>
+          <Property Name="Width" Value="205"/>
         </Control>
         <Control ClassId="0x00001005" Name="Bitmap_1">
           <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -487,7 +487,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="32"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.VstupVytah.PAR.PotvrdenieBannerom_AKTIVNE]"/>
-          <Property Name="Left" Value="276"/>
+          <Property Name="Left" Value="260"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="Top" Value="403"/>
@@ -511,7 +511,7 @@
           <Property Name="TextIndexOffset" Value="15"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="446"/>
-          <Property Name="Width" Value="220"/>
+          <Property Name="Width" Value="205"/>
         </Control>
         <Control ClassId="0x00001005" Name="Bitmap_2">
           <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -523,7 +523,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="32"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.VystupVytah.PAR.PotvrdenieBannerom_AKTIVNE]"/>
-          <Property Name="Left" Value="276"/>
+          <Property Name="Left" Value="260"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="Top" Value="447"/>
@@ -547,7 +547,7 @@
           <Property Name="TextIndexOffset" Value="13"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="492"/>
-          <Property Name="Width" Value="220"/>
+          <Property Name="Width" Value="205"/>
         </Control>
         <Control ClassId="0x00001005" Name="Bitmap_3">
           <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -559,70 +559,11 @@
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="32"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.VystupVytah.PAR.PotvrdenieNGkusuBannerom_AKTIVNE]"/>
-          <Property Name="Left" Value="276"/>
+          <Property Name="Left" Value="260"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="Top" Value="493"/>
           <Property Name="Width" Value="32"/>
-        </Control>
-        <Control ClassId="0x00001003" Name="HotSpot_2">
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_60]"/>
-          <Property Name="Height" Value="35"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="245"/>
-          <Property Name="Locking" Value="Datapoint &gt;= Level"/>
-          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.Vizu.ZmenaParametrov_DISABLE]"/>
-          <Property Name="LockingLevel" Value="1"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="Top" Value="446"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_60]"/>
-          <Property Name="Width" Value="95"/>
-        </Control>
-        <Control ClassId="0x00001003" Name="HotSpot_3">
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_76]"/>
-          <Property Name="Height" Value="35"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="245"/>
-          <Property Name="Locking" Value="Datapoint &gt;= Level"/>
-          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.Vizu.ZmenaParametrov_DISABLE]"/>
-          <Property Name="LockingLevel" Value="1"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="Top" Value="492"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_76]"/>
-          <Property Name="Width" Value="95"/>
-        </Control>
-        <Control ClassId="0x00001001" Name="Shape_2">
-          <Property Name="BackColor" Value="249"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="190"/>
-          <Property Name="Left" Value="396"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="Top" Value="136"/>
-          <Property Name="Width" Value="330"/>
-        </Control>
-        <Control ClassId="0x00001004" Name="Text_8">
-          <Property Name="AlignmentVertical" Value="Center"/>
-          <Property Name="BackColor" Value="48"/>
-          <Property Name="Border" Value="Source[local].Border[FrameHeader]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="FillStyle" Value="Opaque"/>
-          <Property Name="Font" Value="Source[local].Font[Arial12_Bold]"/>
-          <Property Name="Height" Value="25"/>
-          <Property Name="Left" Value="398"/>
-          <Property Name="SimulationIndex" Value="0"/>
-          <Property Name="SimulationValue" Value=""/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndexOffset" Value="7"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="110"/>
-          <Property Name="Width" Value="328"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_19">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -633,7 +574,7 @@
           <Property Name="FillStyle" Value="Opaque"/>
           <Property Name="Font" Value="Source[local].Font[Arial10_Bold]"/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Left" Value="404"/>
+          <Property Name="Left" Value="370"/>
           <Property Name="Multiline" Value="Automatic"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
@@ -642,7 +583,7 @@
           <Property Name="TextIndexOffset" Value="8"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="145"/>
-          <Property Name="Width" Value="206"/>
+          <Property Name="Width" Value="205"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_6">
           <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -653,7 +594,7 @@
           <Property Name="Font" Value="Source[local].Font[Arial12_Bold]"/>
           <Property Name="ForeColor" Value="0"/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Left" Value="614"/>
+          <Property Name="Left" Value="582"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
@@ -675,7 +616,7 @@
           <Property Name="FillStyle" Value="Opaque"/>
           <Property Name="Font" Value="Source[local].Font[Arial10_Bold]"/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Left" Value="404"/>
+          <Property Name="Left" Value="370"/>
           <Property Name="Multiline" Value="Automatic"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
@@ -684,7 +625,7 @@
           <Property Name="TextIndexOffset" Value="16"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="186"/>
-          <Property Name="Width" Value="206"/>
+          <Property Name="Width" Value="205"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_7">
           <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -705,7 +646,7 @@
           <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
           <Property Name="InputUpDown" Value="Disabled"/>
-          <Property Name="Left" Value="614"/>
+          <Property Name="Left" Value="582"/>
           <Property Name="Locking" Value="Datapoint &lt; Level"/>
           <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.ZvolenaUroven]"/>
           <Property Name="LockingLevel" Value="30"/>
@@ -733,9 +674,9 @@
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_81]"/>
           <Property Name="Font" Value="Source[local].Font[Arial10_Bold]"/>
           <Property Name="ForeColor" Value="0"/>
-          <Property Name="Height" Value="50"/>
+          <Property Name="Height" Value="35"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="484"/>
+          <Property Name="Left" Value="686"/>
           <Property Name="Locking" Value="Datapoint &lt; Level"/>
           <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.ZvolenaUroven]"/>
           <Property Name="LockingLevel" Value="30"/>
@@ -754,9 +695,9 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="258"/>
+          <Property Name="Top" Value="145"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_81]"/>
-          <Property Name="Width" Value="155"/>
+          <Property Name="Width" Value="90"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_24">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -776,7 +717,7 @@
           <Property Name="TextIndexOffset" Value="18"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="312"/>
-          <Property Name="Width" Value="220"/>
+          <Property Name="Width" Value="205"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_8">
           <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -797,7 +738,7 @@
           <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
           <Property Name="InputUpDown" Value="Disabled"/>
-          <Property Name="Left" Value="246"/>
+          <Property Name="Left" Value="229"/>
           <Property Name="Locking" Value="Datapoint &lt; Level"/>
           <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.ZvolenaUroven]"/>
           <Property Name="LockingLevel" Value="30"/>
@@ -819,7 +760,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[Arial10_Bold]"/>
           <Property Name="Height" Value="30"/>
-          <Property Name="Left" Value="346"/>
+          <Property Name="Left" Value="330"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -838,7 +779,7 @@
           <Property Name="FillStyle" Value="Opaque"/>
           <Property Name="Font" Value="Source[local].Font[Arial10_Bold]"/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Left" Value="20"/>
+          <Property Name="Left" Value="370"/>
           <Property Name="Multiline" Value="Automatic"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
@@ -846,8 +787,8 @@
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="20"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="358"/>
-          <Property Name="Width" Value="220"/>
+          <Property Name="Top" Value="228"/>
+          <Property Name="Width" Value="205"/>
         </Control>
         <Control ClassId="0x00001005" Name="Bitmap_4">
           <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -858,12 +799,22 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="32"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Linka.Rezim_BezTlaceEtikety]"/>
-          <Property Name="Left" Value="276"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Linka.Rezim_BezCistenia]"/>
+          <Property Name="Left" Value="613"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="Top" Value="359"/>
+          <Property Name="Top" Value="229"/>
           <Property Name="Width" Value="32"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_1">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="360"/>
+          <Property Name="EndY" Value="521"/>
+          <Property Name="LineWidth" Value="2"/>
+          <Property Name="StartX" Value="360"/>
+          <Property Name="StartY" Value="143"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
         </Control>
         <Control ClassId="0x00001003" Name="HotSpot_1">
           <Property Name="ControlID" Value="0"/>
@@ -871,7 +822,7 @@
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_59]"/>
           <Property Name="Height" Value="35"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="245"/>
+          <Property Name="Left" Value="229"/>
           <Property Name="Locking" Value="Datapoint &gt;= Level"/>
           <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.Vizu.ZmenaParametrov_DISABLE]"/>
           <Property Name="LockingLevel" Value="1"/>
@@ -880,18 +831,99 @@
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_59]"/>
           <Property Name="Width" Value="95"/>
         </Control>
+        <Control ClassId="0x00001003" Name="HotSpot_2">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_60]"/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="229"/>
+          <Property Name="Locking" Value="Datapoint &gt;= Level"/>
+          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.Vizu.ZmenaParametrov_DISABLE]"/>
+          <Property Name="LockingLevel" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+          <Property Name="Top" Value="446"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_60]"/>
+          <Property Name="Width" Value="95"/>
+        </Control>
+        <Control ClassId="0x00001003" Name="HotSpot_3">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_76]"/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="229"/>
+          <Property Name="Locking" Value="Datapoint &gt;= Level"/>
+          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.Vizu.ZmenaParametrov_DISABLE]"/>
+          <Property Name="LockingLevel" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+          <Property Name="Top" Value="492"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_76]"/>
+          <Property Name="Width" Value="95"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_26">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="BackColor" Value="248"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_LabelBorder]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Opaque"/>
+          <Property Name="Font" Value="Source[local].Font[Arial10_Bold]"/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="370"/>
+          <Property Name="Multiline" Value="Automatic"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="21"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="270"/>
+          <Property Name="Width" Value="205"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_5">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[CheckBox]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="32"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Linka.Rezim_BezTlaceEtikety]"/>
+          <Property Name="Left" Value="613"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+          <Property Name="Top" Value="271"/>
+          <Property Name="Width" Value="32"/>
+        </Control>
+        <Control ClassId="0x00001003" Name="HotSpot_5">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_99]"/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="582"/>
+          <Property Name="Locking" Value="Datapoint &gt;= Level"/>
+          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.Vizu.RezimBezTlaceEtikety_DISABLE]"/>
+          <Property Name="LockingLevel" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+          <Property Name="Top" Value="270"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_99]"/>
+          <Property Name="Width" Value="95"/>
+        </Control>
         <Control ClassId="0x00001003" Name="HotSpot_4">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_94]"/>
           <Property Name="Height" Value="35"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="245"/>
+          <Property Name="Left" Value="582"/>
           <Property Name="Locking" Value="Datapoint &gt;= Level"/>
-          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.Vizu.RezimBezTlaceEtikety_DISABLE]"/>
+          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.Vizu.RezimBezCistenia_DISABLE]"/>
           <Property Name="LockingLevel" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="Top" Value="358"/>
+          <Property Name="Top" Value="228"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_94]"/>
           <Property Name="Width" Value="95"/>
         </Control>
@@ -961,6 +993,22 @@
           </KeyActions>
         </VirtualKey>
         <VirtualKey Name="%embVirtualKey_94">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x0000016A">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="ResetValue" Value="0"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Linka.Rezim_BezCistenia]"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_99">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
@@ -1069,13 +1117,13 @@
     <MovementEntry Control="Source[local].Layer[PopPrihlasenie].Control[String_1]">
       <Property Name="Down" Value="Source[local].Layer[PopPrihlasenie].Control[String_2]"/>
       <Property Name="Left" Value="Source[embedded].Layer[FrameLayer].Control[Numeric_4]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[FrameLayer].Control[Numeric_7]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[FrameLayer].Control[Numeric_4]"/>
       <Property Name="Up" Value="Source[embedded].Layer[FrameLayer].Control[Numeric_7]"/>
     </MovementEntry>
     <MovementEntry Control="Source[local].Layer[PopPrihlasenie].Control[String_2]">
       <Property Name="Down" Value="Source[embedded].Layer[FrameLayer].Control[Numeric_8]"/>
       <Property Name="Left" Value="Source[embedded].Layer[FrameLayer].Control[Numeric_8]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[FrameLayer].Control[Numeric_7]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[FrameLayer].Control[Numeric_5]"/>
       <Property Name="Up" Value="Source[local].Layer[PopPrihlasenie].Control[String_1]"/>
     </MovementEntry>
   </MovementOrder>

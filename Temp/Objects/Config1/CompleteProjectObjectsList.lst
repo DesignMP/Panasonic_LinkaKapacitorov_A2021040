@@ -16,13 +16,13 @@
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Global.typ"
     LogicalPath="Global.typ"
     Type="File"
-    LastWriteTime="132808532189529192"
+    LastWriteTime="132814461423420072"
     Private="false" />
   <Object
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Global.var"
     LogicalPath="Global.var"
     Type="File"
-    LastWriteTime="132799276989817327"
+    LastWriteTime="132811734164664561"
     Private="false" />
   <Object
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Libraries\Package.pkg"
@@ -521,7 +521,7 @@
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Libraries\Statistika\Types.typ"
     LogicalPath="Libraries.Statistika.Types.typ"
     Type="File"
-    LastWriteTime="132797166338567612"
+    LastWriteTime="132811734565830816"
     Private="false" />
   <Object
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Libraries\Statistika\Constants.var"
@@ -539,7 +539,7 @@
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Libraries\Statistika\Taktime.st"
     LogicalPath="Libraries.Statistika.Taktime.st"
     Type="File"
-    LastWriteTime="132797168844405783"
+    LastWriteTime="132811734744262699"
     Private="false" />
   <Object
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Libraries\IecCheck\IEC.lby"
@@ -585,7 +585,7 @@
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Libraries\EthernetIP\KOM_EthernetIP.st"
     LogicalPath="Libraries.EthernetIP.KOM_EthernetIP.st"
     Type="File"
-    LastWriteTime="132805927504637339"
+    LastWriteTime="132811729279999784"
     Private="false" />
   <Object
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Libraries\MpRecipe\Binary.lby"
@@ -659,7 +659,7 @@
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\Main\Main.st"
     LogicalPath="Program.Main.Main.st"
     Type="File"
-    LastWriteTime="132803411792560862"
+    LastWriteTime="132811739009732919"
     Private="false" />
   <Object
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\Main\Types.typ"
@@ -695,7 +695,7 @@
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\Main\ZmenaModelu.st"
     LogicalPath="Program.Main.ZmenaModelu.st"
     Type="File"
-    LastWriteTime="132799622404979088"
+    LastWriteTime="132811865001272898"
     Private="false" />
   <Object
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\KontrolaOtacaniaTrysiek\IEC.prg"
@@ -729,7 +729,7 @@
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\VstupnyVytah\Main.st"
     LogicalPath="Program.VstupnyVytah.Main.st"
     Type="File"
-    LastWriteTime="132803275493782525"
+    LastWriteTime="132814464311962276"
     Private="false" />
   <Object
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\VstupnyVytah\Types.typ"
@@ -753,7 +753,7 @@
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\VstupnyVytah\OvlDveri.st"
     LogicalPath="Program.VstupnyVytah.OvlDveri.st"
     Type="File"
-    LastWriteTime="132760157687987455"
+    LastWriteTime="132814327256319071"
     Private="false" />
   <Object
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\VstupnyVytah\OvlCitackyRFID.st"
@@ -770,7 +770,7 @@
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\StoperPredCistenim\Main.st"
     LogicalPath="Program.StoperPredCistenim.Main.st"
     Type="File"
-    LastWriteTime="132803371123970674"
+    LastWriteTime="132811994305060849"
     Private="false" />
   <Object
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\StoperPredCistenim\Types.typ"
@@ -851,7 +851,7 @@
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\StoperEtiketovania\Main.st"
     LogicalPath="Program.StoperEtiketovania.Main.st"
     Type="File"
-    LastWriteTime="132803452494118908"
+    LastWriteTime="132814469350514702"
     Private="false" />
   <Object
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\StoperEtiketovania\Types.typ"
@@ -892,7 +892,7 @@
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\Robot\Main.st"
     LogicalPath="Program.Robot.Main.st"
     Type="File"
-    LastWriteTime="132808518065590158"
+    LastWriteTime="132814427621760587"
     Private="false" />
   <Object
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\Robot\Types.typ"
@@ -1129,7 +1129,7 @@
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\StatistikaLinky\Main.st"
     LogicalPath="Program.StatistikaLinky.Main.st"
     Type="File"
-    LastWriteTime="132798994101905465"
+    LastWriteTime="132811735556354610"
     Private="false" />
   <Object
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Program\StatistikaLinky\Types.typ"
@@ -1203,7 +1203,7 @@
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\HMI\OvladanieVizu\Main.st"
     LogicalPath="HMI.OvladanieVizu.Main.st"
     Type="File"
-    LastWriteTime="132808468433415709"
+    LastWriteTime="132814416245091959"
     Private="false" />
   <Object
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\HMI\OvladanieVizu\Types.typ"
@@ -1343,7 +1343,7 @@
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Blikace\Blikanie1s\Blikanie1s.st"
     LogicalPath="Blikace.Blikanie1s.Blikanie1s.st"
     Type="File"
-    LastWriteTime="132735802783237327"
+    LastWriteTime="132811736784795213"
     Private="false" />
   <Object
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Receptury\Package.pkg"
@@ -1433,7 +1433,7 @@
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Logical\Poznamky.txt"
     LogicalPath="Poznamky.txt"
     Type="File"
-    LastWriteTime="132798779042219409"
+    LastWriteTime="132814446446364420"
     Private="false" />
   <Object
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Physical\Config1\Config.pkg"
@@ -1450,13 +1450,13 @@
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Physical\Config1\Hardware.hwl"
     LogicalPath="Config1.Hardware.hwl"
     Type="File"
-    LastWriteTime="132811174752502825"
+    LastWriteTime="132814460841533245"
     Private="false" />
   <Object
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Physical\Config1\AB1_CPU\Cpu.pkg"
     LogicalPath="Config1.AB1_CPU"
     Type="Cpu"
-    LastWriteTime="132811132927316153" />
+    LastWriteTime="132814428693688490" />
   <Object
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Physical\Config1\AB1_CPU\Cpu.sw"
     LogicalPath="Config1.AB1_CPU.Cpu.sw"
@@ -1467,13 +1467,13 @@
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Physical\Config1\AB1_CPU\Cpu.per"
     LogicalPath="Config1.AB1_CPU.Cpu.per"
     Type="File"
-    LastWriteTime="132799277164678036"
+    LastWriteTime="132814464416064359"
     Private="false" />
   <Object
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Physical\Config1\AB1_CPU\IoMap.iom"
     LogicalPath="Config1.AB1_CPU.IoMap.iom"
     Type="File"
-    LastWriteTime="132808374883734471"
+    LastWriteTime="132811737834371788"
     Private="false" />
   <Object
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Physical\Config1\AB1_CPU\PvMap.vvm"
@@ -1838,6 +1838,6 @@
     Path="D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Physical\Config1\Hardware.jpg"
     LogicalPath="Config1.Hardware.jpg"
     Type="File"
-    LastWriteTime="132811174753709948"
+    LastWriteTime="132814460842424466"
     Private="false" />
 </Objects>
