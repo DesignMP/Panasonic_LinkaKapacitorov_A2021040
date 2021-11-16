@@ -106,13 +106,6 @@ PROGRAM _CYCLIC
 	
 	
 	
-	//Prepínanie obrázkov pri korekcii robota//
-	IF OffsetRobota_NazovModelu = 'EZTKE26150HD' THEN
-		Vizu.IndexSuradnicovehoSystemuPaletky:= 1;
-	ELSE
-		Vizu.IndexSuradnicovehoSystemuPaletky:= 0;
-	END_IF	
-	
 	
 	//Zobrazenie symbolov stlaèeného CS//
 	IF Safety.STAV.CS_VstupnyVytah_Odblokovany THEN
@@ -620,6 +613,32 @@ PROGRAM _CYCLIC
 		Vizu.ZobrazHlasenie_DochadzaPaska:= 1;
 	END_IF		
 
+	
+	//***********************************************Prepínanie obrázkov súradnicového systému pre zadávanie korekcii robota*******************************************************//
+	IF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BD1' THEN
+		Vizu.IndexSuradnicovehoSystemuPaletky:= 1;
+	ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BE1' THEN
+		Vizu.IndexSuradnicovehoSystemuPaletky:= 2;	
+	ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BF1' THEN
+		Vizu.IndexSuradnicovehoSystemuPaletky:= 3;
+	ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BV1' THEN
+		Vizu.IndexSuradnicovehoSystemuPaletky:= 4;
+	ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'EH1' THEN
+		Vizu.IndexSuradnicovehoSystemuPaletky:= 4;
+	ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BW1' THEN
+		Vizu.IndexSuradnicovehoSystemuPaletky:= 5;
+	ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'CN1' THEN
+		Vizu.IndexSuradnicovehoSystemuPaletky:= 6;
+	ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'CP1' THEN
+		Vizu.IndexSuradnicovehoSystemuPaletky:= 7;	
+	ELSE
+		Vizu.IndexSuradnicovehoSystemuPaletky:= 0;
+	END_IF	
+	
+	
+	
+	
+	
 	
 	//***********************************************Zobrazenie stavov ladenia kamery***********************************************//
 	//0 - READY.

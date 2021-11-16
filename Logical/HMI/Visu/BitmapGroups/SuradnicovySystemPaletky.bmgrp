@@ -5,11 +5,23 @@
   <Property Name="Index" Value="15"/>
   <Property Name="Translate" Value="False"/>
   <BitmapLayer LanguageId="neutral">
-    <BitmapRef ID="2409" Value="Source[local].Bitmap[SuradnicovySystemPaletky_1]"/>
-    <BitmapRef ID="2410" Value="Source[local].Bitmap[SuradnicovySystemPaletky_2]"/>
+    <BitmapRef ID="2409" Value="None"/>
+    <BitmapRef ID="2410" Value="Source[local].Bitmap[Model_5AQ]"/>
+    <BitmapRef ID="2414" Value="Source[local].Bitmap[Model_5DH]"/>
+    <BitmapRef ID="2415" Value="Source[local].Bitmap[Model_HEAT190_HEAT150]"/>
+    <BitmapRef ID="2416" Value="Source[local].Bitmap[Model_Base_Plus]"/>
+    <BitmapRef ID="2417" Value="Source[local].Bitmap[Model_GT13485]"/>
+    <BitmapRef ID="2418" Value="Source[local].Bitmap[Model_GT13484]"/>
+    <BitmapRef ID="2419" Value="Source[local].Bitmap[Model_EV2020]"/>
   </BitmapLayer>
   <IndexMap>
     <Index ID="2409" Value="0"/>
     <Index ID="2410" Value="1"/>
+    <Index ID="2414" Value="2"/>
+    <Index ID="2415" Value="3"/>
+    <Index ID="2416" Value="4"/>
+    <Index ID="2417" Value="5"/>
+    <Index ID="2418" Value="6"/>
+    <Index ID="2419" Value="7"/>
   </IndexMap>
 </BitmapGroup>

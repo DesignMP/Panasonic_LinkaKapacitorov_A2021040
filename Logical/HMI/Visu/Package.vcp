@@ -410,6 +410,14 @@
     <Source File="Bitmaps\DataMetrix_32x32.bminfo"/>
     <Source File="Bitmaps\Kamera_OFF_32x32.bminfo"/>
     <Source File="Bitmaps\QR_code_32x32.bminfo"/>
+    <Source File="Bitmaps\Model_5AQ.bminfo"/>
+    <Source File="Bitmaps\Model_5DH.bminfo"/>
+    <Source File="Bitmaps\Bitmap_1.bminfo"/>
+    <Source File="Bitmaps\Model_EV2020.bminfo"/>
+    <Source File="Bitmaps\Model_GT13484.bminfo"/>
+    <Source File="Bitmaps\Model_GT13485.bminfo"/>
+    <Source File="Bitmaps\Model_HEAT190_HEAT150.bminfo"/>
+    <Source File="Bitmaps\Model_Base_Plus.bminfo"/>
     <Source File="BitmapGroups\AlarmAcknowledgeState.bmgrp"/>
     <Source File="BitmapGroups\AlarmBypassState.bmgrp"/>
     <Source File="BitmapGroups\AlarmEvent.bmgrp"/>

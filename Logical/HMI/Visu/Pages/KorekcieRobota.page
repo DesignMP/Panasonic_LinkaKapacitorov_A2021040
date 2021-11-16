@@ -336,16 +336,17 @@
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[SuradnicovySystemPaletky]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_SunkenNG]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
-          <Property Name="Height" Value="258"/>
+          <Property Name="Height" Value="301"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Vizu.IndexSuradnicovehoSystemuPaletky]"/>
-          <Property Name="Left" Value="525"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="527"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="Top" Value="190"/>
-          <Property Name="Width" Value="326"/>
+          <Property Name="Top" Value="160"/>
+          <Property Name="Width" Value="330"/>
         </Control>
       </Controls>
       <KeyMapping/>
