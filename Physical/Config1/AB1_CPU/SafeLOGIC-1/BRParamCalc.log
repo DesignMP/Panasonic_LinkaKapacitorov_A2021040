@@ -1,4 +1,4 @@
-LOGStart created on Monday 2021/11/08  UTC 09:35:31:218
+LOGStart created on Tuesday 2021/11/30  UTC 10:42:01:514
 
 Reading "OSDD Data"...
 Reading Content "Start"
@@ -121,7 +121,7 @@ Content "name1" successfully read from "name2"
 
 
 
-LOGAppend on Monday 2021/11/08  UTC 09:35:31:222
+LOGAppend on Tuesday 2021/11/30  UTC 10:42:01:517
 
 Reading "D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Physical\Config1\AB1_CPU\SafeLOGIC-1\BusNavigator.iom"...
 Reading Content "IOOffsets"
@@ -160,31 +160,34 @@ Reading properties for channel "BOOL018". Beginning at line 33
 Reading properties for channel "BOOL019". Beginning at line 34
 Reading properties for channel "BOOL020". Beginning at line 35
 Reading properties for channel "BOOL021". Beginning at line 36
-Reading properties for channel "BOOL101". Beginning at line 37
-Reading properties for channel "BOOL102". Beginning at line 38
-Reading properties for channel "BOOL103". Beginning at line 39
-Reading properties for channel "BOOL104". Beginning at line 40
-Reading properties for channel "BOOL105". Beginning at line 41
-Reading properties for channel "BOOL106". Beginning at line 42
-Reading properties for channel "BOOL107". Beginning at line 43
-Reading properties for channel "BOOL108". Beginning at line 44
-Reading properties for channel "BOOL109". Beginning at line 45
-Reading properties for channel "BOOL110". Beginning at line 46
-Module "SL1.SM1.SL1.SM1" has 43 items.
-Reading properties for module "SL1.SM2". Beginning at line 48
-Reading properties for channel "SafeTwoChannelInput0102". Beginning at line 49
-Reading properties for channel "SafeTwoChannelInput0304". Beginning at line 50
-Reading properties for channel "SafeTwoChannelInput0506". Beginning at line 51
-Reading properties for channel "SafeTwoChannelInput0708". Beginning at line 52
+Reading properties for channel "BOOL022". Beginning at line 37
+Reading properties for channel "BOOL023". Beginning at line 38
+Reading properties for channel "BOOL101". Beginning at line 39
+Reading properties for channel "BOOL102". Beginning at line 40
+Reading properties for channel "BOOL103". Beginning at line 41
+Reading properties for channel "BOOL104". Beginning at line 42
+Reading properties for channel "BOOL105". Beginning at line 43
+Reading properties for channel "BOOL106". Beginning at line 44
+Reading properties for channel "BOOL107". Beginning at line 45
+Reading properties for channel "BOOL108". Beginning at line 46
+Reading properties for channel "BOOL109". Beginning at line 47
+Reading properties for channel "BOOL110". Beginning at line 48
+Reading properties for channel "BOOL111". Beginning at line 49
+Module "SL1.SM1.SL1.SM1" has 46 items.
+Reading properties for module "SL1.SM2". Beginning at line 51
+Reading properties for channel "SafeTwoChannelInput0102". Beginning at line 52
+Reading properties for channel "SafeTwoChannelInput0304". Beginning at line 53
+Reading properties for channel "SafeTwoChannelInput0506". Beginning at line 54
+Reading properties for channel "SafeTwoChannelInput0708". Beginning at line 55
 Module "SL1.SM2.SL1.SM2" has 4 items.
-Reading properties for module "SL1.SM3". Beginning at line 54
-Reading properties for channel "SafeTwoChannelInput0102". Beginning at line 55
-Reading properties for channel "SafeTwoChannelInput0304". Beginning at line 56
-Reading properties for channel "SafeTwoChannelInput0506". Beginning at line 57
+Reading properties for module "SL1.SM3". Beginning at line 57
+Reading properties for channel "SafeTwoChannelInput0102". Beginning at line 58
+Reading properties for channel "SafeTwoChannelInput0304". Beginning at line 59
+Reading properties for channel "SafeTwoChannelInput0506". Beginning at line 60
 Module "SL1.SM3.SL1.SM3" has 3 items.
-Reading properties for module "SL1.SM4". Beginning at line 59
-Reading properties for channel "SafeTwoChannelInput0102". Beginning at line 60
-Reading properties for channel "SafeTwoChannelInput0304". Beginning at line 61
-Reading properties for channel "SafeTwoChannelInput0506". Beginning at line 62
+Reading properties for module "SL1.SM4". Beginning at line 62
+Reading properties for channel "SafeTwoChannelInput0102". Beginning at line 63
+Reading properties for channel "SafeTwoChannelInput0304". Beginning at line 64
+Reading properties for channel "SafeTwoChannelInput0506". Beginning at line 65
 Module "SL1.SM4.SL1.SM4" has 3 items.
 Content "IOOffsets" successfully read from "D:\Projekty BER\Panasonic_LinkaKapacitorov_A2021040\Physical\Config1\AB1_CPU\SafeLOGIC-1\BusNavigator.iom"

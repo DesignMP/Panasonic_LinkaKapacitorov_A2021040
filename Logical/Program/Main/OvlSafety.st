@@ -102,7 +102,12 @@ ACTION OvlSafety:
 	CasResetZonyVystupVytahu();
 	
 	
-	
+	//Reset dedman//
+	IF NOT Linka.STAV.Automat AND ZvolenaUroven > 30 AND Safety.STAV.DeadMan_Odblokovany AND NOT Safety.STAV.DeadMan_AKTIVNY THEN
+		Safety.RESET_DeadMan:= TRUE;
+	ELSE
+		Safety.RESET_DeadMan:= FALSE;
+	END_IF	
 	
 	
 END_ACTION

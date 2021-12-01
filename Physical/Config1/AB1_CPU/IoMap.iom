@@ -965,4 +965,8 @@ VAR_CONFIG
 	Cyclic#1.::Pocitadlo AT %QD."X20IF10D3_1".Connect1_Input_Assembly_Byte_32_Byte_364;
 	Cyclic#1.Linka.OUT.Vzduchotechnika_START AT %QX."AB9_16DO".DigitalOutput13;
 	Cyclic#1.Safety.STAV.ZamkyBunky_AKTIVNE AT %IX."AB3_SafetyMaster".BOOL016;
+	Cyclic#1.Linka.OUT.Rele_ResetNapajaniaKamery AT %QX."X20DOF322".DigitalOutput16;
+	Cyclic#1.Safety.RESET_DeadMan AT %QX."AB3_SafetyMaster".BOOL111;
+	Cyclic#1.Safety.STAV.DeadMan_AKTIVNY AT %IX."AB3_SafetyMaster".BOOL022;
+	Cyclic#1.Safety.STAV.DeadMan_Odblokovany AT %IX."AB3_SafetyMaster".BOOL023;
 END_VAR

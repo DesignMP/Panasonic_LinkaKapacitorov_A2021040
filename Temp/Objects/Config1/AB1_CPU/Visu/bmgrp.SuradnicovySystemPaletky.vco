@@ -7,16 +7,46 @@
       <Folder Name="BitmapGroups">
         <Folder Name="POBJ">
           <Object Name="SuradnicovySystemPaletky" ClsId="0x308" Version="1" TargetIndex="15" Type="BMPG" RefString="Source[local].BitmapGroup[SuradnicovySystemPaletky_sk-SK]">
-            <UInt32 Name="Count">2</UInt32>
-            <Group Name="SuradnicovySystemPaletky_1">
-              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[SuradnicovySystemPaletky_1]</Reference>
+            <UInt32 Name="Count">8</UInt32>
+            <Group Name="">
+              <Reference Name="Bitmap" Type="GFX">None</Reference>
               <UInt16 Name="Reserved">0</UInt16>
               <UInt16 Name="Value">0</UInt16>
             </Group>
-            <Group Name="SuradnicovySystemPaletky_2">
-              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[SuradnicovySystemPaletky_2]</Reference>
+            <Group Name="Model_5AQ">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[Model_5AQ]</Reference>
               <UInt16 Name="Reserved">0</UInt16>
               <UInt16 Name="Value">1</UInt16>
+            </Group>
+            <Group Name="Model_5DH">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[Model_5DH]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">2</UInt16>
+            </Group>
+            <Group Name="Model_HEAT190_HEAT150">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[Model_HEAT190_HEAT150]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">3</UInt16>
+            </Group>
+            <Group Name="Model_Base_Plus">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[Model_Base_Plus]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">4</UInt16>
+            </Group>
+            <Group Name="Model_GT13485">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[Model_GT13485]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">5</UInt16>
+            </Group>
+            <Group Name="Model_GT13484">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[Model_GT13484]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">6</UInt16>
+            </Group>
+            <Group Name="Model_EV2020">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[Model_EV2020]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">7</UInt16>
             </Group>
           </Object>
         </Folder>
@@ -26,16 +56,46 @@
       <Folder Name="BitmapGroups">
         <Folder Name="POBJ">
           <Object Name="SuradnicovySystemPaletky" ClsId="0x308" Version="1" TargetIndex="15" Type="BMPG" RefString="Source[local].BitmapGroup[SuradnicovySystemPaletky_en]">
-            <UInt32 Name="Count">2</UInt32>
-            <Group Name="SuradnicovySystemPaletky_1">
-              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[SuradnicovySystemPaletky_1]</Reference>
+            <UInt32 Name="Count">8</UInt32>
+            <Group Name="">
+              <Reference Name="Bitmap" Type="GFX">None</Reference>
               <UInt16 Name="Reserved">0</UInt16>
               <UInt16 Name="Value">0</UInt16>
             </Group>
-            <Group Name="SuradnicovySystemPaletky_2">
-              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[SuradnicovySystemPaletky_2]</Reference>
+            <Group Name="Model_5AQ">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[Model_5AQ]</Reference>
               <UInt16 Name="Reserved">0</UInt16>
               <UInt16 Name="Value">1</UInt16>
+            </Group>
+            <Group Name="Model_5DH">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[Model_5DH]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">2</UInt16>
+            </Group>
+            <Group Name="Model_HEAT190_HEAT150">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[Model_HEAT190_HEAT150]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">3</UInt16>
+            </Group>
+            <Group Name="Model_Base_Plus">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[Model_Base_Plus]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">4</UInt16>
+            </Group>
+            <Group Name="Model_GT13485">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[Model_GT13485]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">5</UInt16>
+            </Group>
+            <Group Name="Model_GT13484">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[Model_GT13484]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">6</UInt16>
+            </Group>
+            <Group Name="Model_EV2020">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[Model_EV2020]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">7</UInt16>
             </Group>
           </Object>
         </Folder>
@@ -45,16 +105,46 @@
       <Folder Name="BitmapGroups">
         <Folder Name="POBJ">
           <Object Name="SuradnicovySystemPaletky" ClsId="0x308" Version="1" TargetIndex="15" Type="BMPG" RefString="Source[local].BitmapGroup[SuradnicovySystemPaletky_ja-JP]">
-            <UInt32 Name="Count">2</UInt32>
-            <Group Name="SuradnicovySystemPaletky_1">
-              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[SuradnicovySystemPaletky_1]</Reference>
+            <UInt32 Name="Count">8</UInt32>
+            <Group Name="">
+              <Reference Name="Bitmap" Type="GFX">None</Reference>
               <UInt16 Name="Reserved">0</UInt16>
               <UInt16 Name="Value">0</UInt16>
             </Group>
-            <Group Name="SuradnicovySystemPaletky_2">
-              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[SuradnicovySystemPaletky_2]</Reference>
+            <Group Name="Model_5AQ">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[Model_5AQ]</Reference>
               <UInt16 Name="Reserved">0</UInt16>
               <UInt16 Name="Value">1</UInt16>
+            </Group>
+            <Group Name="Model_5DH">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[Model_5DH]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">2</UInt16>
+            </Group>
+            <Group Name="Model_HEAT190_HEAT150">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[Model_HEAT190_HEAT150]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">3</UInt16>
+            </Group>
+            <Group Name="Model_Base_Plus">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[Model_Base_Plus]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">4</UInt16>
+            </Group>
+            <Group Name="Model_GT13485">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[Model_GT13485]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">5</UInt16>
+            </Group>
+            <Group Name="Model_GT13484">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[Model_GT13484]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">6</UInt16>
+            </Group>
+            <Group Name="Model_EV2020">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[Model_EV2020]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">7</UInt16>
             </Group>
           </Object>
         </Folder>

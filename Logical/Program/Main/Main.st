@@ -76,6 +76,8 @@ PROGRAM _CYCLIC
 	//Žlté svetlo//
 	IF Linka.STAV.Automat AND NOT Linka.STAV.PoINIT THEN
 		Linka.OUT.Majak_ZlteSvetlo:= Blikac500ms;
+	ELSIF StoperEtiketovania.STAV.Warning THEN
+		Linka.OUT.Majak_ZlteSvetlo:= Blikac500ms;
 	ELSE
 		Linka.OUT.Majak_ZlteSvetlo:= FALSE;
 	END_IF    
@@ -137,9 +139,9 @@ PROGRAM _CYCLIC
 	END_IF	
 	
 	IF EDGEPOS(PoruchaBunky) THEN
-		StoperEtiketovania.Reset:= TRUE;
+		StoperEtiketovania.KoniecCyklu:= TRUE;
 		Robot.KoniecCyklu:= TRUE;
-		StoperDopravNG.Reset:= TRUE;
+		StoperDopravNG.KoniecCyklu:= TRUE;
 		DopravBunky.KoniecCyklu:= TRUE;
 	END_IF	
 	
@@ -338,6 +340,31 @@ PROGRAM _CYCLIC
 	ELSE    
 		Linka.STAV.READY_TO_START:= FALSE;
 	END_IF  
+	
+	
+	//******************************************Pauza dopravníkov linky**************************************************************//
+	
+	IF Linka.STAV.Automat AND
+		NOT VstupVytah.OUT.Dopravnik_ChodVPRED_ELR1 AND
+		NOT VstupVytah.OUT.Dopravnik_ChodVZAD_ELR1 AND
+		NOT StoperPredCistenim.OUT.StoperZASUN_YV005 AND
+		NOT StoperPoCisteni.OUT.StoperZASUN_YV006 AND
+		NOT StoperEtiketovania.OUT.StoperZASUN_YV007 AND
+		NOT StoperDopravNG.OUT.Dopravnik_ChodVZAD_ELR3 AND
+		NOT StoperVystupDopravnika.OUT.StoperZASUN_YV011 AND
+		NOT VystupVytah.OUT.Dopravnik_ChodVPRED_ELR6 AND
+		NOT VystupVytah.OUT.Dopravnik_ChodVZAD_ELR6 AND
+		NOT StoperVratDopravnika.OUT.StoperZASUN_YV012 THEN
+		CasDoPauzyDopravnikov.IN:= TRUE;
+	ELSE
+		CasDoPauzyDopravnikov.IN:= FALSE;
+	END_IF	
+	
+	
+	Linka.STAV.Dopravniky_PAUZA:= CasDoPauzyDopravnikov.Q;
+	
+	CasDoPauzyDopravnikov.PT:= T#3M;
+	CasDoPauzyDopravnikov();
 	
 	
 	

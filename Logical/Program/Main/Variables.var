@@ -11,4 +11,5 @@ VAR
 	a : UINT := 0;
 	CasAktivacieHukacky : TON := (0);
 	CasVypnutiaVzduchotechniky : TON := (0);
+	CasDoPauzyDopravnikov : TON := (0);
 END_VAR

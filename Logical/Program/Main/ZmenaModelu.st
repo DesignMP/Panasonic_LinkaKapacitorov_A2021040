@@ -45,9 +45,8 @@ ACTION ZmenaModelu:
 	
 	
 	
-	
 
-	
+		
 	
 	
 	CASE SC_ZmenaModelu.Step OF
@@ -92,6 +91,7 @@ ACTION ZmenaModelu:
 					HistoriaVyroby[IndexHistorie].NazovLOTU:= Zvoleny_LOT;
 					HistoriaVyroby[IndexHistorie].PocetVyrobenychKusov_OK:= PocetVyrobenychKusov_OK;
 					HistoriaVyroby[IndexHistorie].PocetVyrobenychKusov_NG:= PocetVyrobenychKusov_NG;
+					HistoriaVyroby[IndexHistorie].Pomer_OK_kusov_IDR:= Pomer_OK_kusov_IDR;
 					IndexHistorie:= IndexHistorie + 1;
 					IF IndexHistorie > 5 THEN
 						IndexHistorie:= 0;
@@ -106,6 +106,7 @@ ACTION ZmenaModelu:
 					RESET_PoctuVyrobenychKusov:= TRUE;
 					Linka.Rezim_BezCistenia:= FALSE;
 					Linka.Rezim_BezTlaceEtikety:= FALSE;
+					Linka.Rezim_Testovania:= FALSE;
 					NacitajRecepturu:= TRUE;
 					ModelNajdeny:= TRUE;
 				END_IF

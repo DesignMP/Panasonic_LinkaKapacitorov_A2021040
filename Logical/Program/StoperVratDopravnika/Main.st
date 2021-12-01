@@ -86,7 +86,7 @@ PROGRAM _CYCLIC
 		
 			SC_StoperVratDopravnika.IdleTime.IN:= StoperVratDopravnika.IN.PritomnostPaletky_IS14;
 			
-			IF StoperVratDopravnika.KoniecCyklu THEN
+			IF StoperVratDopravnika.KoniecCyklu AND NOT VstupVytah.Automat THEN
 				SC_StoperVratDopravnika.ResetStep:= TRUE;
 				SC_StoperVratDopravnika.Step:= 0;
 			ELSIF SC_StoperVratDopravnika.IdleTime.Q THEN
@@ -100,7 +100,7 @@ PROGRAM _CYCLIC
 			SC_StoperVratDopravnika.IdleTime.PT:= T#200ms;
 			SC_StoperVratDopravnika.AlarmTime.PT:= T#5s;
 			
-			IF StoperVratDopravnika.KoniecCyklu THEN
+			IF StoperVratDopravnika.KoniecCyklu AND NOT VstupVytah.Automat THEN
 				SC_StoperVratDopravnika.ResetStep:= TRUE;
 				SC_StoperVratDopravnika.Step:= 0;
 			ELSIF SC_VstupVytah.Step = 105 AND NOT VstupVytah.IN.PritomnostPaletky_IS3 THEN  

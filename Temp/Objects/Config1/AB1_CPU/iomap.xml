@@ -1536,6 +1536,7 @@
 <Cons Device="IF6.ST1" DPName="BOOL110" Kind="io"/>
 </LN>
 <LN ID="%QX.IF6.ST1.BOOL111" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="Safety.RESET_DeadMan" Kind="pv"/>
 <Cons Device="IF6.ST1" DPName="BOOL111" Kind="io"/>
 </LN>
 <LN ID="%QX.IF6.ST1.BOOL112" Type="BOOL">
@@ -1639,9 +1640,11 @@
 </LN>
 <LN ID="%IX.IF6.ST1.BOOL022" Type="BOOL">
 <Prod Device="IF6.ST1" DPName="BOOL022" Kind="io"/>
+<Cons Device="TC#1-CPYDEV" DPName="Safety.STAV.DeadMan_AKTIVNY" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF6.ST1.BOOL023" Type="BOOL">
 <Prod Device="IF6.ST1" DPName="BOOL023" Kind="io"/>
+<Cons Device="TC#1-CPYDEV" DPName="Safety.STAV.DeadMan_Odblokovany" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF6.ST1.BOOL024" Type="BOOL">
 <Prod Device="IF6.ST1" DPName="BOOL024" Kind="io"/>
@@ -2543,6 +2546,7 @@
 <Cons Device="IF6.ST8" DPName="DigitalOutput15" Kind="io"/>
 </LN>
 <LN ID="%QX.IF6.ST8.DigitalOutput16" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="Linka.OUT.Rele_ResetNapajaniaKamery" Kind="pv"/>
 <Cons Device="IF6.ST8" DPName="DigitalOutput16" Kind="io"/>
 </LN>
 <LN ID="%IX.IF6.ST8.StatusDigitalOutput01" Type="BOOL">

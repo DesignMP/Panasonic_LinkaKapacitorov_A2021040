@@ -83,6 +83,7 @@ PROGRAM _CYCLIC
 	//A73 - Bol zastaveny program robota !!!
 	//A74 - Porucha komunikácie so serverom Panasonic !!!
 	//A75 - Kamera robota nieje READY !!!
+	//A76 - Porucha odobratia etikety z tlaèiarne !!!
 
 	 
      //***********************************Hladanie poruchy*****************************************//
@@ -163,14 +164,14 @@ PROGRAM _CYCLIC
 	CasKontroly_KOM_Robota();
     
 	//********************************Porucha komunikácie s kamerou******************************************************//
-	CasKontroly_KOM_Kamery.IN:= Safety.STAV.ZonaCS_AKTIVNA AND NOT StavHardware.Komunikacia_Kamera_OK;
+	CasKontroly_KOM_Kamery.IN:= Robot.Automat AND NOT StavHardware.Komunikacia_Kamera_OK;
 	IF CasKontroly_KOM_Kamery.Q THEN
 		Alarmy[3]:= TRUE;
 		PoruchaBunky:= TRUE;
 	END_IF
     
     
-	CasKontroly_KOM_Kamery.PT:= T#2s;
+	CasKontroly_KOM_Kamery.PT:= T#1s;
 	CasKontroly_KOM_Kamery();
 	
 	

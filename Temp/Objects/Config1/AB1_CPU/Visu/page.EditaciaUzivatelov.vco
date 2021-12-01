@@ -579,7 +579,7 @@
             <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.HesloUzivatela]</Reference>
             <UInt32 Name="ControlID">0</UInt32>
             <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x0000100B].StyleClass[Default]</Reference>
-            <UInt16 Name="StyleTableSize">98</UInt16>
+            <UInt16 Name="StyleTableSize">104</UInt16>
             <UInt16 Name="Reserved">0</UInt16>
             <Group Name="Border">
               <UInt16 Name="Offset">0</UInt16>
@@ -604,7 +604,7 @@
             <Group Name="InputMode">
               <UInt16 Name="Offset">25</UInt16>
               <UInt16 Name="Size">1</UInt16>
-              <Byte Name="Data">0</Byte>
+              <Byte Name="Data">3</Byte>
             </Group>
             <Group Name="InputConfirm">
               <UInt16 Name="Offset">26</UInt16>
@@ -630,6 +630,11 @@
               <UInt16 Name="Offset">31</UInt16>
               <UInt16 Name="Size">1</UInt16>
               <Byte Name="Data">1</Byte>
+            </Group>
+            <Group Name="InputPasswordChar">
+              <UInt16 Name="Offset">32</UInt16>
+              <UInt16 Name="Size">2</UInt16>
+              <UInt16 Name="Data">42</UInt16>
             </Group>
             <Group Name="InputTabSize">
               <UInt16 Name="Offset">34</UInt16>

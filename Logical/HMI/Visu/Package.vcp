@@ -466,8 +466,10 @@
     <Source File="Pages\KorekcieRobota.page"/>
     <Source File="Pages\RFID_citacky_page2.page"/>
     <Source File="Pages\HistoriaVyroby.page"/>
-    <Source File="Pages\Statistika.page"/>
+    <Source File="Pages\TaktimePracovisk.page"/>
     <Source File="Pages\LadenieKamery.page"/>
+    <Source File="Pages\RR_StavySnimacov_page1.page"/>
+    <Source File="Pages\RR_StavySnimacov_page2.page"/>
     <Source File="Layers\Background.layer"/>
     <Source File="Layers\Pozadie_DMP.layer"/>
     <Source File="Layers\PopPrihlasenie.layer"/>

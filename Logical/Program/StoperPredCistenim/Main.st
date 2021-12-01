@@ -125,20 +125,26 @@ PROGRAM _CYCLIC
 				SC_StoperPredCistenim.ResetStep:= TRUE;
 				SC_StoperPredCistenim.Step:= 0;
 			ELSIF SC_StoperPoCisteni.Step = 100 AND (NOT StoperPoCisteni.IN.PritomnostPaletky_IS6 OR NOT StoperPoCisteni.IN.ZaplnenieBuffera_IS5) AND NOT StoperPoCisteni.STAV.PrebiehaVyvazaniePaletky THEN  
-				IF NOT Linka.Rezim_BezCistenia THEN
-					SC_StoperPredCistenim.ResetStep:= TRUE;
-					SC_StoperPredCistenim.Step:= 103;
-				ELSE
+				IF Linka.Rezim_BezCistenia THEN
 					SC_StoperPredCistenim.ResetStep:= TRUE;
 					SC_StoperPredCistenim.Step:= 105;
+				ELSIF Linka.Rezim_Priechodny THEN
+					SC_StoperPredCistenim.ResetStep:= TRUE;
+					SC_StoperPredCistenim.Step:= 105;
+				ELSE
+					SC_StoperPredCistenim.ResetStep:= TRUE;
+					SC_StoperPredCistenim.Step:= 103;
 				END_IF	
 			ELSIF StoperPoCisteni.STAV.PoINIT AND NOT StoperPoCisteni.IN.ZaplnenieBuffera_IS5 THEN
-				IF NOT Linka.Rezim_BezCistenia THEN
-					SC_StoperPredCistenim.ResetStep:= TRUE;
-					SC_StoperPredCistenim.Step:= 103;
-				ELSE
+				IF Linka.Rezim_BezCistenia THEN
 					SC_StoperPredCistenim.ResetStep:= TRUE;
 					SC_StoperPredCistenim.Step:= 105;
+				ELSIF Linka.Rezim_Priechodny THEN
+					SC_StoperPredCistenim.ResetStep:= TRUE;
+					SC_StoperPredCistenim.Step:= 105;	
+				ELSE
+					SC_StoperPredCistenim.ResetStep:= TRUE;
+					SC_StoperPredCistenim.Step:= 103;
 				END_IF
 			END_IF
 		
@@ -231,6 +237,9 @@ PROGRAM _CYCLIC
 				Paletka[i].Cistenie_DONE:= TRUE;
 				Paletka[i].StavCistenia:= 'OK';
 				Paletka[i].StavPaletky:= 'OK';
+				SC_StoperPredCistenim.ResetStep:= TRUE;
+				SC_StoperPredCistenim.Step:= 115;
+			ELSIF Linka.Rezim_Priechodny THEN
 				SC_StoperPredCistenim.ResetStep:= TRUE;
 				SC_StoperPredCistenim.Step:= 115;
 			ELSIF NOT Linka.STAV.PoruchaOtacaniaTrysiek THEN

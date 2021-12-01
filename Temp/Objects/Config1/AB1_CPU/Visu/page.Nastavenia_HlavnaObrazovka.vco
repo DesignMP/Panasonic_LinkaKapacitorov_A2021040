@@ -1171,7 +1171,7 @@
               <UInt16 Name="Reserved">0</UInt16>
               <UInt32 Name="LockingDatapoint">4294967295</UInt32>
               <UInt32 Name="LockingLevel">0</UInt32>
-              <Reference Name="Page" Type="PAGE">Source[local].Page[Statistika]</Reference>
+              <Reference Name="Page" Type="PAGE">Source[local].Page[TaktimePracovisk]</Reference>
               <UInt16 Name="Target">2</UInt16>
               <UInt16 Name="Reserved">0</UInt16>
             </Group>
@@ -1366,21 +1366,21 @@
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">246168</UInt32>
-                <UInt32 Name="TextOffset">298</UInt32>
+                <UInt32 Name="TextOffset">312</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">251170</UInt32>
-                <UInt32 Name="TextOffset">330</UInt32>
+                <UInt32 Name="TextOffset">344</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">261065</UInt32>
-                <UInt32 Name="TextOffset">362</UInt32>
+                <UInt32 Name="TextOffset">376</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
@@ -1395,7 +1395,8 @@ receptur"</String>
               <String Name="Text" Encoding="Unicode">"Editácia 
 uživatelov"</String>
               <String Name="Text" Encoding="Unicode">"Čitačky RFID"</String>
-              <String Name="Text" Encoding="Unicode">"Štatistika"</String>
+              <String Name="Text" Encoding="Unicode">"Taktime
+pracovísk"</String>
               <String Name="Text" Encoding="Unicode">"Korekcie robota"</String>
               <String Name="Text" Encoding="Unicode">"História výroby"</String>
               <String Name="Text" Encoding="Unicode">"Ladenie kamery"</String>
@@ -1463,21 +1464,21 @@ uživatelov"</String>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">246168</UInt32>
-                <UInt32 Name="TextOffset">264</UInt32>
+                <UInt32 Name="TextOffset">280</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">251170</UInt32>
-                <UInt32 Name="TextOffset">300</UInt32>
+                <UInt32 Name="TextOffset">316</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">261065</UInt32>
-                <UInt32 Name="TextOffset">338</UInt32>
+                <UInt32 Name="TextOffset">354</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
@@ -1492,7 +1493,7 @@ editing"</String>
               <String Name="Text" Encoding="Unicode">"User
 editing"</String>
               <String Name="Text" Encoding="Unicode">"RFID readers"</String>
-              <String Name="Text" Encoding="Unicode">"Statistics"</String>
+              <String Name="Text" Encoding="Unicode">"Taktime workplaces"</String>
               <String Name="Text" Encoding="Unicode">"Robot corrections"</String>
               <String Name="Text" Encoding="Unicode">"Production history"</String>
               <String Name="Text" Encoding="Unicode">"Camera tuning"</String>

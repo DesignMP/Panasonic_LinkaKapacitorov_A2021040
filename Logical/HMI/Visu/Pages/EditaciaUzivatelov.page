@@ -269,8 +269,9 @@
           <Property Name="Input" Value="True"/>
           <Property Name="InputCancel" Value="Lost Focus"/>
           <Property Name="InputConfirm" Value="Enter"/>
-          <Property Name="InputMode" Value="Auto"/>
+          <Property Name="InputMode" Value="Password"/>
           <Property Name="InputNext" Value="Enter"/>
+          <Property Name="InputPasswordChar" Value="*"/>
           <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTabSize" Value="0"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpAlphaPad]"/>
@@ -278,7 +279,7 @@
           <Property Name="Locking" Value="Datapoint &lt; Level"/>
           <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.ZvolenaUroven]"/>
           <Property Name="LockingLevel" Value="40"/>
-          <Property Name="SimulationValue" Value="ABC"/>
+          <Property Name="SimulationValue" Value="******"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="Top" Value="220"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.HesloUzivatela]"/>

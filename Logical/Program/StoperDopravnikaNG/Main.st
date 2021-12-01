@@ -239,10 +239,10 @@ PROGRAM _CYCLIC
 			SC_StoperDopravNG.IdleTime.PT:= T#200ms;
 			SC_StoperDopravNG.AlarmTime.PT:= T#10s;
 			
-			IF Safety.STAV.MutingRobota_AKTIVNY THEN
+			IF Safety.STAV.MutingRobota_AKTIVNY AND Robot.STAV.PoINIT THEN
 				SC_StoperDopravNG.ResetStep:= TRUE;
 				SC_StoperDopravNG.Step:= 128;	
-			ELSIF NOT Safety.STAV.MutingRobota_AKTIVNY AND Robot.Automat THEN
+			ELSIF NOT Safety.STAV.MutingRobota_AKTIVNY AND Robot.STAV.PoINIT THEN
 				Robot.KOM_OUT.PresunDoMutingPozicie:= TRUE;
 				SC_StoperDopravNG.ResetStep:= TRUE;
 				SC_StoperDopravNG.Step:= 123;
@@ -465,7 +465,11 @@ PROGRAM _CYCLIC
 			END_IF
 						
 			
-			IF StoperDopravNG.IN.Centrovanie_StrednaPoloha_IS20 AND NOT StoperDopravNG.IN.Stoper_PritomnostPaletky_IS15 THEN
+			IF NOT Linka.Rezim_Priechodny AND StoperDopravNG.IN.Centrovanie_StrednaPoloha_IS20 AND NOT StoperDopravNG.IN.Stoper_PritomnostPaletky_IS15 THEN
+				StoperDopravNG.STAV.PrebiehaVyvazaniePaletky:= FALSE;
+				SC_StoperDopravNG.ResetStep:= TRUE;
+				SC_StoperDopravNG.Step:= 100;
+			ELSIF Linka.Rezim_Priechodny AND StoperDopravNG.IN.Centrovanie_StrednaPoloha_IS20 AND NOT StoperDopravNG.IN.Stoper_PritomnostPaletky_IS15 AND StoperVystupDopravnika.IN.ZaplnenieBuffera_IS28 THEN	
 				StoperDopravNG.STAV.PrebiehaVyvazaniePaletky:= FALSE;
 				SC_StoperDopravNG.ResetStep:= TRUE;
 				SC_StoperDopravNG.Step:= 100;

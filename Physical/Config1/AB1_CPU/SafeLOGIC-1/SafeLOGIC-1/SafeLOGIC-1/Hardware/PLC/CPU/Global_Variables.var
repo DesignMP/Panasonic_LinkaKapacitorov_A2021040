@@ -1,8 +1,8 @@
 ﻿{GroupDefinition(0,'SafetyVstupy')}
 {GroupDefinition(15,'SafetyVystupy')}
 {GroupDefinition(24,'Vstupy_z_PLC_do_SLX')}
-{GroupDefinition(35,'Vystupy_z_SLX_do_PLC')}
-{GroupDefinition(57,'Statusy')}
+{GroupDefinition(36,'Vystupy_z_SLX_do_PLC')}
+{GroupDefinition(60,'Statusy')}
 
 VAR_GLOBAL {Group(0)}
     {LINE(1)}
@@ -75,58 +75,64 @@ VAR_GLOBAL {Group(24)}
     SpatnaVazba_VT_ZonaVstupVytah AT %IX1.0 : BOOL {Custom('SL1.SM1.BOOL109')};
     {LINE(34)}
     SpatnaVazba_VT_ZonaBunky AT %IX1.1 : BOOL {Custom('SL1.SM1.BOOL110')};
+    {LINE(35)}
+    Reset_DeadMan AT %IX1.2 : BOOL {Custom('SL1.SM1.BOOL111')};
 END_VAR
 
-VAR_GLOBAL {Group(35)}
-    {LINE(36)}
-    SafetyPLC_Nabehlo AT %QX0.0 : BOOL {Custom('SL1.SM1.BOOL001')};
+VAR_GLOBAL {Group(36)}
     {LINE(37)}
-    Stav_ZonaCS_AKTIVNA AT %QX0.1 : BOOL {Custom('SL1.SM1.BOOL002')};
+    SafetyPLC_Nabehlo AT %QX0.0 : BOOL {Custom('SL1.SM1.BOOL001')};
     {LINE(38)}
-    Stav_CS_Panel_ODBLOKOVANY AT %QX0.2 : BOOL {Custom('SL1.SM1.BOOL003')};
+    Stav_ZonaCS_AKTIVNA AT %QX0.1 : BOOL {Custom('SL1.SM1.BOOL002')};
     {LINE(39)}
-    Stav_CS_Robot_ODBLOKOVANY AT %QX0.3 : BOOL {Custom('SL1.SM1.BOOL004')};
+    Stav_CS_Panel_ODBLOKOVANY AT %QX0.2 : BOOL {Custom('SL1.SM1.BOOL003')};
     {LINE(40)}
-    Stav_CS_VstupVytah_ODBLOKOVANY AT %QX0.4 : BOOL {Custom('SL1.SM1.BOOL005')};
+    Stav_CS_Robot_ODBLOKOVANY AT %QX0.3 : BOOL {Custom('SL1.SM1.BOOL004')};
     {LINE(41)}
-    Stav_CS_VystVytah_ODBLOKOVANY AT %QX0.5 : BOOL {Custom('SL1.SM1.BOOL006')};
+    Stav_CS_VstupVytah_ODBLOKOVANY AT %QX0.4 : BOOL {Custom('SL1.SM1.BOOL005')};
     {LINE(42)}
-    Stav_VyblokovZamkov_AKTIVNE AT %QX0.6 : BOOL {Custom('SL1.SM1.BOOL007')};
+    Stav_CS_VystVytah_ODBLOKOVANY AT %QX0.5 : BOOL {Custom('SL1.SM1.BOOL006')};
     {LINE(43)}
-    Stav_ZonaBunky_ODBLOKOVANA AT %QX0.7 : BOOL {Custom('SL1.SM1.BOOL008')};
+    Stav_VyblokovZamkov_AKTIVNE AT %QX0.6 : BOOL {Custom('SL1.SM1.BOOL007')};
     {LINE(44)}
-    Stav_ZonaBunky_AKTIVNA AT %QX1.0 : BOOL {Custom('SL1.SM1.BOOL009')};
+    Stav_ZonaBunky_ODBLOKOVANA AT %QX0.7 : BOOL {Custom('SL1.SM1.BOOL008')};
     {LINE(45)}
-    Stav_BarieraDopravNG_AKTIVNA AT %QX1.1 : BOOL {Custom('SL1.SM1.BOOL010')};
+    Stav_ZonaBunky_AKTIVNA AT %QX1.0 : BOOL {Custom('SL1.SM1.BOOL009')};
     {LINE(46)}
-    Stav_ZonaVstupVytah_ODBLOKOV AT %QX1.2 : BOOL {Custom('SL1.SM1.BOOL011')};
+    Stav_BarieraDopravNG_AKTIVNA AT %QX1.1 : BOOL {Custom('SL1.SM1.BOOL010')};
     {LINE(47)}
-    Stav_ZonaVstupVytah_AKTIVNA AT %QX1.3 : BOOL {Custom('SL1.SM1.BOOL012')};
+    Stav_ZonaVstupVytah_ODBLOKOV AT %QX1.2 : BOOL {Custom('SL1.SM1.BOOL011')};
     {LINE(48)}
-    Stav_ZonaVystupVytah_ODBLOKOV AT %QX1.4 : BOOL {Custom('SL1.SM1.BOOL013')};
+    Stav_ZonaVstupVytah_AKTIVNA AT %QX1.3 : BOOL {Custom('SL1.SM1.BOOL012')};
     {LINE(49)}
-    Stav_ZonaVystupVytah_AKTIVNA AT %QX1.5 : BOOL {Custom('SL1.SM1.BOOL014')};
+    Stav_ZonaVystupVytah_ODBLOKOV AT %QX1.4 : BOOL {Custom('SL1.SM1.BOOL013')};
     {LINE(50)}
-    Stav_BarieraVstupVytahu_AKTIV AT %QX1.6 : BOOL {Custom('SL1.SM1.BOOL015')};
+    Stav_ZonaVystupVytah_AKTIVNA AT %QX1.5 : BOOL {Custom('SL1.SM1.BOOL014')};
     {LINE(51)}
-    Stav_BarieraVystupVytahu_AKTIV AT %QX2.0 : BOOL {Custom('SL1.SM1.BOOL017')};
+    Stav_BarieraVstupVytahu_AKTIV AT %QX1.6 : BOOL {Custom('SL1.SM1.BOOL015')};
     {LINE(52)}
-    Stav_MutingRobota_AKTIV AT %QX2.1 : BOOL {Custom('SL1.SM1.BOOL018')};
+    Stav_BarieraVystupVytahu_AKTIV AT %QX2.0 : BOOL {Custom('SL1.SM1.BOOL017')};
     {LINE(53)}
-    Stav_MutingBarVstupVytah_AKTIV AT %QX2.2 : BOOL {Custom('SL1.SM1.BOOL019')};
+    Stav_MutingRobota_AKTIV AT %QX2.1 : BOOL {Custom('SL1.SM1.BOOL018')};
     {LINE(54)}
-    Stav_MutingBarVystVytah_AKTIV AT %QX2.3 : BOOL {Custom('SL1.SM1.BOOL020')};
+    Stav_MutingBarVstupVytah_AKTIV AT %QX2.2 : BOOL {Custom('SL1.SM1.BOOL019')};
     {LINE(55)}
-    Stav_ServDvereTlaciarne_AKTIV AT %QX2.4 : BOOL {Custom('SL1.SM1.BOOL021')};
+    Stav_MutingBarVystVytah_AKTIV AT %QX2.3 : BOOL {Custom('SL1.SM1.BOOL020')};
     {LINE(56)}
+    Stav_ServDvereTlaciarne_AKTIV AT %QX2.4 : BOOL {Custom('SL1.SM1.BOOL021')};
+    {LINE(57)}
     Stav_ZamkyBunky_AKTIV AT %QX1.7 : BOOL {Custom('SL1.SM1.BOOL016')};
+    {LINE(58)}
+    Stav_DeadMan_AKTIVNY AT %QX2.5 : BOOL {Custom('SL1.SM1.BOOL022')};
+    {LINE(59)}
+    Stav_DeadMan_ODBLOKOVANY AT %QX2.6 : BOOL {Custom('SL1.SM1.BOOL023')};
 END_VAR
 
-VAR_GLOBAL {Group(57)}
-    {LINE(58)}
+VAR_GLOBAL {Group(60)}
+    {LINE(61)}
     Status_ZonaCS_AKTIVNA : SAFEBOOL;
-    {LINE(59)}
+    {LINE(62)}
     Status_VyblokovZamkov_AKTIVNE : SAFEBOOL;
-    {LINE(60)}
+    {LINE(63)}
     Status_DeadMan_AKTIVNY : SAFEBOOL;
 END_VAR

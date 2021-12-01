@@ -42,8 +42,10 @@
         <Info Name="AsVariable" Value="BOOL101,Cyclic#1.Safety.RESET_ZonyCS" />
         <Info Name="AsVariable" Value="BOOL003,Cyclic#1.Safety.STAV.CS_OvlPanel_Odblokovany" />
         <Info Name="AsVariable" Value="BOOL103,Cyclic#1.Safety.RESET_ZonyVystupnehoVytahu" />
+        <Info Name="AsVariable" Value="BOOL111,Cyclic#1.Safety.RESET_DeadMan" />
         <Info Name="AsVariable" Value="BOOL013,Cyclic#1.Safety.STAV.ZonaVystupnyVytah_Odblokovana" />
         <Info Name="AsVariable" Value="SafeDigitalInput08,Cyclic#1.Safety.IN.DopravnikNG_Bariera_CH2" />
+        <Info Name="AsVariable" Value="BOOL023,Cyclic#1.Safety.STAV.DeadMan_Odblokovany" />
         <Info Name="AsVariable" Value="BOOL018,Cyclic#1.Safety.STAV.MutingRobota_AKTIVNY" />
         <Info Name="AsVariable" Value="BOOL019,Cyclic#1.Safety.STAV.MutingBarieryVstupVytah_AKTIVNY" />
         <Info Name="AsVariable" Value="BOOL010,Cyclic#1.Safety.STAV.BarieraDopravnikaNG_AKTIVNA" />
@@ -78,6 +80,7 @@
         <Info Name="AsVariable" Value="BOOL110,Cyclic#1.Linka.IN.SpatnaVazba_VentilTerminal_SQ2" />
         <Info Name="AsVariable" Value="BOOL011,Cyclic#1.Safety.STAV.ZonaVstupnyVytah_Odblokovana" />
         <Info Name="AsVariable" Value="BOOL020,Cyclic#1.Safety.STAV.MutingBarieryVystupVytah_AKTIVNY" />
+        <Info Name="AsVariable" Value="BOOL022,Cyclic#1.Safety.STAV.DeadMan_AKTIVNY" />
         <Info Name="AsVariable" Value="BOOL005,Cyclic#1.Safety.STAV.CS_VstupnyVytah_Odblokovany" />
       </NodeDescription>
       <ChannelConfiguration>

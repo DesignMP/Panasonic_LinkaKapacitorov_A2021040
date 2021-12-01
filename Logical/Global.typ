@@ -190,6 +190,7 @@ TYPE
 		RESET_ZonyCS : BOOL;
 		RESET_ZonyVstupnehoVytahu : BOOL;
 		RESET_ZonyVystupnehoVytahu : BOOL;
+		RESET_DeadMan : BOOL;
 		SpatnaVazba_ZonaBunky : BOOL;
 		SpatnaVazba_ZonaCS : BOOL;
 	END_STRUCT;
@@ -254,6 +255,8 @@ TYPE
 		CS_VstupnyVytah_Odblokovany : BOOL;
 		CS_VystupnyVytah_Odblokovany : BOOL;
 		VyblokovanieSafety_AKTIVNE : BOOL;
+		DeadMan_Odblokovany : BOOL;
+		DeadMan_AKTIVNY : BOOL;
 	END_STRUCT;
 END_TYPE
 
@@ -332,8 +335,7 @@ TYPE
 		TL_Robot_CitanieDMkodu_DISABLE : BOOL;
 		TL_Robot_OdoberEtiketu_DISABLE : BOOL;
 		ZadavanieKorekciiRobota_DISABLE : BOOL;
-		RezimBezTlaceEtikety_DISABLE : BOOL;
-		RezimBezCistenia_DISABLE : BOOL;
+		VolbyRezimov_DISABLE : BOOL;
 		IndexSuradnicovehoSystemuPaletky : USINT;
 		IndexFarbyStavuFiltrov : USINT;
 		IndexStavuFiltrov : USINT;
@@ -366,6 +368,9 @@ TYPE
 		Rezim_BezTlaceEtikety : BOOL;
 		Rezim_BezKomunikacie : BOOL;
 		Rezim_BezCistenia : BOOL;
+		Rezim_Priechodny : BOOL;
+		Rezim_Testovania : BOOL;
+		ResetNapajaniaKamery : BOOL;
 	END_STRUCT;
 	Linka_IN_typ : 	STRUCT 
 		PrepatovaOchrana_OK : BOOL; (*1 - OK*)
@@ -417,6 +422,7 @@ TYPE
 		IonJednotka_RESET : BOOL;
 		IonJednotka_AIR : BOOL;
 		Vzduchotechnika_START : BOOL;
+		Rele_ResetNapajaniaKamery : BOOL;
 	END_STRUCT;
 	Linka_PAR_typ : 	STRUCT 
 		Zvoleny_MODEL : STRING[18];
@@ -442,6 +448,7 @@ TYPE
 		PoruchaOtacaniaTrysiek : BOOL;
 		FiltreIonizacnejJednotkyZanesene : BOOL;
 		IonizacnaJednotka_BUSY : BOOL;
+		Dopravniky_PAUZA : BOOL;
 	END_STRUCT;
 END_TYPE
 
@@ -514,7 +521,6 @@ TYPE
 		Zdvih_ZadanaPozicia : UDINT;
 		Zdvih_ZadanaRychlost : REAL;
 		Zdvih_ZadanaJoggRychlost : REAL;
-		PotvrdenieBannerom_AKTIVNE : BOOL;
 	END_STRUCT;
 	VstupnyVytah_STAV_typ : 	STRUCT 
 		PoINIT : BOOL;
@@ -663,6 +669,8 @@ TYPE
 		KoniecCyklu : BOOL;
 		RR_VytlacEtiketu : BOOL;
 		OdosliDataDoPanasonicu : BOOL;
+		RR_ZacentrujPaletku : BOOL;
+		RR_OdcentrujPaletku : BOOL;
 	END_STRUCT;
 	StoperEtiketovania_IN_typ : 	STRUCT 
 		Tlaciaren_KoniecEtikiet : BOOL;
@@ -694,6 +702,7 @@ TYPE
 		Etiketovanie_BUSY : BOOL;
 		VyvazamPaletkuNG : BOOL;
 		AlarmTextPaletkyNG : STRING[30];
+		Warning : BOOL;
 	END_STRUCT;
 END_TYPE
 
@@ -919,8 +928,6 @@ TYPE
 		Zdvih_ZadanaPozicia : UDINT;
 		Zdvih_ZadanaRychlost : REAL;
 		Zdvih_ZadanaJoggRychlost : REAL;
-		PotvrdenieBannerom_AKTIVNE : BOOL;
-		PotvrdenieNGkusuBannerom_AKTIVNE : BOOL;
 	END_STRUCT;
 	VystupnyVytah_STAV_typ : 	STRUCT 
 		PoINIT : BOOL;
@@ -1033,7 +1040,7 @@ END_TYPE
 
 TYPE
 	Paletka_typ : 	STRUCT 
-		StavPaletky : STRING[2]; (*OK alebo NG*)
+		StavPaletky : STRING[2]; (*OK, NG, PR*)
 		CisloPaletky : STRING[4]; (*Preèítané èitaèkou RFID*)
 		TypPaletky : STRING[4]; (*Preèítané èitaèkou RFID*)
 		NazovPaletky : STRING[10]; (*Vyskladaný z èísla paletky a typu paletky*)
@@ -1066,8 +1073,9 @@ TYPE
 	HystoriaVyroby_typ : 	STRUCT 
 		NazovModelu : STRING[18];
 		NazovLOTU : STRING[11];
-		PocetVyrobenychKusov_OK : UDINT;
-		PocetVyrobenychKusov_NG : UDINT;
+		PocetVyrobenychKusov_OK : REAL;
+		PocetVyrobenychKusov_NG : REAL;
+		Pomer_OK_kusov_IDR : REAL;
 	END_STRUCT;
 END_TYPE
 

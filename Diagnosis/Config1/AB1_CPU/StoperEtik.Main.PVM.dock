@@ -1,5 +1,5 @@
 WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=StoperEtik 
-Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index=4 ASCIIString=0
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index=289 ASCIIString=0
                                     name                                     type force                                                            value level type len format place expand specs
                                   Kamera                                  CAM_typ    0 "                                                               *"    0   24    1    0    0    1         
                                      CMD                              CAM_CMD_typ    0 "                                                               *"    1   24    1    0    0    1         
@@ -290,10 +290,10 @@ Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index
           StavPorovnaniaDMkoduZoServerom                                STRING[2]    0 "                                                               *"    2    9    3    1    0    0         
               StavKontrolyBielehoPaternu                                STRING[2]    0 "                                                               *"    2    9    3    1    0    0         
                     StavKomunikacie_DONE                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
-                              Paletka[5]                              Paletka_typ    0 "                                                               *"    1   24    1    0    0    0         
-                             StavPaletky                                STRING[2]    0 "                                                               *"    2    9    3    1    0    0         
-                            CisloPaletky                                STRING[4]    0 "                                                               *"    2    9    5    1    0    0         
-                              TypPaletky                                STRING[4]    0 "                                                               *"    2    9    5    1    0    0         
+                              Paletka[5]                              Paletka_typ    0 "                                                               *"    1   24    1    0    0    1         
+                             StavPaletky                                STRING[2]    0 "                                                            'OK'"    2    9    3    1    0    0         
+                            CisloPaletky                                STRING[4]    0 "                                                             '5'"    2    9    5    1    0    0         
+                              TypPaletky                                STRING[4]    0 "                                                           'BF1'"    2    9    5    1    0    0         
                             NazovPaletky                               STRING[10]    0 "                                                               *"    2    9   11    1    0    0         
                              NazovModelu                               STRING[18]    0 "                                                               *"    2    9   19    1    0    0         
                                 CisloLOT                               STRING[20]    0 "                                                               *"    2    9   21    1    0    0         
@@ -415,31 +415,31 @@ Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index
           StavPorovnaniaDMkoduZoServerom                                STRING[2]    0 "                                                               *"    2    9    3    1    0    0         
               StavKontrolyBielehoPaternu                                STRING[2]    0 "                                                               *"    2    9    3    1    0    0         
                     StavKomunikacie_DONE                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
-                             Paletka[10]                              Paletka_typ    0 "                                                               *"    1   24    1    0    0    1         
-                             StavPaletky                                STRING[2]    0 "                                                            'NG'"    2    9    3    1    0    0         
-                            CisloPaletky                                STRING[4]    0 "                                                            '10'"    2    9    5    1    0    0         
-                              TypPaletky                                STRING[4]    0 "                                                           'BF1'"    2    9    5    1    0    0         
-                            NazovPaletky                               STRING[10]    0 "                                                        '10_BF1'"    2    9   11    1    0    0         
-                             NazovModelu                               STRING[18]    0 "                                                  'EZTYB21670HA'"    2    9   19    1    0    0         
-                                CisloLOT                               STRING[20]    0 "                                                   'TEST1234567'"    2    9   21    1    0    0         
-                     Robot_CisloProgramu                                    USINT    0 "                                                               8"    2    5    1   10    0    0         
-              Kamera_CisloProgramu_QRkod                                    USINT    0 "                                                              15"    2    5    1   10    0    0         
-              Kamera_CisloProgramu_DMkod                                    USINT    0 "                                                              16"    2    5    1   10    0    0         
-                               TypVyroby                                STRING[1]    0 "                                                              ''"    2    9    2    1    0    0         
-                     InternySerialNumber                               STRING[48]    0 "                                 'BF10021040900001ZZZZZZZB10BF1'"    2    9   49    1    0    0         
-                         ZakaznickeCislo                               STRING[49]    0 "                              'AB0000190KW0500000000120210409SK'"    2    9   50    1    0    0         
-        PrecitaneZnakyZakaznickehoDMkodu                               STRING[49]    0 "                              'AB0000190KW0500000000120210409SK'"    2    9   50    1    0    0         
-                       ReturnProcessName                               STRING[30]    0 "                                         'Antistaticke cistenie'"    2    9   31    1    0    0         
-                           Cistenie_DONE                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
-                            StavCistenia                                STRING[2]    0 "                                                            'OK'"    2    9    3    1    0    0         
-                   NalepenieEtikety_DONE                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
-                    StavNalepeniaEtikety                                STRING[2]    0 "                                                            'OK'"    2    9    3    1    0    0         
-             StavCitania_InternehoQRkodu                                STRING[2]    0 "                                                            'OK'"    2    9    3    1    0    0         
-          StavCitania_ZakaznickehoDMkodu                                STRING[2]    0 "                                                            'OK'"    2    9    3    1    0    0         
-              StavCitania_KontrolaZnakov                                STRING[2]    0 "                                                            'NG'"    2    9    3    1    0    0         
-          StavPorovnaniaDMkoduZoServerom                                STRING[2]    0 "                                                            'OK'"    2    9    3    1    0    0         
-              StavKontrolyBielehoPaternu                                STRING[2]    0 "                                                              ''"    2    9    3    1    0    0         
-                    StavKomunikacie_DONE                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
+                             Paletka[10]                              Paletka_typ    0 "                                                               *"    1   24    1    0    0    0         
+                             StavPaletky                                STRING[2]    0 "                                                               *"    2    9    3    1    0    0         
+                            CisloPaletky                                STRING[4]    0 "                                                               *"    2    9    5    1    0    0         
+                              TypPaletky                                STRING[4]    0 "                                                               *"    2    9    5    1    0    0         
+                            NazovPaletky                               STRING[10]    0 "                                                               *"    2    9   11    1    0    0         
+                             NazovModelu                               STRING[18]    0 "                                                               *"    2    9   19    1    0    0         
+                                CisloLOT                               STRING[20]    0 "                                                               *"    2    9   21    1    0    0         
+                     Robot_CisloProgramu                                    USINT    0 "                                                               *"    2    5    1   10    0    0         
+              Kamera_CisloProgramu_QRkod                                    USINT    0 "                                                               *"    2    5    1   10    0    0         
+              Kamera_CisloProgramu_DMkod                                    USINT    0 "                                                               *"    2    5    1   10    0    0         
+                               TypVyroby                                STRING[1]    0 "                                                               *"    2    9    2    1    0    0         
+                     InternySerialNumber                               STRING[48]    0 "                                                               *"    2    9   49    1    0    0         
+                         ZakaznickeCislo                               STRING[49]    0 "                                                               *"    2    9   50    1    0    0         
+        PrecitaneZnakyZakaznickehoDMkodu                               STRING[49]    0 "                                                               *"    2    9   50    1    0    0         
+                       ReturnProcessName                               STRING[30]    0 "                                                               *"    2    9   31    1    0    0         
+                           Cistenie_DONE                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                            StavCistenia                                STRING[2]    0 "                                                               *"    2    9    3    1    0    0         
+                   NalepenieEtikety_DONE                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                    StavNalepeniaEtikety                                STRING[2]    0 "                                                               *"    2    9    3    1    0    0         
+             StavCitania_InternehoQRkodu                                STRING[2]    0 "                                                               *"    2    9    3    1    0    0         
+          StavCitania_ZakaznickehoDMkodu                                STRING[2]    0 "                                                               *"    2    9    3    1    0    0         
+              StavCitania_KontrolaZnakov                                STRING[2]    0 "                                                               *"    2    9    3    1    0    0         
+          StavPorovnaniaDMkoduZoServerom                                STRING[2]    0 "                                                               *"    2    9    3    1    0    0         
+              StavKontrolyBielehoPaternu                                STRING[2]    0 "                                                               *"    2    9    3    1    0    0         
+                    StavKomunikacie_DONE                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
                              Paletka[11]                              Paletka_typ    0 "                                                               *"    1   24    1    0    0    0         
                              StavPaletky                                STRING[2]    0 "                                                               *"    2    9    3    1    0    0         
                             CisloPaletky                                STRING[4]    0 "                                                               *"    2    9    5    1    0    0         
@@ -5191,4 +5191,9 @@ Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index
               StavKontrolyBielehoPaternu                                STRING[2]    0 "                                                               *"    2    9    3    1    0    0         
                     StavKomunikacie_DONE                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
                    SC_StoperEtiketovania                       SequenceControlTyp    0 "                                                               *"    0   24    1    0    0    1         
-                                    Step                                     UINT    0 "                                                               1"    1    6    1   10    0    0         
+                                    Step                                     UINT    0 "                                                               *"    1    6    1   10    0    0         
+                                    Step                                      INT    0 "                                                               *"    0    3    1   10    1    0         
+                        TestKamery_START                                     BOOL    0 "                                                               *"    0    1    1    2    1    0         
+                           CisloProgramu                                    USINT    0 "                                                               *"    0    5    1   10    1    0         
+                      StoperEtiketovania                   StoperEtiketovania_typ    0 "                                                               *"    0   24    1    0    0    1         
+                                 Automat                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         

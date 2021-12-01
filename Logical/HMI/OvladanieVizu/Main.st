@@ -47,6 +47,7 @@ PROGRAM _CYCLIC
 	//11 - V tlaèiarni došla termopáska !!!
 	//12 - Filtre ionizaènej jednotky sú zanesené !!!
 	//13 - Kamera robota nieje READY !!!
+	//14 - Dvere bunky niesu zamknuté !!!
     
     
 	IF NOT Robot.KOM_IN.Stav_RezimAUTOMAT THEN
@@ -78,6 +79,9 @@ PROGRAM _CYCLIC
 		Vizu.StavZariadenia_Farba:= 3;
 	ELSIF NOT Kamera.STAV.READY THEN
 		Vizu.StavZariadenia_Index:= 13;
+		Vizu.StavZariadenia_Farba:= 3;
+	ELSIF NOT Safety.STAV.ZonaBunky_AKTIVNA THEN
+		Vizu.StavZariadenia_Index:= 14;
 		Vizu.StavZariadenia_Farba:= 3;
 	ELSIF Linka.STAV.Automat AND Linka.STAV.UkoncenieCyklu_BUSY THEN
 		Vizu.StavZariadenia_Index:= 4;
@@ -350,7 +354,11 @@ PROGRAM _CYCLIC
 	ELSIF StoperEtiketovania.IN.Tlaciaren_KoniecPasky THEN
 		Vizu.TL_StartAutomat_DISABLE:= TRUE;
 	ELSIF NOT Kamera.STAV.READY THEN	
-		Vizu.TL_StartAutomat_DISABLE:= TRUE;	
+		Vizu.TL_StartAutomat_DISABLE:= TRUE;
+	ELSIF NOT Safety.STAV.ZonaBunky_AKTIVNA THEN
+		Vizu.TL_StartAutomat_DISABLE:= TRUE;
+	ELSIF Linka.STAV.PoINIT THEN
+		Vizu.TL_StartAutomat_DISABLE:= TRUE;
 	ELSE    
 		Vizu.TL_StartAutomat_DISABLE:= FALSE;
 	END_IF    
@@ -578,22 +586,14 @@ PROGRAM _CYCLIC
 	END_IF	
 	
 	
-	//Volba režimu bez tlaèe etikety//
+	
+	//Volby režimov//
 	IF Linka.STAV.Automat THEN
-		Vizu.RezimBezTlaceEtikety_DISABLE:= TRUE;
+		Vizu.VolbyRezimov_DISABLE:= TRUE;
 	ELSIF ZvolenaUroven < 20 THEN
-		Vizu.RezimBezTlaceEtikety_DISABLE:= TRUE;
+		Vizu.VolbyRezimov_DISABLE:= TRUE;
 	ELSE	
-		Vizu.RezimBezTlaceEtikety_DISABLE:= FALSE;
-	END_IF	
-
-	//Volba režimu bez èistenia//
-	IF Linka.STAV.Automat THEN
-		Vizu.RezimBezCistenia_DISABLE:= TRUE;
-	ELSIF ZvolenaUroven < 20 THEN
-		Vizu.RezimBezCistenia_DISABLE:= TRUE;
-	ELSE	
-		Vizu.RezimBezCistenia_DISABLE:= FALSE;
+		Vizu.VolbyRezimov_DISABLE:= FALSE;
 	END_IF	
 	
 	
@@ -631,8 +631,6 @@ PROGRAM _CYCLIC
 		Vizu.IndexSuradnicovehoSystemuPaletky:= 6;
 	ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'CP1' THEN
 		Vizu.IndexSuradnicovehoSystemuPaletky:= 7;	
-	ELSE
-		Vizu.IndexSuradnicovehoSystemuPaletky:= 0;
 	END_IF	
 	
 	
@@ -657,10 +655,7 @@ PROGRAM _CYCLIC
 	//1 - zelená
 	
 	
-	IF NOT StoperEtiketovania.IN.Centrovanie_HornaPoloha_IS18 THEN
-		Vizu.IndexStavuLadenieKamery:= 1;
-		Vizu.IndexStavuLadenieKamery_Farba:= 0;
-	ELSIF NOT RFID_Hlava_2.STAV.PritomnostCipu THEN
+	IF NOT RFID_Hlava_2.STAV.PritomnostCipu THEN
 		Vizu.IndexStavuLadenieKamery:= 2;
 		Vizu.IndexStavuLadenieKamery_Farba:= 0;
 	ELSIF NOT Safety.STAV.ZamkyBunky_AKTIVNE THEN

@@ -3,7 +3,7 @@ QWS: 00007
 *)
 00001	00002	POE\Main\Main.gb
 00002	00008	POE\Main\VyblokovanieZamkov.gb
-00003	00002	POE\Main\DeadMan.gb
+00003	00028	POE\Main\DeadMan.gb
 00004	00080	POE\Main\ZonaCS.gb
 00005	00062	POE\Main\ZonaVstupnyVytah.gb
 00006	00086	POE\Main\ZonaBunky.gb

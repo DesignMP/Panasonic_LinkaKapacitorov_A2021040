@@ -724,9 +724,9 @@
             </Group>
           </Object>
           <Object Name="Button_2" ClsId="0x1002" Version="1" Type="CTRL" RefString="Source[local].Page[RFID_citacky_page2].Layer[FrameLayer].Control[Button_2]">
-            <UInt32 Name="Left">10</UInt32>
+            <UInt32 Name="Left">15</UInt32>
             <UInt32 Name="Top">60</UInt32>
-            <UInt32 Name="Right">89</UInt32>
+            <UInt32 Name="Right">94</UInt32>
             <UInt32 Name="Bottom">94</UInt32>
             <UInt16 Name="KeyMatrixOffset">65535</UInt16>
             <UInt16 Name="Reserved">0</UInt16>

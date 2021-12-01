@@ -1,0 +1,11 @@
+WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=StoperDopr 
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index=7 ASCIIString=0
+                                    name                                     type force                                                            value level type len format place expand specs
+                       SC_StoperDopravNG                       SequenceControlTyp    0 "                                                               *"    0   24    1    0    0    1         
+                                    Step                                     UINT    0 "                                                             100"    1    6    1   10    0    0         
+                               ResetStep                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                   Robot                                Robot_typ    0 "                                                               *"    0   24    1    0    0    1         
+                                 KOM_OUT                         RobotKOM_OUT_typ    0 "                                                               *"    1   24    1    0    0    1         
+                   PresunDoMutingPozicie                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                          StoperDopravNG                   StoperDopravnikaNG_typ    0 "                                                               *"    0   24    1    0    0    1         
+                                 Automat                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         

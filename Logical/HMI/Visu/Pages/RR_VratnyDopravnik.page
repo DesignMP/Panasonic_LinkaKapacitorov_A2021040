@@ -135,7 +135,7 @@
           <Property Name="Left" Value="225"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="Top" Value="144"/>
+          <Property Name="Top" Value="145"/>
           <Property Name="Width" Value="36"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_26">

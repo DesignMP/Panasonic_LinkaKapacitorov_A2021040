@@ -48,6 +48,11 @@ VAR
 	UlozPremenne : BOOL;
 	NacitajPremenne : BOOL;
 END_VAR
+VAR RETAIN
+	VstupVytah_Banner_AKTIVNY : BOOL := FALSE;
+	VystupVytah_Banner_AKTIVNY : BOOL := FALSE;
+	VystupVytah_BannerNG_AKTIVNY : BOOL := FALSE;
+END_VAR
 (*************Premenne receptur**************)
 VAR
 	Receptura : ARRAY[0..150] OF ParametreRecepturTyp := [151((0))];
@@ -158,11 +163,12 @@ VAR
 END_VAR
 VAR RETAIN
 	Linka_Statistika : Taktime := (0);
-	PocetVyrobenychKusov_OK : UDINT := 0;
-	PocetVyrobenychKusov_NG : UDINT := 0;
+	PocetVyrobenychKusov_OK : REAL := 0.0;
+	PocetVyrobenychKusov_NG : REAL := 0.0;
 	CelkovyPocetVyrobenychKusov : UDINT := 0;
 END_VAR
 VAR
+	Pomer_OK_kusov_IDR : REAL := 0.0;
 	RESET_PoctuVyrobenychKusov : BOOL := FALSE;
 	RESET_CelkovehoPoctuKusov : BOOL := FALSE;
 END_VAR

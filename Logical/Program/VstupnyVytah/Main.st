@@ -1,7 +1,7 @@
 
 PROGRAM _INIT
 	VstupVytah.PAR.Zdvih_ZadanaJoggRychlost:= 10;
-	VstupVytah.PAR.PotvrdenieBannerom_AKTIVNE:= TRUE;
+	
 END_PROGRAM
 
 PROGRAM _CYCLIC
@@ -25,10 +25,7 @@ PROGRAM _CYCLIC
 		SC_VstupVytah.Step:= 0;
 	END_IF	
 	
-	//Príznak obsluha potvrdila banner//
-	IF VstupVytah.STAV.ObsluhaPotvrdilaBanner THEN
-		VstupVytah.OUT.Banner_ZelenaLED_IOS1:= Blikac500ms;
-	END_IF	
+
 	
 	CASE SC_VstupVytah.Step OF 
 	
@@ -285,7 +282,7 @@ PROGRAM _CYCLIC
 			IF VstupVytah.KoniecCyklu THEN
 				SC_VstupVytah.ResetStep:= TRUE;
 				SC_VstupVytah.Step:= 0;
-			ELSIF SC_StoperVratDopravnika.Step = 101 AND NOT VstupVytah.IN.PritomnostPaletky_IS3 AND NOT VstupVytah.IN.PrechodDopravnikaVytahu_OS1 AND Safety.STAV.BarieraVstupVytahu_AKTIVNA (*AND VstupVytah.IN.DvereVytahuZatvorene_MS2*) THEN
+			ELSIF SC_StoperVratDopravnika.Step = 101 AND NOT VstupVytah.IN.PritomnostPaletky_IS3 AND NOT VstupVytah.IN.PrechodDopravnikaVytahu_OS1 AND Safety.STAV.BarieraVstupVytahu_AKTIVNA AND VstupVytah.IN.DvereVytahuZatvorene_MS2 THEN
 				SC_VstupVytah.ResetStep:= TRUE;
 				SC_VstupVytah.Step:= 103;
 			ELSIF VstupVytah.IN.PritomnostPaletky_IS3 AND Safety.STAV.BarieraVstupVytahu_AKTIVNA THEN
@@ -362,7 +359,7 @@ PROGRAM _CYCLIC
 			SC_VstupVytah.IdleTime.PT:= T#500ms;
 			SC_VstupVytah.AlarmTime.PT:= T#10s;
 		
-			SC_VstupVytah.IdleTime.IN:= Safety.STAV.BarieraVstupVytahu_AKTIVNA AND NOT VstupVytah.IN.PrechodDopravnikaVytahu_OS1 (*AND VstupVytah.IN.DvereVytahuZatvorene_MS2*);
+			SC_VstupVytah.IdleTime.IN:= Safety.STAV.BarieraVstupVytahu_AKTIVNA AND NOT VstupVytah.IN.PrechodDopravnikaVytahu_OS1 AND VstupVytah.IN.DvereVytahuZatvorene_MS2;
             
 			IF SC_VstupVytah.IdleTime.Q THEN
 				SC_VstupVytah.ResetStep:= TRUE;
@@ -386,7 +383,6 @@ PROGRAM _CYCLIC
 		
 			IF VstupVytah.STAV.VytahNapolohovany THEN
 				VstupVytah.STAV.VytahNapolohovany:= FALSE;
-				VstupVytah.OUT.Banner_CervenaLED_IOS1:= FALSE;
 				SC_VstupVytah.ResetStep:= TRUE;
 				SC_VstupVytah.Step:= 111;
 			ELSIF NOT Safety.STAV.BarieraVstupVytahu_AKTIVNA THEN
@@ -403,30 +399,22 @@ PROGRAM _CYCLIC
 		
 			
 		111:
-			SC_VstupVytah.StepName:='111 - Automaticky Rezim - cakam na vlozenie kusu do paletky';
+			SC_VstupVytah.StepName:='111 - Automaticky Rezim - kontrola pritomnosti paletky';
 			SC_VstupVytah.IdleTime.PT:= T#200ms;
 			SC_VstupVytah.AlarmTime.PT:= T#10s;
 			
-			VstupVytah.OUT.Banner_ZelenaLED_IOS1:= TRUE;
-			
-			SC_VstupVytah.IdleTime.IN:= VstupVytah.IN.PritomnostProduktu_OS2 AND Safety.STAV.BarieraVstupVytahu_AKTIVNA AND VstupVytah.IN.PritomnostPaletky_IS3;
-			
-			IF VstupVytah.KoniecCyklu THEN
-				SC_VstupVytah.ResetStep:= TRUE;
-				SC_VstupVytah.Step:= 0;
-			ELSIF SC_VstupVytah.IdleTime.Q THEN
+			IF VstupVytah.IN.PritomnostPaletky_IS3 THEN
 				SC_VstupVytah.ResetStep:= TRUE;
 				SC_VstupVytah.Step:= 113;
-			ELSIF NOT VstupVytah.IN.PritomnostPaletky_IS3 AND Safety.STAV.BarieraVstupVytahu_AKTIVNA THEN
-				VstupVytah.OUT.Banner_ZelenaLED_IOS1:= FALSE;
+			ELSE
 				SC_VstupVytah.ResetStep:= TRUE;
 				SC_VstupVytah.Step:= 112;
 			END_IF	
-		
+					
 			
 		112:
-			SC_VstupVytah.StepName:='112 - Automaticky Rezim - kontrola pritomnosti paletky na dopravniku vytahu';
-			SC_VstupVytah.IdleTime.PT:= T#2s;
+			SC_VstupVytah.StepName:='112 - Automaticky Rezim - hladanie paletky na dopravniku vytahu';
+			SC_VstupVytah.IdleTime.PT:= T#5s;
 			SC_VstupVytah.AlarmTime.PT:= T#10s;
 			
 			
@@ -509,6 +497,10 @@ PROGRAM _CYCLIC
 				Paletka[i].StavKomunikacie_DONE:= FALSE;
 				SC_VstupVytah.ResetStep:= TRUE;
 				SC_VstupVytah.Step:= 120;
+			ELSIF Linka.Rezim_Priechodny THEN
+				Paletka[i].StavPaletky:= 'PR';
+				SC_VstupVytah.ResetStep:= TRUE;
+				SC_VstupVytah.Step:= 120;
 			ELSE
 				SC_VstupVytah.ResetStep:= TRUE;
 				SC_VstupVytah.Step:= 118;
@@ -550,88 +542,67 @@ PROGRAM _CYCLIC
 				
 			
 		120:
-			SC_VstupVytah.StepName:='120 - Automaticky Rezim - cakam na potvrdenie banera alebo aktivnu barieru vstupneho vytahu';
+			SC_VstupVytah.StepName:='120 - Automaticky Rezim - cakam na vlozenie kusu a potvrdenie banerom alebo aktivnu barieru vstupneho vytahu a vyvezenie na stoper pred cistenim';
 			SC_VstupVytah.IdleTime.PT:= T#2s;
 			SC_VstupVytah.AlarmTime.PT:= T#10s;
 			
-			SC_VstupVytah.IdleTime.IN:= VstupVytah.IN.PritomnostPaletky_IS3 AND VstupVytah.IN.PritomnostProduktu_OS2 AND Safety.STAV.BarieraVstupVytahu_AKTIVNA;
+			SC_VstupVytah.IdleTime.IN:= VstupVytah.IN.PritomnostPaletky_IS3 AND (VstupVytah.IN.PritomnostProduktu_OS2 OR Linka.Rezim_Priechodny) AND Safety.STAV.BarieraVstupVytahu_AKTIVNA;
 		
-			IF VstupVytah.IN.BannerPotvrdeny_IOS1 THEN
+			IF VstupVytah.IN.BannerPotvrdeny_IOS1 AND NOT Linka.Rezim_Priechodny AND VstupVytah.IN.PritomnostProduktu_OS2 AND Safety.STAV.BarieraVstupVytahu_AKTIVNA THEN
 				VstupVytah.STAV.ObsluhaPotvrdilaBanner:= TRUE;
+			ELSIF VstupVytah.IN.BannerPotvrdeny_IOS1 AND Linka.Rezim_Priechodny AND NOT VstupVytah.IN.PritomnostProduktu_OS2 AND Safety.STAV.BarieraVstupVytahu_AKTIVNA THEN
+				VstupVytah.STAV.ObsluhaPotvrdilaBanner:= TRUE;	
 			END_IF	
 			
-			IF NOT VstupVytah.STAV.ObsluhaPotvrdilaBanner THEN
+			IF VstupVytah.STAV.ObsluhaPotvrdilaBanner THEN
+				VstupVytah.OUT.Banner_ZelenaLED_IOS1:= FALSE;
+				VstupVytah.OUT.Banner_CervenaLED_IOS1:= TRUE;
+			ELSE
+				VstupVytah.OUT.Banner_CervenaLED_IOS1:= FALSE;
 				VstupVytah.OUT.Banner_ZelenaLED_IOS1:= TRUE;
 			END_IF	
 		
 			IF VstupVytah.KoniecCyklu THEN
 				SC_VstupVytah.ResetStep:= TRUE;
 				SC_VstupVytah.Step:= 0;
-			ELSIF VstupVytah.IN.PritomnostPaletky_IS3 AND VstupVytah.IN.PritomnostProduktu_OS2 AND Safety.STAV.BarieraVstupVytahu_AKTIVNA AND VstupVytah.STAV.ObsluhaPotvrdilaBanner THEN
+			ELSIF Linka.Rezim_Priechodny AND VstupVytah.IN.PritomnostPaletky_IS3 AND NOT VstupVytah.IN.PritomnostProduktu_OS2 AND Safety.STAV.BarieraVstupVytahu_AKTIVNA AND VstupVytah.STAV.ObsluhaPotvrdilaBanner AND StoperPredCistenim.STAV.PoINIT AND NOT StoperPredCistenim.IN.PritomnostPaletky_IS4 AND NOT StoperPredCistenim.OUT.StoperZASUN_YV005 THEN
+				VstupVytah.STAV.ObsluhaPotvrdilaBanner:= FALSE;
 				SC_VstupVytah.ResetStep:= TRUE;
 				SC_VstupVytah.Step:= 130;
-			ELSIF VstupVytah.IN.PritomnostPaletky_IS3 AND VstupVytah.IN.PritomnostProduktu_OS2 AND Safety.STAV.BarieraVstupVytahu_AKTIVNA AND NOT VstupVytah.PAR.PotvrdenieBannerom_AKTIVNE AND SC_VstupVytah.IdleTime.Q THEN
+			ELSIF Linka.Rezim_Priechodny AND VstupVytah.IN.PritomnostPaletky_IS3 AND NOT VstupVytah.IN.PritomnostProduktu_OS2 AND NOT VstupVytah_Banner_AKTIVNY AND SC_VstupVytah.IdleTime.Q AND StoperPredCistenim.STAV.PoINIT AND NOT StoperPredCistenim.IN.PritomnostPaletky_IS4 AND NOT StoperPredCistenim.OUT.StoperZASUN_YV005 THEN
+				VstupVytah.OUT.Banner_ZelenaLED_IOS1:= FALSE;
+				VstupVytah.OUT.Banner_CervenaLED_IOS1:= TRUE;
+				VstupVytah.STAV.ObsluhaPotvrdilaBanner:= FALSE;
+				SC_VstupVytah.ResetStep:= TRUE;
+				SC_VstupVytah.Step:= 130;	
+			ELSIF NOT Linka.Rezim_Priechodny AND VstupVytah.IN.PritomnostPaletky_IS3 AND VstupVytah.IN.PritomnostProduktu_OS2 AND Safety.STAV.BarieraVstupVytahu_AKTIVNA AND VstupVytah.STAV.ObsluhaPotvrdilaBanner AND StoperPredCistenim.STAV.PoINIT AND NOT StoperPredCistenim.IN.PritomnostPaletky_IS4 AND NOT StoperPredCistenim.OUT.StoperZASUN_YV005 THEN
+				VstupVytah.STAV.ObsluhaPotvrdilaBanner:= FALSE;
 				SC_VstupVytah.ResetStep:= TRUE;
 				SC_VstupVytah.Step:= 130;
-			ELSIF (NOT VstupVytah.IN.PritomnostPaletky_IS3 OR NOT VstupVytah.IN.PritomnostProduktu_OS2) AND Safety.STAV.BarieraVstupVytahu_AKTIVNA THEN
+			ELSIF NOT Linka.Rezim_Priechodny AND VstupVytah.IN.PritomnostPaletky_IS3 AND VstupVytah.IN.PritomnostProduktu_OS2 AND NOT VstupVytah_Banner_AKTIVNY AND SC_VstupVytah.IdleTime.Q AND StoperPredCistenim.STAV.PoINIT AND NOT StoperPredCistenim.IN.PritomnostPaletky_IS4 AND NOT StoperPredCistenim.OUT.StoperZASUN_YV005 THEN
+				VstupVytah.OUT.Banner_ZelenaLED_IOS1:= FALSE;
+				VstupVytah.OUT.Banner_CervenaLED_IOS1:= TRUE;
+				VstupVytah.STAV.ObsluhaPotvrdilaBanner:= FALSE;
+				SC_VstupVytah.ResetStep:= TRUE;
+				SC_VstupVytah.Step:= 130;
+			ELSIF NOT VstupVytah.IN.PritomnostPaletky_IS3 AND Safety.STAV.BarieraVstupVytahu_AKTIVNA THEN
 				VstupVytah.STAV.ObsluhaPotvrdilaBanner:= FALSE;
 				VstupVytah.OUT.Banner_ZelenaLED_IOS1:= FALSE;
+				VstupVytah.OUT.Banner_CervenaLED_IOS1:= FALSE;
 				SC_VstupVytah.ResetStep:= TRUE;
-				SC_VstupVytah.Step:= 121;
+				SC_VstupVytah.Step:= 112;
 			END_IF	
 		
-			
-		121:
-			SC_VstupVytah.StepName:='121 - Automaticky Rezim - kontrola pritomnosti paletky na dopravniku vytahu';
-			SC_VstupVytah.IdleTime.PT:= T#2s;
-			SC_VstupVytah.AlarmTime.PT:= T#10s;
-			
-			
-			
-			IF NOT SC_VstupVytah.Switch1 THEN
-				VstupVytah.OUT.Dopravnik_ChodVZAD_ELR1:= TRUE;
-				SC_VstupVytah.IdleTime.IN:= TRUE;
-				SC_VstupVytah.Switch1:= TRUE;
-			END_IF
-			
-			IF VstupVytah.IN.PritomnostPaletky_IS3 THEN
-				VstupVytah.OUT.Dopravnik_ChodVZAD_ELR1:= FALSE;
-				SC_VstupVytah.ResetStep:= TRUE;
-				SC_VstupVytah.Step:= 111;
-			ELSIF SC_VstupVytah.IdleTime.Q THEN
-				VstupVytah.OUT.Dopravnik_ChodVZAD_ELR1:= FALSE;
-				SC_VstupVytah.ResetStep:= TRUE;
-				SC_VstupVytah.Step:= 100;
-			END_IF		
-			
-			
+	
+		
 		
 		130:
-			SC_VstupVytah.StepName:='125 - Automaticky Rezim - cakam na vyvezenie paletky na stoper pred cistenim';
+			SC_VstupVytah.StepName:='130 - Automaticky Rezim - otvorenie dveri vytahu';
 			SC_VstupVytah.IdleTime.PT:= T#500ms;
-			SC_VstupVytah.AlarmTime.PT:= T#10s;
+			SC_VstupVytah.AlarmTime.PT:= T#1s;
+		
+			SC_VstupVytah.AlarmTime.IN:= NOT Safety.STAV.BarieraVstupVytahu_AKTIVNA;
 			
-			
-		
-			IF VstupVytah.KoniecCyklu THEN
-				SC_VstupVytah.ResetStep:= TRUE;
-				SC_VstupVytah.Step:= 0;
-			ELSIF VstupVytah.IN.PritomnostPaletky_IS3 AND VstupVytah.IN.PritomnostProduktu_OS2 AND Safety.STAV.BarieraVstupVytahu_AKTIVNA AND StoperPredCistenim.STAV.PoINIT AND NOT StoperPredCistenim.IN.PritomnostPaletky_IS4 AND NOT StoperPredCistenim.OUT.StoperZASUN_YV005 THEN
-				SC_VstupVytah.ResetStep:= TRUE;
-				SC_VstupVytah.Step:= 135;
-			ELSIF (NOT VstupVytah.IN.PritomnostPaletky_IS3 OR NOT VstupVytah.IN.PritomnostProduktu_OS2) AND Safety.STAV.BarieraVstupVytahu_AKTIVNA THEN
-				VstupVytah.OUT.Banner_ZelenaLED_IOS1:= FALSE;
-				VstupVytah.STAV.ObsluhaPotvrdilaBanner:= FALSE;
-				SC_VstupVytah.ResetStep:= TRUE;
-				SC_VstupVytah.Step:= 100;
-			END_IF	
-		
-		
-		135:
-			SC_VstupVytah.StepName:='125 - Automaticky Rezim - otvorenie dveri vytahu';
-			SC_VstupVytah.IdleTime.PT:= T#500ms;
-			SC_VstupVytah.AlarmTime.PT:= T#10s;
-		
 			IF NOT SC_VstupVytah.Switch1 THEN
 				Dvere_OTVOR:= TRUE;	
 				SC_VstupVytah.Switch1:= TRUE;
@@ -640,7 +611,7 @@ PROGRAM _CYCLIC
 			IF VstupVytah.IN.DvereVytahuOtvorene_MS1 THEN
 				SC_VstupVytah.ResetStep:= TRUE;
 				SC_VstupVytah.Step:= 138;
-			ELSIF NOT Safety.STAV.BarieraVstupVytahu_AKTIVNA THEN
+			ELSIF SC_VstupVytah.AlarmTime.Q THEN
 				Alarmy[46]:= TRUE;
 				PoruchaVstupnehoVytahu:= TRUE;
 				SC_VstupVytah.ResetStep:= TRUE;
@@ -665,6 +636,7 @@ PROGRAM _CYCLIC
 			IF NOT VstupVytah.IN.PritomnostPaletky_IS3 AND NOT VstupVytah.IN.PrechodDopravnikaVytahu_OS1 AND StoperPredCistenim.IN.PritomnostPaletky_IS4 THEN
 				VstupVytah.OUT.Dopravnik_ChodVPRED_ELR1:= FALSE;
 				VstupVytah.STAV.PrebiehaVyvazaniePaletky:= FALSE;
+				VstupVytah.OUT.Banner_CervenaLED_IOS1:= FALSE;
 				SC_VstupVytah.ResetStep:= TRUE;
 				SC_VstupVytah.Step:= 140;
 			ELSIF NOT Safety.STAV.BarieraVstupVytahu_AKTIVNA THEN

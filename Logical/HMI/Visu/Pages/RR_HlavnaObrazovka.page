@@ -38,6 +38,7 @@
           <Text ID="240272" Value="Dopravník NG\nDopravník bunky"/>
           <Text ID="240627" Value="Výstupný výťah"/>
           <Text ID="240629" Value="Vratný dopravník"/>
+          <Text ID="264646" Value="Stavy snímačov"/>
         </TextLayer>
         <TextLayer LanguageId="en">
           <Text ID="237642" Value="Manual mode"/>
@@ -48,6 +49,7 @@
           <Text ID="240272" Value="Conveyor NG\nWorkpl. conveyor"/>
           <Text ID="240627" Value="Output lift"/>
           <Text ID="240629" Value="Return conveyor"/>
+          <Text ID="264646" Value="Sensor states"/>
         </TextLayer>
         <TextLayer LanguageId="ja-JP">
           <Text ID="237642" Value=""/>
@@ -58,6 +60,7 @@
           <Text ID="240272" Value=""/>
           <Text ID="240627" Value=""/>
           <Text ID="240629" Value=""/>
+          <Text ID="264646" Value=""/>
         </TextLayer>
         <IndexMap>
           <Index ID="237642" Value="0"/>
@@ -68,6 +71,7 @@
           <Index ID="240272" Value="9"/>
           <Index ID="240627" Value="11"/>
           <Index ID="240629" Value="13"/>
+          <Index ID="264646" Value="15"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -304,6 +308,37 @@
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_71]"/>
           <Property Name="Width" Value="262"/>
         </Control>
+        <Control ClassId="0x00001002" Name="Button_15">
+          <Property Name="BackColor" Value="42"/>
+          <Property Name="Bitmap" Value="Source[local].Bitmap[Mechanik1_32x32]"/>
+          <Property Name="BitmapAlignmentHorizontal" Value="Left of Text"/>
+          <Property Name="BitmapIndexDatapoint" Value="None"/>
+          <Property Name="BitmapSource" Value="SingleBitmap"/>
+          <Property Name="Border" Value="Source[local].Border[Button_Global_Area]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_102]"/>
+          <Property Name="Font" Value="Source[local].Font[Arial16_Bold]"/>
+          <Property Name="ForeColor" Value="0"/>
+          <Property Name="Height" Value="70"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="381"/>
+          <Property Name="Multiline" Value="Automatic"/>
+          <Property Name="PressedBackColor" Value="0"/>
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+          <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_pressed]"/>
+          <Property Name="PressedForeColor" Value="0"/>
+          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndex" Value="15"/>
+          <Property Name="TextIndexDatapoint" Value="None"/>
+          <Property Name="TextSimulationValue" Value="0"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="415"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_102]"/>
+          <Property Name="Width" Value="262"/>
+        </Control>
       </Controls>
       <KeyMapping>
         <VirtualKey Name="%embVirtualKey_64">
@@ -393,6 +428,19 @@
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="Page" Value="Source[local].Page[RR_VratnyDopravnik]"/>
+              <Property Name="Target" Value="Page"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_102">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x00000160">
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="Page" Value="Source[local].Page[RR_StavySnimacov_page1]"/>
               <Property Name="Target" Value="Page"/>
             </KeyAction>
           </KeyActions>

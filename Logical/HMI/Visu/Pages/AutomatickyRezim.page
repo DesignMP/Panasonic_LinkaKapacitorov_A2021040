@@ -39,9 +39,7 @@
           <Text ID="248624" Value="Počet OK kusov"/>
           <Text ID="248625" Value="Počet NG kusov"/>
           <Text ID="248626" Value="Celkový taktime"/>
-          <Text ID="251174" Value="Celkový počet\nvyrob. kusov"/>
           <Text ID="259656" Value="Odparkuj robota"/>
-          <Text ID="260347" Value="RESET"/>
         </TextLayer>
         <TextLayer LanguageId="en">
           <Text ID="237546" Value="START PROCESS"/>
@@ -53,9 +51,7 @@
           <Text ID="248624" Value="Number of OK pieces"/>
           <Text ID="248625" Value="Number of NG pieces"/>
           <Text ID="248626" Value="Total taktime"/>
-          <Text ID="251174" Value="Total number of product pieces"/>
           <Text ID="259656" Value="Park the robot"/>
-          <Text ID="260347" Value="RESET"/>
         </TextLayer>
         <TextLayer LanguageId="ja-JP">
           <Text ID="237546" Value=""/>
@@ -67,9 +63,7 @@
           <Text ID="248624" Value=""/>
           <Text ID="248625" Value=""/>
           <Text ID="248626" Value=""/>
-          <Text ID="251174" Value=""/>
           <Text ID="259656" Value=""/>
-          <Text ID="260347" Value="RESET"/>
         </TextLayer>
         <IndexMap>
           <Index ID="237546" Value="6"/>
@@ -81,9 +75,7 @@
           <Index ID="248624" Value="4"/>
           <Index ID="248625" Value="5"/>
           <Index ID="248626" Value="11"/>
-          <Index ID="251174" Value="13"/>
           <Index ID="259656" Value="14"/>
-          <Index ID="260347" Value="16"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -551,7 +543,7 @@
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="11"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="125"/>
+          <Property Name="Top" Value="90"/>
           <Property Name="Width" Value="125"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_1">
@@ -616,54 +608,12 @@
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="125"/>
+          <Property Name="Top" Value="90"/>
           <Property Name="UnitText" Value="Abbreviation"/>
           <Property Name="UnitTextAlignment" Value="Right"/>
           <Property Name="UnitTextPosition" Value="Right"/>
           <Property Name="UnitTextWidth" Value="0"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.StoperEtiketovania_Statistika.OUT.NameranyCas_v_Sekundach]"/>
-          <Property Name="ValueMode" Value="Standard"/>
-          <Property Name="Width" Value="130"/>
-        </Control>
-        <Control ClassId="0x00001004" Name="Text_22">
-          <Property Name="AlignmentVertical" Value="Center"/>
-          <Property Name="BackColor" Value="248"/>
-          <Property Name="Border" Value="Source[local].Border[Mp_LabelBorder]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="FillStyle" Value="Opaque"/>
-          <Property Name="Font" Value="Source[local].Font[Arial9_Bold]"/>
-          <Property Name="Height" Value="30"/>
-          <Property Name="Left" Value="278"/>
-          <Property Name="Multiline" Value="Automatic"/>
-          <Property Name="SimulationIndex" Value="0"/>
-          <Property Name="SimulationValue" Value=""/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndexOffset" Value="13"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="90"/>
-          <Property Name="Width" Value="125"/>
-        </Control>
-        <Control ClassId="0x00001007" Name="Numeric_4">
-          <Property Name="AlignmentHorizontal" Value="Center"/>
-          <Property Name="BackColor" Value="227"/>
-          <Property Name="Border" Value="Source[local].Border[Mp_InputBorderInactive]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Font" Value="Source[local].Font[Arial10_Bold]"/>
-          <Property Name="ForeColor" Value="0"/>
-          <Property Name="Height" Value="30"/>
-          <Property Name="Left" Value="408"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="None"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="None"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="90"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.CelkovyPocetVyrobenychKusov]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="130"/>
         </Control>
@@ -772,40 +722,6 @@
           <Property Name="Top" Value="178"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_86]"/>
           <Property Name="Width" Value="155"/>
-        </Control>
-        <Control ClassId="0x00001002" Name="Button_12">
-          <Property Name="BackColor" Value="0"/>
-          <Property Name="Bitmap" Value="None"/>
-          <Property Name="BitmapAlignmentHorizontal" Value="Left of Text"/>
-          <Property Name="BitmapIndexDatapoint" Value="None"/>
-          <Property Name="BitmapSource" Value="SingleBitmap"/>
-          <Property Name="Border" Value="Source[local].Border[Button_Global_Area]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_87]"/>
-          <Property Name="Font" Value="Source[local].Font[Arial10_Bold]"/>
-          <Property Name="ForeColor" Value="0"/>
-          <Property Name="Height" Value="30"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="548"/>
-          <Property Name="Locking" Value="Datapoint &lt; Level"/>
-          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.ZvolenaUroven]"/>
-          <Property Name="LockingLevel" Value="40"/>
-          <Property Name="Multiline" Value="Automatic"/>
-          <Property Name="PressedBackColor" Value="0"/>
-          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_pressed]"/>
-          <Property Name="PressedForeColor" Value="0"/>
-          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndex" Value="16"/>
-          <Property Name="TextIndexDatapoint" Value="None"/>
-          <Property Name="TextSimulationValue" Value="0"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="90"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_87]"/>
-          <Property Name="Width" Value="70"/>
         </Control>
         <Control ClassId="0x00001005" Name="Bitmap_3">
           <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -934,21 +850,6 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="SetValue" Value="1"/>
               <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Robot.Odparkovanie]"/>
-            </KeyAction>
-          </KeyActions>
-        </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_87">
-          <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
-          <KeyActions>
-            <KeyAction ClassId="0x00000161">
-              <Property Name="CompletionDatapoint" Value="None"/>
-              <Property Name="CompletionValue" Value="0"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Never"/>
-              <Property Name="Name" Value="Action_0"/>
-              <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.RESET_CelkovehoPoctuKusov]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1088,8 +989,7 @@
     <TabSeqItem Index="5" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
     <TabSeqItem Index="6" Value="Source[embedded].Layer[Default].Control[Numeric_2]"/>
     <TabSeqItem Index="7" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
-    <TabSeqItem Index="8" Value="Source[embedded].Layer[Default].Control[Numeric_4]"/>
-    <TabSeqItem Index="9" Value="Source[embedded].Layer[Default].Control[Dropdown_1]"/>
-    <TabSeqItem Index="10" Value="Source[local].Layer[PopPotvrdenieNGpaletky].Control[String_1]"/>
+    <TabSeqItem Index="8" Value="Source[embedded].Layer[Default].Control[Dropdown_1]"/>
+    <TabSeqItem Index="9" Value="Source[local].Layer[PopPotvrdenieNGpaletky].Control[String_1]"/>
   </TabSequence>
 </Page>

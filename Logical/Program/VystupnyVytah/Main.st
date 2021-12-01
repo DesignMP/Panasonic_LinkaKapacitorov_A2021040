@@ -2,8 +2,7 @@
 PROGRAM _INIT
 	
 	VystupVytah.PAR.Zdvih_ZadanaJoggRychlost:= 10;
-	VystupVytah.PAR.PotvrdenieBannerom_AKTIVNE:= TRUE;
-	VystupVytah.PAR.PotvrdenieNGkusuBannerom_AKTIVNE:= TRUE;
+	
 	
 END_PROGRAM
 
@@ -323,6 +322,9 @@ PROGRAM _CYCLIC
 				SC_VystupVytah.Step:= 120;	
 			ELSIF Paletka[i].StavPaletky = 'NG' THEN
 				SC_VystupVytah.ResetStep:= TRUE;
+				SC_VystupVytah.Step:= 125;
+			ELSIF Paletka[i].StavPaletky = 'PR' THEN
+				SC_VystupVytah.ResetStep:= TRUE;
 				SC_VystupVytah.Step:= 125;	
 			ELSE
 				SC_VystupVytah.ResetStep:= TRUE;
@@ -335,21 +337,23 @@ PROGRAM _CYCLIC
 						
 		120:
 			SC_VystupVytah.StepName:='120 - Automaticky Rezim - cakam na odobratie OK kusu a potvrdenie bannerom alebo aktivnou barierou';
-			SC_VystupVytah.IdleTime.PT:= T#500ms;
+			SC_VystupVytah.IdleTime.PT:= T#2s;
 			SC_VystupVytah.AlarmTime.PT:= T#10s;
 		
+			SC_VystupVytah.IdleTime.IN:= VystupVytah.IN.PritomnostPaletky_IS26 AND Safety.STAV.BarieraVystupVytahu_AKTIVNA;
+			
 			VystupVytah.OUT.Banner_ZelenaLED_IOS2:= TRUE;
 			VystupVytah.OUT.Banner_CervenaLED_IOS2:= FALSE;
 			
 			IF VystupVytah.KoniecCyklu THEN
 				SC_VystupVytah.ResetStep:= TRUE;
 				SC_VystupVytah.Step:= 0;
-			ELSIF VystupVytah.IN.PritomnostPaletky_IS26 AND NOT VystupVytah.IN.PritomnostProduktu_OS5 AND Safety.STAV.BarieraVystupVytahu_AKTIVNA AND VystupVytah.IN.BannerPotvrdeny_IOS2 AND VratnyDopravnik.STAV.PoINIT THEN
+			ELSIF VystupVytah.IN.PritomnostPaletky_IS26 AND (NOT VystupVytah.IN.PritomnostProduktu_OS5 OR (Linka.Rezim_Testovania AND SC_VystupVytah.IdleTime.Q)) AND Safety.STAV.BarieraVystupVytahu_AKTIVNA AND VystupVytah.IN.BannerPotvrdeny_IOS2 AND VratnyDopravnik.STAV.PoINIT THEN
 				VystupVytah.OUT.Banner_ZelenaLED_IOS2:= FALSE;
 				VystupVytah.OUT.Banner_CervenaLED_IOS2:= FALSE;
 				SC_VystupVytah.ResetStep:= TRUE;
 				SC_VystupVytah.Step:= 130;
-			ELSIF VystupVytah.IN.PritomnostPaletky_IS26 AND NOT VystupVytah.IN.PritomnostProduktu_OS5 AND Safety.STAV.BarieraVystupVytahu_AKTIVNA AND NOT VystupVytah.PAR.PotvrdenieBannerom_AKTIVNE AND VratnyDopravnik.STAV.PoINIT THEN 	
+			ELSIF VystupVytah.IN.PritomnostPaletky_IS26 AND (NOT VystupVytah.IN.PritomnostProduktu_OS5 OR (Linka.Rezim_Testovania AND SC_VystupVytah.IdleTime.Q)) AND SC_VystupVytah.IdleTime.Q AND NOT VystupVytah_Banner_AKTIVNY AND VratnyDopravnik.STAV.PoINIT THEN 	
 				VystupVytah.OUT.Banner_ZelenaLED_IOS2:= FALSE;
 				VystupVytah.OUT.Banner_CervenaLED_IOS2:= FALSE;
 				SC_VystupVytah.ResetStep:= TRUE;
@@ -389,7 +393,7 @@ PROGRAM _CYCLIC
 			
 		125:
 			SC_VystupVytah.StepName:='125 - Automaticky Rezim - cakam na potvrdenie NG kusu bannerom alebo aktivnou barierou';
-			SC_VystupVytah.IdleTime.PT:= T#1s;
+			SC_VystupVytah.IdleTime.PT:= T#2s;
 			SC_VystupVytah.AlarmTime.PT:= T#10s;
 		
 			IF VystupVytah.IN.PritomnostProduktu_OS5 THEN
@@ -401,7 +405,7 @@ PROGRAM _CYCLIC
 			END_IF	
 				
 			
-			SC_VystupVytah.IdleTime.IN:= VystupVytah.IN.PritomnostPaletky_IS26 AND Safety.STAV.BarieraVystupVytahu_AKTIVNA AND NOT VystupVytah.PAR.PotvrdenieNGkusuBannerom_AKTIVNE AND VratnyDopravnik.STAV.PoINIT;
+			SC_VystupVytah.IdleTime.IN:= VystupVytah.IN.PritomnostPaletky_IS26 AND Safety.STAV.BarieraVystupVytahu_AKTIVNA AND NOT VystupVytah_BannerNG_AKTIVNY AND VratnyDopravnik.STAV.PoINIT;
 			
 			
 			IF VystupVytah.KoniecCyklu THEN
@@ -494,19 +498,20 @@ PROGRAM _CYCLIC
 		
 		135:
 			SC_VystupVytah.StepName:='135 - Automaticky Rezim - vyvezenie paletky na vratny dopravnik';
-			SC_VystupVytah.IdleTime.PT:= T#2s;
-			SC_VystupVytah.AlarmTime.PT:= T#10s;
+			SC_VystupVytah.IdleTime.PT:= T#200ms;
+			SC_VystupVytah.AlarmTime.PT:= T#2s;
 		
-			SC_VystupVytah.IdleTime.IN:= NOT VystupVytah.IN.PritomnostPaletky_IS26 AND NOT VystupVytah.IN.PrechodDopravnikaVytahu_OS6;
-			
-			
+					
 			IF NOT SC_VystupVytah.Switch1 THEN
 				VystupVytah.OUT.Dopravnik_ChodVZAD_ELR6:= TRUE;
-				SC_VystupVytah.AlarmTime.IN:= TRUE;
 				SC_VystupVytah.Switch1:= TRUE;
 			END_IF
 		
-			IF SC_VystupVytah.IdleTime.Q THEN
+			IF EDGENEG(VystupVytah.IN.PrechodDopravnikaVytahu_OS6) THEN
+				SC_VystupVytah.IdleTime.IN:= TRUE;
+			END_IF
+			
+			IF SC_VystupVytah.IdleTime.Q AND NOT VystupVytah.IN.PritomnostPaletky_IS26 AND NOT VystupVytah.IN.PrechodDopravnikaVytahu_OS6 THEN
 				VystupVytah.OUT.Dopravnik_ChodVZAD_ELR6:= FALSE;
 				SC_VystupVytah.ResetStep:= TRUE;
 				SC_VystupVytah.Step:= 140;

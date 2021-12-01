@@ -91,6 +91,8 @@ PROGRAM _CYCLIC
 			SC_VratnyDopravnik.IdleTime.PT:= T#200ms;
 			SC_VratnyDopravnik.AlarmTime.PT:= T#5s;			
 			
+			VratnyDopravnik.OUT.Dopravnik_ChodVPRED_ELR2:= NOT Linka.STAV.Dopravniky_PAUZA;
+						
 			IF VratnyDopravnik.KoniecCyklu AND NOT StoperVratDopravnika.Automat AND NOT VstupVytah.Automat AND NOT VystupVytah.Automat THEN
 				SC_VratnyDopravnik.ResetStep:= TRUE;
 				SC_VratnyDopravnik.Step:= 0;

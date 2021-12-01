@@ -440,7 +440,15 @@ BMINFO_SOURCES_Visu=$(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Alarm_Acknowledg
 	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/EmergencyStop_48x48.bminfo \
 	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/DataMetrix_32x32.bminfo \
 	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Kamera_OFF_32x32.bminfo \
-	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/QR_code_32x32.bminfo 
+	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/QR_code_32x32.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Model_5AQ.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Model_5DH.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Bitmap_1.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Model_EV2020.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Model_GT13484.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Model_GT13485.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Model_HEAT190_HEAT150.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Model_Base_Plus.bminfo 
 
 BMGRP_SOURCES_Visu=$(AS_PROJECT_PATH)/Logical/HMI/Visu/BitmapGroups/AlarmAcknowledgeState.bmgrp \
 	$(AS_PROJECT_PATH)/Logical/HMI/Visu/BitmapGroups/AlarmBypassState.bmgrp \
@@ -491,8 +499,10 @@ PAGE_SOURCES_Visu=$(AS_PROJECT_PATH)/Logical/HMI/Visu/Pages/ObrazovkaHistorieAla
 	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Pages/KorekcieRobota.page \
 	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Pages/RFID_citacky_page2.page \
 	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Pages/HistoriaVyroby.page \
-	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Pages/Statistika.page \
-	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Pages/LadenieKamery.page 
+	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Pages/TaktimePracovisk.page \
+	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Pages/LadenieKamery.page \
+	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Pages/RR_StavySnimacov_page1.page \
+	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Pages/RR_StavySnimacov_page2.page 
 
 LAYER_SOURCES_Visu=$(AS_PROJECT_PATH)/Logical/HMI/Visu/Layers/Background.layer \
 	$(AS_PROJECT_PATH)/Logical/HMI/Visu/Layers/Pozadie_DMP.layer \
@@ -722,11 +732,19 @@ $(TEMP_PATH_Visu)/page.HistoriaVyroby.vco: $(AS_PROJECT_PATH)/Logical/HMI/Visu/P
 	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_Visu)' $(VCCFLAGS_Visu) -P '$(AS_PROJECT_PATH)' -ds '$(SRC_PATH_Visu)/StyleSheets/Default.vcs' -p Visu -so $(VC_STATIC_OPTIONS_Visu) -vcr 4726 -sfas
 
 
-$(TEMP_PATH_Visu)/page.Statistika.vco: $(AS_PROJECT_PATH)/Logical/HMI/Visu/Pages/Statistika.page $(VC_LANGUAGES_Visu)
+$(TEMP_PATH_Visu)/page.TaktimePracovisk.vco: $(AS_PROJECT_PATH)/Logical/HMI/Visu/Pages/TaktimePracovisk.page $(VC_LANGUAGES_Visu)
 	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_Visu)' $(VCCFLAGS_Visu) -P '$(AS_PROJECT_PATH)' -ds '$(SRC_PATH_Visu)/StyleSheets/Default.vcs' -p Visu -so $(VC_STATIC_OPTIONS_Visu) -vcr 4726 -sfas
 
 
 $(TEMP_PATH_Visu)/page.LadenieKamery.vco: $(AS_PROJECT_PATH)/Logical/HMI/Visu/Pages/LadenieKamery.page $(VC_LANGUAGES_Visu)
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_Visu)' $(VCCFLAGS_Visu) -P '$(AS_PROJECT_PATH)' -ds '$(SRC_PATH_Visu)/StyleSheets/Default.vcs' -p Visu -so $(VC_STATIC_OPTIONS_Visu) -vcr 4726 -sfas
+
+
+$(TEMP_PATH_Visu)/page.RR_StavySnimacov_page1.vco: $(AS_PROJECT_PATH)/Logical/HMI/Visu/Pages/RR_StavySnimacov_page1.page $(VC_LANGUAGES_Visu)
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_Visu)' $(VCCFLAGS_Visu) -P '$(AS_PROJECT_PATH)' -ds '$(SRC_PATH_Visu)/StyleSheets/Default.vcs' -p Visu -so $(VC_STATIC_OPTIONS_Visu) -vcr 4726 -sfas
+
+
+$(TEMP_PATH_Visu)/page.RR_StavySnimacov_page2.vco: $(AS_PROJECT_PATH)/Logical/HMI/Visu/Pages/RR_StavySnimacov_page2.page $(VC_LANGUAGES_Visu)
 	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_Visu)' $(VCCFLAGS_Visu) -P '$(AS_PROJECT_PATH)' -ds '$(SRC_PATH_Visu)/StyleSheets/Default.vcs' -p Visu -so $(VC_STATIC_OPTIONS_Visu) -vcr 4726 -sfas
 
 
@@ -2284,6 +2302,38 @@ $(TEMP_PATH_Visu)/bminfo.Kamera_OFF_32x32.vco: $(AS_PROJECT_PATH)/Logical/HMI/Vi
 
 
 $(TEMP_PATH_Visu)/bminfo.QR_code_32x32.vco: $(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/QR_code_32x32.bminfo $(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/QR_code_32x32.png
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_Visu)' $(VCCFLAGS_Visu)  -p Visu -so $(VC_STATIC_OPTIONS_Visu) -vcr 4726 -sfas
+
+
+$(TEMP_PATH_Visu)/bminfo.Model_5AQ.vco: $(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Model_5AQ.bminfo $(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Model_5AQ.jpg
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_Visu)' $(VCCFLAGS_Visu)  -p Visu -so $(VC_STATIC_OPTIONS_Visu) -vcr 4726 -sfas
+
+
+$(TEMP_PATH_Visu)/bminfo.Model_5DH.vco: $(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Model_5DH.bminfo $(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Model_5DH.jpg
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_Visu)' $(VCCFLAGS_Visu)  -p Visu -so $(VC_STATIC_OPTIONS_Visu) -vcr 4726 -sfas
+
+
+$(TEMP_PATH_Visu)/bminfo.Bitmap_1.vco: $(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Bitmap_1.bminfo $(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Bitmap_1.jpg
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_Visu)' $(VCCFLAGS_Visu)  -p Visu -so $(VC_STATIC_OPTIONS_Visu) -vcr 4726 -sfas
+
+
+$(TEMP_PATH_Visu)/bminfo.Model_EV2020.vco: $(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Model_EV2020.bminfo $(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Model_EV2020.jpg
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_Visu)' $(VCCFLAGS_Visu)  -p Visu -so $(VC_STATIC_OPTIONS_Visu) -vcr 4726 -sfas
+
+
+$(TEMP_PATH_Visu)/bminfo.Model_GT13484.vco: $(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Model_GT13484.bminfo $(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Model_GT13484.jpg
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_Visu)' $(VCCFLAGS_Visu)  -p Visu -so $(VC_STATIC_OPTIONS_Visu) -vcr 4726 -sfas
+
+
+$(TEMP_PATH_Visu)/bminfo.Model_GT13485.vco: $(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Model_GT13485.bminfo $(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Model_GT13485.jpg
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_Visu)' $(VCCFLAGS_Visu)  -p Visu -so $(VC_STATIC_OPTIONS_Visu) -vcr 4726 -sfas
+
+
+$(TEMP_PATH_Visu)/bminfo.Model_HEAT190_HEAT150.vco: $(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Model_HEAT190_HEAT150.bminfo $(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Model_HEAT190_HEAT150.jpg
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_Visu)' $(VCCFLAGS_Visu)  -p Visu -so $(VC_STATIC_OPTIONS_Visu) -vcr 4726 -sfas
+
+
+$(TEMP_PATH_Visu)/bminfo.Model_Base_Plus.vco: $(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Model_Base_Plus.bminfo $(AS_PROJECT_PATH)/Logical/HMI/Visu/Bitmaps/Model_Base_Plus.jpg
 	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_Visu)' $(VCCFLAGS_Visu)  -p Visu -so $(VC_STATIC_OPTIONS_Visu) -vcr 4726 -sfas
 
 

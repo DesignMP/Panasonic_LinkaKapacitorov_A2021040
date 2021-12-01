@@ -35,7 +35,7 @@
           <Text ID="239313" Value="Editácia \nreceptur"/>
           <Text ID="239425" Value="Editácia \nuživatelov"/>
           <Text ID="240201" Value="Čitačky RFID"/>
-          <Text ID="240203" Value="Štatistika"/>
+          <Text ID="240203" Value="Taktime\npracovísk"/>
           <Text ID="246168" Value="Korekcie robota"/>
           <Text ID="251170" Value="História výroby"/>
           <Text ID="261065" Value="Ladenie kamery"/>
@@ -46,7 +46,7 @@
           <Text ID="239313" Value="Recipe\nediting"/>
           <Text ID="239425" Value="User\nediting"/>
           <Text ID="240201" Value="RFID readers"/>
-          <Text ID="240203" Value="Statistics"/>
+          <Text ID="240203" Value="Taktime workplaces"/>
           <Text ID="246168" Value="Robot corrections"/>
           <Text ID="251170" Value="Production history"/>
           <Text ID="261065" Value="Camera tuning"/>
@@ -407,7 +407,7 @@
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="Page" Value="Source[local].Page[Statistika]"/>
+              <Property Name="Page" Value="Source[local].Page[TaktimePracovisk]"/>
               <Property Name="Target" Value="Page"/>
             </KeyAction>
           </KeyActions>

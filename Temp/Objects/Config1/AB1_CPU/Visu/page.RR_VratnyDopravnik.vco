@@ -146,9 +146,9 @@
           </Object>
           <Object Name="Bitmap_10" ClsId="0x1005" Version="1" Type="CTRL" RefString="Source[local].Page[RR_VratnyDopravnik].Layer[FrameLayer].Control[Bitmap_10]">
             <UInt32 Name="Left">225</UInt32>
-            <UInt32 Name="Top">144</UInt32>
+            <UInt32 Name="Top">145</UInt32>
             <UInt32 Name="Right">260</UInt32>
-            <UInt32 Name="Bottom">175</UInt32>
+            <UInt32 Name="Bottom">176</UInt32>
             <Reference Name="IndexDatapoint" Type="DP">Source[global].Variable[DataSource.StoperVratDopravnika.IN.PritomnostPaletky_IS14]</Reference>
             <UInt32 Name="ControlID">0</UInt32>
             <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001005].StyleClass[Default]</Reference>

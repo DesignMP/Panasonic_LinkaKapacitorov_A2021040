@@ -318,5 +318,13 @@
     <Bitmap>Source[local].Bitmap[DataMetrix_32x32]</Bitmap>
     <Bitmap>Source[local].Bitmap[Kamera_OFF_32x32]</Bitmap>
     <Bitmap>Source[local].Bitmap[QR_code_32x32]</Bitmap>
+    <Bitmap>Source[local].Bitmap[Model_5AQ]</Bitmap>
+    <Bitmap>Source[local].Bitmap[Model_5DH]</Bitmap>
+    <Bitmap>Source[local].Bitmap[Bitmap_1]</Bitmap>
+    <Bitmap>Source[local].Bitmap[Model_EV2020]</Bitmap>
+    <Bitmap>Source[local].Bitmap[Model_GT13484]</Bitmap>
+    <Bitmap>Source[local].Bitmap[Model_GT13485]</Bitmap>
+    <Bitmap>Source[local].Bitmap[Model_HEAT190_HEAT150]</Bitmap>
+    <Bitmap>Source[local].Bitmap[Model_Base_Plus]</Bitmap>
   </Bitmap32bit>
 </Options>

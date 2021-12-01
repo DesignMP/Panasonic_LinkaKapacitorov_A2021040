@@ -96,10 +96,14 @@ PROGRAM _CYCLIC
 			SC_DopravCistenia.IdleTime.PT:= T#200ms;
 			SC_DopravCistenia.AlarmTime.PT:= T#5s;			
 			
+			DopravCistenia.Dopravnik_RUN:= NOT Linka.STAV.Dopravniky_PAUZA;
+			
+			
 			IF DopravCistenia.KoniecCyklu AND NOT StoperPredCistenim.Automat AND NOT StoperPoCisteni.Automat AND NOT VstupVytah.Automat THEN
 				SC_DopravCistenia.ResetStep:= TRUE;
 				SC_DopravCistenia.Step:= 0;
 			END_IF
+			
 			
 			
 			

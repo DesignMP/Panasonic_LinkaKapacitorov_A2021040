@@ -136,9 +136,16 @@ PROGRAM _CYCLIC
 	IF RESET_PoctuVyrobenychKusov THEN
 		PocetVyrobenychKusov_OK:= 0;
 		PocetVyrobenychKusov_NG:= 0;
+		Pomer_OK_kusov_IDR:= 0;
 		RESET_PoctuVyrobenychKusov:= FALSE;
 	END_IF
    
+	
+	//Vyrátanie IDR percentuálny pomer kusov OK k celkovému poètu vyrobených kusov//
+	IF PocetVyrobenychKusov_OK <> 0 THEN
+		Pomer_OK_kusov_IDR:= 100 * (PocetVyrobenychKusov_OK/(PocetVyrobenychKusov_OK + PocetVyrobenychKusov_NG)); 
+	END_IF	
+	
 	
 	//Reset celkového poètu kusov//
 	IF RESET_CelkovehoPoctuKusov THEN

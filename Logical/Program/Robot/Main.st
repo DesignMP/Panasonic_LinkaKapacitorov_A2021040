@@ -152,10 +152,13 @@ PROGRAM _CYCLIC
 			IF Robot.KOM_IN.Stav_ProgramRUN AND Robot.KOM_IN.Stav_VystupyZresetovane THEN
 				Robot.KOM_OUT.StartProgramuMain:= FALSE;
 				IF Robot.RR_PresunPoziciaCitaniaQRkodu THEN
+					SC_Robot.ResetStep:= TRUE;
 					SC_Robot.Step:= 700;
 				ELSIF Robot.RR_PresunPoziciaCitaniaDMkodu THEN
+					SC_Robot.ResetStep:= TRUE;
 					SC_Robot.Step:= 720;
 				ELSIF Robot.RR_PresunPoziciaOdobratiaEtikety THEN
+					SC_Robot.ResetStep:= TRUE;
 					SC_Robot.Step:= 740;	
 				ELSIF Robot.Odparkovanie AND Safety.STAV.MutingRobota_AKTIVNY THEN
 					SC_Robot.ResetStep:= TRUE;
@@ -202,47 +205,76 @@ PROGRAM _CYCLIC
 						
 			SC_Robot.IdleTime.IN:= RFID_Hlava_2.STAV.PritomnostCipu;
 			
-			IF NOT StoperEtiketovania.IN.Centrovanie_HornaPoloha_IS18 THEN
-				SC_Robot.ResetStep:= TRUE;
-				SC_Robot.Step:= 0;
-			ELSIF NOT RFID_Hlava_2.STAV.PritomnostCipu THEN
+			IF NOT RFID_Hlava_2.STAV.PritomnostCipu THEN
 				SC_Robot.ResetStep:= TRUE;
 				SC_Robot.Step:= 0;	
 			ELSIF SC_Robot.IdleTime.Q THEN
 				IF RFID_Hlava_2.PAR.PrecitaneCisloPaletky <> '' AND Linka.PAR.Zvoleny_MODEL <> '' THEN
 					IF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BF1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKB24380HA' THEN
 						Robot.KOM_OUT.CisloProduktu:= 1;
-						Kamera.PAR.ZadaneCisloProgramu:= 1;
-					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BV1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKE26150HC' THEN
+						IF Kamera.STAV.AktualneCisloProgramu <> 1 THEN
+							Kamera.PAR.ZadaneCisloProgramu:= 1;
+						END_IF	
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BV1' THEN
 						Robot.KOM_OUT.CisloProduktu:= 2;
-						Kamera.PAR.ZadaneCisloProgramu:= 3;
-					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BW1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKE27070WA' THEN
+						IF Kamera.STAV.AktualneCisloProgramu <> 3 THEN
+							Kamera.PAR.ZadaneCisloProgramu:= 3;
+						END_IF	
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BW1' THEN
 						Robot.KOM_OUT.CisloProduktu:= 3;
-						Kamera.PAR.ZadaneCisloProgramu:= 5;	
-					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'CN1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKE28730WA' THEN
+						IF Kamera.STAV.AktualneCisloProgramu <> 5 THEN
+							Kamera.PAR.ZadaneCisloProgramu:= 5;	
+						END_IF	
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'CN1' THEN
 						Robot.KOM_OUT.CisloProduktu:= 4;
-						Kamera.PAR.ZadaneCisloProgramu:= 7;	
-					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'CP1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKN27101HA' THEN
+						IF Kamera.STAV.AktualneCisloProgramu <> 7 THEN
+							Kamera.PAR.ZadaneCisloProgramu:= 7;	
+						END_IF	
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'CP1' THEN
 						Robot.KOM_OUT.CisloProduktu:= 5;
-						Kamera.PAR.ZadaneCisloProgramu:= 9;	
-					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BE1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKR21681HA' THEN
+						IF Kamera.STAV.AktualneCisloProgramu <> 9 THEN
+							Kamera.PAR.ZadaneCisloProgramu:= 9;	
+						END_IF	
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BE1' THEN
 						Robot.KOM_OUT.CisloProduktu:= 6;
 						Kamera.PAR.ZadaneCisloProgramu:= 11;	
-					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BD1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKR25060HA' THEN
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BD1' THEN
 						Robot.KOM_OUT.CisloProduktu:= 7;
-						Kamera.PAR.ZadaneCisloProgramu:= 13;
+						IF Kamera.STAV.AktualneCisloProgramu <> 13 THEN
+							Kamera.PAR.ZadaneCisloProgramu:= 13;
+						END_IF	
 					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BF1' AND Linka.PAR.Zvoleny_MODEL = 'EZTYB21670HA' THEN
 						Robot.KOM_OUT.CisloProduktu:= 8;
-						Kamera.PAR.ZadaneCisloProgramu:= 15;	
+						IF Kamera.STAV.AktualneCisloProgramu <> 15 THEN
+							Kamera.PAR.ZadaneCisloProgramu:= 15;	
+						END_IF
+					ELSE
+						SC_Robot.ResetStep:= TRUE;
+						SC_Robot.Step:= 0;
 					END_IF	
 					SC_Robot.ResetStep:= TRUE;
-					SC_Robot.Step:= 702;
+					SC_Robot.Step:= 701;
 				ELSE	
 					SC_Robot.ResetStep:= TRUE;
 					SC_Robot.Step:= 0;
 				END_IF
 			END_IF	
 		
+		
+		701:
+			SC_Robot.StepName:='701 - Manualny Rezim - zacentrovanie paletky';
+			SC_Robot.IdleTime.PT:= T#200ms;
+			SC_Robot.AlarmTime.PT:= T#5s;
+			
+			IF NOT SC_Robot.Switch1 THEN
+				StoperEtiketovania.RR_ZacentrujPaletku:= TRUE;
+				SC_Robot.Switch1:= TRUE;
+			END_IF
+			
+			IF StoperEtiketovania.IN.Centrovanie_HornaPoloha_IS18 THEN
+				SC_Robot.ResetStep:= TRUE;
+				SC_Robot.Step:= 702;
+			END_IF	
 			
 				
 			
@@ -294,6 +326,7 @@ PROGRAM _CYCLIC
 				SC_Robot.Step:= 710;
 			END_IF
 		
+			
 		
 		710:
 			SC_Robot.StepName:='710 - Manualny Rezim - citania QR kodu internej etikety,cakam na zrusenie signalu cinnost robota ukoncena';
@@ -320,11 +353,24 @@ PROGRAM _CYCLIC
 			IF Robot.KOM_IN.Stav_RobotCinnostUkoncena AND Safety.STAV.MutingRobota_AKTIVNY THEN
 				Robot.KOM_OUT.PresunDoMutingPozicie:= FALSE;
 				SC_Robot.ResetStep:= TRUE;
-				SC_Robot.Step:= 0;
+				SC_Robot.Step:= 714;
 			END_IF	
 		
 		
+		714:
+			SC_Robot.StepName:='714 - Manualny Rezim - odcentrovanie paletky';
+			SC_Robot.IdleTime.PT:= T#200ms;
+			SC_Robot.AlarmTime.PT:= T#5s;
 			
+			IF NOT SC_Robot.Switch1 AND NOT Robot.KOM_IN.Stav_RobotCinnostUkoncena THEN
+				StoperEtiketovania.RR_OdcentrujPaletku:= TRUE;
+				SC_Robot.Switch1:= TRUE;
+			END_IF
+			
+			IF StoperEtiketovania.IN.Centrovanie_SpodnaPoloha_IS17 THEN
+				SC_Robot.ResetStep:= TRUE;
+				SC_Robot.Step:= 0;
+			END_IF		
 			
 			
 			
@@ -344,47 +390,83 @@ PROGRAM _CYCLIC
 						
 			SC_Robot.IdleTime.IN:= RFID_Hlava_2.STAV.PritomnostCipu;
 			
-			IF NOT StoperEtiketovania.IN.Centrovanie_HornaPoloha_IS18 THEN
-				SC_Robot.ResetStep:= TRUE;
-				SC_Robot.Step:= 0;
-			ELSIF NOT RFID_Hlava_2.STAV.PritomnostCipu THEN
+			IF NOT RFID_Hlava_2.STAV.PritomnostCipu THEN
 				SC_Robot.ResetStep:= TRUE;
 				SC_Robot.Step:= 0;	
 			ELSIF SC_Robot.IdleTime.Q THEN
 				IF RFID_Hlava_2.PAR.PrecitaneCisloPaletky <> '' AND Linka.PAR.Zvoleny_MODEL <> '' THEN
 					IF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BF1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKB24380HA' THEN
 						Robot.KOM_OUT.CisloProduktu:= 1;
-						Kamera.PAR.ZadaneCisloProgramu:= 2;
-					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BV1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKE26150HC' THEN
+						IF Kamera.STAV.AktualneCisloProgramu <> 2 THEN
+							Kamera.PAR.ZadaneCisloProgramu:= 2;
+						END_IF	
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BV1' THEN
 						Robot.KOM_OUT.CisloProduktu:= 2;
-						Kamera.PAR.ZadaneCisloProgramu:= 4;
-					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BW1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKE27070WA' THEN
+						IF Kamera.STAV.AktualneCisloProgramu <> 4 THEN
+							Kamera.PAR.ZadaneCisloProgramu:= 4;
+						END_IF	
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BW1' THEN
 						Robot.KOM_OUT.CisloProduktu:= 3;
-						Kamera.PAR.ZadaneCisloProgramu:= 6;	
-					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'CN1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKE28730WA' THEN
+						IF Kamera.STAV.AktualneCisloProgramu <> 6 THEN
+							Kamera.PAR.ZadaneCisloProgramu:= 6;	
+						END_IF	
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'CN1' THEN
 						Robot.KOM_OUT.CisloProduktu:= 4;
-						Kamera.PAR.ZadaneCisloProgramu:= 8;	
-					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'CP1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKN27101HA' THEN
+						IF Kamera.STAV.AktualneCisloProgramu <> 8 THEN
+							Kamera.PAR.ZadaneCisloProgramu:= 8;	
+						END_IF	
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'CP1' THEN
 						Robot.KOM_OUT.CisloProduktu:= 5;
-						Kamera.PAR.ZadaneCisloProgramu:= 10;	
-					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BE1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKR21681HA' THEN
+						IF Kamera.STAV.AktualneCisloProgramu <> 10 THEN
+							Kamera.PAR.ZadaneCisloProgramu:= 10;
+						END_IF	
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BE1' THEN
 						Robot.KOM_OUT.CisloProduktu:= 6;
-						Kamera.PAR.ZadaneCisloProgramu:= 12;	
-					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BD1' AND Linka.PAR.Zvoleny_MODEL = 'EZTKR25060HA' THEN
+						IF Kamera.STAV.AktualneCisloProgramu <> 12 THEN
+							Kamera.PAR.ZadaneCisloProgramu:= 12;	
+						END_IF	
+					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BD1' THEN
 						Robot.KOM_OUT.CisloProduktu:= 7;
-						Kamera.PAR.ZadaneCisloProgramu:= 14;
+						IF Kamera.STAV.AktualneCisloProgramu <> 14 THEN
+							Kamera.PAR.ZadaneCisloProgramu:= 14;
+						END_IF	
 					ELSIF RFID_Hlava_2.PAR.PrecitanyTypPaletky = 'BF1' AND Linka.PAR.Zvoleny_MODEL = 'EZTYB21670HA' THEN
 						Robot.KOM_OUT.CisloProduktu:= 8;
-						Kamera.PAR.ZadaneCisloProgramu:= 16;	
+						IF Kamera.STAV.AktualneCisloProgramu <> 16 THEN
+							Kamera.PAR.ZadaneCisloProgramu:= 16;
+						END_IF	
+					ELSE
+						SC_Robot.ResetStep:= TRUE;
+						SC_Robot.Step:= 0;	
 					END_IF	
 					SC_Robot.ResetStep:= TRUE;
-					SC_Robot.Step:= 722;
+					SC_Robot.Step:= 721;
 				ELSE	
 					SC_Robot.ResetStep:= TRUE;
 					SC_Robot.Step:= 0;
 				END_IF
 			END_IF	
 		
+			
+		721:
+			SC_Robot.StepName:='721 - Manualny Rezim - zacentrovanie paletky';
+			SC_Robot.IdleTime.PT:= T#200ms;
+			SC_Robot.AlarmTime.PT:= T#5s;
+			
+			IF NOT SC_Robot.Switch1 THEN
+				StoperEtiketovania.RR_ZacentrujPaletku:= TRUE;
+				SC_Robot.Switch1:= TRUE;
+			END_IF
+			
+			IF StoperEtiketovania.IN.Centrovanie_HornaPoloha_IS18 THEN
+				SC_Robot.ResetStep:= TRUE;
+				SC_Robot.Step:= 722;
+			END_IF		
+			
+			
+			
+			
+			
 		722:
 			SC_Robot.StepName:='722 - Manualny Rezim - citania DM kodu zakaznickej etikety,presun robota do pozicie citania zakaznickej etikety';
 			SC_Robot.IdleTime.PT:= T#200ms;
@@ -458,10 +540,28 @@ PROGRAM _CYCLIC
 			IF Robot.KOM_IN.Stav_RobotCinnostUkoncena AND Safety.STAV.MutingRobota_AKTIVNY THEN
 				Robot.KOM_OUT.PresunDoMutingPozicie:= FALSE;
 				SC_Robot.ResetStep:= TRUE;
-				SC_Robot.Step:= 0;
+				SC_Robot.Step:= 734;
 			END_IF	
 		
 		
+			
+		734:
+			SC_Robot.StepName:='734 - Manualny Rezim - odcentrovanie paletky';
+			SC_Robot.IdleTime.PT:= T#200ms;
+			SC_Robot.AlarmTime.PT:= T#5s;
+			
+			IF NOT SC_Robot.Switch1 AND NOT Robot.KOM_IN.Stav_RobotCinnostUkoncena THEN
+				StoperEtiketovania.RR_OdcentrujPaletku:= TRUE;
+				SC_Robot.Switch1:= TRUE;
+			END_IF
+			
+			IF StoperEtiketovania.IN.Centrovanie_SpodnaPoloha_IS17 THEN
+				SC_Robot.ResetStep:= TRUE;
+				SC_Robot.Step:= 0;
+			END_IF		
+			
+			
+			
 		
 		
 		
@@ -512,10 +612,19 @@ PROGRAM _CYCLIC
 			IF Robot.KOM_IN.Stav_RobotCinnostUkoncena AND Safety.STAV.MutingRobota_AKTIVNY THEN
 				Robot.KOM_OUT.PresunDoMutingPozicie:= FALSE;
 				SC_Robot.ResetStep:= TRUE;
-				SC_Robot.Step:= 0;
+				SC_Robot.Step:= 750;
 			END_IF	
 		
-		
+		750:
+			SC_Robot.StepName:='750 - Manualny Rezim - cakam na zrusenie signalu cinnost robota ukoncena';
+			SC_Robot.IdleTime.PT:= T#200ms;
+			SC_Robot.AlarmTime.PT:= T#5s;
+           
+			
+			IF NOT Robot.KOM_IN.Stav_RobotCinnostUkoncena THEN
+				SC_Robot.ResetStep:= TRUE;
+				SC_Robot.Step:= 0;  
+			END_IF 
 		
 		
 		

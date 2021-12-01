@@ -1,7 +1,7 @@
 (*
 QWS: 00008
 *)
-00001	00008	POE\Main\Variables.vbb
+00001	00009	POE\Main\Variables.vbb
 00002	00000	POE\Main\Main.gb
 00003	00000	POE\Main\VyblokovanieZamkov.gb
 00004	00000	POE\Main\DeadMan.gb

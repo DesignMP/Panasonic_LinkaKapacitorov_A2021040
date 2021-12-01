@@ -35,6 +35,8 @@
 			<Channel Name="BOOL019" Mapping="NSQX2.2" Variable="Stav_MutingBarVstupVytah_AKTIV" Address="Cyclic#1.Safety.STAV.MutingBarieryVstupVytah_AKTIVNY" SODIndex="0x2580" SODSubIndex="0x3" />
 			<Channel Name="BOOL020" Mapping="NSQX2.3" Variable="Stav_MutingBarVystVytah_AKTIV" Address="Cyclic#1.Safety.STAV.MutingBarieryVystupVytah_AKTIVNY" SODIndex="0x2580" SODSubIndex="0x3" />
 			<Channel Name="BOOL021" Mapping="NSQX2.4" Variable="Stav_ServDvereTlaciarne_AKTIV" Address="Cyclic#1.Safety.STAV.ServisneDvereTlaciarne_AKTIVNE" SODIndex="0x2580" SODSubIndex="0x3" />
+			<Channel Name="BOOL022" Mapping="NSQX2.5" Variable="Stav_DeadMan_AKTIVNY" Address="Cyclic#1.Safety.STAV.DeadMan_AKTIVNY" SODIndex="0x2580" SODSubIndex="0x3" />
+			<Channel Name="BOOL023" Mapping="NSQX2.6" Variable="Stav_DeadMan_ODBLOKOVANY" Address="Cyclic#1.Safety.STAV.DeadMan_Odblokovany" SODIndex="0x2580" SODSubIndex="0x3" />
 			<Channel Name="BOOL101" Mapping="NSIX0.0" Variable="Reset_ZonyCS" Address="Cyclic#1.Safety.RESET_ZonyCS" SODIndex="0x2500" SODSubIndex="0x2" />
 			<Channel Name="BOOL102" Mapping="NSIX0.1" Variable="Reset_ZonyVstupnyVytah" Address="Cyclic#1.Safety.RESET_ZonyVstupnehoVytahu" SODIndex="0x2500" SODSubIndex="0x2" />
 			<Channel Name="BOOL103" Mapping="NSIX0.2" Variable="Reset_ZonyVystupnyVytah" Address="Cyclic#1.Safety.RESET_ZonyVystupnehoVytahu" SODIndex="0x2500" SODSubIndex="0x2" />
@@ -45,6 +47,7 @@
 			<Channel Name="BOOL108" Mapping="NSIX0.7" Variable="SpatnaVazba_ZonaBunky" Address="Cyclic#1.Linka.IN.SpatnaVazba_ZonaBunky" SODIndex="0x2500" SODSubIndex="0x2" />
 			<Channel Name="BOOL109" Mapping="NSIX1.0" Variable="SpatnaVazba_VT_ZonaVstupVytah" Address="Cyclic#1.Linka.IN.SpatnaVazba_VentilTerminal_SQ1" SODIndex="0x2500" SODSubIndex="0x3" />
 			<Channel Name="BOOL110" Mapping="NSIX1.1" Variable="SpatnaVazba_VT_ZonaBunky" Address="Cyclic#1.Linka.IN.SpatnaVazba_VentilTerminal_SQ2" SODIndex="0x2500" SODSubIndex="0x3" />
+			<Channel Name="BOOL111" Mapping="NSIX1.2" Variable="Reset_DeadMan" Address="Cyclic#1.Safety.RESET_DeadMan" SODIndex="0x2500" SODSubIndex="0x3" />
 		</Module>
 		<Module Name="SL1.SM2" Hardware="X20SI8110" SafeLogicID="1" SafeModuleID="2" SISize="3" SOSize="0" NSISize="0" NSOSize="0" SIOffset="60" ConnectionValidBitNumber="0" HWTypeCode="27" >
 			<Channel Name="SafeTwoChannelInput0102" Mapping="SIX61.0" Variable="siTlaciaren_SnimacDveri" SODIndex="0x6000" SODSubIndex="0x2" />

@@ -1443,7 +1443,7 @@
       <Text ID="98" Value="73 - Bol zastaveny program robota !!!"/>
       <Text ID="99" Value="74 - Porucha komunikácie so serverom Panasonic !!!"/>
       <Text ID="100" Value="75 - Kamera robota nieje READY !!!"/>
-      <Text ID="101" Value=""/>
+      <Text ID="101" Value="76 - Porucha odobratia etikety z tlačiarne !!!"/>
       <Text ID="102" Value=""/>
       <Text ID="103" Value=""/>
       <Text ID="104" Value=""/>
@@ -1557,7 +1557,7 @@
       <Text ID="98" Value="73 - The robot program was stopped !!!"/>
       <Text ID="99" Value="74 - Communication failure with Panasonic server !!!"/>
       <Text ID="100" Value="75 - The robot camera is not READY !!!"/>
-      <Text ID="101" Value=""/>
+      <Text ID="101" Value="76 - Label removal error !!!"/>
       <Text ID="102" Value=""/>
       <Text ID="103" Value=""/>
       <Text ID="104" Value=""/>

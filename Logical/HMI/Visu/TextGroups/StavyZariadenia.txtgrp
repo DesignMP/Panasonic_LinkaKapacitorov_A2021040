@@ -19,6 +19,7 @@
     <Text ID="258278" Value="V tlačiarni došla termopáska !!!"/>
     <Text ID="258279" Value="Filtre ionizačnej jednotky sú zanesené !!!"/>
     <Text ID="258967" Value="Kamera robota nieje READY !!!"/>
+    <Text ID="263209" Value="Dvere bunky niesu zamknuté !!!"/>
   </TextLayer>
   <TextLayer LanguageId="en">
     <Text ID="235717" Value="The line is switched off."/>
@@ -35,6 +36,7 @@
     <Text ID="258278" Value="The printer is running out of thermal tape !!!"/>
     <Text ID="258279" Value="Ionization unit filters are clogged !!!"/>
     <Text ID="258967" Value="The robot camera is not READY !!!"/>
+    <Text ID="263209" Value="The doors of workplace is not close !!!"/>
   </TextLayer>
   <TextLayer LanguageId="ja-JP">
     <Text ID="235717" Value=""/>
@@ -51,6 +53,7 @@
     <Text ID="258278" Value=""/>
     <Text ID="258279" Value=""/>
     <Text ID="258967" Value=""/>
+    <Text ID="263209" Value=""/>
   </TextLayer>
   <IndexMap>
     <Index ID="235717" Value="0"/>
@@ -67,5 +70,6 @@
     <Index ID="258278" Value="11"/>
     <Index ID="258279" Value="12"/>
     <Index ID="258967" Value="13"/>
+    <Index ID="263209" Value="14"/>
   </IndexMap>
 </TextGroup>

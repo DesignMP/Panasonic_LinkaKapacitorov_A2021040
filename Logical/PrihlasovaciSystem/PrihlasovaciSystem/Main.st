@@ -61,7 +61,7 @@ PROGRAM _CYCLIC
 	//Listovanie v uložených uživateloch//
 	IF old_a <> i AND i >= 0 AND i <= 50 THEN
 		MenoUzivatela:= Uzivatel[i].Meno;
-		HesloUzivatela:= Uzivatel[i].Heslo;
+		HesloUzivatela:= '*****';
 		UrovenUzivatela:= Uzivatel[i].UrovenUzivatela;
 		old_a:= i;
 	END_IF	
@@ -96,7 +96,10 @@ PROGRAM _CYCLIC
 			OdhlasUzivatela:= FALSE;
 			MpRecipeXml_2.Save:= FALSE;
 			b:= 0;
+			c:= 0;
+			d:= 0;
 			UzivatelNajdeny:= FALSE;
+			UzivatelUlozeny:= FALSE;
 			SC_Uzivatelia.ResetStep:= TRUE;
 			SC_Uzivatelia.Step:= 1;
 			
@@ -113,16 +116,55 @@ PROGRAM _CYCLIC
 			END_IF
 		
 		10://Ulozenie uzivatela//
-			SC_Uzivatelia.StepName:= '10 - Ulozenie uzivatela';
-			Uzivatel[i].Meno:= MenoUzivatela;
-			Uzivatel[i].Heslo:= HesloUzivatela;
-			Uzivatel[i].UrovenUzivatela:= UrovenUzivatela;
-			MpRecipeXml_2.Save:= TRUE;
-			IF MpRecipeXml_2.CommandDone THEN
+			SC_Uzivatelia.StepName:= '10 - Ulozenie uzivatela - hladanie existujuceho uzivatela';
+			IF MenoUzivatela <> '' AND HesloUzivatela <> '' AND HesloUzivatela <> '*****' THEN
+				FOR c:= 0 TO 50 BY 1 DO
+					IF Uzivatel[c].Meno = MenoUzivatela AND NOT UzivatelUlozeny THEN
+						Uzivatel[c].Heslo:= HesloUzivatela;
+						Uzivatel[c].UrovenUzivatela:= UrovenUzivatela;
+						MpRecipeXml_2.Save:= TRUE;
+						UzivatelUlozeny:= TRUE;
+					END_IF
+				END_FOR	
+			ELSE	
 				SC_Uzivatelia.ResetStep:= TRUE;
 				SC_Uzivatelia.Step:= 0;
 			END_IF
-				
+							
+			IF UzivatelUlozeny AND MpRecipeXml_2.CommandDone THEN
+				MpRecipeXml_2.Save:= FALSE;
+				SC_Uzivatelia.ResetStep:= TRUE;
+				SC_Uzivatelia.Step:= 0;
+			ELSIF NOT UzivatelUlozeny THEN
+				SC_Uzivatelia.ResetStep:= TRUE;
+				SC_Uzivatelia.Step:= 11;	
+			END_IF
+		
+			
+		11:
+			//Ulozenie uzivatela//
+			SC_Uzivatelia.StepName:= '10 - Ulozenie uzivatela - ulozenie na prve prazdne miesto';	
+			
+			FOR d:= 0 TO 50 BY 1 DO
+				IF Uzivatel[d].Meno = '' AND NOT UzivatelUlozeny THEN
+					Uzivatel[d].Meno:= MenoUzivatela;
+					Uzivatel[d].Heslo:= HesloUzivatela;
+					Uzivatel[d].UrovenUzivatela:= UrovenUzivatela;
+					MpRecipeXml_2.Save:= TRUE;
+					UzivatelUlozeny:= TRUE;
+				END_IF	
+			END_FOR
+			
+			IF UzivatelUlozeny AND MpRecipeXml_2.CommandDone THEN
+				MpRecipeXml_2.Save:= FALSE;
+				SC_Uzivatelia.ResetStep:= TRUE;
+				SC_Uzivatelia.Step:= 0;
+			ELSIF NOT UzivatelUlozeny THEN
+				SC_Uzivatelia.ResetStep:= TRUE;
+				SC_Uzivatelia.Step:= 0;
+			END_IF
+			
+			
 		
 		20://Èakanie na prihlásenie uživatela//
 			SC_Uzivatelia.StepName:= '20 - Kontrola prazdneho uzivatela';

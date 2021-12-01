@@ -7,6 +7,9 @@ END_PROGRAM
 PROGRAM _CYCLIC
 	
 	
+
+	
+	
 	//Volanie podprogramov//
 	OvlCentrovacky;
 	OvlCitackyRFID;
@@ -36,6 +39,19 @@ PROGRAM _CYCLIC
 		StoperEtiketovania.STAV.PrebiehaVyvazaniePaletky:= FALSE;
 	END_IF	
 	
+	//Oznaèenie paletky NG pri otvoreni dverí//
+	IF NOT Safety.STAV.ZamkyBunky_AKTIVNE AND RFID_Hlava_2.STAV.PritomnostCipu AND RFID_Hlava_2.PAR.PrecitaneCisloPaletky <> '' THEN
+		i:=  STRING_TO_USINT(RFID_Hlava_2.PAR.PrecitaneCisloPaletky);
+		IF NOT Paletka[i].StavKomunikacie_DONE THEN
+			Paletka[i].StavPaletky:= 'NG';
+		END_IF	
+	END_IF
+			
+
+		
+		
+	
+	
 	CASE SC_StoperEtiketovania.Step OF 
 	
 		0:
@@ -57,9 +73,6 @@ PROGRAM _CYCLIC
 			StoperEtiketovania.OUT.Tlaciaren_VytlacZnovaEtiketu:= FALSE;
 			Kamera.STAV.Results_READY:= FALSE;
 			Kamera.CMD.Triger:= FALSE;
-			IF Kamera.STAV.AktualneCisloProgramu <> 50 THEN
-				Kamera.PAR.ZadaneCisloProgramu:= 50;
-			END_IF	
 			StoperEtiketovania.STAV.PrebiehaVyvazaniePaletky:= FALSE;
 			StoperEtiketovania.RR_VytlacEtiketu:= FALSE;
 			Vizu.ZobrazHlasenie_ZaaretujTlaciaren:= 1;
@@ -79,6 +92,7 @@ PROGRAM _CYCLIC
 			KOM_Panasonic.Server_IN.Text_Reading_Error:= FALSE;
 			KOM_Panasonic.Server_IN.CommandNumber:= 0;
 			KOM_Panasonic.Server_IN.RezimBezTlaceEtikety:= FALSE;
+			StoperEtiketovania.STAV.Warning:= FALSE;
 						
 			IF Safety.STAV.ZonaCS_AKTIVNA AND Safety.STAV.ZonaBunky_AKTIVNA AND Linka.IN.TlakVzduchu_OK_S2 AND NOT NastalaPorucha AND Linka.STAV.Hardware_OK THEN
 				SC_StoperEtiketovania.ResetStep:= TRUE;
@@ -164,7 +178,8 @@ PROGRAM _CYCLIC
 				StoperEtiketovania_Statistika.IN.ZAPIS_MeraniaCasu:= TRUE;
 				SC_StoperEtiketovania.ResetStep:= TRUE;
 				SC_StoperEtiketovania.Step:= 103;
-			END_IF
+			END_IF	
+		
 		
 		103:
 			SC_StoperEtiketovania.StepName:='103 - Automaticky Rezim - citam cislo paletky';
@@ -178,8 +193,13 @@ PROGRAM _CYCLIC
 			IF SC_StoperEtiketovania.IdleTime.Q THEN
 				IF RFID_Hlava_2.PAR.PrecitaneCisloPaletky <> '' THEN
 					i:=  STRING_TO_USINT(RFID_Hlava_2.PAR.PrecitaneCisloPaletky);
-					SC_StoperEtiketovania.ResetStep:= TRUE;
-					SC_StoperEtiketovania.Step:= 105;
+					IF Linka.Rezim_Priechodny THEN
+						SC_StoperEtiketovania.ResetStep:= TRUE;
+						SC_StoperEtiketovania.Step:= 240; 
+					ELSE	
+						SC_StoperEtiketovania.ResetStep:= TRUE;
+						SC_StoperEtiketovania.Step:= 105;
+					END_IF	
 				ELSE
 					Alarmy[61]:= TRUE;
 					PoruchaBunky:= TRUE;
@@ -197,7 +217,9 @@ PROGRAM _CYCLIC
 			
 			OffsetRobota_NazovModelu:= Paletka[i].NazovModelu;
 			Robot.KOM_OUT.CisloProduktu:= Paletka[i].Robot_CisloProgramu;
-			Kamera.PAR.ZadaneCisloProgramu:= Paletka[i].Kamera_CisloProgramu_QRkod;
+			IF Kamera.STAV.AktualneCisloProgramu <> Paletka[i].Kamera_CisloProgramu_QRkod THEN
+				Kamera.PAR.ZadaneCisloProgramu:= Paletka[i].Kamera_CisloProgramu_QRkod;
+			END_IF	
 			
 			IF NOT SC_StoperEtiketovania.Switch1 THEN
 				NacitajKorekcieRobota:= TRUE;
@@ -260,7 +282,7 @@ PROGRAM _CYCLIC
 				SC_StoperEtiketovania.Switch1:= TRUE;
 			END_IF
 		
-			IF StoperEtiketovania.IN.Centrovanie_HornaPoloha_IS18 THEN
+			IF StoperEtiketovania.IN.Centrovanie_HornaPoloha_IS18 AND NOT StoperDopravNG.STAV.DopravnikNG_BUSY THEN
 				IF Linka.Rezim_BezKomunikacie THEN
 					SC_StoperEtiketovania.ResetStep:= TRUE;
 					SC_StoperEtiketovania.Step:= 115;
@@ -279,25 +301,40 @@ PROGRAM _CYCLIC
 			IF Paletka[i].StavKomunikacie_DONE THEN
 				SC_StoperEtiketovania.ResetStep:= TRUE;
 				SC_StoperEtiketovania.Step:= 240;
-			ELSIF KOM_Panasonic.Server_OUT.LastCommandNumber = 0 AND Paletka[i].StavPaletky = 'NG' THEN
+			ELSIF Paletka[i].StavPaletky = 'PR' THEN	//Priechodný režim
 				SC_StoperEtiketovania.ResetStep:= TRUE;
 				SC_StoperEtiketovania.Step:= 240;
-			ELSIF KOM_Panasonic.Server_OUT.LastCommandNumber = 0 THEN  //Zaèiatok 
+			ELSIF Paletka[i].StavPaletky = 'NG' AND KOM_Panasonic.Server_OUT.LastCommandNumber = 0 THEN
+				SC_StoperEtiketovania.ResetStep:= TRUE;
+				SC_StoperEtiketovania.Step:= 240;
+			ELSIF Paletka[i].StavPaletky = 'OK' AND KOM_Panasonic.Server_OUT.LastCommandNumber = 0 THEN  //Zaèiatok 
 				SC_StoperEtiketovania.ResetStep:= TRUE;
 				SC_StoperEtiketovania.Step:= 115;
-			ELSIF KOM_Panasonic.Server_OUT.LastCommandNumber = 10 THEN //Naèítanie internej etikety
-				SC_StoperEtiketovania.ResetStep:= TRUE;
-				SC_StoperEtiketovania.Step:= 140;
-			ELSIF KOM_Panasonic.Server_OUT.LastCommandNumber = 20 THEN //Vytlaèenie štítku z tlaèiarne
-				SC_StoperEtiketovania.ResetStep:= TRUE;
-				SC_StoperEtiketovania.Step:= 140;
-			ELSIF KOM_Panasonic.Server_OUT.LastCommandNumber = 30 THEN //Nalepenie štítku
-				SC_StoperEtiketovania.ResetStep:= TRUE;
-				SC_StoperEtiketovania.Step:= 180;
-			ELSIF KOM_Panasonic.Server_OUT.LastCommandNumber = 40 THEN //Naèítanie zákaznickej etikety
-				SC_StoperEtiketovania.ResetStep:= TRUE;
-				SC_StoperEtiketovania.Step:= 180;
-			ELSIF KOM_Panasonic.Server_OUT.LastCommandNumber = 50 THEN //Komunikacia zo serverom ukonèená
+			ELSIF Paletka[i].StavPaletky = 'OK' AND KOM_Panasonic.Server_OUT.LastCommandNumber = 10 THEN //Naèítanie internej etikety
+				IF NOT StoperDopravNG.STAV.DopravnikNG_BUSY THEN
+					StoperEtiketovania.STAV.Etiketovanie_BUSY:= TRUE;
+					SC_StoperEtiketovania.ResetStep:= TRUE;
+					SC_StoperEtiketovania.Step:= 140;
+				END_IF	
+			ELSIF Paletka[i].StavPaletky = 'OK' AND KOM_Panasonic.Server_OUT.LastCommandNumber = 20 THEN //Vytlaèenie štítku z tlaèiarne
+				IF NOT StoperDopravNG.STAV.DopravnikNG_BUSY THEN
+					StoperEtiketovania.STAV.Etiketovanie_BUSY:= TRUE;
+					SC_StoperEtiketovania.ResetStep:= TRUE;
+					SC_StoperEtiketovania.Step:= 140;
+				END_IF	
+			ELSIF Paletka[i].StavPaletky = 'OK' AND KOM_Panasonic.Server_OUT.LastCommandNumber = 30 THEN //Nalepenie štítku
+				IF NOT StoperDopravNG.STAV.DopravnikNG_BUSY THEN
+					StoperEtiketovania.STAV.Etiketovanie_BUSY:= TRUE;
+					SC_StoperEtiketovania.ResetStep:= TRUE;
+					SC_StoperEtiketovania.Step:= 180;
+				END_IF	
+			ELSIF Paletka[i].StavPaletky = 'OK' AND KOM_Panasonic.Server_OUT.LastCommandNumber = 40 THEN //Naèítanie zákaznickej etikety
+				IF NOT StoperDopravNG.STAV.DopravnikNG_BUSY THEN
+					StoperEtiketovania.STAV.Etiketovanie_BUSY:= TRUE;
+					SC_StoperEtiketovania.ResetStep:= TRUE;
+					SC_StoperEtiketovania.Step:= 180;
+				END_IF	
+			ELSIF Paletka[i].StavPaletky = 'OK' AND KOM_Panasonic.Server_OUT.LastCommandNumber = 50 THEN //Komunikacia zo serverom ukonèená
 				SC_StoperEtiketovania.ResetStep:= TRUE;
 				SC_StoperEtiketovania.Step:= 240;
 			END_IF	
@@ -462,7 +499,9 @@ PROGRAM _CYCLIC
 			KOM_Panasonic.Server_IN.SerialNumber_InternaEtiketa:= Paletka[i].InternySerialNumber;
 			KOM_Panasonic.Server_IN.Cislo_LOTU:= Paletka[i].CisloLOT;
 			
-			Kamera.PAR.ZadaneCisloProgramu:= Paletka[i].Kamera_CisloProgramu_DMkod;
+			IF Kamera.STAV.AktualneCisloProgramu <> Paletka[i].Kamera_CisloProgramu_DMkod THEN
+				Kamera.PAR.ZadaneCisloProgramu:= Paletka[i].Kamera_CisloProgramu_DMkod;
+			END_IF	
 			
 			IF NOT KOM_Panasonic.Server_OUT.DataForPLC_READY THEN
 				IF Paletka[i].StavCistenia = 'OK' THEN
@@ -525,8 +564,7 @@ PROGRAM _CYCLIC
 			KOM_Panasonic.Server_IN.Cislo_LOTU:= Paletka[i].CisloLOT;
 			
 			
-			IF NOT KOM_Panasonic.Server_OUT.DataForPLC_READY (*AND STEP*) THEN
-				STEP:= FALSE;
+			IF NOT KOM_Panasonic.Server_OUT.DataForPLC_READY THEN
 				KOM_Panasonic.Server_IN.CommandNumber:= 20;
 				KOM_Panasonic.Server_IN.ProcessResult:= TRUE;
 				KOM_Panasonic.Server_IN.DataForServer_READY:= TRUE;
@@ -541,7 +579,9 @@ PROGRAM _CYCLIC
 			SC_StoperEtiketovania.IdleTime.PT:= T#200ms;
 			SC_StoperEtiketovania.AlarmTime.PT:= T#5s;
 		
-			Kamera.PAR.ZadaneCisloProgramu:= Paletka[i].Kamera_CisloProgramu_DMkod;
+			IF Kamera.STAV.AktualneCisloProgramu <> Paletka[i].Kamera_CisloProgramu_DMkod THEN
+				Kamera.PAR.ZadaneCisloProgramu:= Paletka[i].Kamera_CisloProgramu_DMkod;
+			END_IF	
 			
 			IF StoperEtiketovania.STAV.TlaciarenZaaretovana AND NOT StoperEtiketovania.IN.Tlaciaren_Offline AND NOT SC_StoperEtiketovania.Switch1 THEN
 				Robot.KOM_OUT.PresunDoPozicieOdobratiaEtikety:= TRUE;
@@ -617,6 +657,8 @@ PROGRAM _CYCLIC
 					SC_StoperEtiketovania.ResetStep:= TRUE;
 					SC_StoperEtiketovania.Step:= 230;
 				ELSE	
+					Alarmy[76]:= TRUE;
+					PoruchaBunky:= TRUE;
 					SC_StoperEtiketovania.ResetStep:= TRUE;
 					SC_StoperEtiketovania.Step:= 170;
 				END_IF	
@@ -718,7 +760,9 @@ PROGRAM _CYCLIC
 			SC_StoperEtiketovania.IdleTime.PT:= T#200ms;
 			SC_StoperEtiketovania.AlarmTime.PT:= T#5s;
 		
-			Kamera.PAR.ZadaneCisloProgramu:= Paletka[i].Kamera_CisloProgramu_DMkod;
+			IF Kamera.STAV.AktualneCisloProgramu <> Paletka[i].Kamera_CisloProgramu_DMkod THEN
+				Kamera.PAR.ZadaneCisloProgramu:= Paletka[i].Kamera_CisloProgramu_DMkod;
+			END_IF	
 			
 			IF NOT SC_StoperEtiketovania.Switch1 THEN
 				Robot.KOM_OUT.PresunDoPoziceKontrEtiketyPriamo:= TRUE;
@@ -741,7 +785,9 @@ PROGRAM _CYCLIC
 			SC_StoperEtiketovania.IdleTime.PT:= T#200ms;
 			SC_StoperEtiketovania.AlarmTime.PT:= T#5s;
 		
-			Kamera.PAR.ZadaneCisloProgramu:= Paletka[i].Kamera_CisloProgramu_DMkod;
+			IF Kamera.STAV.AktualneCisloProgramu <> Paletka[i].Kamera_CisloProgramu_DMkod THEN
+				Kamera.PAR.ZadaneCisloProgramu:= Paletka[i].Kamera_CisloProgramu_DMkod;
+			END_IF	
 			
 			IF NOT SC_StoperEtiketovania.Switch1 THEN
 				Robot.KOM_OUT.PresunDoPoziceKontrolyEtikety:= TRUE;
@@ -1064,7 +1110,9 @@ PROGRAM _CYCLIC
 			SC_StoperEtiketovania.IdleTime.PT:= T#200ms;
 			SC_StoperEtiketovania.AlarmTime.PT:= T#5s;
 		
-			Kamera.PAR.ZadaneCisloProgramu:= Paletka[i].Kamera_CisloProgramu_QRkod;
+			IF Kamera.STAV.AktualneCisloProgramu <> Paletka[i].Kamera_CisloProgramu_QRkod THEN
+				Kamera.PAR.ZadaneCisloProgramu:= Paletka[i].Kamera_CisloProgramu_QRkod;
+			END_IF	
 			StoperEtiketovania.STAV.Etiketovanie_BUSY:= FALSE;
 			Paletka[i].StavKomunikacie_DONE:= TRUE;
 			
@@ -1088,21 +1136,32 @@ PROGRAM _CYCLIC
 			SC_StoperEtiketovania.IdleTime.PT:= T#500ms;
 			SC_StoperEtiketovania.AlarmTime.PT:= T#5s;
 		
+			StoperEtiketovania.STAV.Warning:= Paletka[i].StavPaletky = 'NG' AND StoperDopravNG.IN.Dopravnik_PritomnostPaletky_OS4;
+			
+			
 						
 			IF StoperEtiketovania.KoniecCyklu THEN
 				SC_StoperEtiketovania.ResetStep:= TRUE;
 				SC_StoperEtiketovania.Step:= 0;
+			ELSIF Paletka[i].StavPaletky = 'PR' AND SC_StoperDopravNG.Step = 100 AND StoperDopravNG.IN.Centrovanie_StrednaPoloha_IS20 AND NOT StoperDopravNG.IN.Stoper_PritomnostPaletky_IS15 AND NOT StoperDopravNG.STAV.ObsluhaPotvrdilaPaletkuNG AND NOT StoperDopravNG.STAV.DopravnikNG_BUSY THEN
+				StoperEtiketovania.STAV.VyvazamPaletkuNG:= FALSE;
+				StoperEtiketovania.STAV.Warning:= FALSE;
+				SC_StoperEtiketovania.ResetStep:= TRUE;
+				SC_StoperEtiketovania.Step:= 255;	
 			ELSIF Paletka[i].StavPaletky = 'OK' AND SC_StoperDopravNG.Step = 100 AND StoperDopravNG.IN.Centrovanie_StrednaPoloha_IS20 AND NOT StoperDopravNG.IN.Stoper_PritomnostPaletky_IS15 AND NOT StoperDopravNG.STAV.ObsluhaPotvrdilaPaletkuNG AND NOT StoperDopravNG.STAV.DopravnikNG_BUSY THEN
 				StoperEtiketovania.STAV.VyvazamPaletkuNG:= FALSE;
 				PocetVyrobenychKusov_OK:= PocetVyrobenychKusov_OK + 1;
 				CelkovyPocetVyrobenychKusov:= CelkovyPocetVyrobenychKusov + 1;
+				StoperEtiketovania.STAV.Warning:= FALSE;
 				SC_StoperEtiketovania.ResetStep:= TRUE;
 				SC_StoperEtiketovania.Step:= 255;
 			ELSIF Paletka[i].StavPaletky = 'NG' AND SC_StoperDopravNG.Step = 100 AND StoperDopravNG.IN.Centrovanie_StrednaPoloha_IS20 AND NOT StoperDopravNG.IN.Stoper_PritomnostPaletky_IS15 AND (NOT StoperDopravNG.IN.Dopravnik_PritomnostPaletky_OS4 AND NOT StoperDopravNG.STAV.PaletkaNaKonciDopravnika_NG) AND NOT StoperDopravNG.STAV.DopravnikNG_BUSY THEN	
 				StoperEtiketovania.STAV.VyvazamPaletkuNG:= TRUE;
+				StoperDopravNG.STAV.DopravnikNG_BUSY:= TRUE;
 				StoperEtiketovania.STAV.AlarmTextPaletkyNG:= Paletka[i].ReturnProcessName;
 				PocetVyrobenychKusov_NG:= PocetVyrobenychKusov_NG + 1;
 				CelkovyPocetVyrobenychKusov:= CelkovyPocetVyrobenychKusov + 1;
+				StoperEtiketovania.STAV.Warning:= FALSE;
 				SC_StoperEtiketovania.ResetStep:= TRUE;
 				SC_StoperEtiketovania.Step:= 255;
 			END_IF	
@@ -1123,9 +1182,16 @@ PROGRAM _CYCLIC
 			IF NOT StoperEtiketovania.IN.PritomnostPaletky_IS16 THEN
 				StoperEtiketovania.OUT.StoperZASUN_YV007:= FALSE;
 				StoperDopravNG.OUT.NatlakujTlmicPaletky_YV008:= FALSE;
+			END_IF
+			
+			IF NOT Linka.Rezim_Priechodny AND NOT StoperEtiketovania.IN.PritomnostPaletky_IS16 AND NOT StoperEtiketovania.OUT.StoperZASUN_YV007 THEN
 				SC_StoperEtiketovania.ResetStep:= TRUE;
 				SC_StoperEtiketovania.Step:= 100;
-			END_IF
+			ELSIF Linka.Rezim_Priechodny AND NOT StoperEtiketovania.IN.PritomnostPaletky_IS16 AND NOT StoperEtiketovania.OUT.StoperZASUN_YV007 AND StoperDopravNG.IN.Stoper_PritomnostPaletky_IS15 THEN	
+				SC_StoperEtiketovania.ResetStep:= TRUE;
+				SC_StoperEtiketovania.Step:= 100;
+			END_IF	
+			
 			
 			IF SC_StoperEtiketovania.AlarmTime.Q THEN
 				Alarmy[56]:= TRUE;

@@ -10,7 +10,10 @@ VAR
 	MoveDown : BOOL;
 	IndexZoznam : INT;
 	b : INT;
+	c : INT := 0;
+	d : INT := 0;
 	CasOdhlaseniaUzivatela : TON;
 	UzivatelNajdeny : BOOL := 0;
+	UzivatelUlozeny : BOOL := FALSE;
 	CasAutomOdhlaseniaUzivatela : TON := (0);
 END_VAR

@@ -314,7 +314,7 @@
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_85]"/>
           <Property Name="Height" Value="35"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="10"/>
+          <Property Name="Left" Value="15"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>

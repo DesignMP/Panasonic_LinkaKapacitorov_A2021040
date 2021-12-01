@@ -773,15 +773,20 @@
             </Group>
           </Object>
           <Object Name="Bitmap_1" ClsId="0x1005" Version="1" Type="CTRL" RefString="Source[local].Page[KorekcieRobota].Layer[FrameLayer].Control[Bitmap_1]">
-            <UInt32 Name="Left">525</UInt32>
-            <UInt32 Name="Top">190</UInt32>
-            <UInt32 Name="Right">850</UInt32>
-            <UInt32 Name="Bottom">447</UInt32>
+            <UInt32 Name="Left">527</UInt32>
+            <UInt32 Name="Top">160</UInt32>
+            <UInt32 Name="Right">856</UInt32>
+            <UInt32 Name="Bottom">460</UInt32>
             <Reference Name="IndexDatapoint" Type="DP">Source[global].Variable[DataSource.Vizu.IndexSuradnicovehoSystemuPaletky]</Reference>
             <UInt32 Name="ControlID">0</UInt32>
             <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001005].StyleClass[Default]</Reference>
-            <UInt16 Name="StyleTableSize">40</UInt16>
+            <UInt16 Name="StyleTableSize">48</UInt16>
             <UInt16 Name="Reserved">0</UInt16>
+            <Group Name="Border">
+              <UInt16 Name="Offset">0</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <Reference Name="Data" Type="BRD">Source[local].Border[Mp_SunkenNG]</Reference>
+            </Group>
             <Group Name="FillStyle">
               <UInt16 Name="Offset">4</UInt16>
               <UInt16 Name="Size">1</UInt16>

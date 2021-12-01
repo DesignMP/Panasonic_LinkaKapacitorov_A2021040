@@ -1,6 +1,22 @@
 
 ACTION KOM_Kamera: 
 
+	//Reset napájania kamery//
+	IF Linka.ResetNapajaniaKamery THEN
+		Linka.OUT.Rele_ResetNapajaniaKamery:= TRUE;
+		Linka.ResetNapajaniaKamery:= FALSE;
+	END_IF
+	
+	CasResetovaniaKamery.IN:= Linka.OUT.Rele_ResetNapajaniaKamery;
+	IF CasResetovaniaKamery.Q THEN
+		Linka.OUT.Rele_ResetNapajaniaKamery:= FALSE;
+	END_IF	
+	
+	
+	CasResetovaniaKamery.PT:= T#2s;
+	CasResetovaniaKamery();
+	
+	
 	//Triger kamery//
 	Kamera.Profinet_PLC_OUTPUTS.0:= Kamera.CMD.Triger;
 	

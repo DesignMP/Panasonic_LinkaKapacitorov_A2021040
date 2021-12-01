@@ -13,6 +13,8 @@ ACTION OvlCentrovacky:
 			SC_OvlCentrovacky.StepName:= '0 - Nulovanie';
 			Centrovacku_VYSUN:= FALSE;
 			Centrovacku_ZASUN:= FALSE;
+			StoperEtiketovania.RR_OdcentrujPaletku:= FALSE;
+			StoperEtiketovania.RR_ZacentrujPaletku:= FALSE;
 			//StoperEtiketovania.OUT.Centrovanie_VYSUN_YV003:= FALSE;
 			//StoperEtiketovania.OUT.Centrovanie_ZASUN_YV004:= FALSE;
 								
@@ -27,6 +29,10 @@ ACTION OvlCentrovacky:
 			IF Centrovacku_VYSUN THEN
 				SC_OvlCentrovacky.Step:= 10;
 			ELSIF Centrovacku_ZASUN THEN
+				SC_OvlCentrovacky.Step:= 20;
+			ELSIF StoperEtiketovania.RR_ZacentrujPaletku THEN
+				SC_OvlCentrovacky.Step:= 10;
+			ELSIF StoperEtiketovania.RR_OdcentrujPaletku THEN
 				SC_OvlCentrovacky.Step:= 20;
 			END_IF
 	

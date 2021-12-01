@@ -89,10 +89,14 @@ PROGRAM _CYCLIC
 			
 		100:  
 			SC_VystupnyDopravnik.StepName:='100 - Automaticky Rezim - cakam na vypnutie dopravnika';
-			SC_VystupnyDopravnik.IdleTime.PT:= T#200ms;
+			SC_VystupnyDopravnik.IdleTime.PT:= T#2s;
 			SC_VystupnyDopravnik.AlarmTime.PT:= T#5s;			
 			
-			IF VystupnyDopravnik.KoniecCyklu AND NOT StoperVystupDopravnika.Automat AND NOT VystupVytah.Automat THEN
+			SC_VystupnyDopravnik.IdleTime.IN:= NOT StoperVystupDopravnika.Automat AND NOT VystupVytah.Automat;
+			
+			VystupnyDopravnik.OUT.Dopravnik_ChodVPRED_ELR5:= NOT Linka.STAV.Dopravniky_PAUZA;
+						
+			IF VystupnyDopravnik.KoniecCyklu AND SC_VystupnyDopravnik.IdleTime.Q THEN
 				SC_VystupnyDopravnik.ResetStep:= TRUE;
 				SC_VystupnyDopravnik.Step:= 0;
 			END_IF
